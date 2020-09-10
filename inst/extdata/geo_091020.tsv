@@ -1,0 +1,4027 @@
+id	org	files	has_meta	has_r	usable
+GSE157653	Mus musculus	TAR	no	no	no
+GSE157644	Mus musculus	CSV, LOOM	no	no	no
+GSE157641	Mus musculus	CSV	no	no	no
+GSE157624	Mus musculus	TSV	no	no	no
+GSE157592	Mus musculus	TSV, TXT	no	no	no
+GSE157591	Homo sapiens	CSV	no	no	no
+GSE156473	Homo sapiens	TSV	no	no	no
+GSE153569	Mus musculus	MTX, TSV	no	no	no
+GSE153568	Mus musculus	MTX, TSV	no	no	no
+GSE153370	Homo sapiens	MTX, TSV	no	no	no
+GSE152866	Mus musculus	CSV, TAR	no	no	no
+GSE150305	Homo sapiens	none	no	no	no
+GSE149452	Mus musculus	H5	no	no	no
+GSE144637	Mus musculus	MTX, TSV	no	no	no
+GSE144420	Mus musculus	MTX, TSV	no	no	no
+GSE143255	Mus musculus	BW, MTX, TSV	no	no	no
+GSE142754	Mus musculus	MTX, TSV	no	no	no
+GSE141895	Mus musculus	TAR	no	no	no
+GSE140968	Mus musculus	H5	no	no	no
+GSE140812	Mus musculus	H5	no	no	no
+GSE136162	Drosophila melanogaster	MTX, TSV	no	no	no
+GSE128464	Mus musculus	CSV, MTX, TSV	yes	no	yes
+GSE155449	Danio rerio; Homo sapiens	BW	no	no	no
+GSE150263	Homo sapiens	H5	no	no	no
+GSE157542	Mus musculus	TXT	no	no	no
+GSE157518	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE157507	blank sample; Mus musculus	TXT	no	no	no
+GSE157501	Mus musculus	CSV, LOOM	no	no	no
+GSE157410	Mus musculus	CLOUPE	no	no	no
+GSE154692	Mus musculus	TXT	yes	no	yes
+GSE150425	Mus musculus	CSV	no	no	no
+GSE149909	Mus musculus	MTX, TSV	no	no	no
+GSE149813	Mus musculus	MTX, TSV	no	no	no
+GSE149512	Homo sapiens	CSV	no	no	no
+GSE147415	Mus musculus	MTX, TSV	no	no	no
+GSE137908	Mus musculus	TSV	no	no	no
+GSE157362	Mus musculus	MTX, TSV	no	no	no
+GSE153339	Mus musculus	MTX, TSV	no	no	no
+GSE147893	Homo sapiens	TSV	no	no	no
+GSE157292	Mus musculus	MTX, TSV	no	no	no
+GSE157280	Homo sapiens	TSV	no	no	no
+GSE157277	Homo sapiens	CSV	no	no	no
+GSE137864	Homo sapiens	MTX, TSV	no	no	no
+GSE135779	Homo sapiens	MTX, TSV	no	no	no
+GSE157220	Homo sapiens	TXT, XLSX	no	no	no
+GSE157157	Homo sapiens	MTX, TSV	no	no	no
+GSE154973	Mus musculus	H5	no	no	no
+GSE154579	Mus musculus	MTX, TSV	no	no	no
+GSE152014	Homo sapiens	TAR	no	no	no
+GSE148339	Mus musculus	MTX, RDATA, TSV, TXT	no	yes	yes
+GSE144090	Mus musculus	MTX, TSV	no	no	no
+GSE141664	Danio rerio	TAR	no	no	no
+GSE140440	Homo sapiens	TXT	no	no	no
+GSE138835	Homo sapiens	MTX, TSV	no	no	no
+GSE137829	Homo sapiens	TXT	no	no	no
+GSE136800	Bos taurus	CSV	no	no	no
+GSE112302	Homo sapiens	TXT, XLSX	no	no	no
+GSE157144	Mus musculus	TXT	no	no	no
+GSE151285	Mus musculus	none	no	no	no
+GSE151284	Mus musculus	CSV, XLSX	no	no	no
+GSE150008	Mus musculus	TXT	no	no	no
+GSE148316	Mus musculus	BIGWIG, CSV, MTX, TSV	yes	no	yes
+GSE147322	Homo sapiens	TSV	no	no	no
+GSE142274	Mus musculus	TAR	no	no	no
+GSE139819	Homo sapiens; Mus musculus	CSV, H5	no	no	no
+GSE139534	Homo sapiens	H5	no	no	no
+GSE133028	Homo sapiens	TXT	no	no	no
+GSE157079	Mus musculus	BIGWIG, CSV, RDS, TXT	yes	yes	yes
+GSE157072	Mus musculus	TXT	no	no	no
+GSE157019	Homo sapiens	MTX, TSV	no	no	no
+GSE156988	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE151229	Mus musculus	CSV, XLSX	no	no	no
+GSE148866	Mus musculus	TXT	yes	no	yes
+GSE136610	Homo sapiens	TXT	no	no	no
+GSE155850	Homo sapiens	MTX, TSV	no	no	no
+GSE137818	Mus musculus	CSV	no	no	no
+GSE152841	Mus musculus	TXT	no	no	no
+GSE124885	Homo sapiens	CSV	no	no	no
+GSE156790	Homo sapiens	TXT	no	no	no
+GSE156776	Homo sapiens	MTX, TSV, TXT	no	no	no
+GSE156735	Homo sapiens	BROADPEAK	no	no	no
+GSE156734	Homo sapiens	BED, CSV	no	no	no
+GSE151117	Homo sapiens	MTX, TSV	no	no	no
+GSE148963	Homo sapiens	MTX, TSV	no	no	no
+GSE145086	Mus musculus	MTX, TSV	no	no	no
+GSE139495	Homo sapiens	TSV	yes	no	yes
+GSE120046	Homo sapiens	TXT	no	no	no
+GSE156700	Mus musculus	MTX, TSV	no	no	no
+GSE156689	Mus musculus	XLSX	no	no	no
+GSE152587	Mus musculus	TSV	no	no	no
+GSE146042	Homo sapiens; Mus musculus	CSV	no	no	no
+GSE145830	Homo sapiens; Mus musculus	CSV	no	no	no
+GSE145829	Mus musculus	CSV	no	no	no
+GSE145828	Mus musculus	CSV	no	no	no
+GSE145827	Mus musculus	CSV	no	no	no
+GSE134311	Homo sapiens; Mus musculus; synthetic construct	BED, CSV, GTF, MTX, TSV, TXT	no	no	no
+GSE139585	Mus musculus	XLSX	no	no	no
+GSE139103	Mus musculus	TSV, TXT	no	no	no
+GSE156234	Mus musculus	TSV	no	no	no
+GSE153463	Homo sapiens	TXT	no	no	no
+GSE156338	Mus musculus	CSV	no	no	no
+GSE155340	Mus musculus	BW, MTX, TSV	no	no	no
+GSE153489	Homo sapiens; Mus musculus	CEL, CHP, RCC	no	no	no
+GSE153487	Mus musculus	MTX, TSV	no	no	no
+GSE142523	Mus musculus	BW, MTX, TSV, TXT, XLS	no	no	no
+GSE135096	Mus musculus	TXT	no	no	no
+GSE130000	Homo sapiens	TXT	no	no	no
+GSE156505	Mus musculus	TXT	no	no	no
+GSE156471	Homo sapiens	TSV, TXT	no	no	no
+GSE150703	Mus musculus	TXT	no	no	no
+GSE131696	Homo sapiens	CSV	no	no	no
+GSE128762	Mus musculus	MTX, TSV	no	no	no
+GSE128761	Mus musculus	MTX, TSV	no	no	no
+GSE128759	Mus musculus	TXT	no	no	no
+GSE151152	Mus musculus	H5	no	no	no
+GSE151151	Mus musculus	TXT	no	no	no
+GSE142047	Mus musculus	MTX, TSV	no	no	no
+GSE156057	Mus musculus	H5	no	no	no
+GSE156052	Mus musculus	TXT	no	no	no
+GSE154047	Mus musculus	CLOUPE, MTX, TSV	no	no	no
+GSE149897	Mus musculus	XLSX	no	no	no
+GSE144271	Mus musculus	MTX, TSV	no	no	no
+GSE135310	Mus musculus	H5, MTX, TSV, TXT	no	no	no
+GSE156341	Homo sapiens	MTX, TSV	no	no	no
+GSE156340	Homo sapiens	TXT	no	no	no
+GSE140032	Mus musculus	MTX, TSV	no	no	no
+GSE138979	Homo sapiens	H5, TXT	no	no	no
+GSE135880	Mus musculus	BED, FPKM_TRACKING, WIG	no	no	no
+GSE135513	Harpegnathos saltator	TXT	no	no	no
+GSE135357	Homo sapiens	BEDPE, MTX, TSV, TXT	no	no	no
+GSE135356	Homo sapiens	MTX, TSV	no	no	no
+GSE135283	Mus musculus	BED, BEDGRAPH, TSV	no	no	no
+GSE122460	Homo sapiens	CSV, TXT	yes	no	yes
+GSE118258	Homo sapiens	CSV, TXT	yes	no	yes
+GSE106251	Homo sapiens	TXT	no	no	no
+GSE100344	Homo sapiens	CSV	no	no	no
+GSE143546	Mus musculus	BW	no	no	no
+GSE143545	Mus musculus	BW, TSV, TXT	no	no	no
+GSE156285	Homo sapiens	H5	no	no	no
+GSE156210	Mus musculus	TXT	no	no	no
+GSE149224	Homo sapiens	CSV, TXT	yes	no	yes
+GSE147559	Mus musculus	TXT	no	no	no
+GSE141526	Homo sapiens	MTX, TSV	no	no	no
+GSE156150	Homo sapiens	CSV, TSV	no	no	no
+GSE156136	Mus musculus	MTX, TSV	no	no	no
+GSE156135	Mus musculus	MTX, TSV	no	no	no
+GSE151710	Mus musculus	H5, TSV	yes	no	yes
+GSE149655	Homo sapiens	MTX, TSV, TXT	no	no	no
+GSE148633	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE146043	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE145243	Mus musculus	TXT	no	no	no
+GSE145242	Mus musculus	TXT	no	no	no
+GSE145241	Mus musculus	MTX, RDS, TSV	no	yes	yes
+GSE152022	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE151921	Homo sapiens	XLS	no	no	no
+GSE150877	Mus musculus; Homo sapiens	TAR, TXT	no	no	no
+GSE150876	Mus musculus; Homo sapiens	TAR	no	no	no
+GSE150872	Mus musculus	TXT	yes	no	yes
+GSE142435	Phytophthora parasitica	TXT	no	no	no
+GSE137971	Danio rerio	CSV	no	no	no
+GSE137236	Mus musculus	CSV	yes	no	yes
+GSE155988	Danio rerio	CSV	yes	no	yes
+GSE152555	Mus musculus	MTX, TSV	no	no	no
+GSE150235	Mus musculus	TSV	no	no	no
+GSE150234	Homo sapiens	TXT	no	no	no
+GSE150233	Homo sapiens	MTX, TSV	no	no	no
+GSE148113	Homo sapiens	MTX, TSV	no	no	no
+GSE147975	Homo sapiens	MTX, TSV	no	no	no
+GSE144273	Mus musculus	MTX, TSV	no	no	no
+GSE143813	Mus musculus	TXT	no	no	no
+GSE133097	Homo sapiens	TXT	no	no	no
+GSE132338	Homo sapiens	MTX, RDS, TXT	no	yes	yes
+GSE154037	Homo sapiens	TXT, XLSX	yes	no	yes
+GSE151669	Homo sapiens	H5, TXT	no	no	no
+GSE145095	Mus musculus; Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE134388	Homo sapiens; Mus musculus	BB, MTX, TSV, TXT, XLSX	no	no	no
+GSE123366	Mus musculus	MTX, TSV	no	no	no
+GSE132355	Mus musculus	CSV, MTX, RDS, TSV, TXT	no	yes	yes
+GSE155886	Homo sapiens; Mus musculus	TSV	no	no	no
+GSE155884	Homo sapiens	TXT	no	no	no
+GSE150383	Mus musculus	MTX, TSV	no	no	no
+GSE155814	Mus musculus	TAR	no	no	no
+GSE155794	Mus musculus	TAR	no	no	no
+GSE155673	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE140890	Mus musculus	TXT	no	no	no
+GSE155669	Mus musculus	MTX, TSV	no	no	no
+GSE155249	Homo sapiens	CSV, H5, H5AD, TXT	yes	no	yes
+GSE129308	Homo sapiens	CSV, H5	no	no	no
+GSE155678	Mus musculus	BED, MTX, TSV	no	no	no
+GSE155602	Mus musculus	TXT	no	no	no
+GSE155569	Mus musculus	MTX, TSV	no	no	no
+GSE155275	Mus musculus	CSV	no	no	no
+GSE141733	Mus musculus	CLOUPE	no	no	no
+GSE141732	Mus musculus	CLOUPE	no	no	no
+GSE108677	Mus musculus	MTX, TSV	no	no	no
+GSE154136	Homo sapiens	TXT	no	no	no
+GSE152018	Mus musculus	MTX, TSV	no	no	no
+GSE149133	Homo sapiens	TAR	no	no	no
+GSE147397	Homo sapiens	MTX, TSV	no	no	no
+GSE147395	Homo sapiens	TXT	no	no	no
+GSE147394	Homo sapiens	TXT	no	no	no
+GSE145031	Mus musculus	MTX, TSV	no	no	no
+GSE144468	Mus musculus	MTX, TSV	no	no	no
+GSE138544	Homo sapiens	TXT	no	no	no
+GSE152989	Mus musculus; Pogona vitticeps	TAB	no	no	no
+GSE148837	Homo sapiens	CSV, TAR	yes	no	yes
+GSE148505	Mus musculus	TXT	no	no	no
+GSE123405	Homo sapiens	TXT	no	no	no
+GSE155506	Homo sapiens	TXT	no	no	no
+GSE153916	Mus musculus	CSV	no	no	no
+GSE153771	Mus musculus	MTX, TSV	no	no	no
+GSE153770	Mus musculus	MTX, TSV	no	no	no
+GSE149527	Mus musculus	CSV	no	no	no
+GSE147766	Homo sapiens	CSV	no	no	no
+GSE145619	Xenopus tropicalis	BED, TAB	no	no	no
+GSE143158	Homo sapiens	CSV	no	no	no
+GSE143002	Homo sapiens	CSV	no	no	no
+GSE142999	Homo sapiens	CSV	no	no	no
+GSE142797	Mus musculus	H5	no	no	no
+GSE136441	Mus musculus	MTX, TSV	no	no	no
+GSE136005	Capra hircus	TXT	no	no	no
+GSE135897	Capra hircus	TXT	no	no	no
+GSE135737	Mus musculus	H5	no	no	no
+GSE131169	Homo sapiens	NARROWPEAK, TXT	no	no	no
+GSE130070	Homo sapiens	MTX, TSV	no	no	no
+GSE118312	Mus musculus; Homo sapiens	TXT	no	no	no
+GSE103111	Homo sapiens	TXT	no	no	no
+GSE155499	Mus musculus	TAR	no	no	no
+GSE155427	Strongylocentrotus purpuratus	MTX, RDS, TSV	no	yes	yes
+GSE149356	Homo sapiens	CSV, MTX, RDS, TSV	no	yes	yes
+GSE141862	Homo sapiens	TXT	no	no	no
+GSE141017	Mus musculus; Homo sapiens	CSV	no	no	no
+GSE128738	Mus musculus	CSV	no	no	no
+GSE125969	Homo sapiens	TSV	yes	no	yes
+GSE121371	Mus musculus	CSV	no	no	no
+GSE151346	Mus musculus	CSV, TSV	yes	no	yes
+GSE148360	Mus musculus	CSV	no	no	no
+GSE145326	Homo sapiens	MTX, TSV	no	no	no
+GSE143528	Mus musculus	none	no	no	no
+GSE143526	Mus musculus	RDS	no	yes	yes
+GSE143524	Mus musculus	TXT	no	no	no
+GSE135076	Homo sapiens	TXT	yes	no	yes
+GSE155261	Mus musculus	TSV	no	no	no
+GSE145633	Homo sapiens	CSV	no	no	no
+GSE142480	Mus musculus	CSV	no	no	no
+GSE116947	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE116946	Homo sapiens	CSV	no	no	no
+GSE155212	Homo sapiens	CSV	no	no	no
+GSE152759	Danio rerio	CSV	no	no	no
+GSE151511	Homo sapiens	TAR	no	no	no
+GSE150992	Homo sapiens	TAR	no	no	no
+GSE136752	Mus musculus	MTX, TSV	no	no	no
+GSE155089	Mus musculus	BEDGRAPH, BIGWIG, COV	no	no	no
+GSE155088	Mus musculus	CLOUPE, CSV	no	no	no
+GSE155081	Mus musculus	TXT	no	no	no
+GSE155079	Mus musculus	XLSX	no	no	no
+GSE154654	Mus musculus	TXT	no	no	no
+GSE148212	Homo sapiens	MTX, TSV	no	no	no
+GSE148115	Mus musculus	MTX, TSV	no	no	no
+GSE147525	Mus musculus	XLSX	no	no	no
+GSE146988	Mus musculus	XLSX	no	no	no
+GSE146165	Homo sapiens	TXT	no	no	no
+GSE144038	Mus musculus	TXT	no	no	no
+GSE140572	Homo sapiens	TXT	no	no	no
+GSE141275	Drosophila melanogaster	TXT	no	no	no
+GSE141274	Drosophila melanogaster	TXT	no	no	no
+GSE133230	Mus musculus	TSV	no	no	no
+GSE154989	Mus musculus	CSV, H5	yes	no	yes
+GSE154978	Mus musculus	CSV, H5	yes	no	yes
+GSE154977	Mus musculus	CSV, H5	yes	no	yes
+GSE152607	Mus musculus	H5, TBI, TSV	no	no	no
+GSE147262	Mus musculus	CSV, TAR	no	no	no
+GSE141273	Drosophila melanogaster	TXT	no	no	no
+GSE132047	Mus musculus	CSV	no	no	no
+GSE114704	Homo sapiens	TSV	no	no	no
+GSE154930	Homo sapiens	TXT	no	no	no
+GSE154921	Mus musculus	TXT	no	no	no
+GSE150644	Mus musculus	NARROWPEAK, TXT	no	no	no
+GSE154870	Homo sapiens	CSV, GFF3	yes	no	yes
+GSE154869	Homo sapiens	CSV, GFF3	no	no	no
+GSE154868	Mus musculus	CSV, GFF3	yes	no	yes
+GSE154832	Mus musculus	XLSX	no	no	no
+GSE154826	Homo sapiens	CSV	yes	no	yes
+GSE154817	Mus musculus	MTX, TSV	no	no	no
+GSE154659	Mus musculus	RDS	no	yes	yes
+GSE154515	Saccharomyces cerevisiae; Candida albicans	TAR, TXT	no	no	no
+GSE153931	Homo sapiens	TXT	yes	no	yes
+GSE145927	Homo sapiens	CSV	yes	no	yes
+GSE145273	Mus musculus	TSV	no	no	no
+GSE145177	Mus musculus	BED, TSV, TXT	no	no	no
+GSE144923	Mus musculus	TSV, TXT	yes	no	yes
+GSE144919	Mus musculus	TSV, TXT	yes	no	yes
+GSE141038	Mus musculus	MTX, TSV	no	no	no
+GSE132092	Mus musculus	CSV	no	no	no
+GSE124488	Mus musculus	CSV, TXT	no	no	no
+GSE124487	Mus musculus	CSV	no	no	no
+GSE124471	Mus musculus	TXT	no	no	no
+GSE117891	Homo sapiens	TSV, XLSX	no	no	no
+GSE154776	Mus musculus	TXT	no	no	no
+GSE154759	Homo sapiens	H5AD, TSV	no	no	no
+GSE154160	Mus musculus	TXT	no	no	no
+GSE154159	Mus musculus	TXT	no	no	no
+GSE150861	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE142168	Mus musculus; Homo sapiens	MTX, RDS, TSV	no	yes	yes
+GSE141851	Mus musculus; Homo sapiens	TXT	no	no	no
+GSE153559	Homo sapiens	MTX, TSV, TXT	no	no	no
+GSE150792	Mus musculus	H5	no	no	no
+GSE150430	Homo sapiens	TXT	no	no	no
+GSE130896	Mus musculus	TXT	no	no	no
+GSE128306	Astyanax mexicanus	H5	no	no	no
+GSE154676	Mus musculus	TXT	no	no	no
+GSE154614	Mus musculus	TXT	no	no	no
+GSE154600	Homo sapiens	MTX, TSV	no	no	no
+GSE154572	Mus musculus	TAB, TXT	yes	no	yes
+GSE152058	Homo sapiens; Mus musculus	MTX, TSV, TXT	no	no	no
+GSE154468	Mus musculus	TAB, XLSX	no	no	no
+GSE154442	Mus musculus	TAB	no	no	no
+GSE154437	Mus musculus	TAB, ZIP	no	no	no
+GSE153878	Mus musculus	TAB	no	no	no
+GSE153362	Mus musculus	TAB, XLSX	no	no	no
+GSE153356	Mus musculus	TAB	no	no	no
+GSE152716	Mus musculus	TAB	no	no	no
+GSE150660	Homo sapiens	CSV, H5AD	no	no	no
+GSE147143	Homo sapiens	H5AD	no	no	no
+GSE147047	Homo sapiens	MTX, TSV	no	no	no
+GSE142789	Drosophila melanogaster	none	no	no	no
+GSE142788	Drosophila melanogaster	CSV	no	no	no
+GSE142787	Drosophila melanogaster	RDS, XLSX	no	yes	yes
+GSE137620	Homo sapiens	MTX, TSV	no	no	no
+GSE125527	Homo sapiens	CSV, TSV	yes	no	yes
+GSE154406	Mus musculus	RDATA	no	yes	yes
+GSE152685	Homo sapiens	MTX, TSV	no	no	no
+GSE146118	Homo sapiens	TSV	no	no	no
+GSE141026	Homo sapiens	RDS	no	yes	yes
+GSE140822	Mus musculus	TSV	no	no	no
+GSE125579	Mus musculus	MTX, TSV, TXT	yes	no	yes
+GSE154359	Homo sapiens	MTX, TSV	no	no	no
+GSE154358	Homo sapiens	MTX, TSV	no	no	no
+GSE154356	Homo sapiens	MTX, TSV	no	no	no
+GSE154304	Mus musculus	TXT	no	no	no
+GSE154178	Homo sapiens	BIGWIG, BW, MTX, TSV	no	no	no
+GSE118487	Homo sapiens	MTX, TSV	no	no	no
+GSE154278	Mus musculus	MTX, TSV	no	no	no
+GSE154259	Mus musculus	CSV, TXT	no	no	no
+GSE154203	Drosophila melanogaster	TSV	no	no	no
+GSE152674	Mus musculus	TXT	no	no	no
+GSE150952	Mus musculus	TXT	no	no	no
+GSE146912	Mus musculus	TXT	no	no	no
+GSE145013	Homo sapiens	RDA, TXT	yes	yes	yes
+GSE142745	Homo sapiens	MTX, TSV, TXT	no	no	no
+GSE142744	Homo sapiens	MTX, TSV	no	no	no
+GSE141460	Homo sapiens	TXT	no	no	no
+GSE132164	Homo sapiens	CSV	no	no	no
+GSE138626	Drosophila melanogaster	TXT	no	no	no
+GSE135851	Homo sapiens	TAR	no	no	no
+GSE154107	Mus musculus	CSV	no	no	no
+GSE154102	Mus musculus	MTX, TSV	no	no	no
+GSE152281	Mus musculus	TAR	no	no	no
+GSE151674	Mus musculus	MTX, TXT	yes	no	yes
+GSE151263	Homo sapiens	TXT	no	no	no
+GSE148507	Homo sapiens	none	no	no	no
+GSE148506	Homo sapiens	TXT	yes	no	yes
+GSE148504	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE134432	Homo sapiens	BW, TSV	no	no	no
+GSE134365	Mus musculus	MTX, TSV	no	no	no
+GSE130708	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE154049	Isodiametra pulchra	MTX, TSV	no	no	no
+GSE154014	Mus musculus	TXT	no	no	no
+GSE146147	Homo sapiens	TXT	no	no	no
+GSE143706	Homo sapiens	H5	no	no	no
+GSE143705	Homo sapiens	CSV, TXT	no	no	no
+GSE134036	Mus musculus	TXT	no	no	no
+GSE153958	Homo sapiens	ZIP	no	no	no
+GSE153935	Homo sapiens	TXT	no	no	no
+GSE153929	Homo sapiens; Mus musculus	MTX, TSV	no	no	no
+GSE152282	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE151831	Mus musculus	TSV	no	no	no
+GSE151830	Mus musculus	TSV	no	no	no
+GSE151829	Mus musculus	TXT	no	no	no
+GSE148859	Mus musculus	CSV, RDATA, TAR, TXT	no	yes	yes
+GSE148178	Mus musculus	TXT	no	no	no
+GSE145122	Homo sapiens	MTX, TSV	no	no	no
+GSE153824	Mus musculus	H5	no	no	no
+GSE151248	Mus musculus	none	no	no	no
+GSE151247	Mus musculus	CSV, TXT	yes	no	yes
+GSE151246	Mus musculus	CSV, TXT	yes	no	yes
+GSE151245	Mus musculus	TXT	yes	no	yes
+GSE151244	Mus musculus	TXT	yes	no	yes
+GSE150923	Mus musculus	CSV, PNG	no	no	no
+GSE149377	Homo sapiens	GCT	no	no	no
+GSE136546	Ambystoma mexicanum	FA, GTF, MTX, TSV	no	no	no
+GSE136376	Mus musculus	CSV, TSV	no	no	no
+GSE134004	Mus musculus; Homo sapiens	MTX, TSV, TXT	no	no	no
+GSE131987	Homo sapiens	CSV	no	no	no
+GSE152805	Homo sapiens	MTX, TSV	no	no	no
+GSE150219	Mus musculus	CSV	yes	no	yes
+GSE149689	Homo sapiens	MTX, TSV	no	no	no
+GSE140879	Mus musculus	H5	no	no	no
+GSE119888	Pseudomonas aeruginosa PAO1; Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344	CSV	no	no	no
+GSE153802	Homo sapiens	MTX, TSV	no	no	no
+GSE135622	Mus musculus	MTX, TSV	no	no	no
+GSE135621	Mus musculus	MTX, TSV	no	no	no
+GSE135554	Mus musculus	MTX, TSV	no	no	no
+GSE135512	Mus musculus	TXT	no	no	no
+GSE135509	Mus musculus	TXT	no	no	no
+GSE153760	Homo sapiens	MTX, TSV	no	no	no
+GSE149221	Strongylocentrotus purpuratus	MTX, RDS, TSV	no	yes	yes
+GSE151940	Bacillus subtilis; Escherichia coli	CSV	no	no	no
+GSE133953	Mus musculus	TAB	no	no	no
+GSE153638	Rattus norvegicus	TXT	no	no	no
+GSE153627	Mus musculus	CSV	no	no	no
+GSE152766	Arabidopsis thaliana	RDS, TAR	no	yes	yes
+GSE137586	Salmonella enterica subsp. enterica serovar Typhimurium	TXT	no	no	no
+GSE153676	Mus musculus	CSV	no	no	no
+GSE153675	Mus musculus	CSV, XLSX	yes	no	yes
+GSE153596	Mus musculus	LOOM	no	no	no
+GSE153551	Mus musculus	none	no	no	no
+GSE153549	Mus musculus	CSV	yes	no	yes
+GSE153541	Homo sapiens	TXT	yes	no	yes
+GSE151161	Homo sapiens	CSV	no	no	no
+GSE150768	Mus musculus; Homo sapiens	BW, TXT	yes	no	yes
+GSE150713	Mus musculus	CSV, TXT	no	no	no
+GSE150150	Mus musculus	CSV, DATA, LOOM, RDS, TXT	no	yes	yes
+GSE145360	Homo sapiens	MTX, TSV, TXT	yes	no	yes
+GSE143949	Mus musculus	MTX, TSV	no	no	no
+GSE142500	Mus musculus	MTX, TSV	no	no	no
+GSE142483	Macaca mulatta	MTX, TSV, TXT	no	no	no
+GSE140468	Mus musculus	CSV	yes	no	yes
+GSE134912	Spongilla lacustris	FASTA, TXT	no	no	no
+GSE134058	Mus musculus	CSV	no	no	no
+GSE131498	Mus musculus	TXT	no	no	no
+GSE129125	Mus musculus	TSV	no	no	no
+GSE116482	Mus musculus	BW, TXT	no	no	no
+GSE102929	Mus musculus	TXT	no	no	no
+GSE153534	Homo sapiens; Mus musculus	CSV	no	no	no
+GSE150995	Mus musculus	MTX, TSV	no	no	no
+GSE132914	Homo sapiens	H5	no	no	no
+GSE132910	Mus musculus	H5	no	no	no
+GSE131593	Homo sapiens	CSV	no	no	no
+GSE128553	Mus musculus	TXT	no	no	no
+GSE153424	Mus musculus; Escherichia coli	TAR, TSV	no	no	no
+GSE151682	Mus musculus	TXT	no	no	no
+GSE151630	Mus musculus	TXT	no	no	no
+GSE149636	Mus musculus	TXT	no	no	no
+GSE149635	Mus musculus	TXT, XLSX	yes	no	yes
+GSE149634	Mus musculus	XLSX	no	no	no
+GSE148805	Mus musculus	MTX, TSV, XLS	no	no	no
+GSE146609	Mus musculus	MTX, TSV	no	no	no
+GSE146192	Homo sapiens	TAR	no	no	no
+GSE145230	Homo sapiens	MTX, TSV	no	no	no
+GSE145229	Homo sapiens	XLSX	no	no	no
+GSE144469	Homo sapiens	CSV, TAR	yes	no	yes
+GSE144085	Homo sapiens	MTX, TSV, TXT	no	no	no
+GSE111976	Homo sapiens	CSV, RDS, TXT	yes	yes	yes
+GSE151137	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE153358	Homo sapiens	CSV, MTX, TSV	yes	no	yes
+GSE148283	Homo sapiens	CSV	no	no	no
+GSE144636	Saccharomyces bayanus; Saccharomyces cerevisiae	GTF, TXT	no	no	no
+GSE153197	Danio rerio	TSV	no	no	no
+GSE109324	Mus musculus	TXT	no	no	no
+GSE153032	Homo sapiens	TXT	no	no	no
+GSE152981	Homo sapiens	CSV, XLSX	no	no	no
+GSE152370	Mus musculus	TSV	no	no	no
+GSE152369	Mus musculus	TSV	no	no	no
+GSE150839	Danio rerio	TAR	no	no	no
+GSE137763	Rattus norvegicus	MTX, TSV	no	no	no
+GSE137759	Rattus norvegicus	MTX, TSV	no	no	no
+GSE152988	Homo sapiens	CSV, H5	no	no	no
+GSE152982	Danio rerio	MTX, TSV	no	no	no
+GSE151985	Mus musculus	H5AD, TAR	no	no	no
+GSE149335	Mus musculus	TSV, TXT	no	no	no
+GSE145998	Mus musculus	TXT	no	no	no
+GSE122533	Mus musculus	BEDGRAPH, TXT, XLSX	no	no	no
+GSE122393	Mus musculus	XLSX	no	no	no
+GSE150921	Mus musculus	TXT	no	no	no
+GSE150241	Homo sapiens	H5	no	no	no
+GSE149715	Mus musculus	CSV	no	no	no
+GSE148077	Homo sapiens	CSV	no	no	no
+GSE144384	Mus musculus	BW, H5	no	no	no
+GSE144240	Homo sapiens	JPG, TSV	no	no	no
+GSE144239	Homo sapiens	CSV, JPG, JSON, PNG, TSV, TXT	no	no	no
+GSE144236	Homo sapiens; Mus musculus	TXT	yes	no	yes
+GSE134918	Mus musculus	TXT	no	no	no
+GSE152867	Mus musculus; Homo sapiens	MTX, TSV	no	no	no
+GSE152806	Mus musculus	MTX, TSV	no	no	no
+GSE142078	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE132904	Mus musculus	XLS	no	no	no
+GSE139342	Homo sapiens	TAR	no	no	no
+GSE152715	Mus musculus	MTX, TSV	no	no	no
+GSE150294	Mus musculus	none	no	no	no
+GSE150289	Mus musculus	TXT	no	no	no
+GSE149859	Mus musculus	TXT	no	no	no
+GSE149656	Mus musculus	TXT	no	no	no
+GSE149301	Mus musculus	TXT	no	no	no
+GSE143167	Homo sapiens	none	no	no	no
+GSE142119	Homo sapiens	BEDGRAPH, TXT	no	no	no
+GSE152632	Mus musculus	CSV	no	no	no
+GSE139891	Homo sapiens	CSV, TXT	no	no	no
+GSE135495	Mus musculus	TXT	no	no	no
+GSE124099	Sus scrofa	TXT, XLSX	no	no	no
+GSE152467	Mus musculus	TXT	no	no	no
+GSE138757	Mus musculus	TXT	no	no	no
+GSE138756	Mus musculus	TXT, XLS	yes	no	yes
+GSE138755	Mus musculus	TXT, XLS	yes	no	yes
+GSE138754	Mus musculus	TXT, XLS	yes	no	yes
+GSE138753	Mus musculus	TXT, XLS	yes	no	yes
+GSE136689	Mus musculus	TXT	yes	no	yes
+GSE135553	Gallus gallus; Canis lupus familiaris	FA, GTF, MTX, TSV	no	no	no
+GSE151709	Mus musculus	CSV	no	no	no
+GSE150864	Homo sapiens	CSV	no	no	no
+GSE149451	Homo sapiens	CSV	no	no	no
+GSE139999	Mus musculus	TXT	no	no	no
+GSE132745	Mus musculus	TXT	no	no	no
+GSE152387	Mus musculus	CSV, FASTA, TXT	yes	no	yes
+GSE145306	Homo sapiens	CSV	no	no	no
+GSE152318	Homo sapiens	CSV, XLSX	no	no	no
+GSE152315	Homo sapiens	XLSX	no	no	no
+GSE142585	Homo sapiens; Macaca mulatta	TXT	no	no	no
+GSE139042	Homo sapiens	CSV, TXT	no	no	no
+GSE117513	Homo sapiens	BED, BROADPEAK	no	no	no
+GSE117512	Homo sapiens	MTX, TSV	no	no	no
+GSE152246	Homo sapiens	XLSX	no	no	no
+GSE152222	Mus musculus	CSV	no	no	no
+GSE152198	Mus musculus	MTX, TSV	no	no	no
+GSE147903	Homo sapiens	MTX, TSV	no	no	no
+GSE137758	Homo sapiens	MTX, TSV	no	no	no
+GSE132558	Homo sapiens	MTX, TSV, TXT	no	no	no
+GSE120180	Macaca fascicularis	TXT	no	no	no
+GSE152125	Mus musculus	H5	no	no	no
+GSE151735	Homo sapiens	TXT	no	no	no
+GSE148268	Mus musculus	TXT	no	no	no
+GSE146172	Homo sapiens	none	no	no	no
+GSE146170	Homo sapiens	TXT	yes	no	yes
+GSE146046	Homo sapiens	TXT	no	no	no
+GSE142845	Mus musculus	CSV	no	no	no
+GSE128243	Homo sapiens	MTX, TSV	no	no	no
+GSE123899	Homo sapiens	TXT	no	no	no
+GSE113417	Mus musculus	TXT	no	no	no
+GSE113415	Homo sapiens	TXT	no	no	no
+GSE152048	Homo sapiens	none	no	no	no
+GSE149036	Mus musculus	MTX, TSV	no	no	no
+GSE130157	Homo sapiens	TXT	no	no	no
+GSE124560	Mus musculus	TXT	no	no	no
+GSE113418	Homo sapiens; Mus musculus	none	no	no	no
+GSE146235	Mus musculus	BW, MTX, TSV	no	no	no
+GSE146233	Mus musculus	MTX, TSV	no	no	no
+GSE142858	Mus musculus	TAR	no	no	no
+GSE142853	Mus musculus	MTX, TSV	no	no	no
+GSE134759	Homo sapiens; Mus musculus	MTX, TSV	no	no	no
+GSE134758	Mus musculus	CSV, MTX, TSV, TXT	yes	no	yes
+GSE134757	Homo sapiens	CSV, MTX, TSV, TXT	yes	no	yes
+GSE130116	Homo sapiens	MTX, TSV	no	no	no
+GSE145866	Mus musculus	MTX, TSV	no	no	no
+GSE151889	Homo sapiens; Mus musculus	MTX, TSV	no	no	no
+GSE142784	Homo sapiens	CSV	no	no	no
+GSE138709	Homo sapiens	CSV	no	no	no
+GSE135194	Homo sapiens	CSV	no	no	no
+GSE151825	Homo sapiens	TSV	no	no	no
+GSE151811	Mus musculus	MTX, TSV	no	no	no
+GSE148825	Candidatus Kuenenia stuttgartiensis	CSV	no	no	no
+GSE142245	Mus musculus	MTX, TXT	yes	no	yes
+GSE151723	Mus musculus	TXT	no	no	no
+GSE151695	Mus musculus	TXT	yes	no	yes
+GSE148796	Homo sapiens	MTX, TSV	no	no	no
+GSE144222	Mus musculus	H5, HTML, MTX, TSV, TXT	no	no	no
+GSE136954	Mus musculus	BW, TXT	no	no	no
+GSE132589	Mus musculus	TXT	no	no	no
+GSE131094	Homo sapiens	TXT	no	no	no
+GSE151658	Mus musculus	RDS, TAR	no	yes	yes
+GSE150259	Dugesia japonica; Schmidtea mediterranea	GTF, TXT	yes	no	yes
+GSE145328	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE143337	Gallus gallus	TAB	no	no	no
+GSE134439	Mus musculus	CSV, RDA	no	yes	yes
+GSE115299	Mus musculus	CSV	no	no	no
+GSE115298	Mus musculus	CSV	no	no	no
+GSE115297	Mus musculus	CSV	no	no	no
+GSE151167	Mus musculus	MTX, TSV	no	no	no
+GSE144769	Mus musculus	CLOUPE	no	no	no
+GSE144678	Mus musculus	CLOUPE	no	no	no
+GSE143704	Homo sapiens	TXT	yes	no	yes
+GSE141634	Mus musculus	TSV	no	no	no
+GSE136880	Mus musculus	H5, TSV, TXT	no	no	no
+GSE151334	Homo sapiens; Mus musculus	TSV	no	no	no
+GSE149652	Homo sapiens	CSV	no	no	no
+GSE149247	Mus musculus	MTX, TSV	no	no	no
+GSE148882	Mus musculus	TXT	no	no	no
+GSE146510	Mus musculus	MTX, TSV	no	no	no
+GSE145502	Mus musculus	MTX, TSV	no	no	no
+GSE142546	Mus musculus	TSV	no	no	no
+GSE142489	Homo sapiens	MTX, TSV	no	no	no
+GSE135520	Homo sapiens	TSV	no	no	no
+GSE132533	Mus musculus	MTX, TSV	no	no	no
+GSE115765	Mus musculus	CSV, TXT	no	no	no
+GSE114454	Homo sapiens	TXT	no	no	no
+GSE148209	Mus musculus	TXT	no	no	no
+GSE151409	Homo sapiens	CSV, H5, HTML, TXT, XLSX	no	no	no
+GSE151375	Homo sapiens	CSV, TSV	no	no	no
+GSE151091	Homo sapiens	CSV	no	no	no
+GSE149298	Homo sapiens	CSV, DOCX, XLSX	yes	no	yes
+GSE145036	Homo sapiens	H5	no	no	no
+GSE143355	Mus musculus	TAR	no	no	no
+GSE142233	Mus musculus	TXT	no	no	no
+GSE150766	Homo sapiens	MTX, TSV	no	no	no
+GSE149180	Mus musculus; Homo sapiens	MTX, TSV	no	no	no
+GSE149179	Mus musculus	MTX, TSV	no	no	no
+GSE149178	Mus musculus	CSV, TXT	no	no	no
+GSE149175	Mus musculus	TXT, XLSX	no	no	no
+GSE146861	Mus musculus	XLSX	no	no	no
+GSE145410	Homo sapiens	MTX, TSV	no	no	no
+GSE145279	Mus musculus	TAR	no	no	no
+GSE115869	Homo sapiens	TXT	no	no	no
+GSE149535	Mus musculus	MTX, ROBJ, TSV	no	no	no
+GSE137539	Mus musculus; Homo sapiens	TXT	yes	no	yes
+GSE131025	Mus musculus	BED, TXT	no	no	no
+GSE147694	Homo sapiens	MTX, TSV	no	no	no
+GSE137673	Homo sapiens	BEDGRAPH, H5, TSV	no	no	no
+GSE137672	Homo sapiens	H5	no	no	no
+GSE137671	Homo sapiens	TSV	no	no	no
+GSE137540	Mus musculus; Homo sapiens	TXT	no	no	no
+GSE122009	Mus musculus	CSV, FA, MTX, TSV, TXT	no	no	no
+GSE150774	Homo sapiens	TAR	no	no	no
+GSE149975	Drosophila melanogaster	TXT	no	no	no
+GSE149777	Rattus norvegicus	TAR	no	no	no
+GSE148405	Mus musculus	CSV	no	no	no
+GSE141018	Escherichia coli; Staphylococcus aureus	TXT, XLSX	no	no	no
+GSE135399	Homo sapiens	MTX, TSV	no	no	no
+GSE151089	Homo sapiens	MTX, TSV	no	no	no
+GSE151087	Homo sapiens	MTX, TSV	no	no	no
+GSE151074	Mus musculus	TXT	no	no	no
+GSE148902	Homo sapiens	TXT	no	no	no
+GSE151009	Mus musculus	TXT	no	no	no
+GSE151007	Mus musculus	TXT	no	no	no
+GSE151006	Mus musculus	TXT	no	no	no
+GSE150991	Mus musculus	TAR	no	no	no
+GSE147135	Mus musculus	MTX, TSV	no	no	no
+GSE146783	Mus musculus	TXT	no	no	no
+GSE145121	Mus musculus	CSV	no	no	no
+GSE135429	Coccolithovirus; Emiliania huxleyi	TXT	no	no	no
+GSE150949	Homo sapiens	CSV	no	no	no
+GSE149069	Mus musculus	MTX, TSV	no	no	no
+GSE149068	Mus musculus	MTX, TSV	no	no	no
+GSE149067	Mus musculus	XLSX	no	no	no
+GSE148996	Homo sapiens	MTX, TSV	no	no	no
+GSE123534	Mus musculus	CSV	no	no	no
+GSE143997	Mus musculus	H5	no	no	no
+GSE140881	Homo sapiens	MTX, TSV	no	no	no
+GSE150770	Mus musculus	CSV	no	no	no
+GSE150752	Mus musculus	MTX, TSV	no	no	no
+GSE148374	Macaca mulatta	CSV	no	no	no
+GSE148373	Macaca fascicularis	CSV	no	no	no
+GSE148371	Homo sapiens	CSV	no	no	no
+GSE146187	Sus scrofa	CSV	no	no	no
+GSE146186	Mus musculus	CSV	no	no	no
+GSE145929	Mus musculus	H5	no	no	no
+GSE145905	Mus musculus	BW, MTX, TSV, TXT	no	no	no
+GSE145865	Mus musculus	H5	no	no	no
+GSE145861	Mus musculus	H5	no	no	no
+GSE145838	Homo sapiens	H5	no	no	no
+GSE150728	Homo sapiens	RDS	no	yes	yes
+GSE148665	Homo sapiens	CSV	no	no	no
+GSE146637	Mus musculus	MTX, RDS, TSV	no	yes	yes
+GSE145973	Mus musculus	CSV	no	no	no
+GSE144944	Danio rerio	H5, XLSX	no	no	no
+GSE143417	Homo sapiens	TAR, TSV	no	no	no
+GSE147104	Homo sapiens; Dengue virus	MTX, TSV	no	no	no
+GSE147103	Homo sapiens; Dengue virus 1 Nauru/West Pac/1974	MTX, TSV	no	no	no
+GSE150637	Homo sapiens	MTX, TSV	no	no	no
+GSE147110	Dengue virus 1 Nauru/West Pac/1974; Dengue virus; Homo sapiens	MTX, TSV	no	no	no
+GSE146596	Drosophila melanogaster	CSV, MTX, TSV, TXT	yes	no	yes
+GSE150579	Mus musculus	RDS	no	yes	yes
+GSE150556	Homo sapiens	TXT	no	no	no
+GSE150551	Mus musculus	H5, XLSX	no	no	no
+GSE150311	Homo sapiens	MTX, TSV	no	no	no
+GSE149992	Mus musculus	BW, NARROWPEAK	no	no	no
+GSE149991	Mus musculus	XLSX	no	no	no
+GSE147564	Homo sapiens	MTX, TSV	no	no	no
+GSE142637	Mus musculus; Homo sapiens	MTX, TSV	no	no	no
+GSE140348	Mus musculus	CSV, MTX, TSV	yes	no	yes
+GSE131847	Mus musculus	TSV	no	no	no
+GSE150486	Lonchura striata domestica	TXT	yes	no	yes
+GSE145922	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE141533	Mus musculus	TXT	no	no	no
+GSE141532	Mus musculus	TXT	no	no	no
+GSE131714	Mus musculus	XLSX	no	no	no
+GSE150387	Mus musculus	MTX, TSV	no	no	no
+GSE150361	Mus musculus	MTX, TSV	no	no	no
+GSE150358	Mus musculus	TSV	yes	no	yes
+GSE150166	Mus musculus	CSV, MTX, TSV, XLSX	no	no	no
+GSE146990	Homo sapiens	H5	no	no	no
+GSE146799	Homo sapiens	CSV	no	no	no
+GSE137797	Mus musculus	CSV	no	no	no
+GSE137770	Danio rerio	TXT	no	no	no
+GSE137512	Mus musculus	CSV, XLS	no	no	no
+GSE130045	Mus musculus	H5, MTX, TSV	no	no	no
+GSE150321	Homo sapiens	CSV	no	no	no
+GSE136831	Homo sapiens	MTX, RDS, TXT	yes	yes	yes
+GSE128175	Mus musculus	CSV, XLSX	no	no	no
+GSE150226	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE148820	Homo sapiens	MTX, TSV, TXT	no	no	no
+GSE143880	Homo sapiens	TXT	no	no	no
+GSE141115	Mus musculus	TXT	no	no	no
+GSE140819	Homo sapiens	CSV, H5	no	no	no
+GSE138033	Mus musculus	H5	no	no	no
+GSE150176	Mus musculus	H5	no	no	no
+GSE129981	Streptococcus oralis	TXT	no	no	no
+GSE150169	Mus musculus	MTX, TSV	no	no	no
+GSE150115	Homo sapiens	CSV, TXT	no	no	no
+GSE131007	Homo sapiens	TSV	no	no	no
+GSE150084	Homo sapiens	MTX, TSV	no	no	no
+GSE150083	Homo sapiens	MTX, TSV	no	no	no
+GSE150065	Mus musculus	TAR	no	no	no
+GSE150025	Homo sapiens	TXT	no	no	no
+GSE150021	Homo sapiens	TXT	no	no	no
+GSE150020	Homo sapiens	CNT	no	no	no
+GSE149617	Mus musculus	H5	no	no	no
+GSE149443	Mus musculus	TXT	yes	no	yes
+GSE131183	Mus musculus	CSV, FASTA, TXT	no	no	no
+GSE150004	Macaca fascicularis	TXT	no	no	no
+GSE149974	Macaca fascicularis	TXT	no	no	no
+GSE149965	Mus musculus	TXT	no	no	no
+GSE149941	Mus musculus	TXT	no	no	no
+GSE147349	Homo sapiens	H5, MTX, TSV	no	no	no
+GSE146020	Mus musculus	CSV, H5, XLSX	no	no	no
+GSE144568	Homo sapiens	RDATA, TAR	no	yes	yes
+GSE138002	Homo sapiens	CSV, MTX	no	no	no
+GSE128818	Gallus gallus; Mus musculus	BED, BW, MTX, TSV	no	no	no
+GSE122970	Homo sapiens	MTX, TSV	no	no	no
+GSE116106	Homo sapiens	MTX, TSV	no	no	no
+GSE149907	Mus musculus	none	no	no	no
+GSE147285	Mus musculus	TXT	no	no	no
+GSE146684	Mus musculus	CSV, TXT	yes	no	yes
+GSE145236	Mus musculus	MTX, TSV	no	no	no
+GSE142538	Homo sapiens	TXT	no	no	no
+GSE135601	Mus musculus	none	no	no	no
+GSE132730	Mus musculus	GRAPHML, RDS, TSV	no	yes	yes
+GSE143295	Mus musculus	CSV	no	no	no
+GSE138771	Mus musculus	TXT	no	no	no
+GSE132757	Homo sapiens	H5	no	no	no
+GSE129017	Homo sapiens	BED, TXT	yes	no	yes
+GSE128338	Mus musculus	MTX, TSV	no	no	no
+GSE128334	Mus musculus	MTX, TSV	no	no	no
+GSE116530	Mus musculus	TXT, XLS	no	no	no
+GSE148729	Homo sapiens	TSV	yes	no	yes
+GSE146216	Mus musculus	CSV	no	no	no
+GSE137524	Homo sapiens	CSV	no	no	no
+GSE114446	Homo sapiens	TXT	no	no	no
+GSE115997	Mus musculus	TXT	no	no	no
+GSE148162	Homo sapiens	TSV	no	no	no
+GSE147495	Mus musculus	BW, MTX, TSV	no	no	no
+GSE146811	Mus musculus	H5, TSV	no	no	no
+GSE146026	Homo sapiens	TSV	no	no	no
+GSE145896	Homo sapiens	CSV	no	no	no
+GSE145477	Mus musculus	TXT	no	no	no
+GSE135406	Mus musculus; Danio rerio	NARROWPEAK, XLSX	no	no	no
+GSE133894	Homo sapiens	TXT	no	no	no
+GSE131416	Homo sapiens	TXT	no	no	no
+GSE131409	Homo sapiens	CSV	no	no	no
+GSE131059	Mus musculus	MTX, TSV	no	no	no
+GSE126131	Homo sapiens	TSV	no	no	no
+GSE115243	Mus musculus	CSV, TXT	yes	no	yes
+GSE113788	Ciona savignyi	TXT, XLSX	no	no	no
+GSE149614	Homo sapiens	TXT	no	no	no
+GSE149590	Mus musculus	CSV, H5AD, LOOM	no	no	no
+GSE149583	Homo sapiens	MTX, TXT	yes	no	yes
+GSE149571	Mus musculus	MTX, TSV	no	no	no
+GSE149569	Mus musculus	TXT	no	no	no
+GSE149564	Mus musculus	MTX, TSV	no	no	no
+GSE149344	Mus musculus	CSV, TXT	yes	no	yes
+GSE145928	Homo sapiens	H5	no	no	no
+GSE145832	Mus musculus	CSV	yes	no	yes
+GSE144170	Mus musculus	CLOUPE, MTX, TSV	no	no	no
+GSE142564	Mus musculus	CSV, MTX, TSV, TXT	no	no	no
+GSE140611	Mus musculus	BEDGRAPH, BIGWIG, TDF	no	no	no
+GSE140610	Mus musculus	TXT	no	no	no
+GSE132048	Homo sapiens	CSV, TAR, TXT	no	no	no
+GSE147822	Sus scrofa	TXT	no	no	no
+GSE147457	Homo sapiens	TSV	no	no	no
+GSE131630	Mus musculus	TXT	no	no	no
+GSE149457	Gallus gallus	H5	no	no	no
+GSE146923	Danio rerio	TXT	no	no	no
+GSE145843	Homo sapiens	H5	no	no	no
+GSE145727	Mus musculus	TXT	no	no	no
+GSE145726	Mus musculus	TXT	no	no	no
+GSE143758	Mus musculus	CSV, TXT	no	no	no
+GSE130880	Mus musculus	MTX, TSV	no	no	no
+GSE124310	Homo sapiens	TAR	no	no	no
+GSE143687	Homo sapiens	MTX, TSV	no	no	no
+GSE143686	Homo sapiens	MTX, TSV	no	no	no
+GSE143685	Homo sapiens	CSV	no	no	no
+GSE143637	Mus musculus	TXT	no	no	no
+GSE137116	Mus musculus	CSV, TXT	yes	no	yes
+GSE132065	Homo sapiens	BED, MTX, TSV	no	no	no
+GSE149280	Homo sapiens	TSV	no	no	no
+GSE140133	Mus musculus	CSV, H5, TSV	no	no	no
+GSE139836	Mus musculus	CSV, H5	no	no	no
+GSE127975	Mus musculus	TXT	no	no	no
+GSE149136	Homo sapiens	MTX, TSV, XLSX	no	no	no
+GSE149100	Homo sapiens	TSV	no	no	no
+GSE149099	Homo sapiens	XLSX	no	no	no
+GSE148829	Macaca fascicularis; Mus musculus; Macaca mulatta; Homo sapiens	CSV, TXT	no	no	no
+GSE148791	Mus musculus	CSV, RDS	no	yes	yes
+GSE145163	Homo sapiens	TXT	no	no	no
+GSE137909	Mus musculus	TXT	yes	no	yes
+GSE149030	Mus musculus	CLOUPE, MTX, TSV	no	no	no
+GSE147573	Mus musculus	MTX, TSV	no	no	no
+GSE145926	Homo sapiens	CSV, H5	no	no	no
+GSE145307	Homo sapiens	MTX, TSV	no	no	no
+GSE139535	Homo sapiens	MTX, TSV	no	no	no
+GSE135300	Mus musculus	TXT	no	no	no
+GSE148946	Mus musculus	CSV	yes	no	yes
+GSE148942	Mus musculus	TXT	no	no	no
+GSE132396	Homo sapiens	TSV	no	no	no
+GSE130653	Mus musculus	TXT	yes	no	yes
+GSE144317	Mus musculus	TXT	yes	no	yes
+GSE143916	Mus musculus	MTX, TSV	no	no	no
+GSE123547	Mus musculus	CSV, TXT, XLSX	no	no	no
+GSE122706	Mus musculus	CSV	no	no	no
+GSE115424	Mus musculus	FASTA, MTX, TSV	no	no	no
+GSE106078	Mus musculus	TXT	no	no	no
+GSE135253	Homo sapiens	MTX, TSV	no	no	no
+GSE127937	Homo sapiens	MTX, TSV, TXT	no	no	no
+GSE148842	Homo sapiens	TXT	no	no	no
+GSE146771	Homo sapiens	TXT	yes	no	yes
+GSE135992	Homo sapiens	CSV	no	no	no
+GSE148366	Mus musculus	TSV	no	no	no
+GSE146626	Mus musculus	TSV	no	no	no
+GSE145638	Mus musculus	CSV	no	no	no
+GSE144870	Homo sapiens	MTX, TSV	no	no	no
+GSE141807	Drosophila melanogaster	TXT	no	no	no
+GSE138181	Danio rerio	H5	no	no	no
+GSE126067	Mus musculus	TXT	no	no	no
+GSE122817	Mus musculus	CSV	no	no	no
+GSE148666	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE148658	Homo sapiens	TXT	no	no	no
+GSE147263	Mus musculus	TXT	no	no	no
+GSE147081	Mus musculus	TAR	no	no	no
+GSE147080	Mus musculus	TXT	no	no	no
+GSE147021	Mus musculus	TXT	no	no	no
+GSE146926	Mus musculus	TXT	no	no	no
+GSE144508	Macaca mulatta	TXT	yes	no	yes
+GSE138881	Mus musculus	TXT	no	no	no
+GSE137353	Homo sapiens	TXT	no	no	no
+GSE148591	Danio rerio	MTX, TSV	no	no	no
+GSE141552	Homo sapiens	MTX, TSV	no	no	no
+GSE140512	Mus musculus	CSV	yes	no	yes
+GSE137285	Mus musculus	BW	no	no	no
+GSE133983	Mus musculus	CSV, TXT	no	no	no
+GSE131886	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE130228	Homo sapiens	MTX, TSV	no	no	no
+GSE137476	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE125290	Mus musculus	TXT	no	no	no
+GSE131351	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE128879	Homo sapiens	CSV, TXT	no	no	no
+GSE148482	Mus musculus	CSV, TSV, TXT, VCF	no	no	no
+GSE148480	Mus musculus	CSV, TSV	no	no	no
+GSE148477	Mus musculus	TSV	no	no	no
+GSE146221	Homo sapiens	MTX, TSV	no	no	no
+GSE146122	Mus musculus	CSV, MTX, RDS, TSV	no	yes	yes
+GSE145363	Mus musculus	TXT	no	no	no
+GSE137877	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE133018	Mus musculus	none	no	no	no
+GSE148345	Homo sapiens	TSV	no	no	no
+GSE146113	Mus musculus	MTX, TSV	no	no	no
+GSE143190	Homo sapiens	TXT	no	no	no
+GSE137496	Homo sapiens	TXT	no	no	no
+GSE137299	Mus musculus	TXT	no	no	no
+GSE141590	Drosophila melanogaster	BW, TSV	no	no	no
+GSE141589	Drosophila melanogaster	TSV	no	no	no
+GSE131984	Homo sapiens	RDATA, TXT	yes	yes	yes
+GSE131983	Homo sapiens	TSV	no	no	no
+GSE148190	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE144890	Dictyostelium discoideum	CSV	no	no	no
+GSE143492	Homo sapiens	TXT	no	no	no
+GSE143453	Homo sapiens	CSV, TXT	no	no	no
+GSE143452	Homo sapiens	CSV	no	no	no
+GSE137337	Mus musculus	BW, MTX, TSV	no	no	no
+GSE142347	Homo sapiens	TXT	no	no	no
+GSE142341	Mus musculus	H5, TXT	no	no	no
+GSE134174	Homo sapiens	RDATA, TXT	yes	yes	yes
+GSE120409	Mus musculus; Homo sapiens	BED, H5, TXT	no	no	no
+GSE120408	Mus musculus	TXT	no	no	no
+GSE120407	Mus musculus	TXT	no	no	no
+GSE120406	Mus musculus	TXT	no	no	no
+GSE120404	Mus musculus	TXT	no	no	no
+GSE120365	Mus musculus	TXT	no	no	no
+GSE147863	Homo sapiens	H5	no	no	no
+GSE144735	Homo sapiens	TXT	yes	no	yes
+GSE148040	Mus musculus	CSV	no	no	no
+GSE132465	Homo sapiens	TXT	yes	no	yes
+GSE132257	Homo sapiens	TXT	yes	no	yes
+GSE147989	Homo sapiens	H5	no	no	no
+GSE147987	Drosophila melanogaster	MTX, TSV	no	no	no
+GSE147883	Mus musculus	CSV, RDS	no	yes	yes
+GSE147807	Mus musculus	CSV	no	no	no
+GSE144507	Mus musculus	MTX, TSV	no	no	no
+GSE143818	Mus musculus	CSV	no	no	no
+GSE142541	Rattus norvegicus; Mus musculus	CSV, MTX, TSV	yes	no	yes
+GSE141030	Homo sapiens	CSV, MTX, TSV, TXT	yes	no	yes
+GSE140883	Mus musculus	TSV, XLSX	no	no	no
+GSE139280	Homo sapiens	ZIP	no	no	no
+GSE135143	Mus musculus	TXT	no	no	no
+GSE135142	Mus musculus	TXT	no	no	no
+GSE130212	Mus musculus	TXT	no	no	no
+GSE129921	Homo sapiens	CSV	no	no	no
+GSE129517	Mus musculus	TXT	no	no	no
+GSE129257	Mus musculus	TXT	no	no	no
+GSE129256	Mus musculus	MTX, TSV	no	no	no
+GSE125188	Homo sapiens	MTX, TSV	no	no	no
+GSE118599	Danio rerio	TAB	no	no	no
+GSE147794	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE147744	Mus musculus	TXT	no	no	no
+GSE146619	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE142613	Arabidopsis thaliana	BED, BW, TSV	no	no	no
+GSE142116	Homo sapiens	TXT	no	no	no
+GSE140811	Mus musculus	H5	no	no	no
+GSE133743	Mus musculus	BED, TXT	no	no	no
+GSE130973	Homo sapiens	MTX, RDS, TSV	no	yes	yes
+GSE147693	Mus musculus	CSV, MTX, TSV	yes	no	yes
+GSE146238	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE142345	Mus musculus	TXT	no	no	no
+GSE135325	Homo sapiens	CSV, FASTA, MTX, TSV	no	no	no
+GSE132758	Homo sapiens	MTX, TSV	no	no	no
+GSE131629	Mus musculus	TXT	no	no	no
+GSE131135	Homo sapiens	RDATA	no	yes	yes
+GSE131099	Homo sapiens	TXT	no	no	no
+GSE128796	Homo sapiens; Mus musculus	none	no	no	no
+GSE128794	Mus musculus	TXT	no	no	no
+GSE128793	Mus musculus	TXT	no	no	no
+GSE128791	Homo sapiens	TXT	no	no	no
+GSE128790	Homo sapiens	TXT	no	no	no
+GSE119324	Homo sapiens	TXT	no	no	no
+GSE119323	Homo sapiens	TSV, TXT, XLSX	no	no	no
+GSE147668	Mus musculus	TSV	yes	no	yes
+GSE147355	Schistosoma mansoni	TSV, TXT	no	no	no
+GSE146040	Drosophila melanogaster	LOOM, MTX, RDS, TSV	no	yes	yes
+GSE141786	Mus musculus	MTX, TSV	no	no	no
+GSE141784	Mus musculus	MTX, TSV, TXT	yes	no	yes
+GSE131907	Homo sapiens	TXT	yes	no	yes
+GSE128916	Mus musculus	TXT	no	no	no
+GSE112420	Mus musculus	BW	no	no	no
+GSE145140	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE145139	Homo sapiens	TXT	no	no	no
+GSE145137	Homo sapiens; Mus musculus	TXT, XLSX	yes	no	yes
+GSE141834	Homo sapiens	BW, TXT	no	no	no
+GSE131957	Mus musculus	CSV	yes	no	yes
+GSE147206	Homo sapiens	TAR	no	no	no
+GSE139659	Staphylococcus aureus	XLS	no	no	no
+GSE138826	Mus musculus	RDS, TXT	no	yes	yes
+GSE147424	Homo sapiens	TXT	no	no	no
+GSE147405	Homo sapiens	CSV	yes	no	yes
+GSE147386	Mus musculus	MTX, TSV	no	no	no
+GSE139389	Mus musculus	TXT	no	no	no
+GSE145347	Homo sapiens	MTX, TSV	no	no	no
+GSE143913	Mus musculus	H5	no	no	no
+GSE140793	Mus musculus	TAB	no	no	no
+GSE135497	Homo sapiens; Mus musculus	CSV, TXT	no	no	no
+GSE134242	Mus musculus	CSV, TSV, TXT	yes	no	yes
+GSE131134	Mus musculus	TXT	no	no	no
+GSE127266	Homo sapiens	TXT	no	no	no
+GSE147327	Mus musculus	H5	no	no	no
+GSE147259	Homo sapiens	CSV, TSV	no	no	no
+GSE146974	Homo sapiens	MTX, TSV	no	no	no
+GSE146613	Mus musculus	MTX, TSV	no	no	no
+GSE147202	Homo sapiens	CSV, TSV	yes	no	yes
+GSE133233	Mus musculus	CSV, MTX, TAB, TSV	yes	no	yes
+GSE133232	Mus musculus	TAB	no	no	no
+GSE125497	Homo sapiens	CSV	no	no	no
+GSE147203	Homo sapiens; Mus musculus	H5, TSV	no	no	no
+GSE147191	Mus musculus	TSV	yes	no	yes
+GSE147182	Mus musculus	CSV, HTML, MTX, TSV, XLSX	no	no	no
+GSE142465	Homo sapiens; Mus musculus	H5, MTX, TSV, TXT	yes	no	yes
+GSE147100	Mus musculus	TXT	no	no	no
+GSE147092	Mus musculus	TSV	yes	no	yes
+GSE143988	Mus musculus	CSV, TXT	no	no	no
+GSE115851	Mus musculus	TXT	no	no	no
+GSE147075	Mus musculus	TXT	no	no	no
+GSE146972	Mus musculus	H5	no	no	no
+GSE142471	Mus musculus	MTX, TSV	no	no	no
+GSE131750	Rattus norvegicus	XLSX	no	no	no
+GSE147066	Homo sapiens	TXT	yes	no	yes
+GSE123941	Mus musculus	TXT	no	no	no
+GSE123359	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE146983	Mus musculus	TSV, XLS	no	no	no
+GSE145708	Mus musculus	MTX, TSV	no	no	no
+GSE135710	Mus musculus; Homo sapiens	MTX, TSV	no	no	no
+GSE133054	Mus musculus; Homo sapiens	CSV	no	no	no
+GSE118194	Mus musculus	CSV, XLSX	no	no	no
+GSE107153	Mus musculus	TXT, XLSX	no	no	no
+GSE107152	Mus musculus	TXT, XLSX	no	no	no
+GSE146837	Xenopus tropicalis	MTX, TSV	no	no	no
+GSE146836	Xenopus tropicalis	MTX, TSV, TXT	yes	no	yes
+GSE146826	synthetic construct; Homo sapiens	CSV	no	no	no
+GSE146793	Mus musculus	NARROWPEAK	no	no	no
+GSE136974	Homo sapiens	MTX, TSV	no	no	no
+GSE135382	Mus musculus	TXT	yes	no	yes
+GSE128276	Mus musculus	TXT	no	no	no
+GSE146763	Homo sapiens	MTX, TSV	no	no	no
+GSE146737	Schistosoma mansoni	none	no	no	no
+GSE146736	Schistosoma mansoni	RDS, XLSX	no	yes	yes
+GSE146735	Schistosoma mansoni	CSV	no	no	no
+GSE146712	Homo sapiens	NWK, TXT	no	no	no
+GSE142768	Mus musculus	MTX, TSV	no	no	no
+GSE138857	Homo sapiens	MTX, TSV	no	no	no
+GSE146683	Mus musculus	none	no	no	no
+GSE146682	Mus musculus	MTX, TSV	no	no	no
+GSE146681	Mus musculus	TXT	no	no	no
+GSE146672	Mus musculus	TXT	no	no	no
+GSE146244	Mus musculus	MTX, TSV	no	no	no
+GSE142484	Danio rerio	TXT, ZIP	no	no	no
+GSE140026	Homo sapiens; Mus musculus	TSV	no	no	no
+GSE134273	Mus musculus	CSV	no	no	no
+GSE129218	Mus musculus	H5, MTX, TSV, TXT	no	no	no
+GSE129105	Mus musculus	MTX, TSV	no	no	no
+GSE120064	Mus musculus	CSV, TXT	no	no	no
+GSE145107	Mus musculus	TAR	no	no	no
+GSE146456	Mus musculus	CSV, MTX, TSV, TXT	no	no	no
+GSE133022	Homo sapiens	XLSX	no	no	no
+GSE146395	Mus musculus	CSV	no	no	no
+GSE146373	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE143802	Mus musculus	MTX, TSV	no	no	no
+GSE143663	Danio rerio	TXT	no	no	no
+GSE141457	Mus musculus	CSV, XLSX	no	no	no
+GSE140946	Mus musculus	TXT	no	no	no
+GSE138156	Macaca mulatta	CSV, MTX, TSV	no	no	no
+GSE137941	Homo sapiens	TXT	no	no	no
+GSE146399	Homo sapiens	BED, CSV	no	no	no
+GSE146285	Mus musculus	TSV, TXT	no	no	no
+GSE137478	Mus musculus	MTX, TSV	no	no	no
+GSE146194	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE140989	Homo sapiens	MTX, TSV, TXT	no	no	no
+GSE128822	Homo sapiens	CSV	no	no	no
+GSE143806	Mus musculus	H5	no	no	no
+GSE138646	Homo sapiens; Mus musculus	BEDGRAPH, FPKM_TRACKING, WIG	no	no	no
+GSE128198	Mus musculus	TXT	no	no	no
+GSE146138	Mus musculus	MTX, RDATA, TSV	no	yes	yes
+GSE146137	Mus musculus; Homo sapiens	TXT	no	no	no
+GSE145886	Mus musculus	MTX, RDS, TSV	no	yes	yes
+GSE144477	Homo sapiens	CSV	no	no	no
+GSE143516	Mus musculus	BROADPEAK	no	no	no
+GSE142244	Gallus gallus	MTX, TSV	no	no	no
+GSE141982	Homo sapiens	MTX, TSV	no	no	no
+GSE141031	Mus musculus	CSV	no	no	no
+GSE139533	Homo sapiens	TAB	no	no	no
+GSE135394	Mus musculus; Homo sapiens	FPKM_TRACKING	no	no	no
+GSE128743	Mus musculus	TXT	no	no	no
+GSE118412	Homo sapiens	CSV	no	no	no
+GSE146123	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE146099	Mus musculus	MTX, RDATA, TSV	no	yes	yes
+GSE145010	Thalassiosira oceanica CCMP1005	FA, TXT	no	no	no
+GSE144528	Mus musculus	CSV, TAB, TXT	no	no	no
+GSE146130	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE143140	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE135167	Mus musculus	TXT	no	no	no
+GSE146002	Mus musculus	CSV	no	no	no
+GSE128944	Mus musculus	H5	no	no	no
+GSE145934	Mus musculus	CSV, MTX, TSV, XLS	no	no	no
+GSE145894	Homo sapiens	TXT	yes	no	yes
+GSE142074	Mus musculus	MTX, TSV	no	no	no
+GSE133449	Homo sapiens	TXT	no	no	no
+GSE132438	Mus musculus	CSV	no	no	no
+GSE145815	Homo sapiens	TSV	yes	no	yes
+GSE145801	Danio rerio	TXT	no	no	no
+GSE145800	Toxoplasma gondii RH	HDF5	no	no	no
+GSE144136	Homo sapiens	CSV, MTX	yes	no	yes
+GSE143888	Mus musculus	MTX, TSV	no	no	no
+GSE142213	Homo sapiens; Mus musculus	TAR	no	no	no
+GSE139558	Mus musculus	MTX, TSV	no	no	no
+GSE137659	Homo sapiens	MTX, TSV, TXT	no	no	no
+GSE129581	Aspidelaps lubricus cowlesi; Naja nivea	CSV, FNA	no	no	no
+GSE120628	Mus musculus	TXT	no	no	no
+GSE118814	Drosophila melanogaster; Mus musculus	CSV, MTX, TSV	no	no	no
+GSE139161	Homo sapiens	TXT	no	no	no
+GSE140795	Mus musculus	VLOUPE, XLS	no	no	no
+GSE137869	Homo sapiens; Rattus norvegicus	MTX, TSV, TXT	no	no	no
+GSE145556	Mus musculus	CSV	no	no	no
+GSE145518	Rattus norvegicus	CEL, CHP, MTX, TSV	no	no	no
+GSE145517	Rattus norvegicus	MTX, TSV	no	no	no
+GSE128565	Mus musculus	H5, TAR	no	no	no
+GSE124425	Mus musculus	CSV, TXT	no	no	no
+GSE123837	Homo sapiens	TXT	no	no	no
+GSE121179	Homo sapiens	TSV	no	no	no
+GSE145443	Mus musculus	TSV	yes	no	yes
+GSE140817	Mus musculus	none	no	no	no
+GSE140816	Mus musculus	MTX, TSV	no	no	no
+GSE135703	Mus musculus	TXT	yes	no	yes
+GSE130850	Mus musculus	TXT	no	no	no
+GSE128956	Homo sapiens	XLSX	no	no	no
+GSE126647	Danio rerio	MTX, TSV	no	no	no
+GSE143476	Mus musculus	CSV, MTX, TSV	yes	no	yes
+GSE132166	Danio rerio	TSV, TXT	no	no	no
+GSE124742	Homo sapiens	TAB	no	no	no
+GSE115033	Mus musculus	TSV	no	no	no
+GSE115032	Homo sapiens	TXT	no	no	no
+GSE144482	Mus musculus	CSV, TXT	yes	no	yes
+GSE144481	Mus musculus	TXT	no	no	no
+GSE142449	Homo sapiens	TSV	no	no	no
+GSE128089	Mus musculus	BW, NARROWPEAK, TXT	no	no	no
+GSE137010	Homo sapiens	MTX, TSV	no	no	no
+GSE133345	Homo sapiens	TXT	yes	no	yes
+GSE145298	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE145286	Mus musculus	MTX, TXT	no	no	no
+GSE145283	Mus musculus	TXT	no	no	no
+GSE145281	Homo sapiens	TXT	no	no	no
+GSE145251	Mus musculus	MTX, TSV	no	no	no
+GSE145248	Mus musculus	MTX, TSV	no	no	no
+GSE145247	Mus musculus	MTX, TSV	no	no	no
+GSE130025	Homo sapiens	BED, MTX, TSV, TXT, XLSX	no	no	no
+GSE130024	Homo sapiens	MTX, TSV	no	no	no
+GSE130023	Homo sapiens	TXT	no	no	no
+GSE130022	Homo sapiens	TXT	no	no	no
+GSE130021	Homo sapiens	TXT	no	no	no
+GSE130020	Homo sapiens	TXT	no	no	no
+GSE130019	Homo sapiens	TXT	no	no	no
+GSE145172	Mus musculus	CSV, MTX, TSV	yes	no	yes
+GSE138381	Mus musculus	TXT	no	no	no
+GSE124992	Homo sapiens	CSV	no	no	no
+GSE124822	Mus musculus; Homo sapiens	CSV, TXT	no	no	no
+GSE145080	Toxoplasma gondii	H5	no	no	no
+GSE143920	Rattus norvegicus	MTX, TSV	no	no	no
+GSE138474	Homo sapiens	TAR	no	no	no
+GSE138418	Homo sapiens	TSV	no	no	no
+GSE138267	Homo sapiens	TAR	no	no	no
+GSE130119	Mus musculus; Homo sapiens	BEDGRAPH, CSV, TXT	no	no	no
+GSE130118	Mus musculus	TXT	no	no	no
+GSE130105	Homo sapiens	CSV, TXT	no	no	no
+GSE129774	Mus musculus	TXT	no	no	no
+GSE129773	Mus musculus	TXT	no	no	no
+GSE129763	Mus musculus	TXT	no	no	no
+GSE129762	Homo sapiens	TXT	no	no	no
+GSE129609	Mus musculus	TXT	no	no	no
+GSE141853	Mus musculus	BEDPE, BW, TAB	no	no	no
+GSE141852	Mus musculus	TAB	no	no	no
+GSE134355	Mus musculus; Homo sapiens	TXT	no	no	no
+GSE131434	Homo sapiens	MTX, TSV	no	no	no
+GSE144980	Mus musculus	TXT	no	no	no
+GSE144908	Homo sapiens	XLSX	no	no	no
+GSE144495	Homo sapiens	XLS	no	no	no
+GSE144494	Homo sapiens	XLS	no	no	no
+GSE143624	Homo sapiens	XLSX	no	no	no
+GSE140807	Mus musculus	TXT	no	no	no
+GSE135810	Drosophila melanogaster	GTF, MTX, TSV	no	no	no
+GSE144827	Danio rerio	TAR	no	no	no
+GSE144820	Saccharomyces cerevisiae	CSV	no	no	no
+GSE144730	Canis lupus familiaris	TXT	no	no	no
+GSE134479	Mus musculus	TXT	no	no	no
+GSE133244	Mus musculus	BED, BW, MTX, TAB, TXT	yes	no	yes
+GSE127556	Mus musculus	none	no	no	no
+GSE127488	Mus musculus	TXT	no	no	no
+GSE144720	Mus musculus	MTX, TSV	no	no	no
+GSE144707	Mus musculus	TXT	no	no	no
+GSE144705	Mus musculus	TXT	no	no	no
+GSE131971	Drosophila melanogaster	MTX, TSV	no	no	no
+GSE131187	Mus musculus	BEDGRAPH, BIGWIG, TXT	no	no	no
+GSE131186	Mus musculus	TXT	no	no	no
+GSE130785	Apis mellifera	MTX, TSV	no	no	no
+GSE124477	Mus musculus	TXT	no	no	no
+GSE118768	Mus musculus	MTX, TSV	no	no	no
+GSE140312	Homo sapiens	TAR	no	no	no
+GSE130977	Homo sapiens	TXT	no	no	no
+GSE138222	Mus musculus	MTX, TSV	no	no	no
+GSE144473	Mus musculus	TAR	no	no	no
+GSE144471	Mus musculus	TXT	no	no	no
+GSE144444	Mus musculus	CSV	no	no	no
+GSE144434	Homo sapiens	CSV, TSV	no	no	no
+GSE141856	Mus musculus	TAR	no	no	no
+GSE141594	Mus musculus	PDF	yes	no	yes
+GSE132771	Homo sapiens; Mus musculus	MTX, TSV	no	no	no
+GSE132509	Homo sapiens	MTX, TSV	no	no	no
+GSE127898	Macaca mulatta; Pan troglodytes; Pan paniscus; Homo sapiens	CSV	no	no	no
+GSE127774	Pan paniscus; Macaca mulatta; Pan troglodytes; Homo sapiens	FA, GTF, MTX, RDS, TSV, TXT	no	yes	yes
+GSE144430	Homo sapiens	MTX, TSV	no	no	no
+GSE144411	Mus musculus	MTX, TSV	no	no	no
+GSE144357	Homo sapiens	CSV, TXT, XLSX	yes	no	yes
+GSE134009	Macaca fascicularis	TXT	no	no	no
+GSE144270	Mus musculus	MTX, TSV	no	no	no
+GSE138536	Homo sapiens	TXT	yes	no	yes
+GSE130664	Macaca fascicularis; Homo sapiens	TXT	no	no	no
+GSE144299	Mus musculus	MTX, TSV	no	no	no
+GSE141600	Mus musculus	none	no	no	no
+GSE138838	Homo sapiens	TXT	no	no	no
+GSE144216	Homo sapiens	CSV, XLSX	no	no	no
+GSE144191	Homo sapiens	RDS	no	yes	yes
+GSE139829	Homo sapiens	MTX, TSV	no	no	no
+GSE137316	Homo sapiens	BED	no	no	no
+GSE135663	Homo sapiens	TSV	no	no	no
+GSE135193	Homo sapiens	XLSX	no	no	no
+GSE132229	Mus musculus	MTX, TSV	no	no	no
+GSE124162	Danio rerio	TAB	no	no	no
+GSE116426	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE115501	Homo sapiens	TXT	no	no	no
+GSE141928	Mus musculus	MTX, TSV	no	no	no
+GSE130077	Mus musculus	MTX, TSV	no	no	no
+GSE129937	Mus musculus	MTX, TSV	no	no	no
+GSE125839	Homo sapiens	MTX	no	no	no
+GSE125838	Homo sapiens	MTX, TSV	no	no	no
+GSE125837	Homo sapiens	TXT	no	no	no
+GSE125372	Mus musculus; Homo sapiens	TSV	no	no	no
+GSE135133	Homo sapiens	TXT	no	no	no
+GSE135092	Homo sapiens	TSV	no	no	no
+GSE134463	Mus musculus	TXT	no	no	no
+GSE130593	Mus musculus	MTX, TSV	no	no	no
+GSE139328	Mus musculus	MTX, TSV	no	no	no
+GSE138228	Mus musculus	TAB	no	no	no
+GSE138227	Mus musculus	TAB	no	no	no
+GSE126574	Mus musculus	TXT	no	no	no
+GSE136915	Mus musculus	MTX, TSV	no	no	no
+GSE134465	Mus musculus	none	no	no	no
+GSE128357	Homo sapiens	CSV, H5, TAR, TXT	no	no	no
+GSE121750	Danio rerio	TXT	no	no	no
+GSE110680	Homo sapiens	CSV	no	no	no
+GSE143877	Mus musculus	CSV	no	no	no
+GSE137912	Homo sapiens	CSV, MTX, TSV	yes	no	yes
+GSE136455	Mus musculus	TSV, XLS	no	no	no
+GSE130822	Mus musculus	BW, MTX, TSV, TXT	no	no	no
+GSE130681	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE128671	Homo sapiens; Mus musculus	BW, MTX, TSV, TXT	no	no	no
+GSE112271	Homo sapiens	MTX, TSV	no	no	no
+GSE143750	Danio rerio	MTX, TSV	no	no	no
+GSE132250	Toxoplasma gondii	BEDGRAPH, NARROWPEAK, TXT	no	no	no
+GSE132238	Toxoplasma gondii	TXT	no	no	no
+GSE130646	Homo sapiens	CSV	no	no	no
+GSE143669	Homo sapiens	TXT	no	no	no
+GSE143636	Mus musculus	CSV	no	no	no
+GSE143607	Homo sapiens	MTX, RDS, TSV	no	yes	yes
+GSE141284	Capra hircus	TXT	no	no	no
+GSE138892	Homo sapiens	MTX, TSV	no	no	no
+GSE115803	Mus musculus	MTX, TSV	no	no	no
+GSE142267	Mus musculus	PKL, TSV	yes	no	yes
+GSE140222	Mus musculus	CSV, TXT	no	no	no
+GSE123904	Homo sapiens	CSV	no	no	no
+GSE123903	Homo sapiens	CSV	no	no	no
+GSE123902	Homo sapiens	CSV, RTF	no	no	no
+GSE141299	Homo sapiens	TXT	no	no	no
+GSE140628	Mus musculus	H5, MTX, RDATA, TSV	no	yes	yes
+GSE140405	Homo sapiens	H5	no	no	no
+GSE138693	Homo sapiens	TXT	no	no	no
+GSE134144	Homo sapiens	TXT	no	no	no
+GSE132815	Rattus norvegicus	TXT	no	no	no
+GSE131604	Homo sapiens	BW, TXT	no	no	no
+GSE111822	Homo sapiens	CSV	no	no	no
+GSE111672	Homo sapiens	JPG, RTF, TSV, TXT	no	no	no
+GSE137833	Homo sapiens	GFF3, XLSX	yes	no	yes
+GSE143437	Mus musculus	TXT	yes	no	yes
+GSE143435	Mus musculus	TXT	yes	no	yes
+GSE143423	Homo sapiens	CSV	yes	no	yes
+GSE143353	Homo sapiens	CSV	no	no	no
+GSE142526	Homo sapiens	TAR	no	no	no
+GSE141105	Mus musculus	TXT	no	no	no
+GSE139079	Homo sapiens	TXT	no	no	no
+GSE132149	Homo sapiens	TXT	no	no	no
+GSE124875	Mus musculus	TXT	yes	no	yes
+GSE143221	Mus musculus	PDF, TSV	no	no	no
+GSE143214	Homo sapiens	TXT	no	no	no
+GSE143151	Homo sapiens; Mus musculus	BED, CEL	no	no	no
+GSE143148	Mus musculus; Homo sapiens	BED, CSV, TSV	no	no	no
+GSE135769	Mus musculus	TXT	no	no	no
+GSE126349	Mus musculus	TXT	no	no	no
+GSE118410	Mus musculus	H5	no	no	no
+GSE97160	Mus musculus	XLS	no	no	no
+GSE141776	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE140231	Homo sapiens	TAR	no	no	no
+GSE135147	Mus musculus	TXT	no	no	no
+GSE132925	Mus musculus	TXT	no	no	no
+GSE127847	Mus musculus	none	no	no	no
+GSE143136	Homo sapiens; Mus musculus	TAB, TXT	no	no	no
+GSE143135	Mus musculus	TXT	no	no	no
+GSE127918	Homo sapiens	TXT	no	no	no
+GSE143038	Drosophila melanogaster	CSV	no	no	no
+GSE142873	Mus musculus	TXT	no	no	no
+GSE142838	Homo sapiens	TAR	no	no	no
+GSE139448	Homo sapiens	CSV	no	no	no
+GSE139336	Mus musculus	TXT	yes	no	yes
+GSE138585	Mus musculus	CSV	no	no	no
+GSE126488	Homo sapiens	RDATA, TXT	no	yes	yes
+GSE139598	Macaca mulatta	CSV	yes	no	yes
+GSE130884	Mus musculus	BED, BIGWIG, H5, MTX, TSV	no	no	no
+GSE130879	Mus musculus	H5, MTX, TSV	no	no	no
+GSE130875	Mus musculus	TSV	yes	no	yes
+GSE130842	Mus musculus	XLSX	no	no	no
+GSE130009	Mus musculus	TXT	yes	no	yes
+GSE129170	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE124325	Mus musculus	CLOUPE	no	no	no
+GSE124324	Mus musculus	XLSX	no	no	no
+GSE124323	Mus musculus	CLOUPE	no	no	no
+GSE122792	Rattus norvegicus	TXT	no	no	no
+GSE122209	Mus musculus	XLSX	no	no	no
+GSE121309	Homo sapiens	TXT	no	no	no
+GSE110208	Mus musculus	CSV	no	no	no
+GSE142750	Homo sapiens	MTX, TSV	no	no	no
+GSE141117	Mus musculus	CSV	no	no	no
+GSE141111	Mus musculus	MTX, TSV	no	no	no
+GSE140511	Mus musculus	MTX, TSV	no	no	no
+GSE140510	Mus musculus	MTX, TSV	no	no	no
+GSE140399	Mus musculus	MTX, TSV	no	no	no
+GSE137026	Homo sapiens	CSV, H5	no	no	no
+GSE134134	Mus musculus	CSV	no	no	no
+GSE133466	Danio rerio	CSV	no	no	no
+GSE133167	Homo sapiens	TXT	no	no	no
+GSE126916	Macaca mulatta	TXT	no	no	no
+GSE124901	Mus musculus	BED, MTX, TSV, TXT	no	no	no
+GSE122378	Mus musculus	TXT	no	no	no
+GSE138718	Mus musculus	MTX, TSV	no	no	no
+GSE137167	Mus musculus	MTX, TSV	no	no	no
+GSE142694	Mus musculus	TXT	no	no	no
+GSE140021	Homo sapiens	BW, TXT	no	no	no
+GSE134288	Danio rerio	TXT	no	no	no
+GSE139827	Mus musculus	MTX, TSV	no	no	no
+GSE129299	Mus musculus	MTX	no	no	no
+GSE129298	Mus musculus	MTX, TSV	no	no	no
+GSE129297	Mus musculus	MTX, TSV	no	no	no
+GSE141946	Homo sapiens	CSV, TXT	yes	no	yes
+GSE142581	Mus musculus	TXT	no	no	no
+GSE138025	Homo sapiens	CSV	no	no	no
+GSE138019	Mus musculus	XLSX	no	no	no
+GSE142515	Mus musculus	MTX, TSV	no	no	no
+GSE139218	Danio rerio	CSV, TSV	no	no	no
+GSE142451	Mus musculus	CSV, TXT	no	no	no
+GSE142425	Mus musculus	MTX, TSV	no	no	no
+GSE142423	Mus musculus	TXT	no	no	no
+GSE142420	Mus musculus	TXT	no	no	no
+GSE142418	Mus musculus	TXT	no	no	no
+GSE130626	Mus musculus	CSV, TXT	no	no	no
+GSE142392	Homo sapiens	CSV	no	no	no
+GSE139186	Mus musculus	H5	no	no	no
+GSE139013	Mus musculus	TXT	no	no	no
+GSE138904	Mus musculus	H5	no	no	no
+GSE138676	Mus musculus	XLSX	no	no	no
+GSE136239	Escherichia coli; Acinetobacter baylyi	CSV	no	no	no
+GSE131734	Mus musculus	MTX, TSV	no	no	no
+GSE108378	Homo sapiens	XLSX	no	no	no
+GSE142286	Homo sapiens	CSV	no	no	no
+GSE120537	Drosophila melanogaster	CSV, TXT	yes	no	yes
+GSE142212	Mus musculus	TXT	no	no	no
+GSE139522	Homo sapiens	MTX, TSV	no	no	no
+GSE122515	Homo sapiens	TXT	no	no	no
+GSE142113	Mus musculus	MTX, TSV	no	no	no
+GSE120386	Homo sapiens	CSV, TXT	no	no	no
+GSE140894	Mus musculus	BIGWIG	no	no	no
+GSE136659	Rattus norvegicus	TXT	no	no	no
+GSE116514	Mus musculus	TXT	no	no	no
+GSE142016	Homo sapiens	MTX, TSV	no	no	no
+GSE141922	Mus musculus	H5	no	no	no
+GSE141896	Drosophila melanogaster	FASTA, MTX, TSV	no	no	no
+GSE128908	Homo sapiens	MTX, TXT	no	no	no
+GSE123824	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE114000	Mus musculus	TSV, TXT, XLSX	yes	no	yes
+GSE141832	Homo sapiens	CSV	no	no	no
+GSE141814	Mus musculus	MTX, TSV	no	no	no
+GSE141810	Mus musculus	TXT	no	no	no
+GSE141809	Mus musculus	TXT	no	no	no
+GSE141808	Mus musculus	XLSX	no	no	no
+GSE140493	Homo sapiens	CSV, HDF5, TSV	no	no	no
+GSE134706	Macaca fascicularis; Mus musculus; Ovis aries; Rattus norvegicus; Danio rerio; Gallus gallus; Callithrix jacchus; Homo sapiens; Mesocricetus auratus	TXT	no	no	no
+GSE134705	Homo sapiens; Mus musculus; Nannospalax galili; Danio rerio; Gallus gallus; Callithrix jacchus; Mesocricetus auratus; Macaca fascicularis; Ovis aries; Rattus norvegicus	TXT	yes	no	yes
+GSE141728	Mus musculus	CSV	no	no	no
+GSE137015	Mus musculus	TAR	no	no	no
+GSE135704	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE132394	Mus musculus	H5, MTX, TSV	no	no	no
+GSE141636	Homo sapiens	XLS	no	no	no
+GSE141469	Mus musculus; Homo sapiens; Canis lupus familiaris	TSV	yes	no	yes
+GSE139035	Mus musculus	XLSX	no	no	no
+GSE139034	Mus musculus	XLSX	no	no	no
+GSE138748	Homo sapiens	TXT, XLSX	no	no	no
+GSE138266	Homo sapiens	MTX, TSV	no	no	no
+GSE137793	Mus musculus	XLSX	no	no	no
+GSE137792	Mus musculus	XLSX	no	no	no
+GSE137791	Mus musculus	XLSX	no	no	no
+GSE136196	Mus musculus	MTX, TSV	no	no	no
+GSE133549	Canis lupus familiaris; Homo sapiens; Mus musculus	none	no	no	no
+GSE133548	Homo sapiens; Canis lupus familiaris; Mus musculus	TSV	yes	no	yes
+GSE133547	Mus musculus; Homo sapiens; Canis lupus familiaris	TSV	yes	no	yes
+GSE133546	Homo sapiens; Canis lupus familiaris; Mus musculus	TSV	yes	no	yes
+GSE133545	Mus musculus; Homo sapiens; Canis lupus familiaris	TSV	yes	no	yes
+GSE133544	Homo sapiens; Mus musculus; Canis lupus familiaris	TSV	yes	no	yes
+GSE133543	Homo sapiens; Mus musculus; Canis lupus familiaris	TSV	yes	no	yes
+GSE133542	Homo sapiens; Mus musculus; Canis lupus familiaris	TSV	yes	no	yes
+GSE133541	Homo sapiens; Canis lupus familiaris; Mus musculus	TSV	yes	no	yes
+GSE133540	Homo sapiens; Mus musculus; Canis lupus familiaris	TSV	yes	no	yes
+GSE133539	Homo sapiens; Canis lupus familiaris; Mus musculus	TSV	yes	no	yes
+GSE133538	Mus musculus; Homo sapiens; Canis lupus familiaris	TSV	yes	no	yes
+GSE133537	Mus musculus; Homo sapiens; Canis lupus familiaris	TSV	yes	no	yes
+GSE133536	Canis lupus familiaris; Mus musculus; Homo sapiens	TSV	yes	no	yes
+GSE133535	Canis lupus familiaris; Homo sapiens; Mus musculus	TSV	yes	no	yes
+GSE125269	Mus musculus	CSV	no	no	no
+GSE118773	Influenza A virus (A/Puerto Rico/8/1934(H1N1)); Homo sapiens; Canis lupus familiaris	TXT	no	no	no
+GSE139555	Homo sapiens	CSV, MTX, RDS, TSV, TXT	yes	yes	yes
+GSE138675	Homo sapiens	NARROWPEAK	no	no	no
+GSE138673	Homo sapiens	TXT	no	no	no
+GSE116141	Homo sapiens	none	no	no	no
+GSE116130	Homo sapiens	H5	no	no	no
+GSE133992	Mus musculus	MTX, TSV	no	no	no
+GSE133887	Mus musculus; Homo sapiens	TXT	no	no	no
+GSE141472	Mus musculus	TXT	no	no	no
+GSE141428	Danio rerio	TSV	no	no	no
+GSE141427	Danio rerio	CSV, TSV	no	no	no
+GSE141426	Danio rerio	TSV	no	no	no
+GSE141425	Danio rerio	TSV	no	no	no
+GSE139944	Homo sapiens; Mus musculus	MATRIX, RDS, TXT	no	yes	yes
+GSE137082	Mus musculus	TXT	no	no	no
+GSE134157	Mus musculus	TSV	no	no	no
+GSE129139	Mus musculus	MTX, TSV	no	no	no
+GSE123187	Homo sapiens; Mus musculus	TSV, TXT	no	no	no
+GSE110038	Mus musculus	BED, MTX, TSV	no	no	no
+GSE110037	Mus musculus	MTX, TSV	no	no	no
+GSE133747	Sus scrofa; Mus musculus; Rattus norvegicus; Homo sapiens	MTX, TSV	no	no	no
+GSE132507	Mus musculus	TXT	no	no	no
+GSE118577	Danio rerio	TAB	no	no	no
+GSE141257	Homo sapiens	XLSX	no	no	no
+GSE141238	Homo sapiens	MTX, TSV, TXT	no	no	no
+GSE140431	Mus musculus	TXT	yes	no	yes
+GSE139232	Mus musculus	none	no	no	no
+GSE139231	Mus musculus	XLSX	no	no	no
+GSE139229	Mus musculus	XLSX	no	no	no
+GSE138230	Mus musculus	TAB, TXT	no	no	no
+GSE129914	Mus musculus	TXT	yes	no	yes
+GSE124691	Mus musculus	MTX, TSV	no	no	no
+GSE122827	Homo sapiens	CSV	no	no	no
+GSE141259	Mus musculus	CSV, MTX, TXT	no	no	no
+GSE127943	Mus musculus	CSV	no	no	no
+GSE121521	Mus musculus	MTX, TSV	no	no	no
+GSE94087	Mus musculus	TXT	no	no	no
+GSE135472	Mus musculus	TXT	no	no	no
+GSE133773	Mus musculus	MTX, TSV	no	no	no
+GSE117075	Homo sapiens	CSV	no	no	no
+GSE104842	Mus musculus	DIFF, MTX, TSV, XLSX	no	no	no
+GSE92432	Homo sapiens	CSV	no	no	no
+GSE141157	Mus musculus	CSV	no	no	no
+GSE134240	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE117715	Macaca fascicularis	MTX, TSV, TXT, XLS, XLSX	no	no	no
+GSE140553	Homo sapiens	MTX, TSV	no	no	no
+GSE141087	Homo sapiens	CSV	no	no	no
+GSE141044	Mus musculus	CSV, MTX, TXT	no	no	no
+GSE139193	Homo sapiens	MTX, TSV	no	no	no
+GSE137863	Mus musculus	CSV	no	no	no
+GSE137828	Mus musculus	CSV	no	no	no
+GSE137525	Danio rerio	CSV	no	no	no
+GSE137462	Gallus gallus	MTX, TSV	no	no	no
+GSE137400	Mus musculus	none	no	no	no
+GSE137398	Mus musculus	CSV	no	no	no
+GSE134814	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE133382	Mus musculus	CSV	no	no	no
+GSE131737	Gallus gallus	TXT	no	no	no
+GSE128982	Mus musculus; Homo sapiens	TXT	no	no	no
+GSE125711	Gallus gallus	MTX, TSV	no	no	no
+GSE125710	Gallus gallus	TXT	no	no	no
+GSE125709	Gallus gallus	TXT	no	no	no
+GSE123035	Mus musculus	CSV	no	no	no
+GSE141036	Mus musculus	MTX, TSV	no	no	no
+GSE141002	Mus musculus	TXT	no	no	no
+GSE136447	Homo sapiens	TXT	no	no	no
+GSE133757	Homo sapiens	TXT	no	no	no
+GSE133604	Mus musculus	MTX, TSV	no	no	no
+GSE140896	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE138680	Homo sapiens	TSV	no	no	no
+GSE132642	Mus musculus; Heterocephalus glaber	CSV	no	no	no
+GSE130355	Mus musculus	TXT	no	no	no
+GSE130146	Mus musculus	MTX, TSV	no	no	no
+GSE39123	Mus musculus	BEDGRAPH, TXT	no	no	no
+GSE140802	Mus musculus	MTX, TXT	no	no	no
+GSE140774	Mus musculus	none	no	no	no
+GSE140773	Mus musculus	TSV	no	no	no
+GSE132273	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE125881	Homo sapiens	CSV	no	no	no
+GSE121380	Homo sapiens	TXT	no	no	no
+GSE124903	Homo sapiens	BW	no	no	no
+GSE122740	Mus musculus	CSV, TXT	no	no	no
+GSE136028	Mus musculus	TXT	no	no	no
+GSE133531	Mus musculus	MTX, TSV, TXT	yes	no	yes
+GSE132525	Homo sapiens	TXT	no	no	no
+GSE129611	Homo sapiens	TSV, TXT	no	no	no
+GSE124172	Homo sapiens	MTX, TSV	no	no	no
+GSE138791	Homo sapiens	TSV	no	no	no
+GSE135437	Homo sapiens	TSV	no	no	no
+GSE132080	Homo sapiens	CSV, MTX, TSV	yes	no	yes
+GSE139412	Mus musculus	CSV, RDS	no	yes	yes
+GSE135985	Mus musculus	TAR	no	no	no
+GSE134722	Drosophila melanogaster	MTX, TSV	no	no	no
+GSE138651	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE110727	Homo sapiens	TXT	no	no	no
+GSE140262	Mus musculus	CSV, MTX	yes	no	yes
+GSE140228	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE139324	Homo sapiens	MTX, TSV	no	no	no
+GSE136206	Mus musculus	MTX, TSV	no	no	no
+GSE129447	Homo sapiens	TXT	no	no	no
+GSE121477	Homo sapiens	TXT	no	no	no
+GSE119212	Homo sapiens	MTX, TSV	no	no	no
+GSE125272	Mus musculus	MTX	no	no	no
+GSE118931	Mus musculus	MTX, TSV	no	no	no
+GSE117382	Homo sapiens	TXT	no	no	no
+GSE139248	Mus musculus	CSV	no	no	no
+GSE137029	Homo sapiens	MTX, TXT	no	no	no
+GSE130504	Mus musculus	TXT	no	no	no
+GSE140162	Rattus norvegicus	XLSX	no	no	no
+GSE140151	Mus musculus	MTX, TSV	no	no	no
+GSE140123	Homo sapiens	XLSX	no	no	no
+GSE135330	Mus musculus	TSV	no	no	no
+GSE126139	Drosophila melanogaster	MTX, TSV, TXT	no	no	no
+GSE136314	Homo sapiens	MTX, TSV	no	no	no
+GSE136230	Homo sapiens	none	no	no	no
+GSE136229	Homo sapiens	TXT	no	no	no
+GSE134577	Homo sapiens	TAR	no	no	no
+GSE134576	Homo sapiens	TAR	no	no	no
+GSE132274	Drosophila melanogaster	MTX, TSV	no	no	no
+GSE129798	Mus musculus	none	no	no	no
+GSE129363	Homo sapiens	MTX, TSV, TXT	yes	no	yes
+GSE139842	Mus musculus	CSV	yes	no	yes
+GSE139658	Mus musculus	TXT	no	no	no
+GSE139265	Mus musculus	TXT	no	no	no
+GSE137720	Mus musculus	CSV, MTX, TAB, TSV	no	no	no
+GSE135414	Mus musculus	BW, MTX, TSV	no	no	no
+GSE130114	Macaca fascicularis	CSV, XLSX	yes	no	yes
+GSE139600	Mus musculus	TXT	no	no	no
+GSE138707	Mus musculus	MTX, TSV	no	no	no
+GSE129837	Homo sapiens	H5, TXT	no	no	no
+GSE129826	Homo sapiens	H5, TXT	no	no	no
+GSE129825	Homo sapiens	TXT	no	no	no
+GSE124799	Mus musculus	TXT	no	no	no
+GSE135922	Homo sapiens	TSV	no	no	no
+GSE131368	Mus musculus	MTX, TSV	no	no	no
+GSE131339	Mus musculus	MTX, TSV	no	no	no
+GSE130554	Mus musculus	MTX, TSV	no	no	no
+GSE129192	Mus musculus	TXT	no	no	no
+GSE126268	Mus musculus	TXT, XLSX	no	no	no
+GSE139512	Sus scrofa	TXT	no	no	no
+GSE139492	Mus musculus	TSV	no	no	no
+GSE128814	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE114186	Homo sapiens; Mus musculus	CSV, TXT	no	no	no
+GSE132214	Mus musculus	TXT, XLSX	no	no	no
+GSE117149	Mus musculus	CSV, PDF, TXT	no	no	no
+GSE139382	Homo sapiens	CSV	no	no	no
+GSE139318	Rattus norvegicus	CLOUPE	no	no	no
+GSE137710	Homo sapiens; Mus musculus	TSV	yes	no	yes
+GSE132573	Mus musculus	TSV	no	no	no
+GSE132255	Mus musculus	CSV	no	no	no
+GSE127470	Mus musculus	MTX, TSV	no	no	no
+GSE127469	Mus musculus	MTX, TSV	no	no	no
+GSE127260	Mus musculus	TXT	no	no	no
+GSE124889	Homo sapiens	CSV, XLSX	no	no	no
+GSE124888	Homo sapiens	CSV, XLSX	no	no	no
+GSE124887	Homo sapiens	CSV, XLSX	no	no	no
+GSE123810	Homo sapiens	TXT	no	no	no
+GSE122762	Mus musculus	MTX, TSV	no	no	no
+GSE109308	Homo sapiens	TXT	no	no	no
+GSE139200	Macaca mulatta	TXT	yes	no	yes
+GSE130050	Homo sapiens	TSV	no	no	no
+GSE125616	Homo sapiens	TXT	no	no	no
+GSE124728	Mus musculus	COV, TXT	no	no	no
+GSE139249	Homo sapiens	MTX, TSV	no	no	no
+GSE136611	Homo sapiens	TXT	no	no	no
+GSE126060	Mus musculus	MTX, TSV	no	no	no
+GSE139181	Homo sapiens	TXT	no	no	no
+GSE121602	Mus musculus	CSV, FASTA	no	no	no
+GSE117707	Mus musculus	TAR	no	no	no
+GSE117706	Mus musculus	TSV	no	no	no
+GSE139125	Mus musculus	TXT	no	no	no
+GSE132867	Mus musculus	TXT	no	no	no
+GSE130289	Homo sapiens	TXT	no	no	no
+GSE125970	Homo sapiens	TXT	no	no	no
+GSE121893	Homo sapiens	CSV, TXT	no	no	no
+GSE117708	Mus musculus	TAR, TSV	no	no	no
+GSE109816	Homo sapiens	CSV, TXT	yes	no	yes
+GSE139088	Mus musculus	CSV	no	no	no
+GSE139065	Mus musculus	BW, DATA, TXT, XLS, XLSX	no	no	no
+GSE138975	Mus musculus	CLOUPE	no	no	no
+GSE135701	Mus musculus	MTX, TSV	no	no	no
+GSE133486	Mus musculus	MTX, TSV	yes	no	yes
+GSE106218	Homo sapiens	TXT	no	no	no
+GSE138902	Mus musculus	MTX, TSV	no	no	no
+GSE138852	Homo sapiens	CSV	no	no	no
+GSE137391	Homo sapiens	TXT	no	no	no
+GSE137165	Mus musculus	CSV, MTX, TSV	yes	no	yes
+GSE130812	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE124880	Mus musculus	MATRIX, MTX, TSV	no	no	no
+GSE121940	Mus musculus	CSV	no	no	no
+GSE121939	Mus musculus	CSV	no	no	no
+GSE121937	Mus musculus	CSV	no	no	no
+GSE135929	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE135928	Homo sapiens	CSV	no	no	no
+GSE135927	Homo sapiens	MTX, TSV	no	no	no
+GSE112856	Mus musculus; Homo sapiens	NARROWPEAK	no	no	no
+GSE112855	Homo sapiens	TSV	no	no	no
+GSE112853	Mus musculus	TSV	no	no	no
+GSE138794	Homo sapiens	BED, MTX, TSV, TXT	yes	no	yes
+GSE122930	Mus musculus	MTX, TSV, XLSX	no	no	no
+GSE138629	Mus musculus	CSV	no	no	no
+GSE138628	Homo sapiens	CSV	no	no	no
+GSE138515	Mus musculus	TXT	yes	no	yes
+GSE138027	Mus musculus	CSV	yes	no	yes
+GSE134892	Trypanosoma brucei brucei	none	no	no	no
+GSE134889	Trypanosoma brucei brucei	FA, XLS	no	no	no
+GSE116390	Mus musculus	TAR	yes	no	yes
+GSE114986	Drosophila melanogaster	MTX, TSV	no	no	no
+GSE136900	Danio rerio	TXT	no	no	no
+GSE133341	Homo sapiens	TXT	no	no	no
+GSE131688	Gallus gallus	BED, MTX, TSV	no	no	no
+GSE130500	Gallus gallus	TXT	no	no	no
+GSE130037	Danio rerio	TXT	no	no	no
+GSE121527	Gallus gallus	BED, MTX, TSV, TXT	no	no	no
+GSE121526	Gallus gallus	TXT	no	no	no
+GSE121331	Gallus gallus	TXT	no	no	no
+GSE137554	Homo sapiens	H5, TSV	yes	no	yes
+GSE136154	Mus musculus	H5, TAB, TXT	no	no	no
+GSE135500	Homo sapiens	CSV, TXT	no	no	no
+GSE133856	Homo sapiens	TSV, TXT	no	no	no
+GSE133854	Homo sapiens	TSV	no	no	no
+GSE121080	Homo sapiens	TXT	no	no	no
+GSE118137	Arabidopsis thaliana	TXT	no	no	no
+GSE138504	Homo sapiens	RDS, TXT	no	yes	yes
+GSE131285	Mus musculus	XLSX	no	no	no
+GSE117620	Homo sapiens	CSV	no	no	no
+GSE112438	Danio rerio; Homo sapiens	COV, CSV, TXT	no	no	no
+GSE137275	Homo sapiens	CSV, DOCX, XLSX	no	no	no
+GSE125449	Homo sapiens	MTX, TSV, TXT	no	no	no
+GSE131272	Mus musculus	CSV	no	no	no
+GSE136580	Mus musculus	TXT	no	no	no
+GSE135801	Mus musculus	XLSX	no	no	no
+GSE114569	Homo sapiens	TSV	yes	no	yes
+GSE138270	Homo sapiens	MTX, TSV	no	no	no
+GSE138248	Homo sapiens	FPKM_TRACKING, XLSX	no	no	no
+GSE138246	Tetrahymena thermophila	TXT	no	no	no
+GSE134269	Homo sapiens	TXT	no	no	no
+GSE130117	Homo sapiens; synthetic construct	MTX, TSV, TXT	no	no	no
+GSE136874	Homo sapiens	H5, HTML	no	no	no
+GSE136805	Homo sapiens	H5, HTML, RDS, TXT	no	yes	yes
+GSE136109	Danio rerio	TAR, XLSX	no	no	no
+GSE135814	Mus musculus	MTX, TSV	no	no	no
+GSE135767	Danio rerio	TAR	no	no	no
+GSE135296	Mus musculus	BIGWIG, CSV, TXT	yes	no	yes
+GSE133707	Homo sapiens	TXT	no	no	no
+GSE133181	Homo sapiens	TAR	no	no	no
+GSE132901	Mus musculus	H5	no	no	no
+GSE119960	Mus musculus	TXT	no	no	no
+GSE133725	Mus musculus	TSV	no	no	no
+GSE133689	Mus musculus	TSV	no	no	no
+GSE121708	Mus musculus	TSV	no	no	no
+GSE121650	Mus musculus	TSV	no	no	no
+GSE120190	Homo sapiens	TXT	no	no	no
+GSE108359	Mus musculus	CSV	no	no	no
+GSE129628	Mus musculus	CLOUPE, MTX, TSV, TXT	no	no	no
+GSE129584	Mus musculus	CLOUPE, MTX, TSV	no	no	no
+GSE129583	Mus musculus	XLSX	no	no	no
+GSE137788	Danio rerio	MTX, TSV	no	no	no
+GSE137787	Danio rerio	TXT	no	no	no
+GSE137784	Danio rerio	MTX, TSV	no	no	no
+GSE136802	Mus musculus	BED, CSV, TSV	yes	no	yes
+GSE131391	Homo sapiens	TXT	no	no	no
+GSE137350	Mus musculus; Homo sapiens	none	no	no	no
+GSE137349	Homo sapiens; Mus musculus	CSV	no	no	no
+GSE127803	Mus musculus	H5, MTX, TSV	no	no	no
+GSE110571	Homo sapiens	TXT	no	no	no
+GSE137961	Homo sapiens	H5, TXT	no	no	no
+GSE137927	Mus musculus	TXT	no	no	no
+GSE120285	Mus musculus	TXT	no	no	no
+GSE110572	Homo sapiens	BED, BIGWIG, TXT	no	no	no
+GSE137811	Homo sapiens	MTX, TXT	no	no	no
+GSE137805	Homo sapiens	TSV	no	no	no
+GSE137799	Homo sapiens	MTX, TSV	no	no	no
+GSE134997	Mus musculus	CSV	no	no	no
+GSE132045	Mus musculus	TXT	no	no	no
+GSE120395	Mus musculus	TXT	yes	no	yes
+GSE109281	Homo sapiens; Mus musculus	CSV, TSV, TXT	no	no	no
+GSE137847	Homo sapiens	none	no	no	no
+GSE137846	Homo sapiens	MTX, TXT	yes	no	yes
+GSE130979	Mus musculus	TXT	no	no	no
+GSE127193	Mus musculus	CSV	no	no	no
+GSE115908	Mus musculus	TXT	no	no	no
+GSE137537	Homo sapiens	MTX, TSV, TXT	yes	no	yes
+GSE137786	Homo sapiens; Mus musculus	TSV	no	no	no
+GSE137749	Mus musculus	MTX, TSV	no	no	no
+GSE132133	Mus musculus	TXT	no	no	no
+GSE129987	Homo sapiens	CSV	no	no	no
+GSE121600	Homo sapiens; Mus musculus; Sus scrofa	H5	no	no	no
+GSE134049	Homo sapiens	MTX, TSV	no	no	no
+GSE125288	Homo sapiens	BW, TXT	no	no	no
+GSE137572	Mus musculus	TSV	no	no	no
+GSE137545	Homo sapiens	TXT	no	no	no
+GSE136636	Mus musculus	MTX, TSV	no	no	no
+GSE136723	Mus musculus	TSV	no	no	no
+GSE134791	Mus musculus	CLOUPE	no	no	no
+GSE129371	Mus musculus	MTX, TSV	no	no	no
+GSE135564	Homo sapiens	H5	no	no	no
+GSE130919	Mus musculus	MTX, TSV	no	no	no
+GSE113502	Mus musculus	H5, MTX, TSV	no	no	no
+GSE136103	Mus musculus; Homo sapiens	MTX, TSV	no	no	no
+GSE125595	Mus musculus	BW, CLOUPE, HIC, TXT	no	no	no
+GSE137007	Mus musculus	CSV, FA, TXT	no	no	no
+GSE137101	Homo sapiens	MTX, TSV, TXT	yes	no	yes
+GSE137076	Mus musculus	MTX, TSV	no	no	no
+GSE137073	Mus musculus	XLSX	no	no	no
+GSE136394	Homo sapiens	MTX, TSV	no	no	no
+GSE131882	Homo sapiens	RDS	no	yes	yes
+GSE131675	Mus musculus	BED, BW, CSV, MTX, TSV	no	no	no
+GSE123805	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE119718	Danio rerio	CSV	no	no	no
+GSE117154	Mus musculus	CSV	no	no	no
+GSE110283	synthetic construct; Mus musculus	TSV	no	no	no
+GSE135202	Homo sapiens	TXT	no	no	no
+GSE133948	Homo sapiens	CSV	yes	no	yes
+GSE133079	Mus musculus	CSV, TXT	no	no	no
+GSE130682	Mus musculus	TIFF, TSV	no	no	no
+GSE126030	Homo sapiens	TXT	no	no	no
+GSE109247	Mus musculus	TXT	no	no	no
+GSE118682	Homo sapiens	CSV	no	no	no
+GSE136979	Mus musculus	MTX, TSV	no	no	no
+GSE136973	Mus musculus	MTX, TSV	no	no	no
+GSE136970	Mus musculus	MTX, TSV	no	no	no
+GSE131508	Mus musculus	TXT	no	no	no
+GSE136871	Mus musculus; synthetic construct; Homo sapiens	CSV	no	no	no
+GSE136867	Homo sapiens	H5	no	no	no
+GSE135893	Homo sapiens	CSV, MTX, RDS, TSV, TXT	yes	yes	yes
+GSE134540	Mus musculus	CSV	no	no	no
+GSE136795	Homo sapiens	TXT	no	no	no
+GSE136720	Mus musculus	TAR	no	no	no
+GSE133699	Mus musculus	MTX, TSV	no	no	no
+GSE124258	Homo sapiens	CSV	no	no	no
+GSE136732	Homo sapiens	TXT	no	no	no
+GSE136088	Mus musculus	TXT	no	no	no
+GSE131204	Mus musculus	HDF5, MTX, TSV, TXT	no	no	no
+GSE130298	Mus musculus	TXT	no	no	no
+GSE129726	Mus musculus	TXT	no	no	no
+GSE128934	Mus musculus	TXT	no	no	no
+GSE92622	Mus musculus	TXT	no	no	no
+GSE132184	Mus musculus	TAR	no	no	no
+GSE130001	Homo sapiens	MTX, TSV	no	no	no
+GSE128963	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE120145	Homo sapiens	CSV	no	no	no
+GSE133204	Drosophila melanogaster	CSV	no	no	no
+GSE126804	Homo sapiens; Mus musculus	TAB, TXT	no	no	no
+GSE119313	Mus musculus	TXT	no	no	no
+GSE79374	Mus musculus	TXT	no	no	no
+GSE136641	Mus musculus	H5	no	no	no
+GSE136628	Mus musculus	CSV	no	no	no
+GSE136148	Homo sapiens; Mus musculus	MTX, TSV, XLSX	no	no	no
+GSE134483	Homo sapiens	TXT	no	no	no
+GSE130151	Homo sapiens	MTX, TSV	no	no	no
+GSE120974	Mus musculus	FPKM_TRACKING, MTX, TSV, TXT, WIG	no	no	no
+GSE120973	Mus musculus	FPKM_TRACKING	no	no	no
+GSE120972	Mus musculus	TXT	no	no	no
+GSE120966	Mus musculus	MTX, TSV	no	no	no
+GSE134809	Homo sapiens	MTX, TSV	no	no	no
+GSE124952	Mus musculus	CSV, MTX, TSV	yes	no	yes
+GSE86192	Acrobeloides nanus	CSV, FASTA, GFF	no	no	no
+GSE86175	Panagrellus redivivus	CSV, GFF	no	no	no
+GSE129845	Mus musculus; Homo sapiens	MTX, TSV	no	no	no
+GSE136353	Homo sapiens	TXT	no	no	no
+GSE136341	Mus musculus	CSV	no	no	no
+GSE130566	Drosophila melanogaster	CSV	no	no	no
+GSE121107	Homo sapiens	TXT	no	no	no
+GSE134557	Mus musculus	CSV	no	no	no
+GSE134555	Homo sapiens	BIGWIG	no	no	no
+GSE128691	Mus musculus	TXT	no	no	no
+GSE135595	Homo sapiens	TXT	yes	no	yes
+GSE133512	Mus musculus	MTX, TSV	no	no	no
+GSE136225	Mus musculus	CSV	yes	no	yes
+GSE132224	Rattus norvegicus	MTX, TSV	no	no	no
+GSE126820	Mus musculus	none	no	no	no
+GSE126819	Mus musculus	CSV	no	no	no
+GSE122466	Mus musculus	CSV	no	no	no
+GSE119045	Mus musculus	CSV	no	no	no
+GSE136160	Mus musculus	MTX, TSV	no	no	no
+GSE136156	Mus musculus	TXT	no	no	no
+GSE132960	Mus musculus	none	no	no	no
+GSE132959	Mus musculus	TXT	no	no	no
+GSE122783	Homo sapiens	TXT	no	no	no
+GSE121437	Mus musculus	COV	no	no	no
+GSE136126	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE136125	Mus musculus	MTX, TSV	no	no	no
+GSE136121	Mus musculus	TXT	no	no	no
+GSE136049	Caenorhabditis elegans	CSV, TXT	yes	no	yes
+GSE134881	Homo sapiens	CSV	no	no	no
+GSE134127	Homo sapiens	TXT	no	no	no
+GSE133912	Mus musculus	CSV	yes	no	yes
+GSE131800	Mus musculus	H5	no	no	no
+GSE123838	Mus musculus	CSV	no	no	no
+GSE121705	Mus musculus	XLSX	no	no	no
+GSE121292	Mus musculus	XLSX	no	no	no
+GSE118947	Homo sapiens	TXT	no	no	no
+GSE135507	Homo sapiens	CSV	no	no	no
+GSE134902	Mus musculus	CSV	no	no	no
+GSE134570	Homo sapiens	TXT	no	no	no
+GSE134523	Mus musculus	TXT	no	no	no
+GSE120107	Homo sapiens	BW, TXT	no	no	no
+GSE132999	Mus musculus	TXT	no	no	no
+GSE135781	Danio rerio	TXT	no	no	no
+GSE135780	Danio rerio	TXT	no	no	no
+GSE128169	Homo sapiens	H5, MTX, TSV	no	no	no
+GSE121364	Mus musculus	TXT	no	no	no
+GSE135761	Mus musculus	TXT	no	no	no
+GSE135719	Homo sapiens	BED	no	no	no
+GSE135716	Homo sapiens	TXT	no	no	no
+GSE131927	Mus musculus	H5, MTX, TSV	no	no	no
+GSE124847	Mus musculus	TSV	no	no	no
+GSE135634	Homo sapiens	BEDGRAPH	no	no	no
+GSE135633	Homo sapiens	BEDGRAPH	no	no	no
+GSE112541	Mus musculus	CSV, H5	no	no	no
+GSE135618	Mus musculus; Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE118418	Euplotes vannus	FA	no	no	no
+GSE118415	Euplotes vannus	TXT	no	no	no
+GSE134482	Sus scrofa	TXT	no	no	no
+GSE134098	Mus musculus	CSV, TSV	yes	no	yes
+GSE133344	Homo sapiens	CSV, H5, MTX, TSV	no	no	no
+GSE129516	Mus musculus	CSV	no	no	no
+GSE124494	Homo sapiens	MTX, TSV	no	no	no
+GSE122467	Mus musculus	CSV, TSV, TXT	no	no	no
+GSE122465	Mus musculus	CSV	no	no	no
+GSE120963	Mus musculus	TXT	no	no	no
+GSE135461	Homo sapiens	CEL, CSV, TXT	no	no	no
+GSE134420	Mus musculus	TXT	no	no	no
+GSE134286	Mus musculus	TXT	no	no	no
+GSE121671	Mus musculus; Homo sapiens	BW, HIC, TXT	no	no	no
+GSE120948	Mus musculus	none	no	no	no
+GSE120946	Mus musculus	TXT	no	no	no
+GSE115251	Homo sapiens	MTX, TSV	no	no	no
+GSE134163	Mus musculus	TSV, XLS	no	no	no
+GSE132798	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE131909	Mus musculus	MTX, TSV	no	no	no
+GSE122982	Homo sapiens	CSV	no	no	no
+GSE135326	Mus musculus	H5	no	no	no
+GSE133329	Homo sapiens	TXT	no	no	no
+GSE132950	Homo sapiens	MTX, TSV	no	no	no
+GSE135289	Mus musculus	TXT	no	no	no
+GSE135240	Mus musculus	MTX, TSV, TXT, XLSX	no	no	no
+GSE127969	Homo sapiens	CSV, TXT	no	no	no
+GSE106871	Homo sapiens	BEDGRAPH	no	no	no
+GSE135132	Mus musculus	TXT	no	no	no
+GSE132658	Mus musculus	MTX, TSV	no	no	no
+GSE132067	Mus musculus	TXT	no	no	no
+GSE131569	Mus musculus	MTX, TSV	no	no	no
+GSE121050	Homo sapiens	TXT	no	no	no
+GSE119906	Mus musculus	BEDGRAPH, TXT	no	no	no
+GSE99156	Mus musculus	TXT	no	no	no
+GSE99155	Mus musculus	TXT	no	no	no
+GSE130075	Homo sapiens	CLOUPE, MTX, TSV, TXT	no	no	no
+GSE130073	Homo sapiens	CLOUPE, MTX, TSV	no	no	no
+GSE117803	Homo sapiens	TSV	no	no	no
+GSE133706	Homo sapiens	BW, H5, NARROWPEAK	no	no	no
+GSE133704	Homo sapiens	H5	no	no	no
+GSE133433	Homo sapiens	MTX, TSV	no	no	no
+GSE119926	Homo sapiens	TXT	no	no	no
+GSE131780	Homo sapiens; Mus musculus	BED	no	no	no
+GSE131778	Homo sapiens	TXT	no	no	no
+GSE131777	Mus musculus	TXT	no	no	no
+GSE131776	Mus musculus	TXT	no	no	no
+GSE125671	Mus musculus	BIGWIG, CLOUPE	no	no	no
+GSE125670	Mus musculus	CLOUPE	no	no	no
+GSE106872	Mus musculus; Homo sapiens	BEDGRAPH	no	no	no
+GSE134904	Mus musculus	MTX, TSV	no	no	no
+GSE134571	Homo sapiens	MTX, RDS, TSV, TXT	no	yes	yes
+GSE134885	Mus musculus	XLS, XLSX	no	no	no
+GSE134883	Mus musculus	XLS, XLSX	yes	no	yes
+GSE132649	Homo sapiens	BW, TXT	no	no	no
+GSE132357	Mus musculus	CSV, TSV	no	no	no
+GSE127249	Homo sapiens; Rattus norvegicus; Mus musculus	MTX, TSV, TXT	no	no	no
+GSE127248	Rattus norvegicus	MTX, TSV	no	no	no
+GSE127246	Mus musculus; Homo sapiens	TXT	no	no	no
+GSE118980	Homo sapiens	TXT	no	no	no
+GSE134732	Mus musculus	BW, MTX, TSV	no	no	no
+GSE134731	Mus musculus	MTX, TSV	no	no	no
+GSE134726	Mus musculus	TSV	no	no	no
+GSE126480	Mus musculus	TXT	no	no	no
+GSE134520	Homo sapiens	TXT	no	no	no
+GSE112205	Mus musculus	TXT	no	no	no
+GSE134419	Homo sapiens	TXT	no	no	no
+GSE134331	Canis lupus familiaris	FPKM_TRACKING	no	no	no
+GSE128273	Homo sapiens	CSV	no	no	no
+GSE134350	Strongylocentrotus purpuratus	TXT	no	no	no
+GSE134327	Mus musculus	TXT	no	no	no
+GSE122743	Homo sapiens	TXT	no	no	no
+GSE134260	Mus musculus	CSV	no	no	no
+GSE133413	Mus musculus	TXT	no	no	no
+GSE120988	Mus musculus	BW	no	no	no
+GSE89322	Homo sapiens	TXT	no	no	no
+GSE132402	Mus musculus	RTF, TSV	no	no	no
+GSE130430	Homo sapiens	MTX, TSV	no	no	no
+GSE110869	Mus musculus	none	no	no	no
+GSE110868	Mus musculus	TXT	no	no	no
+GSE110154	Homo sapiens	CSV	no	no	no
+GSE134181	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE134180	Mus musculus	TXT	no	no	no
+GSE134179	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE134139	Mus musculus	MTX, TSV	no	no	no
+GSE114687	Homo sapiens	MTX, RDS, TSV	yes	yes	yes
+GSE130318	Homo sapiens	MTX, TSV	no	no	no
+GSE129515	Mus musculus	TSV	no	no	no
+GSE109555	Homo sapiens	TXT	no	no	no
+GSE134048	Homo sapiens	CSV	no	no	no
+GSE115612	Mus musculus; Murid betaherpesvirus 1; Homo sapiens	H5, TSV, TXT	no	no	no
+GSE133996	Homo sapiens	TSV	no	no	no
+GSE130938	Mus musculus	CSV	no	no	no
+GSE133015	Mus musculus	TXT	no	no	no
+GSE131155	Ciona intestinalis	H5	no	no	no
+GSE122031	Homo sapiens	CSV	no	no	no
+GSE131928	Homo sapiens	TSV, XLSX	no	no	no
+GSE130422	Homo sapiens	CSV, FA	no	no	no
+GSE130420	Homo sapiens	CSV, FA	no	no	no
+GSE133832	Homo sapiens	TXT	no	no	no
+GSE107723	Homo sapiens	CSV, FA	no	no	no
+GSE102683	Homo sapiens	CSV	no	no	no
+GSE107618	Homo sapiens	CSV	no	no	no
+GSE133452	Mus musculus	CSV	no	no	no
+GSE131328	Mus musculus	none	no	no	no
+GSE131305	Mus musculus	TXT	no	no	no
+GSE130515	Mus musculus	CSV	no	no	no
+GSE133640	Mus musculus	CSV, RDATA	no	yes	yes
+GSE129175	Mus musculus	CEL, H5, IDAT	no	no	no
+GSE128628	Mus musculus	H5	no	no	no
+GSE131535	Mus musculus	MTX, TSV	no	no	no
+GSE129788	Mus musculus	TXT	yes	no	yes
+GSE114396	Homo sapiens	CSV	no	no	no
+GSE130461	Mus musculus	H5	no	no	no
+GSE116397	Rattus norvegicus	BW, TXT	no	no	no
+GSE113293	Mus musculus	TXT	no	no	no
+GSE133161	Homo sapiens	TXT	no	no	no
+GSE132364	Mus musculus	PDF, R, RDATA, TXT	no	yes	yes
+GSE133371	Mus musculus	TXT	no	no	no
+GSE130453	Mus musculus	MTX, TSV	no	no	no
+GSE128518	Homo sapiens; Mus musculus	MTX, TSV, TXT	yes	no	yes
+GSE108129	Mus musculus	MTX, TSV	no	no	no
+GSE114615	Arabidopsis thaliana	CSV, TXT	no	no	no
+GSE113985	Mus musculus	BEDGRAPH, BIGWIG, TXT	no	no	no
+GSE113983	Mus musculus	XLSX	no	no	no
+GSE131996	Mus musculus	BW, MTX, TSV	no	no	no
+GSE124898	Homo sapiens	MTX, TSV	no	no	no
+GSE78924	Mus musculus	TXT	no	no	no
+GSE123508	Mus musculus	MTX, TSV	no	no	no
+GSE132770	Mus musculus	MTX, TSV	no	no	no
+GSE121653	Mus musculus	TSV	no	no	no
+GSE108963	Mus musculus	BW, TXT	no	no	no
+GSE108879	Mus musculus	TXT	no	no	no
+GSE133094	Homo sapiens	TSV	no	no	no
+GSE133083	Mus musculus	CXB, TXT	no	no	no
+GSE128033	Homo sapiens	MTX, TSV	no	no	no
+GSE115631	Mus musculus	TXT	no	no	no
+GSE115467	Mus musculus	TAB	no	no	no
+GSE131935	Mus musculus	TAB	no	no	no
+GSE106888	Homo sapiens	XLSX	no	no	no
+GSE132912	Mus musculus	none	no	no	no
+GSE132608	Mus musculus	MTX, TSV	no	no	no
+GSE129455	Mus musculus	CSV	no	no	no
+GSE125770	Homo sapiens	CEL	no	no	no
+GSE125769	Homo sapiens	TXT	no	no	no
+GSE124472	Homo sapiens	TAR	no	no	no
+GSE122336	Mus musculus	TXT	no	no	no
+GSE118404	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE118403	Mus musculus	TXT	no	no	no
+GSE117295	Mus musculus	CSV	no	no	no
+GSE132880	Mus musculus	TXT	no	no	no
+GSE130609	Mus musculus	TXT	no	no	no
+GSE130287	Mus musculus	MTX, TSV	no	no	no
+GSE127800	Rattus norvegicus	none	no	no	no
+GSE127794	Rattus norvegicus	TXT	no	no	no
+GSE124395	Homo sapiens	CSV, RDATA, TXT	no	yes	yes
+GSE132802	Homo sapiens	H5	no	no	no
+GSE118000	Danio rerio	TXT	no	no	no
+GSE117410	Homo sapiens	CSV	yes	no	yes
+GSE132672	Homo sapiens	TXT	no	no	no
+GSE132662	Mus musculus	CSV	no	no	no
+GSE131668	Homo sapiens	TXT	no	no	no
+GSE102935	Mus musculus	TXT	no	no	no
+GSE118127	Homo sapiens	H5	no	no	no
+GSE111898	Homo sapiens	none	no	no	no
+GSE111896	Homo sapiens	TXT	yes	no	yes
+GSE111894	Homo sapiens	TXT	no	no	no
+GSE111892	Homo sapiens	BW, TXT	no	no	no
+GSE132581	Mus musculus	TXT	no	no	no
+GSE132566	Homo sapiens	TXT	no	no	no
+GSE132504	Mus musculus	TXT	no	no	no
+GSE132462	Mus musculus	MTX, TSV	no	no	no
+GSE132188	Mus musculus	H5, TAR	no	no	no
+GSE130950	Mus musculus	TXT	no	no	no
+GSE115030	Mus musculus	RDATA, TSV	no	yes	yes
+GSE132151	Mus musculus	TSV, TXT	no	no	no
+GSE131736	Homo sapiens	H5	no	no	no
+GSE130888	Homo sapiens	MTX, TSV	no	no	no
+GSE126321	Homo sapiens	MTX, TSV	no	no	no
+GSE132300	Homo sapiens	TXT	no	no	no
+GSE128627	Homo sapiens	TXT	no	no	no
+GSE128626	Homo sapiens	TXT	no	no	no
+GSE122084	Homo sapiens	TXT	no	no	no
+GSE122083	Homo sapiens	TXT	no	no	no
+GSE122058	Homo sapiens	TXT	no	no	no
+GSE115730	Mus musculus	TXT	no	no	no
+GSE114551	Mus musculus	BW	no	no	no
+GSE114549	Mus musculus	BW	no	no	no
+GSE132272	Mus musculus	MTX, TSV	no	no	no
+GSE132199	Mus musculus	CSV, MTX, TAB, TSV	no	no	no
+GSE128639	Homo sapiens	CSV, TSV	no	no	no
+GSE126500	Mus musculus	BEDGRAPH, TXT	no	no	no
+GSE132172	Homo sapiens	TSV	no	no	no
+GSE129519	Homo sapiens	TXT	no	no	no
+GSE132042	Mus musculus	CSV, H5AD, LOOM, TAR	no	no	no
+GSE126497	Mus musculus	H5	no	no	no
+GSE123778	Danio rerio	MTX, TSV	no	no	no
+GSE131181	Mus musculus	CSV	yes	no	yes
+GSE129087	Mus musculus	MTX, TSV	no	no	no
+GSE131834	Mus musculus	CSV, TXT	yes	no	yes
+GSE129112	Homo sapiens	TXT	no	no	no
+GSE132044	Homo sapiens; Mus musculus	MTX, TSV	no	no	no
+GSE132026	Homo sapiens	none	no	no	no
+GSE132023	Homo sapiens	TXT	no	no	no
+GSE130271	Homo sapiens	XLSX	no	no	no
+GSE128945	Mus musculus	XLSX	no	no	no
+GSE127832	Drosophila melanogaster	CSV, TSV, TXT	no	no	no
+GSE117826	Mus musculus; Homo sapiens	MTX, TSV, TXT	no	no	no
+GSE117824	Homo sapiens; Mus musculus	MTX, TSV	no	no	no
+GSE130649	Mus musculus	MTX, TSV	no	no	no
+GSE130578	Homo sapiens	TSV	no	no	no
+GSE128241	Mus musculus	CSV, TXT	yes	no	yes
+GSE124333	Mus musculus	BW, TAB	no	no	no
+GSE124322	Mus musculus	TAB	no	no	no
+GSE122900	Mus musculus	CSV	no	no	no
+GSE120771	Mus musculus; Homo sapiens	BED, HIC, TXT	no	no	no
+GSE115149	Homo sapiens	H5	no	no	no
+GSE99537	Mus musculus	TXT	no	no	no
+GSE131685	Homo sapiens	MTX, TSV	no	no	no
+GSE130606	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE122403	Mus musculus	MTX, TSV	no	no	no
+GSE116001	Mus musculus	CSV	no	no	no
+GSE131841	Homo sapiens	TXT	no	no	no
+GSE126128	Mus musculus	CSV	no	no	no
+GSE123103	Mus musculus	CSV	no	no	no
+GSE121048	Schmidtea mediterranea	none	no	no	no
+GSE121047	Schmidtea mediterranea	TXT	no	no	no
+GSE131702	Saccharomyces cerevisiae	CSV, TXT	no	no	no
+GSE123813	Homo sapiens	TXT	yes	no	yes
+GSE123812	Homo sapiens	TXT	no	no	no
+GSE131662	Homo sapiens	XLSX	no	no	no
+GSE131271	Mus musculus	XLSX	no	no	no
+GSE128423	Mus musculus	MTX, TSV	no	no	no
+GSE100412	Mus musculus	TXT	no	no	no
+GSE118614	Mus musculus	MTX, TSV	no	no	no
+GSE113336	Homo sapiens	BIGBED, BW	no	no	no
+GSE131450	Mus musculus	TXT	no	no	no
+GSE130473	Homo sapiens	CSV	no	no	no
+GSE127914	Mus musculus	none	no	no	no
+GSE126770	Mus musculus	CNT, CSV, TXT	no	no	no
+GSE122843	Mus musculus	TXT, XLSX	no	no	no
+GSE110901	Mus musculus	HIC, NARROWPEAK	no	no	no
+GSE110899	Mus musculus	TXT	no	no	no
+GSE110894	Mus musculus	CSV, XLSX	no	no	no
+GSE127683	Mus musculus	TXT	no	no	no
+GSE124312	Mus musculus	TXT	yes	no	yes
+GSE131365	Mus musculus	H5	no	no	no
+GSE130636	Homo sapiens	TSV	no	no	no
+GSE124904	Mus musculus	TXT	no	no	no
+GSE119127	Mus musculus	XLSX	no	no	no
+GSE117837	Homo sapiens	CSV	no	no	no
+GSE131136	Danio rerio	MTX, TSV	yes	no	yes
+GSE118904	Mus musculus	CSV	no	no	no
+GSE117542	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE130526	Danio rerio	MTX, RDS, TSV	no	yes	yes
+GSE122687	Arabidopsis thaliana	CSV, TXT	no	no	no
+GSE122187	Mus musculus	PDF, XLS	no	no	no
+GSE121560	Homo sapiens	TXT	no	no	no
+GSE116254	Homo sapiens	TXT	no	no	no
+GSE109100	Mus musculus	CSV, TXT	no	no	no
+GSE104406	Homo sapiens	TXT	no	no	no
+GSE76879	Mus musculus	TXT	no	no	no
+GSE131038	Mus musculus	RDS, TSV	no	yes	yes
+GSE104379	Homo sapiens	TXT	no	no	no
+GSE130966	Mus musculus	TXT	no	no	no
+GSE128531	Homo sapiens	CSV	no	no	no
+GSE118953	Mus musculus	TSV	no	no	no
+GSE114412	Homo sapiens	TSV	yes	no	yes
+GSE130881	Homo sapiens	TXT	no	no	no
+GSE130439	Gallus gallus	TXT	no	no	no
+GSE122795	Mus musculus	TXT	no	no	no
+GSE126631	Drosophila melanogaster; Mus musculus	TXT	no	no	no
+GSE126629	Mus musculus	TXT	no	no	no
+GSE125688	Mus musculus	CSV, TXT	no	no	no
+GSE130784	Homo sapiens; Mus musculus	TAR, TXT	no	no	no
+GSE130772	Homo sapiens	TXT	no	no	no
+GSE121707	Mus musculus	CSV	no	no	no
+GSE108679	Mus musculus	TXT	no	no	no
+GSE127813	Homo sapiens	TXT	no	no	no
+GSE127472	Homo sapiens	CEL, MTX, TSV	no	no	no
+GSE127471	Homo sapiens	MTX, TSV	no	no	no
+GSE114164	Mus musculus	TXT	no	no	no
+GSE130597	Mus musculus	TXT	no	no	no
+GSE123392	Mus musculus; Homo sapiens	TXT	yes	no	yes
+GSE109085	Homo sapiens	CSV, TXT, XLSX	no	no	no
+GSE128933	Homo sapiens	CSV	no	no	no
+GSE128890	Mus musculus; Homo sapiens	MTX, TSV	no	no	no
+GSE128889	Homo sapiens; Mus musculus	MTX, TSV	no	no	no
+GSE128223	Homo sapiens	TSV	no	no	no
+GSE126387	Mus musculus	CSV	no	no	no
+GSE126068	Homo sapiens	CSV	no	no	no
+GSE118068	Mus musculus	MTX, TSV	no	no	no
+GSE117498	Homo sapiens	TSV	no	no	no
+GSE117437	Mus musculus	MTX, TSV	no	no	no
+GSE117570	Homo sapiens	TXT	no	no	no
+GSE113837	Mus musculus	TXT	no	no	no
+GSE113692	Mus musculus	TXT	no	no	no
+GSE130346	Homo sapiens	CSV	no	no	no
+GSE130312	Mus musculus	CSV, TXT	yes	no	yes
+GSE126042	Homo sapiens	CSV, TXT	no	no	no
+GSE101132	Homo sapiens	TXT	no	no	no
+GSE101076	Homo sapiens	TXT	no	no	no
+GSE100722	Homo sapiens	TXT	no	no	no
+GSE130238	Homo sapiens	MTX, TSV	no	no	no
+GSE119507	Homo sapiens	MTX, TSV	no	no	no
+GSE119506	Homo sapiens	MTX, TSV	no	no	no
+GSE119343	Homo sapiens	TXT	no	no	no
+GSE119274	Homo sapiens	TXT	no	no	no
+GSE115956	Mus musculus	CSV	no	no	no
+GSE115955	Mus musculus	CSV	no	no	no
+GSE109684	Mus musculus	XLSX	no	no	no
+GSE130180	Mus musculus	TXT	no	no	no
+GSE117176	Mus musculus	MTX, TSV	no	no	no
+GSE113616	Homo sapiens	CSV	no	no	no
+GSE130148	Homo sapiens	CSV, RDATA, TXT	yes	yes	yes
+GSE124989	Homo sapiens	XLSX	no	no	no
+GSE120503	Danio rerio	TXT	no	no	no
+GSE115301	Homo sapiens; Mus musculus	CSV, TXT	yes	no	yes
+GSE130113	Mus musculus	MTX, TSV	no	no	no
+GSE113767	Mus musculus	BW, MTX, TSV	no	no	no
+GSE113766	Mus musculus	MTX, TSV	no	no	no
+GSE113765	Mus musculus	BW, TXT	no	no	no
+GSE123586	Mus musculus	TSV, WIG	no	no	no
+GSE123585	Homo sapiens	TSV, WIG	no	no	no
+GSE130065	Homo sapiens; Mus musculus	CSV, MTX, TSV, TXT	no	no	no
+GSE113403	Mus musculus	TXT	no	no	no
+GSE108222	Mus musculus	CSV	no	no	no
+GSE125708	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE130008	Mus musculus	TXT	yes	no	yes
+GSE129933	Homo sapiens	TSV	yes	no	yes
+GSE129927	Mus musculus	XLSX	no	no	no
+GSE121271	Saccharomyces cerevisiae; Candida albicans	TXT	no	no	no
+GSE127202	Homo sapiens	TAR, TXT	no	no	no
+GSE127201	Homo sapiens	BED, XLSX	no	no	no
+GSE127199	Homo sapiens	TAR, TXT	no	no	no
+GSE119943	Mus musculus	BW, MTX, TSV	no	no	no
+GSE119942	Mus musculus	TXT, XLSX	no	no	no
+GSE119940	Mus musculus	MTX, TSV	no	no	no
+GSE126924	Mus musculus	MTX, TSV	no	no	no
+GSE129741	Mus musculus	TXT	no	no	no
+GSE129740	Mus musculus	TXT	no	no	no
+GSE129738	Mus musculus	TXT	no	no	no
+GSE129730	Mus musculus	TXT	no	no	no
+GSE129675	Mus musculus	BIGWIG, MTX, TSV, TXT	no	no	no
+GSE129662	Mus musculus	MTX, TSV	no	no	no
+GSE129653	Homo sapiens	TXT	no	no	no
+GSE121457	Mus musculus	CSV	yes	no	yes
+GSE121451	Mus musculus	TAB	no	no	no
+GSE117309	Mus musculus; Homo sapiens	FASTA, TAR, TXT	no	no	no
+GSE129605	Mus musculus	MTX, TSV	no	no	no
+GSE129578	Homo sapiens; Mus musculus	MTX	no	no	no
+GSE129570	Homo sapiens	CSV	no	no	no
+GSE126022	Homo sapiens	TXT	no	no	no
+GSE123078	Mus musculus	TSV, TXT	no	no	no
+GSE122871	Mus musculus	BEDGRAPH, MTX, NARROWPEAK, TSV, TXT	no	no	no
+GSE118436	Mus musculus	TSV, TXT	no	no	no
+GSE108891	Mus musculus	TSV, TXT	no	no	no
+GSE123135	Mus musculus	CSV	no	no	no
+GSE123124	Mus musculus	CSV	no	no	no
+GSE123046	Mus musculus	CSV	no	no	no
+GSE113014	Mus musculus	BED, BEDGRAPH, TDF, TSV, TXT	no	no	no
+GSE129451	Mus musculus	TXT	no	no	no
+GSE127465	Homo sapiens; Mus musculus	MTX, TSV	yes	no	yes
+GSE121478	Mus musculus	MTX, TSV	no	no	no
+GSE108709	Mus musculus	MTX, TSV	no	no	no
+GSE112946	Mus musculus; Homo sapiens	BED, BW, DIFF, H5	no	no	no
+GSE120000	Mus musculus	TXT	no	no	no
+GSE128993	Mus musculus; Rattus norvegicus; Homo sapiens; Sus scrofa	TXT	no	no	no
+GSE128992	Sus scrofa; Homo sapiens; Mus musculus; Rattus norvegicus	TXT	no	no	no
+GSE128991	Mus musculus; Homo sapiens	XLSX	yes	no	yes
+GSE123662	Danio rerio	CSV	no	no	no
+GSE125680	Homo sapiens; Mus musculus	MTX, TSV, TXT	no	no	no
+GSE129225	Mus musculus	CSV	no	no	no
+GSE129214	Mus musculus	TXT	yes	no	yes
+GSE129213	Mus musculus	TXT	no	no	no
+GSE125586	Mus musculus	TXT	yes	no	yes
+GSE124675	Homo sapiens	CSV	no	no	no
+GSE104899	Mus musculus	TXT	no	no	no
+GSE104898	Mus musculus	TXT	no	no	no
+GSE81730	Homo sapiens	TXT	no	no	no
+GSE129178	Mus musculus	TXT	no	no	no
+GSE129150	Mus musculus	CSV, TSV, TXT, XLS	no	no	no
+GSE129114	Mus musculus	TXT	no	no	no
+GSE129106	Mus musculus	CSV	no	no	no
+GSE129096	Homo sapiens	TSV	no	no	no
+GSE126184	Mus musculus	MTX, TSV	no	no	no
+GSE129122	Mus musculus	TXT	no	no	no
+GSE112507	Homo sapiens	TXT	no	no	no
+GSE129007	Homo sapiens	TXT	no	no	no
+GSE125492	Mus musculus	MTX, TSV	no	no	no
+GSE115242	Mus musculus	TSV	no	no	no
+GSE129074	Ciona robusta	TXT	no	no	no
+GSE129057	Mus musculus	CLOUPE, TAR	no	no	no
+GSE110878	Mus musculus	CSV, TSV	no	no	no
+GSE129064	Mus musculus	TXT	no	no	no
+GSE128985	Mus musculus	TXT	no	no	no
+GSE128971	Mus musculus	TXT	no	no	no
+GSE121619	Arabidopsis thaliana	RDS, TSV	no	yes	yes
+GSE128974	Dictyostelium discoideum	CSV, TXT	no	no	no
+GSE119149	Homo sapiens	TXT	no	no	no
+GSE128855	Mus musculus	TXT	no	no	no
+GSE128854	Mus musculus	TXT	no	no	no
+GSE128781	Mus musculus	TXT	no	no	no
+GSE113049	Mus musculus	TSV	yes	no	yes
+GSE113046	Homo sapiens	TXT	no	no	no
+GSE128197	Mus musculus	TXT	no	no	no
+GSE120421	Mus musculus	TXT	no	no	no
+GSE124930	Mus musculus	CSV, H5, TAR	no	no	no
+GSE124899	Homo sapiens	MTX, TSV	no	no	no
+GSE123818	Arabidopsis thaliana	CSV, TXT	no	no	no
+GSE121320	Mus musculus	XLSX	no	no	no
+GSE118937	Homo sapiens; Mus musculus	CSV	no	no	no
+GSE120261	Homo sapiens; Mus musculus	CSV	no	no	no
+GSE128707	Mus musculus	TXT	no	no	no
+GSE126657	Mus musculus	TXT	no	no	no
+GSE112274	Homo sapiens	CSV	no	no	no
+GSE107646	Homo sapiens	TXT	no	no	no
+GSE122703	Homo sapiens	MTX, TSV	no	no	no
+GSE115427	Danio rerio	CSV	no	no	no
+GSE100725	Homo sapiens	none	no	no	no
+GSE79499	Mus musculus	TXT	no	no	no
+GSE127955	Homo sapiens	TXT	no	no	no
+GSE123070	Homo sapiens	TXT	no	no	no
+GSE111404	Homo sapiens	TXT	no	no	no
+GSE121081	Mus musculus	MTX, TSV	no	no	no
+GSE110865	Mus musculus	CEL, TXT	no	no	no
+GSE110864	Mus musculus	TXT	no	no	no
+GSE125162	Saccharomyces cerevisiae	MTX, TSV	no	no	no
+GSE123488	Mus musculus	BW, TXT	no	no	no
+GSE123484	Mus musculus	TSV	no	no	no
+GSE120467	Danio rerio	TXT	no	no	no
+GSE109524	Homo sapiens	BW, TXT, XLSX	no	no	no
+GSE128393	Mus musculus	CSV, TSV, TXT	no	no	no
+GSE128331	Homo sapiens	CSV	no	no	no
+GSE117599	Homo sapiens	H5	no	no	no
+GSE113530	Mus musculus	TXT	no	no	no
+GSE107711	Mus musculus	TXT, XLSX	no	no	no
+GSE119988	Mus musculus	TXT	no	no	no
+GSE128147	Mus musculus; other sequences; Homo sapiens	TXT	no	no	no
+GSE126783	Mus musculus	MTX, TSV	no	no	no
+GSE124334	Homo sapiens	MTX, TSV	no	no	no
+GSE122357	Mus musculus	CSV, XLSX	no	no	no
+GSE119561	Homo sapiens	MTX, TSV	no	no	no
+GSE114157	Mus musculus	BED, CSV, FASTA, PSL, TSV, TXT	no	no	no
+GSE112004	Mus musculus	TSV	no	no	no
+GSE106514	Mus musculus	TXT	no	no	no
+GSE128066	Mus musculus; Homo sapiens	MTX, TSV	no	no	no
+GSE128040	Homo sapiens	TXT	no	no	no
+GSE127752	Mus musculus	TXT, XLS	yes	no	yes
+GSE127235	Mus musculus	TXT	no	no	no
+GSE126834	Mus musculus	MTX, TSV	no	no	no
+GSE126714	Mus musculus	TXT	no	no	no
+GSE127963	Mus musculus	CSV	no	no	no
+GSE127888	Homo sapiens	TXT	no	no	no
+GSE127754	Mus musculus	CSV, RTF, TSV	no	no	no
+GSE127724	Mus musculus	CSV	no	no	no
+GSE124031	Homo sapiens	CSV, MTX, TSV, TXT	no	no	no
+GSE127221	Homo sapiens	RDS, TXT	yes	yes	yes
+GSE123782	Homo sapiens	TXT	no	no	no
+GSE115389	Homo sapiens	TXT	no	no	no
+GSE127454	Mus musculus	TXT	no	no	no
+GSE126954	Caenorhabditis elegans	CSV, TSV, TXT	yes	no	yes
+GSE126310	Mus musculus; Homo sapiens	CSV, TXT	no	no	no
+GSE121568	Mus musculus	CSV	no	no	no
+GSE119594	Homo sapiens	MTX, TSV	no	no	no
+GSE117233	Mus musculus	none	no	no	no
+GSE117232	Mus musculus	TXT	no	no	no
+GSE117231	Mus musculus	TXT	no	no	no
+GSE117228	Mus musculus	TXT	no	no	no
+GSE117225	Mus musculus	TXT	no	no	no
+GSE117211	Homo sapiens	MTX, TSV	no	no	no
+GSE111429	Mus musculus	MTX, TSV, XLSX	no	no	no
+GSE127298	Homo sapiens	TXT	no	no	no
+GSE124577	Mus musculus	MTX, TSV	no	no	no
+GSE124562	Mus musculus	MTX, TSV	no	no	no
+GSE124174	Homo sapiens	TXT	no	no	no
+GSE123516	Mus musculus	MTX, TSV	no	no	no
+GSE123515	Mus musculus	CSV	no	no	no
+GSE122583	Homo sapiens	TSV	no	no	no
+GSE122582	Homo sapiens	TXT	no	no	no
+GSE118203	Homo sapiens	TSV	no	no	no
+GSE117783	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE116256	Homo sapiens	TXT	no	no	no
+GSE115626	Mus musculus	none	no	no	no
+GSE115622	Mus musculus	CSV, XLSX	no	no	no
+GSE115600	Mus musculus	MTX, TSV	no	no	no
+GSE115218	Homo sapiens	TSV	no	no	no
+GSE115217	Homo sapiens	TSV	no	no	no
+GSE115214	Homo sapiens	TSV, TXT	no	no	no
+GSE115210	Homo sapiens	TXT	no	no	no
+GSE115209	Homo sapiens	TXT	no	no	no
+GSE125620	Mus musculus	H5, TSV	no	no	no
+GSE118932	Mus musculus	CSV	no	no	no
+GSE116222	Homo sapiens	TXT	no	no	no
+GSE114176	Mus musculus	H5	no	no	no
+GSE127005	Mus musculus	TXT	yes	no	yes
+GSE126968	Mus musculus	MTX, TSV	no	no	no
+GSE126967	Mus musculus	MTX, TSV	no	no	no
+GSE126966	Mus musculus	MTX, TSV	no	no	no
+GSE124438	Homo sapiens	CEL, CSV	no	no	no
+GSE124437	Homo sapiens	CSV, TXT	no	no	no
+GSE123926	Homo sapiens	MTX, TSV	no	no	no
+GSE121904	Mus musculus	CSV	no	no	no
+GSE126159	Mus musculus	XLSX	no	no	no
+GSE126158	Homo sapiens	XLSX	no	no	no
+GSE119271	Homo sapiens; Mus musculus	FPKM_TRACKING	no	no	no
+GSE96676	Homo sapiens; Mus musculus	BW	no	no	no
+GSE96675	Mus musculus	XLS	no	no	no
+GSE96674	Mus musculus	XLS	no	no	no
+GSE122730	Mus musculus	MTX, TSV	no	no	no
+GSE126908	Homo sapiens	CSV	yes	no	yes
+GSE126906	Homo sapiens	CSV	no	no	no
+GSE126891	Mus musculus	CSV	no	no	no
+GSE111015	Homo sapiens	BIGWIG, NARROWPEAK	no	no	no
+GSE111014	Homo sapiens	MTX, TSV	no	no	no
+GSE126836	Homo sapiens; Mus musculus	CSV, MTX	no	no	no
+GSE123587	Mus musculus	MTX, TSV	no	no	no
+GSE116621	Homo sapiens	TXT	no	no	no
+GSE114530	Homo sapiens	MTX, TSV	no	no	no
+GSE126780	Homo sapiens	CSV	no	no	no
+GSE119945	Mus musculus	CSV, TXT	yes	no	yes
+GSE126707	Mus musculus	MTX, TSV, XLSX	no	no	no
+GSE125044	Mus musculus	TXT	yes	no	yes
+GSE120372	Mus musculus	CSV	no	no	no
+GSE110791	Homo sapiens	CSV	no	no	no
+GSE126579	Mus musculus	TXT	no	no	no
+GSE126539	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE125587	Homo sapiens	TXT	no	no	no
+GSE110684	Homo sapiens	BW, CSV, TXT	no	no	no
+GSE108116	Homo sapiens; Mus musculus	BED, TXT	no	no	no
+GSE108115	Homo sapiens	TXT	no	no	no
+GSE124706	Pan troglodytes; Pan paniscus; Homo sapiens	TXT	no	no	no
+GSE124061	Mus musculus	CSV	no	no	no
+GSE89285	Mus musculus	none	no	no	no
+GSE89280	Mus musculus	TXT	no	no	no
+GSE124335	Homo sapiens	CSV, TXT	no	no	no
+GSE123595	Mus musculus	TXT	no	no	no
+GSE121639	Mus musculus	CSV, MTX, TSV, TXT	no	no	no
+GSE121469	Mus musculus	CSV, MTX, TSV, TXT	no	no	no
+GSE120745	Mus musculus	CSV	no	no	no
+GSE120744	Mus musculus	CSV	no	no	no
+GSE120629	Mus musculus	CSV	no	no	no
+GSE115937	Homo sapiens	CSV, TAB	no	no	no
+GSE115936	Homo sapiens	CSV, TAB	no	no	no
+GSE115861	Homo sapiens	CSV, TAB	no	no	no
+GSE126388	Mus musculus	TXT	no	no	no
+GSE121265	Homo sapiens	RDS, TXT	yes	yes	yes
+GSE124796	Mus musculus	CEL, TXT	no	no	no
+GSE122198	Homo sapiens	TXT	no	no	no
+GSE117770	Mus musculus	MTX, TSV	no	no	no
+GSE109355	Drosophila melanogaster	BEDGRAPH, MTX, TSV, TXT	no	no	no
+GSE105454	Homo sapiens	none	no	no	no
+GSE105452	Homo sapiens	TXT	no	no	no
+GSE105451	Homo sapiens	TXT	no	no	no
+GSE126261	Homo sapiens	TXT	no	no	no
+GSE126250	Homo sapiens	TSV	no	no	no
+GSE126205	Mus musculus	TSV	no	no	no
+GSE116138	Mus musculus	TXT	no	no	no
+GSE113320	Mus musculus	MTX, TSV	no	no	no
+GSE124299	Macaca mulatta; Homo sapiens; Pan troglodytes	TXT, XLSX	yes	no	yes
+GSE117449	Mus musculus	TXT	no	no	no
+GSE113307	Mus musculus	TXT	no	no	no
+GSE126111	Homo sapiens	TXT	no	no	no
+GSE126085	Homo sapiens	TXT	no	no	no
+GSE123080	Mus musculus	TXT	no	no	no
+GSE118852	Macaca fascicularis	CSV	no	no	no
+GSE118546	Macaca fascicularis	CSV, RDATA	no	yes	yes
+GSE109761	Homo sapiens; Mus musculus	RDS, TXT	no	yes	yes
+GSE126074	Mus musculus; Homo sapiens	MTX, TSV	no	no	no
+GSE123013	Arabidopsis thaliana	TSV	no	no	no
+GSE115986	Homo sapiens	TXT	no	no	no
+GSE126027	Homo sapiens	CSV	no	no	no
+GSE122392	Saccharomyces cerevisiae	TAB	no	no	no
+GSE118292	Mus musculus	TXT	no	no	no
+GSE109071	Mus musculus	TXT	no	no	no
+GSE123164	Zea mays	TXT	no	no	no
+GSE125949	Drosophila melanogaster	MTX, TSV	no	no	no
+GSE125948	Drosophila melanogaster	MTX, TSV	no	no	no
+GSE125947	Drosophila melanogaster	MTX, TSV	no	no	no
+GSE122208	Danio rerio	TXT	no	no	no
+GSE120067	Mus musculus	MTX, TSV	no	no	no
+GSE103577	Mus musculus	CSV	no	no	no
+GSE122662	Mus musculus	H5, MTX, TSV	no	no	no
+GSE122653	Mus musculus	CSV, H5	no	no	no
+GSE118486	Mus musculus	MTX, TSV	no	no	no
+GSE115943	Mus musculus	H5, MTX, TXT	no	no	no
+GSE113561	Mus musculus	CSV	yes	no	yes
+GSE106340	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE116481	Homo sapiens	TXT	yes	no	yes
+GSE101558	Homo sapiens	CLOUPE, TSV, TXT	no	no	no
+GSE115931	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE112380	Sus scrofa	TXT	no	no	no
+GSE125694	Caenorhabditis elegans	TXT, XLSX	no	no	no
+GSE125676	Mus musculus	TXT	no	no	no
+GSE125588	Mus musculus	MTX, TSV	no	no	no
+GSE118948	Mus musculus	CSV	no	no	no
+GSE112837	Mus musculus	MTX, TSV	no	no	no
+GSE106118	Homo sapiens	TXT	no	no	no
+GSE125464	Mus musculus	FA, GTF, MTX, TSV	no	no	no
+GSE123264	Homo sapiens	TXT	no	no	no
+GSE119484	Mus musculus	TXT	no	no	no
+GSE118257	Homo sapiens	TXT	yes	no	yes
+GSE106810	Homo sapiens; Mus musculus	BW, TXT	no	no	no
+GSE125416	Homo sapiens	H5, MTX, TSV	no	no	no
+GSE115972	Mus musculus	BIGWIG, NARROWPEAK	no	no	no
+GSE115967	Mus musculus	TXT	no	no	no
+GSE125316	Mus musculus	TXT	no	no	no
+GSE125300	Homo sapiens	CSV, TXT	no	no	no
+GSE125241	Mus musculus	TXT	no	no	no
+GSE101181	Sus scrofa	TXT	no	no	no
+GSE93706	Homo sapiens	BW, FPKM_TRACKING	no	no	no
+GSE125088	Mus musculus	MTX, TSV	no	no	no
+GSE122969	Mus musculus	TXT	no	no	no
+GSE108632	Homo sapiens	XLSX	no	no	no
+GSE125065	Mus musculus	MTX, TSV	no	no	no
+GSE121083	Mus musculus	TXT	no	no	no
+GSE118891	Mus musculus	TXT	no	no	no
+GSE123335	Mus musculus	TXT	yes	no	yes
+GSE118726	Drosophila melanogaster	BW, MTX, TSV	no	no	no
+GSE116753	Homo sapiens	TXT	no	no	no
+GSE111065	Homo sapiens	TXT	no	no	no
+GSE124872	Mus musculus	CSV, MTX, RDATA, TXT	yes	yes	yes
+GSE124862	Homo sapiens	TXT	no	no	no
+GSE124859	Homo sapiens	TXT	no	no	no
+GSE124858	Homo sapiens	TXT	no	no	no
+GSE124731	Homo sapiens	TXT	yes	no	yes
+GSE121002	Mus musculus	MTX, TSV	no	no	no
+GSE124703	Homo sapiens	MTX, TSV, TXT	no	no	no
+GSE122332	Mus musculus	TXT	no	no	no
+GSE122331	Mus musculus	XLSX	no	no	no
+GSE122330	Mus musculus	TXT, XLSX	no	no	no
+GSE122329	Mus musculus	TXT	no	no	no
+GSE120861	Homo sapiens	MTX, RDS, TSV, TXT	no	yes	yes
+GSE123119	Mus musculus	CSV, FA, GTF	yes	no	yes
+GSE123028	Homo sapiens	CSV	no	no	no
+GSE119984	Homo sapiens	TSV	no	no	no
+GSE119983	Homo sapiens	TSV	no	no	no
+GSE119982	Homo sapiens	TSV	no	no	no
+GSE119936	Homo sapiens	TSV	no	no	no
+GSE109447	Mus musculus	TXT, XLSX	no	no	no
+GSE108463	Mus musculus	TXT	no	no	no
+GSE104698	Rattus norvegicus	CEL	no	no	no
+GSE104497	Rattus norvegicus	TXT	no	no	no
+GSE103221	Mus musculus	CSV	no	no	no
+GSE123067	Mus musculus	TXT	no	no	no
+GSE123030	Mus musculus	none	no	no	no
+GSE123025	Mus musculus	CSV	no	no	no
+GSE123024	Mus musculus	CSV	no	no	no
+GSE123022	Mus musculus	CSV	no	no	no
+GSE123021	Mus musculus	CSV	no	no	no
+GSE122233	Mus musculus	TXT	no	no	no
+GSE122012	Mus musculus	TXT	no	no	no
+GSE121001	Mus musculus	none	no	no	no
+GSE119766	Mus musculus	TXT	no	no	no
+GSE115011	Homo sapiens	CSV, TXT	no	no	no
+GSE104343	Saccharomyces cerevisiae	TXT	no	no	no
+GSE124454	Mus musculus	TXT	no	no	no
+GSE124399	Mus musculus	TXT	no	no	no
+GSE124365	Homo sapiens	CSV	no	no	no
+GSE123139	Homo sapiens	TXT	no	no	no
+GSE122043	Mus musculus	MTX, TSV	no	no	no
+GSE122026	Mus musculus	CSV, XLSX	no	no	no
+GSE121599	Mus musculus	MTX, TSV	no	no	no
+GSE121598	Mus musculus	MTX, TSV	no	no	no
+GSE117844	Homo sapiens	TXT	no	no	no
+GSE115305	Homo sapiens	TXT	no	no	no
+GSE108578	Bubalus bubalis	FA, XLS	no	no	no
+GSE117394	Mus musculus	TSV	no	no	no
+GSE124314	Homo sapiens	TXT	no	no	no
+GSE124308	Homo sapiens	TSV	no	no	no
+GSE108427	Mus musculus	TXT	no	no	no
+GSE124263	Homo sapiens	MTX, TSV	no	no	no
+GSE119694	Mus musculus	TXT	no	no	no
+GSE99187	Mus musculus	TXT	no	no	no
+GSE122342	Homo sapiens	MTX, TSV, TXT	no	no	no
+GSE107794	Homo sapiens	TXT	no	no	no
+GSE120522	Homo sapiens; Mus musculus	FA, GTF, MTX, TSV, TXT	no	no	no
+GSE119893	Homo sapiens	CSV	no	no	no
+GSE114822	Mus musculus	BW, TXT	no	no	no
+GSE115901	Mus musculus	none	no	no	no
+GSE115900	Mus musculus	TXT	no	no	no
+GSE115899	Mus musculus	TXT	no	no	no
+GSE123844	Homo sapiens	TXT	no	no	no
+GSE122960	Homo sapiens	H5	no	no	no
+GSE121611	Mus musculus	H5, MTX, TSV	no	no	no
+GSE119355	Mus musculus	MTX, TSV	no	no	no
+GSE114670	Homo sapiens	TAB	no	no	no
+GSE111360	Homo sapiens	CSV, MTX, TSV, TXT	no	no	no
+GSE108556	Homo sapiens; Mus musculus	BEDGRAPH, BIGWIG, TXT	no	no	no
+GSE123604	Homo sapiens	BW, TXT	no	no	no
+GSE121069	Mus musculus; Homo sapiens	TXT	no	no	no
+GSE112865	Mus musculus	MTX, TSV	no	no	no
+GSE68920	Danio rerio	TSV	no	no	no
+GSE123476	Homo sapiens	TXT	no	no	no
+GSE123400	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE117156	Homo sapiens	TXT	yes	no	yes
+GSE114802	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE106676	Danio rerio	BED, BW, TXT, WIG	no	no	no
+GSE103618	Mus musculus	TXT	no	no	no
+GSE123454	Mus musculus	CSV, XLS	no	no	no
+GSE119969	Homo sapiens	TXT	no	no	no
+GSE107761	Mus musculus	CSV	no	no	no
+GSE116031	Mus musculus	TXT	no	no	no
+GSE113854	Mus musculus	MTX, TSV	no	no	no
+GSE113605	Mus musculus	TXT	no	no	no
+GSE121891	Mus musculus	CSV, TXT	yes	no	yes
+GSE117403	Homo sapiens	MTX, TSV	no	no	no
+GSE117271	Homo sapiens	TXT	no	no	no
+GSE116708	Mus musculus	none	no	no	no
+GSE102048	Mus musculus	CSV	no	no	no
+GSE51025	Homo sapiens	BW, TXT, WIG	no	no	no
+GSE123241	Danio rerio	H5	no	no	no
+GSE122873	Homo sapiens	TXT	no	no	no
+GSE105781	Mus musculus	TXT	no	no	no
+GSE123179	Mus musculus	XLSX	no	no	no
+GSE123177	Mus musculus	TXT	no	no	no
+GSE120776	Mus musculus	TXT	no	no	no
+GSE119139	Homo sapiens	CSV, H5	no	no	no
+GSE115257	Homo sapiens	TXT	no	no	no
+GSE113253	Homo sapiens	BED, TXT, ZIP	no	no	no
+GSE107694	Mus musculus	TXT	no	no	no
+GSE122863	Mus musculus	CEL, CHP, TXT	no	no	no
+GSE120667	Mus musculus	TXT	no	no	no
+GSE115008	Mus musculus	TXT	no	no	no
+GSE123074	Homo sapiens	XLSX	no	no	no
+GSE120678	Mus musculus	TXT	no	no	no
+GSE116177	Mus musculus	TXT	no	no	no
+GSE111301	Mus musculus; Homo sapiens	CSV, TSV, TXT	no	no	no
+GSE104869	Homo sapiens	TXT	no	no	no
+GSE97693	Homo sapiens	TXT	no	no	no
+GSE122992	Mus musculus	CSV, TXT	no	no	no
+GSE120462	Mus musculus	FA, GTF, H5	no	no	no
+GSE119750	Homo sapiens	TXT	yes	no	yes
+GSE115926	Homo sapiens	TSV, TXT	no	no	no
+GSE115903	Mus musculus	TXT	no	no	no
+GSE81585	Homo sapiens	BW, TXT	no	no	no
+GSE111527	Mus musculus	TXT	no	no	no
+GSE122846	Homo sapiens	H5, MTX, TSV	no	no	no
+GSE120796	Homo sapiens	TXT	no	no	no
+GSE111229	Mus musculus	TXT	no	no	no
+GSE117872	Homo sapiens	TXT	no	no	no
+GSE116011	Homo sapiens; Mus musculus; synthetic construct	TXT	no	no	no
+GSE115934	Mus musculus	TXT	no	no	no
+GSE122713	Mus musculus	NARROWPEAK	no	no	no
+GSE122712	Mus musculus	MTX, TSV	no	no	no
+GSE122675	Mus musculus	MTX, TSV	no	no	no
+GSE122666	Saccharomyces cerevisiae	TXT	no	no	no
+GSE119455	Homo sapiens	TXT	no	no	no
+GSE112502	Mus musculus	TXT, XLSX	no	no	no
+GSE107864	Homo sapiens	none	no	no	no
+GSE107863	Homo sapiens	TXT	no	no	no
+GSE107858	Homo sapiens	TXT	no	no	no
+GSE119807	Homo sapiens	TXT	no	no	no
+GSE118234	Mus musculus	CSV	no	no	no
+GSE116794	Mus musculus	BW, TXT	no	no	no
+GSE116672	Homo sapiens	TSV	no	no	no
+GSE113466	Mus musculus	TXT	no	no	no
+GSE118900	Homo sapiens	TXT	no	no	no
+GSE115350	Mus musculus	TXT	no	no	no
+GSE115346	Mus musculus	TXT	no	no	no
+GSE118120	Mus musculus	CSV	no	no	no
+GSE115884	Caenorhabditis elegans	TSV	no	no	no
+GSE113901	Mus musculus; Homo sapiens	CSV, XLSX	no	no	no
+GSE111704	Mus musculus	TXT	no	no	no
+GSE110909	Mus musculus	TXT	no	no	no
+GSE118368	Mus musculus	CSV, TXT	no	no	no
+GSE117795	Mus musculus	CSV, TXT	no	no	no
+GSE117794	Mus musculus	CSV	no	no	no
+GSE117793	Mus musculus	CSV	no	no	no
+GSE117792	Mus musculus	CSV	no	no	no
+GSE117790	Mus musculus	CSV	no	no	no
+GSE117788	Mus musculus	CSV	no	no	no
+GSE117786	Mus musculus	CSV	no	no	no
+GSE117785	Mus musculus	CSV	no	no	no
+GSE117784	Mus musculus	CSV	no	no	no
+GSE122326	Homo sapiens	TDF, TXT	no	no	no
+GSE121386	Mus musculus	TXT	no	no	no
+GSE121287	Mus musculus	MTX, TSV	no	no	no
+GSE121284	Mus musculus	TXT	no	no	no
+GSE121267	Homo sapiens	MTX, TSV	no	no	no
+GSE103647	Mus musculus	TXT	no	no	no
+GSE109645	Homo sapiens	TXT	no	no	no
+GSE109049	Mus musculus	MTX, TSV	no	no	no
+GSE109037	Mus musculus; Homo sapiens	MTX, TSV	no	no	no
+GSE109033	Mus musculus	MTX, TSV	no	no	no
+GSE108977	Homo sapiens	TXT	no	no	no
+GSE108974	Mus musculus	TXT	no	no	no
+GSE108970	Mus musculus	TXT	no	no	no
+GSE121720	Homo sapiens	BIGWIG, CSV, TXT	yes	no	yes
+GSE121717	Homo sapiens	BIGWIG, TXT	no	no	no
+GSE107517	Homo sapiens	CSV	no	no	no
+GSE122057	Mus musculus	TXT	no	no	no
+GSE121617	Hydra vulgaris	BED, TXT	no	no	no
+GSE120909	Mus musculus	TXT	no	no	no
+GSE118828	Homo sapiens	CSV	no	no	no
+GSE112692	Homo sapiens	TXT	no	no	no
+GSE109535	Homo sapiens; Mus musculus	TXT, XLSX	no	no	no
+GSE122041	Homo sapiens	TXT	no	no	no
+GSE121429	Homo sapiens	CLOUPE	no	no	no
+GSE118237	Mus musculus	CLOUPE, XLSX	no	no	no
+GSE115978	Homo sapiens	CSV	yes	no	yes
+GSE113576	Mus musculus	MTX, TSV	no	no	no
+GSE106510	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE121957	Mus musculus	CSV	yes	no	yes
+GSE115746	Mus musculus	CSV	yes	no	yes
+GSE119352	Mus musculus	MTX, TSV, TXT	yes	no	yes
+GSE113069	Mus musculus	TXT	yes	no	yes
+GSE111027	Mus musculus	MTX, TSV	no	no	no
+GSE111026	Mus musculus	MTX, TSV	no	no	no
+GSE111025	Mus musculus	TXT	no	no	no
+GSE64314	Mus musculus	TXT	no	no	no
+GSE64292	Mus musculus	TXT	no	no	no
+GSE121861	Mus musculus	CSV	no	no	no
+GSE121807	Ciona robusta	CLOUPE, H5, TXT	no	no	no
+GSE121655	Mus musculus; Homo sapiens	TXT	no	no	no
+GSE114071	Homo sapiens	GCT	no	no	no
+GSE121737	Ambystoma mexicanum	FASTA, TXT	no	no	no
+GSE111545	Homo sapiens	TXT	no	no	no
+GSE111543	Homo sapiens	TXT	no	no	no
+GSE121699	Homo sapiens	CSV	no	no	no
+GSE121654	Mus musculus	TXT	no	no	no
+GSE111664	Mus musculus	TXT	no	no	no
+GSE121579	Homo sapiens	CSV	no	no	no
+GSE118122	Mus musculus	CSV	no	no	no
+GSE117616	Mus musculus	CSV	no	no	no
+GSE117615	Mus musculus	CSV	no	no	no
+GSE114044	Mus musculus; Homo sapiens	CSV	no	no	no
+GSE121034	Mus musculus	CSV	no	no	no
+GSE115469	Homo sapiens	CSV	no	no	no
+GSE111717	Homo sapiens	TXT	no	no	no
+GSE120410	Mus musculus	CSV, MTX, TSV	no	no	no
+GSE121416	Mus musculus	TXT	no	no	no
+GSE118252	Mus musculus	BW, MTX, TSV	no	no	no
+GSE118245	Mus musculus	MTX, TSV	no	no	no
+GSE120508	Homo sapiens	none	no	no	no
+GSE120506	Homo sapiens	TXT	no	no	no
+GSE116683	Homo sapiens	CSV	no	no	no
+GSE112013	Homo sapiens	TXT	no	no	no
+GSE119531	Mus musculus	TXT	yes	no	yes
+GSE118184	Homo sapiens	TXT	no	no	no
+GSE119228	Mus musculus	TXT	yes	no	yes
+GSE116180	Homo sapiens	TXT	no	no	no
+GSE112601	synthetic construct; Mus musculus	none	no	no	no
+GSE121100	Mus musculus	none	no	no	no
+GSE121039	Zea mays	CSV, TXT	yes	no	yes
+GSE120976	Mus musculus	CSV, TXT	no	no	no
+GSE120960	Mus musculus	CSV	no	no	no
+GSE115476	Drosophila melanogaster	TXT	no	no	no
+GSE110973	Homo sapiens	H5	no	no	no
+GSE121026	Trypanosoma brucei brucei	TSV	no	no	no
+GSE120515	Trypanosoma brucei brucei; other sequences	TXT	no	no	no
+GSE119767	Homo sapiens	TXT, XLSX	no	no	no
+GSE111462	Homo sapiens; Mus musculus	H5, TXT	no	no	no
+GSE111461	Mus musculus	TXT	no	no	no
+GSE111458	Homo sapiens	TXT	no	no	no
+GSE111456	Mus musculus	TXT	no	no	no
+GSE111403	Mus musculus	TXT	no	no	no
+GSE111402	Mus musculus	H5	no	no	no
+GSE120904	Homo sapiens	TXT	no	no	no
+GSE120839	Homo sapiens; Canis lupus familiaris; Influenza A virus (A/WSN/1933(H1N1))	FASTA, MTX, TSV	no	no	no
+GSE120575	Homo sapiens	TXT	no	no	no
+GSE115723	Rattus norvegicus	GTF, MTX, TSV, TXT	no	no	no
+GSE107771	Homo sapiens	CSV	no	no	no
+GSE120787	Mus musculus	H5	no	no	no
+GSE113111	Mus musculus	MTX, TSV	no	no	no
+GSE120199	Mus musculus	TSV	no	no	no
+GSE104987	Homo sapiens	TSV	no	no	no
+GSE104985	Homo sapiens	TXT	no	no	no
+GSE120654	Mus musculus	MTX, TSV	no	no	no
+GSE118545	Mus musculus	TXT	no	no	no
+GSE113089	Homo sapiens	CSV, HTML	no	no	no
+GSE109534	Homo sapiens	TXT	no	no	no
+GSE120035	Ciona intestinalis	CLOUPE, H5	no	no	no
+GSE114374	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE106269	Ambystoma mexicanum	CSV, MTX, TSV	no	no	no
+GSE120446	Homo sapiens	H5, JSON, MTX, TSV	no	no	no
+GSE120444	Homo sapiens	H5, JSON, TSV, TXT	no	no	no
+GSE120239	Mus musculus	CSV	no	no	no
+GSE119373	Homo sapiens	TXT	no	no	no
+GSE105211	Homo sapiens	TXT	no	no	no
+GSE101901	Mus musculus	TXT	no	no	no
+GSE95459	Homo sapiens	none	no	no	no
+GSE95450	Homo sapiens	TXT	no	no	no
+GSE95446	Homo sapiens	TXT	no	no	no
+GSE95435	Homo sapiens	TXT	no	no	no
+GSE115950	Mus musculus	CSV	no	no	no
+GSE106882	Mus musculus	CSV	no	no	no
+GSE106636	Mus musculus	CSV	no	no	no
+GSE106489	Mus musculus	CSV, H5, TXT	no	no	no
+GSE99915	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE79435	Mus musculus	CSV	no	no	no
+GSE107185	unidentified plasmid; Homo sapiens	CSV, TSV, TXT	no	no	no
+GSE120269	Homo sapiens	CSV	no	no	no
+GSE120221	Homo sapiens	MTX, TSV	no	no	no
+GSE118723	Homo sapiens	RDS, TXT	yes	yes	yes
+GSE117397	Homo sapiens	TXT	no	no	no
+GSE112794	Mus musculus	TXT	no	no	no
+GSE101207	Homo sapiens; Mus musculus	BW, TXT	no	no	no
+GSE120108	Mus musculus	MTX, TSV	no	no	no
+GSE117963	Mus musculus	H5, TXT	no	no	no
+GSE108561	Mus musculus	TXT, XLSX	no	no	no
+GSE118019	Mus musculus	MAT, TSV	no	no	no
+GSE115798	Homo sapiens	CSV, TXT	no	no	no
+GSE115639	Homo sapiens	CSV	no	no	no
+GSE104995	Homo sapiens	TXT	no	no	no
+GSE118209	Homo sapiens	TXT	no	no	no
+GSE119859	Homo sapiens; Mus musculus	BW	no	no	no
+GSE116329	Mus musculus; synthetic RNA	CSV	no	no	no
+GSE114279	Mus musculus	TXT	no	no	no
+GSE114278	Mus musculus	TXT	no	no	no
+GSE110265	Mus musculus	TXT, XLSX	no	no	no
+GSE96648	Mus musculus	TXT	no	no	no
+GSE117568	Mus musculus	MTX, TSV	no	no	no
+GSE117567	Mus musculus	MTX, TSV	no	no	no
+GSE117470	Mus musculus	TXT	no	no	no
+GSE115571	Mus musculus	TXT	no	no	no
+GSE117055	Mus musculus	TAB	no	no	no
+GSE119630	Homo sapiens; Mus musculus; Rattus norvegicus	CSV	no	no	no
+GSE119562	Homo sapiens; Mus musculus	CSV	no	no	no
+GSE119450	Homo sapiens	CSV, TAR	no	no	no
+GSE111839	Mus musculus	BW, MTX, NARROWPEAK, TAR, TSV, TXT	no	no	no
+GSE103518	Homo sapiens	HDF5	no	no	no
+GSE102086	Mus musculus	MTX, TSV	no	no	no
+GSE97213	Mus musculus	BEDGRAPH, TXT	no	no	no
+GSE119428	Homo sapiens; Mus musculus	JSON, TSV, TXT	no	no	no
+GSE115982	Homo sapiens	CSV	no	no	no
+GSE118987	Mus musculus	TXT	no	no	no
+GSE118555	Mus musculus	CSV	no	no	no
+GSE101061	Homo sapiens	XLSX	no	no	no
+GSE118056	Homo sapiens	CSV	no	no	no
+GSE117988	Homo sapiens	CSV	no	no	no
+GSE111588	Mus musculus	MTX, TSV	no	no	no
+GSE112671	Mus musculus	H5, MTX, TSV	no	no	no
+GSE72612	Homo sapiens	TXT	no	no	no
+GSE116271	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE116240	Mus musculus	MTX, TSV	no	no	no
+GSE106487	Homo sapiens	TXT, XLS	no	no	no
+GSE105267	Mus musculus	TXT	no	no	no
+GSE117089	Homo sapiens; Mus musculus	CSV, TXT	no	no	no
+GSE119097	Mus musculus	CSV	no	no	no
+GSE117131	Homo sapiens; Mus musculus	TXT	yes	no	yes
+GSE116614	Arabidopsis thaliana	TXT	no	no	no
+GSE114713	Mus musculus	BB, BW	no	no	no
+GSE109984	Mus musculus	TXT	no	no	no
+GSE109488	Homo sapiens	TXT	no	no	no
+GSE117893	Mus musculus	TXT	no	no	no
+GSE117219	Macaca mulatta	none	no	no	no
+GSE117218	Macaca mulatta	TXT	no	no	no
+GSE106481	Macaca mulatta	TXT	no	no	no
+GSE119035	Homo sapiens	CEL	no	no	no
+GSE113973	Mus musculus	TAB	no	no	no
+GSE90975	Mus musculus	TXT	no	no	no
+GSE114748	Mus musculus	TXT	no	no	no
+GSE112393	Mus musculus	TXT, XLSX	no	no	no
+GSE100896	other sequences; Trypanosoma brucei brucei	TXT, WIG	no	no	no
+GSE118918	Mus musculus	TXT	no	no	no
+GSE115397	Homo sapiens	TXT	no	no	no
+GSE116470	Mus musculus	CSV, TXT	yes	no	yes
+GSE116341	Plasmodium falciparum	TXT	no	no	no
+GSE114161	Homo sapiens	CSV, TSV, TXT	no	no	no
+GSE111599	Mus musculus	TXT	no	no	no
+GSE106708	Mus musculus	none	no	no	no
+GSE106707	Mus musculus	TAB	no	no	no
+GSE97478	Mus musculus	TXT	no	no	no
+GSE118055	Mus musculus	TXT	no	no	no
+GSE118767	Homo sapiens	CSV, TXT	no	no	no
+GSE118734	Homo sapiens	TXT	no	no	no
+GSE118733	Homo sapiens	TXT	no	no	no
+GSE117617	Homo sapiens	CSV, XLS	no	no	no
+GSE117450	Homo sapiens	CSV, TXT	no	no	no
+GSE118706	Homo sapiens	CSV	no	no	no
+GSE118704	Homo sapiens	CSV, TXT	no	no	no
+GSE114220	Mus musculus	CSV	no	no	no
+GSE114219	Mus musculus	CSV	no	no	no
+GSE114218	Mus musculus	CSV	no	no	no
+GSE116104	Mus musculus	FPKM_TRACKING	no	no	no
+GSE115405	Homo sapiens	TXT	no	no	no
+GSE110164	Mus musculus	none	no	no	no
+GSE108711	Mus musculus	BED, FPKM_TRACKING, TXT	no	no	no
+GSE108710	Mus musculus	FPKM_TRACKING	no	no	no
+GSE108546	Homo sapiens	TXT	no	no	no
+GSE114759	Mus musculus	TXT	yes	no	yes
+GSE106236	Mus musculus	TXT	no	no	no
+GSE103789	Mus musculus	TXT	no	no	no
+GSE101099	Mus musculus	MTX, TSV	no	no	no
+GSE72091	Mus musculus	TXT	no	no	no
+GSE118390	Homo sapiens	none	no	no	no
+GSE118389	Homo sapiens	TXT	no	no	no
+GSE113164	Mus musculus	TXT	no	no	no
+GSE109881	Danio rerio	CSV	no	no	no
+GSE118322	Mus musculus	CSV	yes	no	yes
+GSE118300	Mus musculus	TXT, XLS	no	no	no
+GSE108288	Homo sapiens	MTX, TSV	no	no	no
+GSE102592	Homo sapiens; Mus musculus	MTX, TSV	no	no	no
+GSE102591	Mus musculus	MTX, TSV	no	no	no
+GSE84705	Mus musculus	TXT	no	no	no
+GSE118180	Mus musculus	TXT	no	no	no
+GSE118173	Mus musculus	TXT	no	no	no
+GSE111113	Mus musculus	TXT	no	no	no
+GSE114997	Mus musculus	CSV	no	no	no
+GSE107747	Homo sapiens	MTX, TSV	no	no	no
+GSE117997	Mus musculus	BED, TXT	no	no	no
+GSE95194	Mus musculus	TAB	no	no	no
+GSE115280	Schmidtea mediterranea	TXT	no	no	no
+GSE114988	Mus musculus	CSV, TSV, TXT	no	no	no
+GSE114462	Homo sapiens	none	no	no	no
+GSE114461	Homo sapiens	CSV	no	no	no
+GSE114460	Homo sapiens	CSV	no	no	no
+GSE114459	Homo sapiens	CSV	no	no	no
+GSE111683	Homo sapiens	BED, GTF, TXT	no	no	no
+GSE107644	Mus musculus	BEDGRAPH, TAB, TXT	no	no	no
+GSE107493	Mus musculus	BIGWIG	no	no	no
+GSE102580	Mus musculus; Homo sapiens	TSV	yes	no	yes
+GSE117895	Mus musculus	FA, H5	no	no	no
+GSE115331	Ciona intestinalis	CLOUPE, H5	no	no	no
+GSE111860	Homo sapiens	TXT	yes	no	yes
+GSE111689	Homo sapiens	BED, GTF, IDAT	no	no	no
+GSE100474	Mus musculus	TXT	no	no	no
+GSE103354	Mus musculus	MTX, RDS, TSV, TXT	no	yes	yes
+GSE95143	Homo sapiens; Mus musculus	BED, BW	no	no	no
+GSE95140	Mus musculus; Homo sapiens	TXT	no	no	no
+GSE115189	Homo sapiens	H5	no	no	no
+GSE98679	Mus musculus	TXT, XLSX	yes	no	yes
+GSE112880	Mus musculus	MTX, TSV	no	no	no
+GSE103568	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE102139	Homo sapiens	TXT	no	no	no
+GSE117618	Homo sapiens	CSV, XLS	no	no	no
+GSE112845	Homo sapiens	MTX, TSV	no	no	no
+GSE117480	Homo sapiens	TXT	no	no	no
+GSE89497	Homo sapiens	TXT	no	no	no
+GSE79283	Danio rerio	CSV	no	no	no
+GSE79161	Danio rerio	CSV	no	no	no
+GSE110116	Mus musculus	TXT, XLSX	no	no	no
+GSE107073	Homo sapiens	BW	no	no	no
+GSE107071	Homo sapiens	TXT	no	no	no
+GSE103970	Mus musculus	TXT	no	no	no
+GSE103967	Mus musculus	TXT	yes	no	yes
+GSE94453	Homo sapiens	TXT	no	no	no
+GSE86225	Mus musculus	TXT	no	no	no
+GSE95093	Mus musculus	CSV	no	no	no
+GSE104782	Homo sapiens	TXT, XLSX	no	no	no
+GSE117324	Homo sapiens	BED, TSV	no	no	no
+GSE117313	Homo sapiens	TSV	no	no	no
+GSE115353	Homo sapiens	none	no	no	no
+GSE114961	Homo sapiens	TSV, TXT	no	no	no
+GSE85477	Mus musculus	TXT	no	no	no
+GSE117229	Mus musculus	TXT	no	no	no
+GSE117216	Mus musculus	TXT	no	no	no
+GSE116237	Homo sapiens	TXT	no	no	no
+GSE115859	Mus musculus	CSV	no	no	no
+GSE99258	Mus musculus	TSV	no	no	no
+GSE117166	Mus musculus	XLSX	no	no	no
+GSE117129	Mus musculus	TXT	no	no	no
+GSE116140	Mus musculus	CSV	no	no	no
+GSE115404	Mus musculus	CSV	no	no	no
+GSE114998	Homo sapiens	XLSX	no	no	no
+GSE117079	Mus musculus	TXT	no	no	no
+GSE117078	Mus musculus	TXT	no	no	no
+GSE112008	Mus musculus	TXT, XLSX	no	no	no
+GSE117011	Mus musculus	TXT	no	no	no
+GSE112846	Mus musculus	CSV, FASTA, GTF	no	no	no
+GSE108356	Mus musculus	TXT, XLSX	no	no	no
+GSE116920	Schistosoma mansoni	CSV, FA, TXT	no	no	no
+GSE114297	Homo sapiens	MTX, TSV	no	no	no
+GSE116555	Homo sapiens	RDA, TXT	no	yes	yes
+GSE116718	Mus musculus	TXT	no	no	no
+GSE112982	Mus musculus	MTX, TSV	no	no	no
+GSE110588	Ciona intestinalis	TXT	no	no	no
+GSE111068	Mnemiopsis leidyi; Trichoplax adhaerens; Amphimedon queenslandica	BW, TXT	no	no	no
+GSE116500	Homo sapiens	CSV	no	no	no
+GSE114475	Mus musculus	TXT	no	no	no
+GSE114474	Mus musculus	TXT	no	no	no
+GSE103224	Homo sapiens	TXT	no	no	no
+GSE108397	Homo sapiens	MTX, TSV	no	no	no
+GSE108394	Homo sapiens	MTX, TSV	no	no	no
+GSE108383	Homo sapiens	TXT	no	no	no
+GSE108382	Homo sapiens	TXT	no	no	no
+GSE100706	Mus musculus	TXT	no	no	no
+GSE103723	Homo sapiens	TXT, XLSX	no	no	no
+GSE114727	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE114725	Homo sapiens	CSV	no	no	no
+GSE114724	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE109671	Mus musculus	TXT	no	no	no
+GSE104701	Mus musculus	XLSX	no	no	no
+GSE116165	Mus musculus	COV, TXT	no	no	no
+GSE115580	Homo sapiens	none	no	no	no
+GSE115578	Homo sapiens	CSV	no	no	no
+GSE100483	Homo sapiens	TXT	no	no	no
+GSE99254	Homo sapiens	TXT	no	no	no
+GSE114952	Mus musculus	BEDGRAPH, XLSX	no	no	no
+GSE113770	Mus musculus	TXT	no	no	no
+GSE110686	Homo sapiens	MTX, TSV	no	no	no
+GSE115865	Mus musculus	XLS	no	no	no
+GSE116113	Homo sapiens	TXT	no	no	no
+GSE114314	Mus musculus	TXT	no	no	no
+GSE114313	Mus musculus	TXT	no	no	no
+GSE114312	Mus musculus	TXT	no	no	no
+GSE99822	Homo sapiens	TXT	no	no	no
+GSE116061	Homo sapiens	TXT	no	no	no
+GSE112230	Homo sapiens; Mus musculus	BW, CSV, NARROWPEAK	no	no	no
+GSE108155	Mus musculus	TXT, XLSX	no	no	no
+GSE107919	Rattus norvegicus; Mus musculus	FPKM_TRACKING, WIG	no	no	no
+GSE115968	Mus musculus	TXT	no	no	no
+GSE115961	Homo sapiens	BED, BW, TSV	no	no	no
+GSE115960	Homo sapiens	TSV	no	no	no
+GSE114156	Homo sapiens	TXT	no	no	no
+GSE109564	Homo sapiens	TXT	no	no	no
+GSE92575	Mus musculus	TXT	yes	no	yes
+GSE115795	Homo sapiens	CSV	no	no	no
+GSE99211	Mus musculus	CSV, XLSX	no	no	no
+GSE113968	Mus musculus	CEL	no	no	no
+GSE113811	Mus musculus	TXT	no	no	no
+GSE113807	Mus musculus	TXT	no	no	no
+GSE113689	Mus musculus	TXT	no	no	no
+GSE113280	Mus musculus	TXT	no	no	no
+GSE113262	Mus musculus	TXT	no	no	no
+GSE113221	Mus musculus	TXT	no	no	no
+GSE113208	Mus musculus	TXT	no	no	no
+GSE111912	Homo sapiens	TXT	no	no	no
+GSE107874	Schmidtea mediterranea	XLSX	no	no	no
+GSE107873	Schmidtea mediterranea	CSV, XLSX	no	no	no
+GSE103772	Drosophila melanogaster	TXT	yes	no	yes
+GSE103771	Drosophila melanogaster	TXT	no	no	no
+GSE107451	Drosophila melanogaster	BW, TSV, TXT	yes	no	yes
+GSE115640	Danio rerio	TXT	no	no	no
+GSE115628	Mus musculus	TXT	no	no	no
+GSE113931	Homo sapiens; Pan troglodytes	TXT	no	no	no
+GSE103867	Homo sapiens	MTX, TSV	no	no	no
+GSE103866	Homo sapiens	TXT	no	no	no
+GSE103591	Homo sapiens	none	no	no	no
+GSE113536	Mus musculus	TXT	no	no	no
+GSE112417	Homo sapiens; Mus musculus	BIGWIG, CSV, TXT	no	no	no
+GSE114371	Homo sapiens	TXT	no	no	no
+GSE107947	Mus musculus	TXT	no	no	no
+GSE113036	Homo sapiens	CSV, MTX, TSV	no	no	no
+GSE107910	Mus musculus	FA, TXT	no	no	no
+GSE113595	Mus musculus	none	no	no	no
+GSE113560	Mus musculus	TXT	no	no	no
+GSE110351	Mus musculus	CSV	no	no	no
+GSE109711	Mus musculus	CEL	no	no	no
+GSE109707	Mus musculus	TXT	no	no	no
+GSE92465	Mus musculus	TXT	no	no	no
+GSE92464	Mus musculus	TXT	no	no	no
+GSE114895	Mus musculus	RDA, TXT	no	yes	yes
+GSE55343	Homo sapiens	TXT	no	no	no
+GSE115125	Mus musculus	TXT	yes	no	yes
+GSE115097	Homo sapiens	CSV	no	no	no
+GSE115070	Mus musculus	RDA, RDATA, TXT	no	yes	yes
+GSE106245	Pongo abelii; Pan troglodytes; Macaca mulatta; Homo sapiens	GTF, TAR, TSV, TXT	no	no	no
+GSE95723	Nematostella vectensis	BW, TXT, XLSX	no	no	no
+GSE115007	Homo sapiens	CSV, TXT	no	no	no
+GSE115006	Homo sapiens	CSV, TXT	no	no	no
+GSE97849	Mus musculus	TXT	no	no	no
+GSE97848	Mus musculus	TXT	no	no	no
+GSE113168	Homo sapiens	TSV	no	no	no
+GSE100586	Mus musculus	TXT	no	no	no
+GSE100584	Mus musculus	TXT	no	no	no
+GSE110499	Homo sapiens	TXT	no	no	no
+GSE99255	Homo sapiens	TAB, TXT	no	no	no
+GSE114793	Mus musculus	TXT	no	no	no
+GSE112642	Mus musculus	CSV	no	no	no
+GSE92540	Mus musculus	TXT	no	no	no
+GSE106202	Homo sapiens	TXT	no	no	no
+GSE92274	Mus musculus; Homo sapiens	PDF, TXT	no	no	no
+GSE109718	Homo sapiens	TXT	no	no	no
+GSE109205	Homo sapiens	TXT	no	no	no
+GSE114397	Homo sapiens	TSV, TXT	no	no	no
+GSE99888	Mus musculus	MAT, TAB, TXT	no	no	no
+GSE112903	Mus musculus	TXT, XLSX	yes	no	yes
+GSE112381	Mus musculus	TXT	no	no	no
+GSE99786	Mus musculus	CSV, XLSX	no	no	no
+GSE113990	Drosophila melanogaster	TXT	no	no	no
+GSE94957	Homo sapiens	BW	no	no	no
+GSE100320	Mus musculus	MTX, TSV	no	no	no
+GSE112177	Mus musculus	TXT	no	no	no
+GSE111668	Mus musculus	TXT	no	no	no
+GSE109113	Mus musculus	MTX, TSV	no	no	no
+GSE97727	Homo sapiens	TXT	no	no	no
+GSE113660	Homo sapiens	MTX, TSV, TXT	no	no	no
+GSE113074	Xenopus tropicalis	TSV	yes	no	yes
+GSE112824	Danio rerio	MTX, TSV	no	no	no
+GSE111107	Mus musculus	TXT	no	no	no
+GSE106587	Danio rerio	MTX, TSV	no	no	no
+GSE106466	Danio rerio	TXT	no	no	no
+GSE102665	Mus musculus	MTX, TSV	no	no	no
+GSE113675	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE112294	Danio rerio	CSV, TXT	no	no	no
+GSE96811	Homo sapiens	TXT	no	no	no
+GSE96772	Homo sapiens	none	no	no	no
+GSE102090	Homo sapiens	HDF5, MTX, TSV	no	no	no
+GSE98587	Mus musculus	TXT	no	no	no
+GSE98440	Homo sapiens	CSV, TXT	no	no	no
+GSE112732	Homo sapiens	TXT	no	no	no
+GSE112033	Mus musculus	CSV	no	no	no
+GSE100861	Mus musculus	TXT	no	no	no
+GSE102130	Homo sapiens	TXT	no	no	no
+GSE110357	Mus musculus	CSV	no	no	no
+GSE103633	Schmidtea mediterranea	FASTA, TXT	no	no	no
+GSE110010	Mustela putorius furo	TXT	no	no	no
+GSE89910	Gallus gallus	TXT	no	no	no
+GSE113198	Homo sapiens	TXT	no	no	no
+GSE113197	Homo sapiens	TXT	no	no	no
+GSE113196	Homo sapiens	TXT	no	no	no
+GSE113127	Homo sapiens	TXT	no	no	no
+GSE113099	Homo sapiens	TXT	no	no	no
+GSE113043	Mus musculus	TXT	no	no	no
+GSE111764	Homo sapiens; Mus musculus; Schmidtea mediterranea	TXT	no	no	no
+GSE103516	Mus musculus	CSV	no	no	no
+GSE102934	Homo sapiens	CSV, H5, TXT, XLSX	no	no	no
+GSE112570	Homo sapiens	MTX, TSV	no	no	no
+GSE104556	Mus musculus	MTX, TSV	no	no	no
+GSE108233	Mus musculus	CSV	no	no	no
+GSE108900	Sus scrofa	TXT	no	no	no
+GSE110798	Homo sapiens	XLSX	no	no	no
+GSE103840	Mus musculus	XLSX	no	no	no
+GSE90015	Homo sapiens	BW, IDAT, TSV	no	no	no
+GSE90014	Homo sapiens	TSV	no	no	no
+GSE111831	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE100037	Mus musculus	CSV	no	no	no
+GSE79280	Homo sapiens	TSV	no	no	no
+GSE112711	Mus musculus	MTX, TSV	no	no	no
+GSE107585	Mus musculus	TXT	no	no	no
+GSE103239	Homo sapiens	none	no	no	no
+GSE103154	Homo sapiens	TXT, XLSX	no	no	no
+GSE95630	Homo sapiens	TXT, XLSX	no	no	no
+GSE106121	Danio rerio	CSV, MTX, TSV, TXT	no	no	no
+GSE100449	Mus musculus	DIFF, FPKM_TRACKING, TXT	no	no	no
+GSE108287	Mus musculus	TXT	no	no	no
+GSE95155	Homo sapiens; other sequences	TSV	no	no	no
+GSE110513	Homo sapiens	CSV	no	no	no
+GSE100274	Mus musculus	R, TXT	no	no	no
+GSE109574	Mus musculus	XLSX	no	no	no
+GSE108849	Homo sapiens	TXT	no	no	no
+GSE104858	Homo sapiens	TXT	no	no	no
+GSE102990	Danio rerio	TXT	no	no	no
+GSE107727	Mus musculus	TXT	no	no	no
+GSE106973	Mus musculus	FA, TXT	no	no	no
+GSE104154	Mus musculus	CSV, XLSX	yes	no	yes
+GSE97310	Mus musculus	CSV, H5, TAR, TXT	no	no	no
+GSE108275	Homo sapiens	TXT	no	no	no
+GSE109159	Danio rerio	MATRIX	no	no	no
+GSE109158	Danio rerio	TXT	no	no	no
+GSE105115	Danio rerio	TXT	no	no	no
+GSE96986	Mus musculus; other sequences; Homo sapiens	CEL	no	no	no
+GSE96982	Homo sapiens; Mus musculus; other sequences	TXT	no	no	no
+GSE96958	Mus musculus	TXT	no	no	no
+GSE109774	Mus musculus	TAR, TXT	no	no	no
+GSE111901	Homo sapiens	TXT	no	no	no
+GSE90553	Homo sapiens	BED, MTX, TSV, TXT	no	no	no
+GSE111752	Mus musculus	TSV	no	no	no
+GSE111748	Mnemiopsis leidyi	TXT	no	no	no
+GSE99210	Bos taurus	TXT	no	no	no
+GSE89885	Mus musculus	TXT	no	no	no
+GSE84324	Mus musculus	BEDGRAPH, TXT	no	no	no
+GSE111727	Homo sapiens	TXT	no	no	no
+GSE79096	Mus musculus	TXT	no	no	no
+GSE111598	Mus musculus	TXT	no	no	no
+GSE110626	Homo sapiens	TXT	no	no	no
+GSE83443	Homo sapiens	TXT	no	no	no
+GSE109796	Mus musculus	TXT	no	no	no
+GSE107552	Homo sapiens	CSV	no	no	no
+GSE104158	Mus musculus	none	no	no	no
+GSE104157	Mus musculus	CSV	no	no	no
+GSE104156	Mus musculus	CSV	no	no	no
+GSE103983	Mus musculus	CSV	no	no	no
+GSE86023	Danio rerio	CSV	no	no	no
+GSE104490	Homo sapiens	TXT	no	no	no
+GSE99795	Homo sapiens	TXT	no	no	no
+GSE109706	Homo sapiens	none	no	no	no
+GSE111108	Homo sapiens	CSV	no	no	no
+GSE110501	Homo sapiens; Mus musculus	GTF, TXT	no	no	no
+GSE109999	Mus musculus	TXT	no	no	no
+GSE103920	Homo sapiens	none	no	no	no
+GSE103919	Homo sapiens	TXT	no	no	no
+GSE103918	Homo sapiens	MTX, TSV	no	no	no
+GSE98556	Homo sapiens	TXT	no	no	no
+GSE110496	Homo sapiens	TSV	no	no	no
+GSE102962	Mus musculus	TXT	no	no	no
+GSE110648	Mus musculus	BED, BW, TXT	no	no	no
+GSE103269	Mus musculus	BED, TSV	no	no	no
+GSE103268	Mus musculus	BED	no	no	no
+GSE103267	Mus musculus	TSV	no	no	no
+GSE87038	Mus musculus	TXT, XLSX	no	no	no
+GSE108416	Mus musculus	MTX, TSV	no	no	no
+GSE111070	Mus musculus	TXT	yes	no	yes
+GSE95157	Mus musculus	TXT	no	no	no
+GSE108790	Mus musculus	CSV	no	no	no
+GSE108788	Mus musculus	CSV	no	no	no
+GSE108775	Mus musculus	TXT	no	no	no
+GSE110823	Homo sapiens; Mus musculus	MAT	no	no	no
+GSE89754	Mus musculus	CSV, TXT	no	no	no
+GSE88953	Mus musculus	CSV	no	no	no
+GSE107527	Mus musculus	MTX, TSV	no	no	no
+GSE79875	Mus musculus	BED, BEDGRAPH, TXT	no	no	no
+GSE109444	Mus musculus	FPKM_TRACKING	no	no	no
+GSE103692	Danio rerio	TXT	no	no	no
+GSE100694	Homo sapiens	CSV	no	no	no
+GSE110746	Mus musculus	MTX, TSV	no	no	no
+GSE101341	Homo sapiens	TXT	no	no	no
+GSE110692	Mus musculus	TXT	yes	no	yes
+GSE110688	Mus musculus	TXT	yes	no	yes
+GSE110679	Mus musculus	TXT	no	no	no
+GSE109990	Homo sapiens	none	no	no	no
+GSE109989	Mus musculus	CSV	no	no	no
+GSE109979	Homo sapiens	TXT	no	no	no
+GSE109658	Homo sapiens	TXT	no	no	no
+GSE102479	Mus musculus	TSV, TXT	no	no	no
+GSE80797	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE110568	Mus musculus	TXT	no	no	no
+GSE110558	Mus musculus	TXT	yes	no	yes
+GSE110547	Mus musculus	TXT	no	no	no
+GSE108097	Homo sapiens; Mus musculus	TAR, TXT	no	no	no
+GSE102596	Homo sapiens	TSV	no	no	no
+GSE99305	Homo sapiens	TXT	no	no	no
+GSE102748	Mus musculus	TXT	no	no	no
+GSE109822	Homo sapiens	CSV	no	no	no
+GSE98664	Mus musculus	BW, CSV, GTF, TXT	no	no	no
+GSE75187	Mus musculus	CSV	no	no	no
+GSE75185	Mus musculus	CSV	no	no	no
+GSE104276	Homo sapiens	TXT, XLS, XLSX	no	no	no
+GSE110371	Mus musculus	TXT	no	no	no
+GSE105010	Danio rerio	CSV, GTF, RDATA, TXT	no	yes	yes
+GSE95021	Homo sapiens	TXT	no	no	no
+GSE95020	Homo sapiens	TXT	no	no	no
+GSE94980	Homo sapiens	TXT	no	no	no
+GSE94979	Homo sapiens	TXT	no	no	no
+GSE97519	Mus musculus	TXT	no	no	no
+GSE88927	Mus musculus	TAB	no	no	no
+GSE88926	Mus musculus	TAB	no	no	no
+GSE108761	Mus musculus	TSV, TXT, XLSX	no	no	no
+GSE106960	Mus musculus	CSV	no	no	no
+GSE106543	Homo sapiens	TXT	no	no	no
+GSE103892	Mus musculus	TXT	no	no	no
+GSE77882	Homo sapiens	TXT	no	no	no
+GSE109542	Homo sapiens; Mus musculus	CSV, MTX, TSV	no	no	no
+GSE108020	Mus musculus	TXT	no	no	no
+GSE79380	Mus musculus	XLSX	no	no	no
+GSE108699	Homo sapiens	MTX, RDS, TSV	yes	yes	yes
+GSE100471	Mus musculus	TXT	no	no	no
+GSE109742	Mus musculus; Mus musculus	none	no	no	no
+GSE109726	Mus musculus	TXT	no	no	no
+GSE100033	Homo sapiens; Mus musculus	BW, MAT, TXT	no	no	no
+GSE109556	Mus musculus	TXT	no	no	no
+GSE107740	Mus musculus	CSV	no	no	no
+GSE106544	Homo sapiens	none	no	no	no
+GSE106542	Homo sapiens	TXT	no	no	no
+GSE106541	Homo sapiens	TXT	no	no	no
+GSE106540	Homo sapiens	TXT	no	no	no
+GSE103461	Homo sapiens	TXT	no	no	no
+GSE108478	Mus musculus	TXT	no	no	no
+GSE109449	Homo sapiens	TSV	yes	no	yes
+GSE109262	Mus musculus; synthetic construct	TSV, TXT	no	no	no
+GSE106268	Mus musculus	BED, H5	no	no	no
+GSE106264	Mus musculus	H5	no	no	no
+GSE100384	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE95542	Homo sapiens	TXT	no	no	no
+GSE97037	Mus musculus	TXT	no	no	no
+GSE65970	Mus musculus	CSV	no	no	no
+GSE103350	Homo sapiens	XLS	no	no	no
+GSE108291	Homo sapiens; Mus musculus	CSV, MTX, TSV	no	no	no
+GSE108811	Mus musculus	TXT	no	no	no
+GSE90742	Mus musculus	CSV	no	no	no
+GSE108313	Homo sapiens	CSV, TXT	no	no	no
+GSE107053	Mus musculus	TXT	no	no	no
+GSE94118	Mus musculus	CSV	no	no	no
+GSE65160	Mus musculus	FPKM_TRACKING	no	no	no
+GSE107632	Mus musculus	TXT	no	no	no
+GSE108571	Homo sapiens	H5	no	no	no
+GSE107122	Mus musculus	TXT	no	no	no
+GSE108444	Homo sapiens	CSV	no	no	no
+GSE108443	Homo sapiens	CSV	no	no	no
+GSE80212	Homo sapiens	CSV	no	no	no
+GSE104054	Mus musculus	TXT	yes	no	yes
+GSE99989	Mus musculus	CSV	no	no	no
+GSE108261	Saccharomyces cerevisiae	TSV	no	no	no
+GSE108230	Gallus gallus	none	no	no	no
+GSE108221	Gallus gallus	TXT	no	no	no
+GSE108199	Gallus gallus	TXT	no	no	no
+GSE81233	Homo sapiens; Mus musculus	BED, FPKM_TRACKING, TXT	no	no	no
+GSE108108	Mus musculus	TXT	no	no	no
+GSE108067	Mus musculus	MTX, TSV	no	no	no
+GSE107115	Mus musculus	TXT	no	no	no
+GSE106663	Mus musculus	TAB	no	no	no
+GSE108041	Influenza A virus (A/WSN/1933(H1N1)); Homo sapiens	FASTA, GTF, H5, TXT	no	no	no
+GSE103753	Mus musculus	TXT	no	no	no
+GSE106447	Mus musculus	CSV, TSV	no	no	no
+GSE106273	Mus musculus	CSV, MTX, TSV	yes	no	yes
+GSE98600	Mus musculus	MTX, TXT	no	no	no
+GSE107909	Mus musculus	CSV	no	no	no
+GSE102827	Mus musculus	CSV, TXT	yes	no	yes
+GSE97942	Homo sapiens	TAR	no	no	no
+GSE97930	Homo sapiens	TXT	no	no	no
+GSE106678	Mus musculus	TXT	no	no	no
+GSE101601	Mus musculus; Homo sapiens	XLSX	no	no	no
+GSE99235	Mus musculus	TXT	no	no	no
+GSE99058	Mus musculus	TXT	no	no	no
+GSE98816	Mus musculus	TXT	no	no	no
+GSE107653	Mus musculus	TXT	yes	no	yes
+GSE106219	Schmidtea mediterranea	XLSX	no	no	no
+GSE98852	Homo sapiens	TXT	no	no	no
+GSE103322	Homo sapiens	TXT	no	no	no
+GSE104600	Homo sapiens	MTX, TSV	no	no	no
+GSE85234	Mus musculus	TXT	no	no	no
+GSE103011	Rattus norvegicus	CSV	no	no	no
+GSE89477	Mus musculus	TXT, XLSX	no	no	no
+GSE107220	Mus musculus	CSV	no	no	no
+GSE92842	Mus musculus	CSV	no	no	no
+GSE103275	Mus musculus	BAI, MTX, TSV	no	no	no
+GSE103272	Mus musculus	MTX, TSV	no	no	no
+GSE98131	Mus musculus	TXT	no	no	no
+GSE96630	Mus musculus	FPKM_TRACKING	no	no	no
+GSE95448	Mus musculus	TXT	no	no	no
+GSE95445	Mus musculus	TXT	no	no	no
+GSE95436	Mus musculus	TXT	no	no	no
+GSE95434	Mus musculus	TXT	no	no	no
+GSE95432	Mus musculus	TXT	no	no	no
+GSE95430	Mus musculus	BAI, MTX, TSV	no	no	no
+GSE90822	Mus musculus	TXT	no	no	no
+GSE87795	Mus musculus	FPKM_TRACKING	no	no	no
+GSE103574	Mus musculus	CLOUPE, CSV	no	no	no
+GSE100607	Mus musculus	none	no	no	no
+GSE99521	Homo sapiens; Mus musculus	CLOUPE, CSV, TSV, WIG	no	no	no
+GSE102698	Homo sapiens; Mus musculus	CSV	no	no	no
+GSE93722	Homo sapiens	TXT	no	no	no
+GSE81530	Mus musculus	BW, TXT	no	no	no
+GSE104478	Mus musculus	TXT	no	no	no
+GSE101519	Homo sapiens	TXT	no	no	no
+GSE101518	Homo sapiens	CSV	no	no	no
+GSE100618	Homo sapiens	TXT	no	no	no
+GSE89798	Mus musculus	TXT	no	no	no
+GSE106391	Homo sapiens	TXT	no	no	no
+GSE106472	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE106471	Mus musculus	TXT	no	no	no
+GSE98644	Homo sapiens	TXT	no	no	no
+GSE92332	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE89378	Mus musculus	CSV	no	no	no
+GSE86113	Mus musculus	TAB	no	no	no
+GSE84465	Homo sapiens	CSV	no	no	no
+GSE99701	Mus musculus	TXT	no	no	no
+GSE99251	Mus musculus	RDA, TXT	no	yes	yes
+GSE74607	Mus musculus	TXT	no	no	no
+GSE74290	Mus musculus	TXT	no	no	no
+GSE98569	Mus musculus	CSV	no	no	no
+GSE98567	Mus musculus	XLSX	no	no	no
+GSE79578	Mus musculus	TXT	no	no	no
+GSE100058	Drosophila melanogaster	CSV, TAB	no	no	no
+GSE103185	Mus musculus	TXT	no	no	no
+GSE105064	Homo sapiens	TXT	no	no	no
+GSE105054	Mus musculus	CSV, XLSX	no	no	no
+GSE97390	Mus musculus	CSV	no	no	no
+GSE102346	Mus musculus; synthetic construct	TXT	no	no	no
+GSE99095	Homo sapiens	CSV, GTF	no	no	no
+GSE103976	Mus musculus	TXT	no	no	no
+GSE102456	Mus musculus	none	no	no	no
+GSE102455	Mus musculus	TSV	no	no	no
+GSE103334	Mus musculus	TXT	no	no	no
+GSE104678	Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344; Mus musculus	XLSX	no	no	no
+GSE102163	Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344; Mus musculus	none	no	no	no
+GSE102162	Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344	XLSX	no	no	no
+GSE102161	Mus musculus	XLSX	no	no	no
+GSE102160	Mus musculus	XLSX	no	no	no
+GSE102159	Mus musculus	XLSX	no	no	no
+GSE104525	Mus musculus	TXT	no	no	no
+GSE92276	Homo sapiens	TXT	no	no	no
+GSE99909	Homo sapiens	CSV	no	no	no
+GSE102443	Mus musculus	TXT	no	no	no
+GSE90813	Homo sapiens	TXT	no	no	no
+GSE66343	Mus musculus	BED, BEDGRAPH, TXT	no	no	no
+GSE104211	Bos taurus	TXT	no	no	no
+GSE101391	Mus musculus	TXT	no	no	no
+GSE104396	Mus musculus	TXT	no	no	no
+GSE101984	Mus musculus	CSV	no	no	no
+GSE85755	Mus musculus; Danio rerio	CSV, FA, TSV, TXT	no	no	no
+GSE81547	Homo sapiens	CSV	no	no	no
+GSE96638	Mus musculus	TXT	no	no	no
+GSE84054	Homo sapiens	TXT	no	no	no
+GSE101487	Mus musculus	MATRIX	no	no	no
+GSE100120	Mus musculus; Homo sapiens	none	no	no	no
+GSE100118	Homo sapiens	CSV	no	no	no
+GSE97859	Mus musculus	BW, FPKM_TRACKING	no	no	no
+GSE90697	Mus musculus	TXT	no	no	no
+GSE90958	Mus musculus	BED, BEDGRAPH, TXT, XLSX	no	no	no
+GSE90072	synthetic construct; Mus musculus	none	no	no	no
+GSE90059	Mus musculus	TXT	no	no	no
+GSE102299	Mus musculus	MTX, TSV, TXT	no	no	no
+GSE103544	Homo sapiens	CSV	no	no	no
+GSE94054	Mus musculus	TXT	no	no	no
+GSE100389	Mus musculus	CSV	no	no	no
+GSE99714	Mus musculus	MTX, TSV	no	no	no
+GSE92699	Mus musculus	CSV	no	no	no
+GSE87293	Mus musculus	TXT	no	no	no
+GSE101712	Mus musculus	TXT	no	no	no
+GSE89900	Mus musculus	XLS	no	no	no
+GSE101334	Mus musculus	CSV	no	no	no
+GSE101340	Mus musculus	TXT	no	no	no
+GSE95025	Drosophila virilis; Drosophila melanogaster	TXT	no	no	no
+GSE102475	Saccharomyces cerevisiae BY4741	TXT	no	no	no
+GSE100501	Homo sapiens	TXT	no	no	no
+GSE102066	Homo sapiens	TXT	no	no	no
+GSE81335	Danio rerio	FPKM_TRACKING	no	no	no
+GSE97904	Homo sapiens	TSV	no	no	no
+GSE98561	Caenorhabditis elegans; Homo sapiens; Mus musculus	CSV, RDATA, TXT	no	yes	yes
+GSE93524	Mus musculus	BW, TXT	no	no	no
+GSE97080	Homo sapiens	BW, TXT	no	no	no
+GSE94389	Mus musculus	TXT	no	no	no
+GSE94388	Mus musculus	GCT, TSV	no	no	no
+GSE97655	Homo sapiens	TXT	no	no	no
+GSE78954	Danio rerio	TSV, TXT	no	no	no
+GSE102332	Mus musculus	CSV	no	no	no
+GSE84686	Homo sapiens	TXT	no	no	no
+GSE100913	Danio rerio	none	no	no	no
+GSE100912	Danio rerio	TXT	no	no	no
+GSE100911	Danio rerio	TXT	no	no	no
+GSE100910	Danio rerio	TXT, XLSX	no	no	no
+GSE98415	Mus musculus	CSV	no	no	no
+GSE90824	Mus musculus	TXT	no	no	no
+GSE100866	Homo sapiens	CSV	no	no	no
+GSE99951	Homo sapiens	CSV	no	no	no
+GSE89263	Mus musculus	TXT	no	no	no
+GSE88814	Mus musculus	XLSX	no	no	no
+GSE100771	Mus musculus	CSV	no	no	no
+GSE98201	Homo sapiens	MTX, TSV, TXT	no	no	no
+GSE97881	Homo sapiens	XLSX	no	no	no
+GSE99866	Mus musculus	TXT	no	no	no
+GSE100428	Mus musculus	none	no	no	no
+GSE100426	Mus musculus	TXT	no	no	no
+GSE96993	Homo sapiens; Mus musculus	XLSX	no	no	no
+GSE99778	Homo sapiens	XLSX	no	no	no
+GSE90047	Mus musculus	TXT	no	no	no
+GSE85908	Homo sapiens	BED, CSV, WIG	yes	no	yes
+GSE84323	Homo sapiens	TXT	no	no	no
+GSE79306	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE99933	Mus musculus	TXT	no	no	no
+GSE99457	Mus musculus	MTX, TSV	no	no	no
+GSE89549	Mus musculus	XLSX	no	no	no
+GSE99735	Mus musculus	MTX, TSV	no	no	no
+GSE65994	Mus musculus	BED, DIFF	no	no	no
+GSE90683	Homo sapiens	BED, BW, NARROWPEAK, TXT	no	no	no
+GSE100669	Homo sapiens	TXT, XLS	yes	no	yes
+GSE98451	Mus musculus	TXT	no	no	no
+GSE100337	Homo sapiens	TXT	no	no	no
+GSE100597	Mus musculus	TXT	no	no	no
+GSE97381	Mus musculus	TAB	no	no	no
+GSE98794	Mus musculus	TXT	no	no	no
+GSE96981	Homo sapiens; Mus musculus	CSV	no	no	no
+GSE96105	Mus musculus	TXT	no	no	no
+GSE96104	Mus musculus	TXT	no	no	no
+GSE100106	Mus musculus	HTML, MTX, TSV	no	no	no
+GSE78140	Mus musculus	BW, TXT	no	no	no
+GSE99846	Ciona robusta	none	no	no	no
+GSE99844	Ciona robusta	TXT	no	no	no
+GSE99765	Mus musculus	CSV, TSV	no	no	no
+GSE96583	Homo sapiens	MAT, MTX, TSV, TXT	no	no	no
+GSE90046	Mus musculus	TXT	no	no	no
+GSE98971	Mus musculus	BIGWIG, TXT	no	no	no
+GSE98969	Mus musculus	TXT	no	no	no
+GSE96819	Mus musculus	TXT	no	no	no
+GSE96569	Homo sapiens	none	no	no	no
+GSE96568	Homo sapiens	TXT	no	no	no
+GSE96564	Homo sapiens	TXT	no	no	no
+GSE96563	Homo sapiens	TXT	no	no	no
+GSE96562	Homo sapiens	TXT	no	no	no
+GSE95736	Macaca mulatta; Homo sapiens	TXT	no	no	no
+GSE99093	Mus musculus	XLSX	no	no	no
+GSE95133	Mus musculus	CSV	yes	no	yes
+GSE81812	Homo sapiens	TXT	no	no	no
+GSE99330	Homo sapiens	TXT	no	no	no
+GSE91395	Homo sapiens; synthetic construct; unidentified	XLSX	no	no	no
+GSE79108	Mus musculus	CSV	no	no	no
+GSE87631	Mus musculus	TXT	no	no	no
+GSE98638	Homo sapiens	TAB, TXT	no	no	no
+GSE85112	Homo sapiens	TXT	no	no	no
+GSE85111	Homo sapiens	TXT	no	no	no
+GSE97941	Mus musculus	TXT	yes	no	yes
+GSE95701	Mus musculus	TXT	yes	no	yes
+GSE76312	Homo sapiens	RDATA, TXT	yes	yes	yes
+GSE98734	Homo sapiens	TXT, XLSX	yes	no	yes
+GSE96677	Mus musculus; Homo sapiens	TXT	no	no	no
+GSE97168	Homo sapiens	TXT	yes	no	yes
+GSE92865	Mus musculus	MTX, TSV	no	no	no
+GSE89164	Homo sapiens; Mus musculus; Drosophila melanogaster	TXT	no	no	no
+GSE96106	Homo sapiens	TXT	no	no	no
+GSE87375	Mus musculus	TXT	no	no	no
+GSE98145	Arabidopsis thaliana	XLS	no	no	no
+GSE98052	Homo sapiens	TXT	no	no	no
+GSE98011	Homo sapiens	TXT	no	no	no
+GSE86479	Mus musculus	BIGWIG	no	no	no
+GSE86153	Homo sapiens	CSV, TXT	no	no	no
+GSE97354	Mus musculus	TXT	no	no	no
+GSE96045	Homo sapiens	none	no	no	no
+GSE95837	Homo sapiens	TXT	no	no	no
+GSE94920	"c(""(Submitter supplied) Organism: Mus musculus  Experiment type: Gene expression profiling by high throughput sequencing  Summary: Pathological angiogenesis is a hallmark of cancer and therapeutic target. Vascular-endothelial growth factor-A (VEGFA) and angiopoietin-2 (ANGPT2/ANG2) sustain tumor angiogenesis and limit anti-tumor immunity. We show that combined ANGPT2 and VEGFA blockade by mono-specific antibodies (LC06 + B20) or a bi-specific antibody (A2V) provides synergistic anti-tumoral benefits in both transgenic and transplant tumor models. more..."", 
+""Organism:\tMus musculus"")"	TXT	no	no	no
+GSE93811	Homo sapiens	CSV	no	no	no
+GSE93321	Homo sapiens	TXT	no	no	no
+GSE97564	Homo sapiens	MTX, TSV, TXT	no	no	no
+GSE98048	Mus musculus	TXT	no	no	no
+GSE94820	Homo sapiens	TXT	no	no	no
+GSE97955	Mus musculus	XLSX	no	no	no
+GSE86310	Mus musculus	TXT	no	no	no
+GSE90848	Mus musculus	TXT	yes	no	yes
+GSE90847	Mus musculus	TXT	no	no	no
+GSE92650	Mus musculus	TXT	no	no	no
+GSE95601	Mus musculus	RDA, TXT	no	yes	yes
+GSE97726	Homo sapiens	TXT	no	no	no
+GSE97681	Homo sapiens	TSV	no	no	no
+GSE97679	Homo sapiens	TSV	no	no	no
+GSE96827	Homo sapiens	TXT	no	no	no
+GSE81848	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE81750	Homo sapiens	TXT	no	no	no
+GSE81749	Homo sapiens	TXT	no	no	no
+GSE81748	Homo sapiens	TXT	no	no	no
+GSE81747	Homo sapiens	TXT	no	no	no
+GSE81412	Homo sapiens	TXT	no	no	no
+GSE94813	Mus musculus	FPKM_TRACKING, TXT	no	no	no
+GSE97395	Homo sapiens	TXT	no	no	no
+GSE85917	Homo sapiens	XLSX	no	no	no
+GSE90797	Mus musculus	TXT	no	no	no
+GSE90140	Mus musculus	TXT	no	no	no
+GSE89567	Homo sapiens	TXT	no	no	no
+GSE86146	Homo sapiens	TXT	no	no	no
+GSE85627	Mus musculus	XLSX	no	no	no
+GSE89684	Mus musculus	TSV	no	no	no
+GSE89683	Mus musculus	TSV	no	no	no
+GSE87544	Mus musculus	CSV, RDATA, TXT	no	yes	yes
+GSE81444	Homo sapiens	none	no	no	no
+GSE80727	Homo sapiens	BED, TXT	no	no	no
+GSE70713	Mus musculus	XLSX	no	no	no
+GSE92542	Danio rerio	XLSX	no	no	no
+GSE92541	Homo sapiens	XLSX	no	no	no
+GSE81861	Homo sapiens	CSV	no	no	no
+GSE84558	Homo sapiens; Mus musculus	FPKM_TRACKING	no	no	no
+GSE90856	Mus musculus	TSV	no	no	no
+GSE94135	Mus musculus	TXT	no	no	no
+GSE96066	Plasmodium falciparum NF54	TSV	no	no	no
+GSE79137	Mus musculus	TXT	no	no	no
+GSE93801	Homo sapiens	CSV	no	no	no
+GSE93593	Homo sapiens	CSV	no	no	no
+GSE92707	Mus musculus	TSV	no	no	no
+GSE90860	Mus musculus	TSV	no	no	no
+GSE80168	Mus musculus	TXT	no	no	no
+GSE80280	Mus musculus	BED, HDF5, PDB, TSV, TXT, XYZ	no	no	no
+GSE74052	Mus musculus	TXT	no	no	no
+GSE94641	Mus musculus	TSV	no	no	no
+GSE94579	Mus musculus	TSV	no	no	no
+GSE74639	Homo sapiens	XLS	yes	no	yes
+GSE75417	Mus musculus	CSV	yes	no	yes
+GSE75454	Mus musculus	BEDGRAPH, PAIR, TXT, WIG	no	no	no
+GSE72856	Mus musculus	BED, BEDGRAPH	no	no	no
+GSE72855	Mus musculus	BEDGRAPH	no	no	no
+GSE72854	Mus musculus	BEDGRAPH	no	no	no
+GSE72852	Mus musculus	BEDGRAPH	no	no	no
+GSE72851	Mus musculus	BEDGRAPH	no	no	no
+GSE93511	Homo sapiens	XLSX	no	no	no
+GSE89405	Mus musculus	BED, CSV	no	no	no
+GSE93156	Homo sapiens	TXT	no	no	no
+GSE92495	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE85045	Mus musculus; Homo sapiens	BIGWIG, WIG	no	no	no
+GSE85040	Mus musculus	BIGWIG	no	no	no
+GSE79457	Mus musculus	CSV	no	no	no
+GSE79102	Homo sapiens	TXT	no	no	no
+GSE94883	Mus musculus	TXT	no	no	no
+GSE94383	Mus musculus	CSV	no	no	no
+GSE85534	Canis lupus familiaris; Homo sapiens; Mus musculus	TSV	no	no	no
+GSE90053	Mus musculus; Homo sapiens	XLSX	no	no	no
+GSE85249	Mus musculus	TXT	no	no	no
+GSE81252	Homo sapiens	CSV	no	no	no
+GSE94555	Homo sapiens	XLSX	yes	no	yes
+GSE90806	Mus musculus	CSV	no	no	no
+GSE90670	Homo sapiens	BED, BEDGRAPH, BIGWIG	no	no	no
+GSE90659	Homo sapiens	TXT	no	no	no
+GSE39160	Mus musculus	BIGWIG, TXT	no	no	no
+GSE85875	Mus musculus	CSV, PDF	no	no	no
+GSE80205	Mus musculus	BED	no	no	no
+GSE94333	Mus musculus	TXT	no	no	no
+GSE93374	Mus musculus	TXT	yes	no	yes
+GSE89503	Homo sapiens	TXT	no	no	no
+GSE87726	Homo sapiens	none	no	no	no
+GSE87725	Homo sapiens	TXT	no	no	no
+GSE87720	Homo sapiens	TXT	no	no	no
+GSE87692	Homo sapiens	TXT	no	no	no
+GSE70875	Homo sapiens	none	no	no	no
+GSE70874	Homo sapiens	XLSX	no	no	no
+GSE84714	Homo sapiens	TSV	no	no	no
+GSE75478	Homo sapiens	CSV	no	no	no
+GSE92872	Homo sapiens; Mus musculus	CSV	no	no	no
+GSE91063	Homo sapiens	XLSX	no	no	no
+GSE87849	Homo sapiens	TXT, XLSX	no	no	no
+GSE93530	Homo sapiens	TXT	no	no	no
+GSE93421	Mus musculus	HDF5	no	no	no
+GSE81383	Homo sapiens	TXT	no	no	no
+GSE81505	Mus musculus	CSV	no	no	no
+GSE76026	Mus musculus	TXT	no	no	no
+GSE78968	Homo sapiens	DAT, TXT	no	no	no
+GSE78510	Mus musculus	TXT	no	no	no
+GSE68981	Mus musculus	TXT	no	no	no
+GSE81671	Homo sapiens	BED, FPKM_TRACKING	no	no	no
+GSE71794	Mus musculus	XLSX	no	no	no
+GSE89237	Homo sapiens	TXT	no	no	no
+GSE89236	Homo sapiens	TXT	no	no	no
+GSE89235	Homo sapiens	TXT	no	no	no
+GSE89234	Homo sapiens	none	no	no	no
+GSE79136	Homo sapiens	none	no	no	no
+GSE79130	Homo sapiens	TXT	no	no	no
+GSE90488	Mus musculus	TXT	no	no	no
+GSE90486	Mus musculus	TXT, XLS	no	no	no
+GSE90063	Homo sapiens; Mus musculus	CSV, TXT	no	no	no
+GSE90546	Homo sapiens	CSV, TSV, TXT	no	no	no
+GSE92247	Mus musculus; Rattus norvegicus	CSV	no	no	no
+GSE75688	Homo sapiens	TXT	no	no	no
+GSE86618	Homo sapiens	TXT	no	no	no
+GSE81275	Mus musculus	TXT	no	no	no
+GSE80483	Mus musculus	BW, TXT	no	no	no
+GSE87341	Mus musculus	TXT	no	no	no
+GSE85527	Homo sapiens	TXT	no	no	no
+GSE83142	Homo sapiens	TXT	no	no	no
+GSE81674	Homo sapiens	none	no	no	no
+GSE81673	Homo sapiens	TXT	no	no	no
+GSE80810	Mus musculus	XLS	no	no	no
+GSE90809	Mus musculus	CSV	no	no	no
+GSE90734	Homo sapiens	XLSX	no	no	no
+GSE87641	Homo sapiens	TXT	no	no	no
+GSE76184	Mus musculus	TXT	no	no	no
+GSE74672	Mus musculus	XLSX	no	no	no
+GSE69319	Homo sapiens	TXT	no	no	no
+GSE84498	Mus musculus	TXT	no	no	no
+GSE83948	Mus musculus	CSV	no	no	no
+GSE78045	Mus musculus	TXT	no	no	no
+GSE77852	Mus musculus	TXT	no	no	no
+GSE87637	Mus musculus	BEDGRAPH, TXT	no	no	no
+GSE85573	Homo sapiens	none	no	no	no
+GSE87527	Mus musculus	BED, TDF, TXT	no	no	no
+GSE89232	Homo sapiens	TXT	no	no	no
+GSE79552	Mus musculus; Homo sapiens	BW, TXT	no	no	no
+GSE81197	Mus musculus	TXT	no	no	no
+GSE67071	Mus musculus	TXT	no	no	no
+GSE89468	Mus musculus	TXT	no	no	no
+GSE86573	Mus musculus	TXT	no	no	no
+GSE86473	Homo sapiens	none	no	no	no
+GSE86469	Homo sapiens	CSV	no	no	no
+GSE86468	Homo sapiens	CSV	no	no	no
+GSE88567	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE88550	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE87945	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE87944	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE85784	Homo sapiens	TSV	no	no	no
+GSE85783	Homo sapiens	TSV	no	no	no
+GSE85782	Homo sapiens	TSV	no	no	no
+GSE87195	Homo sapiens	CSV	no	no	no
+GSE70630	Homo sapiens	TXT	no	no	no
+GSE86207	Pan troglodytes; Homo sapiens	TXT	yes	no	yes
+GSE89379	Mus musculus	CSV	no	no	no
+GSE86997	Mus musculus	CSV	no	no	no
+GSE88850	Homo sapiens	TXT	no	no	no
+GSE80032	Mus musculus	CSV	no	no	no
+GSE86929	Mus musculus	CSV	no	no	no
+GSE87069	Mus musculus	TAB	no	no	no
+GSE87239	Homo sapiens	CGMAP, TXT	no	no	no
+GSE87237	Homo sapiens	TXT	no	no	no
+GSE76267	Macaca fascicularis	TXT	no	no	no
+GSE84799	Homo sapiens	RCC	no	no	no
+GSE84789	Homo sapiens	TXT	no	no	no
+GSE69970	Mus musculus	TXT	no	no	no
+GSE83466	Danio rerio	XLSX	no	no	no
+GSE76381	Mus musculus; Homo sapiens	TXT	no	no	no
+GSE85241	Homo sapiens	CSV, PDF	no	no	no
+GSE75751	Mus musculus	TXT	no	no	no
+GSE86985	Homo sapiens	CSV	no	no	no
+GSE86982	Homo sapiens	CSV	no	no	no
+GSE86977	Homo sapiens	CSV	no	no	no
+GSE86894	Homo sapiens	none	no	no	no
+GSE83372	Gossypium hirsutum	none	no	no	no
+GSE71418	Gossypium hirsutum	FPKM_TRACKING	no	no	no
+GSE87414	Ctenopharyngodon idella	TXT	no	no	no
+GSE87408	Ctenopharyngodon idella	TXT	no	no	no
+GSE82174	Mus musculus	TXT	no	no	no
+GSE77740	Mus musculus	CSV, XLSX	no	no	no
+GSE77736	Mus musculus	CSV	no	no	no
+GSE84133	Homo sapiens; Mus musculus	CSV	no	no	no
+GSE75659	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE67848	Homo sapiens	TXT	no	no	no
+GSE87144	Mus musculus	XLSX	no	no	no
+GSE67602	Mus musculus	TXT	no	no	no
+GSE74450	Homo sapiens	GTF, XLS	yes	no	yes
+GSE79363	Mus musculus	TXT	no	no	no
+GSE75790	Mus musculus	TXT	no	no	no
+GSE86042	Mus musculus	CEL	no	no	no
+GSE86039	Mus musculus	TXT	no	no	no
+GSE86031	Mus musculus	TXT	no	no	no
+GSE86030	Mus musculus	TXT	no	no	no
+GSE86028	Mus musculus	TXT	no	no	no
+GSE85954	Mus musculus	TXT	no	no	no
+GSE85951	Mus musculus	TXT	no	no	no
+GSE81475	Homo sapiens	TXT	no	no	no
+GSE77113	Mus musculus	DIFF	no	no	no
+GSE86105	Homo sapiens	none	no	no	no
+GSE86104	Homo sapiens	TXT	no	no	no
+GSE86103	Homo sapiens	TXT	no	no	no
+GSE86102	Homo sapiens	TXT	no	no	no
+GSE86101	Homo sapiens	TXT	no	no	no
+GSE81608	Homo sapiens	TXT	no	no	no
+GSE78845	Mus musculus	TAB	no	no	no
+GSE78907	Mus musculus	TXT	no	no	no
+GSE71453	Mus musculus	CSV, TXT	no	no	no
+GSE70245	Mus musculus	TSV, TXT	no	no	no
+GSE70244	Mus musculus	TXT	no	no	no
+GSE70243	Mus musculus	TXT	no	no	no
+GSE70242	Mus musculus	TXT	no	no	no
+GSE70241	Mus musculus	TXT	no	no	no
+GSE70240	Mus musculus	TXT	no	no	no
+GSE70239	Mus musculus	TXT	no	no	no
+GSE70238	Mus musculus	TXT	no	no	no
+GSE70236	Mus musculus	TXT	no	no	no
+GSE70235	Mus musculus	TXT	no	no	no
+GSE84535	Mus musculus	TXT	no	no	no
+GSE81905	Mus musculus	BAM	no	no	no
+GSE81904	Mus musculus	BAM, R, RDATA, TXT	no	yes	yes
+GSE81903	Mus musculus	TXT	no	no	no
+GSE80232	Mus musculus	TXT	no	no	no
+GSE75367	Homo sapiens	TXT	yes	no	yes
+GSE74767	Macaca fascicularis; Mus musculus	TXT	no	no	no
+GSE85154	Mus musculus	XLSX	no	no	no
+GSE85152	Mus musculus	TXT	no	no	no
+GSE75386	Mus musculus	CSV	no	no	no
+GSE77944	Caenorhabditis elegans	BED, TXT	no	no	no
+GSE85721	Mus musculus	TXT	no	no	no
+GSE85575	Mus musculus; Homo sapiens	TXT	no	no	no
+GSE85183	Homo sapiens	TXT	no	no	no
+GSE85066	Homo sapiens	NARROWPEAK, TXT	no	no	no
+GSE79651	Rattus norvegicus; Mus musculus	TXT, XLSX	no	no	no
+GSE74155	Mus musculus	TXT	no	no	no
+GSE75748	Homo sapiens	CSV	yes	no	yes
+GSE75868	Homo sapiens	PILEUP, TSV, TXT	no	no	no
+GSE83765	Homo sapiens	PILEUP, TXT	no	no	no
+GSE82187	Mus musculus	CSV	no	no	no
+GSE79818	Mus musculus	TXT	no	no	no
+GSE79812	Mus musculus	XLSX	no	no	no
+GSE63161	Homo sapiens	TXT	no	no	no
+GSE52359	Mus musculus	FPKM_TRACKING	no	no	no
+GSE77367	Mus musculus	BW, XLS	no	no	no
+GSE77357	Mus musculus	TXT, XLS	no	no	no
+GSE74720	Mus musculus	XLSX	no	no	no
+GSE77288	Homo sapiens	TXT	no	no	no
+GSE83139	Homo sapiens	CSV	no	no	no
+GSE81682	Mus musculus	TXT	no	no	no
+GSE83146	Mus musculus	TXT	no	no	no
+GSE79920	Homo sapiens	TXT	yes	no	yes
+GSE76606	Mus musculus	FPKM_TRACKING	no	no	no
+GSE81076	Homo sapiens	CSV, RTF, TXT	no	no	no
+GSE76983	Mus musculus	CSV	no	no	no
+GSE76408	Mus musculus	CSV, TXT	no	no	no
+GSE74210	Homo sapiens	none	no	no	no
+GSE74207	Homo sapiens	TXT	no	no	no
+GSE83534	Homo sapiens	TAR	no	no	no
+GSE83533	Homo sapiens	TXT	no	no	no
+GSE74369	Homo sapiens	XLSX	no	no	no
+GSE83450	Homo sapiens	CSV	no	no	no
+GSE66582	Mus musculus	TXT	no	no	no
+GSE66390	Mus musculus	BEDGRAPH	no	no	no
+GSE76157	Mus musculus	TXT	no	no	no
+GSE67310	Mus musculus	TXT	yes	no	yes
+GSE76284	Homo sapiens	XLSX	no	no	no
+GSE82070	Homo sapiens	TXT	no	no	no
+GSE75384	Homo sapiens	none	no	no	no
+GSE74246	Homo sapiens	TXT	no	no	no
+GSE68771	Mus musculus	none	no	no	no
+GSE68770	Mus musculus	TXT	no	no	no
+GSE68769	Mus musculus	TXT	no	no	no
+GSE77564	Homo sapiens	TXT	no	no	no
+GSE67123	Mus musculus	FPKM_TRACKING	no	no	no
+GSE67120	Mus musculus	FPKM_TRACKING, TXT	yes	no	yes
+GSE66954	Mus musculus	FPKM_TRACKING	no	no	no
+GSE79510	Mus musculus	TXT	no	no	no
+GSE70605	Mus musculus	FPKM_TRACKING	no	no	no
+GSE70608	Mus musculus	BW, FPKM_TRACKING, TXT	no	no	no
+GSE78521	Mus musculus	TXT	no	no	no
+GSE71318	Homo sapiens	TXT	no	no	no
+GSE80264	Homo sapiens	TXT	no	no	no
+GSE79779	Homo sapiens	DIFF, TXT	no	no	no
+GSE80297	Homo sapiens	DAT	no	no	no
+GSE72059	Mus musculus	TXT	no	no	no
+GSE75139	Mus musculus	CEL	no	no	no
+GSE71802	Mus musculus	TXT	no	no	no
+GSE80551	Homo sapiens	TXT	no	no	no
+GSE66578	Mus musculus	TXT	no	no	no
+GSE65884	Mus musculus	TXT	no	no	no
+GSE75049	Mus musculus	TXT, XLSX	no	no	no
+GSE76314	Homo sapiens	CSV	no	no	no
+GSE74597	Mus musculus	BED, TXT	no	no	no
+GSE74596	Mus musculus	TXT	no	no	no
+GSE74594	Mus musculus	TXT	no	no	no
+GSE77067	Mus musculus	TXT	no	no	no
+GSE80155	Mus musculus	TXT	no	no	no
+GSE76483	Mus musculus	TXT	no	no	no
+GSE74360	Schmidtea mediterranea	TXT	no	no	no
+GSE79866	Schmidtea mediterranea	TXT	no	no	no
+GSE78779	Mus musculus; Caenorhabditis elegans	TXT	no	no	no
+GSE78509	Homo sapiens	BED, BW, CSV	no	no	no
+GSE78508	Homo sapiens	CSV	no	no	no
+GSE72056	Homo sapiens	TXT	no	no	no
+GSE77029	Mus musculus	TXT	no	no	no
+GSE74488	Arabidopsis thaliana	CSV	no	no	no
+GSE71315	Homo sapiens	BW, GTF, TXT	no	no	no
+GSE77847	Mus musculus	TXT	no	no	no
+GSE77846	Mus musculus	TXT	no	no	no
+GSE70657	Mus musculus	TXT	no	no	no
+GSE65924	Mus musculus	TXT, XLSX	no	no	no
+GSE79436	Mus musculus	TXT	no	no	no
+GSE69926	Mus musculus	XLSX	no	no	no
+GSE67113	Mus musculus	TXT	no	no	no
+GSE78494	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78490	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78489	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78488	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78486	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78483	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78482	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78480	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78479	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78478	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78475	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78473	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78471	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78467	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78466	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78463	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78460	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78458	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78457	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78455	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78454	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78453	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78451	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78449	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78447	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78445	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78443	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78442	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78440	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78439	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78436	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78435	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78434	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78432	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78430	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78428	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78427	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78426	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78425	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78424	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78421	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78420	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78417	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78414	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78412	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78410	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78408	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78407	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78402	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78401	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78400	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78398	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78397	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78394	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78389	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78388	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78387	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78386	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78385	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78383	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78381	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78379	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78377	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78376	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78375	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78373	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78368	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78367	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78366	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78365	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78363	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78362	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78361	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78356	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78355	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78354	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78353	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78352	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78350	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78349	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78348	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78347	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78346	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78343	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78342	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78341	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78339	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78336	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78334	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78333	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78332	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78331	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78330	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78328	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78327	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78326	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78324	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78322	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78319	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78318	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78314	Mus musculus	BIGWIG, TSV, TXT	no	no	no
+GSE78313	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78312	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78311	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78310	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78309	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78308	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE78307	Homo sapiens	BIGWIG, TSV, TXT	no	no	no
+GSE76579	Mus musculus; Mus musculus x Mus spretus	TXT	no	no	no
+GSE74406	Mus musculus	TXT	no	no	no
+GSE77705	Mus musculus	XLSX	no	no	no
+GSE77107	Mus musculus	CSV, TXT	no	no	no
+GSE68056	Mus musculus	TXT	no	no	no
+GSE65364	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE75901	Mus musculus	TXT	no	no	no
+GSE77308	Homo sapiens	TXT	no	no	no
+GSE69101	Mus musculus	BED, BW	no	no	no
+GSE77980	Mus musculus	TXT	no	no	no
+GSE74533	Mus musculus; Rattus norvegicus	TXT	no	no	no
+GSE70580	Homo sapiens	TXT	no	no	no
+GSE76881	Bos taurus	TSV, TXT	no	no	no
+GSE76005	Mus musculus	CSV	no	no	no
+GSE76871	Petunia x hybrida	CSV, FA, TXT	yes	no	yes
+GSE69790	Homo sapiens	TXT	no	no	no
+GSE73727	Homo sapiens	TSV	no	no	no
+GSE71585	Mus musculus	CSV	no	no	no
+GSE73574	Mus musculus	TXT	no	no	no
+GSE71104	Drosophila melanogaster	TXT	no	no	no
+GSE74535	Mus musculus	TXT, ZIP	no	no	no
+GSE74534	Mus musculus	TXT	no	no	no
+GSE66202	Mus musculus	TXT	no	no	no
+GSE74923	Mus musculus	TXT	no	no	no
+GSE70844	Mus musculus	XLS	no	no	no
+GSE63576	Mus musculus	TXT	no	no	no
+GSE75804	Mus musculus	TXT	no	no	no
+GSE73861	Mus musculus	TXT	no	no	no
+GSE75140	Homo sapiens	TXT	no	no	no
+GSE74792	Homo sapiens	TXT	no	no	no
+GSE65481	Homo sapiens	TXT	no	no	no
+GSE75413	Mus musculus	TXT	no	no	no
+GSE75189	Homo sapiens	XLSX	no	no	no
+GSE72857	Mus musculus	TXT	no	no	no
+GSE61844	Homo sapiens; Mus musculus	BED, BEDGRAPH, TXT	no	no	no
+GSE73892	Macaca mulatta	XLS	no	no	no
+GSE69647	Homo sapiens	WIG	no	no	no
+GSE75111	Mus musculus	FPKM_TRACKING	no	no	no
+GSE75110	Mus musculus	FPKM_TRACKING	no	no	no
+GSE75109	Mus musculus	FPKM_TRACKING	no	no	no
+GSE75108	Mus musculus	FPKM_TRACKING	no	no	no
+GSE75107	Mus musculus	FPKM_TRACKING	no	no	no
+GSE75106	Mus musculus	FPKM_TRACKING	no	no	no
+GSE75105	Mus musculus	FPKM_TRACKING	no	no	no
+GSE75104	Mus musculus	FPKM_TRACKING	no	no	no
+GSE75103	Mus musculus	FPKM_TRACKING	no	no	no
+GSE74833	Mus musculus	FPKM_TRACKING	no	no	no
+GSE71735	Stenotrophomonas maltophilia K279a	WIG	no	no	no
+GSE74713	Homo sapiens	CEL	no	no	no
+GSE73382	Mus musculus	none	no	no	no
+GSE73381	Mus musculus	TXT	no	no	no
+GSE66931	Mus musculus	XLSX	no	no	no
+GSE68625	Rattus norvegicus	TXT	no	no	no
+GSE63796	Mus musculus	XLSX	no	no	no
+GSE71982	Mus musculus	TXT	no	no	no
+GSE71858	Homo sapiens	CSV	no	no	no
+GSE59114	Mus musculus	XLSX	no	no	no
+GSE68596	Homo sapiens	CSV, TXT	no	no	no
+GSE73122	Homo sapiens	TXT	no	no	no
+GSE73121	Homo sapiens	TXT	no	no	no
+GSE67980	Homo sapiens	TXT	no	no	no
+GSE63681	Mus musculus	TXT	no	no	no
+GSE65530	Mus musculus	TXT	no	no	no
+GSE65529	Mus musculus	TXT	no	no	no
+GSE65528	Mus musculus	TXT	no	no	no
+GSE64002	Mus musculus	CSV, TXT	no	no	no
+GSE71485	Mus musculus	TXT	no	no	no
+GSE66507	Homo sapiens	TXT	no	no	no
+GSE62270	Mus musculus	TXT	no	no	no
+GSE70930	Mus musculus	TXT	no	no	no
+GSE69168	Mus musculus	TXT	no	no	no
+GSE67833	Mus musculus	CSV	no	no	no
+GSE71316	Mus musculus	CEL	no	no	no
+GSE70764	Homo sapiens; Mus musculus	BED, TXT, WIG	no	no	no
+GSE66056	Mus musculus	CEL	no	no	no
+GSE66054	Mus musculus	BED, TXT	no	no	no
+GSE60066	Mus musculus	BED, BEDGRAPH, BIGWIG, TXT	no	no	no
+GSE69708	Macaca fascicularis	TXT	no	no	no
+GSE67259	Homo sapiens; Mus musculus; Macaca fascicularis	TXT	no	no	no
+GSE69292	Homo sapiens	FPKM_TRACKING	no	no	no
+GSE70798	Mus musculus	CSV, TXT	yes	no	yes
+GSE64016	Homo sapiens	CSV	no	no	no
+GSE53386	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE69761	Mus musculus	TXT	no	no	no
+GSE60768	Mus musculus	CSV, TXT	no	no	no
+GSE62050	Mus musculus	BED, TXT	no	no	no
+GSE69405	Homo sapiens	TXT	no	no	no
+GSE63818	Homo sapiens	BED, TXT	no	no	no
+GSE59715	Caenorhabditis elegans	CSV	no	no	no
+GSE60781	Mus musculus	TXT	no	no	no
+GSE47946	Homo sapiens	TXT	no	no	no
+GSE47917	Homo sapiens	CEL, CHP, CNCHP, TXT	no	no	no
+GSE61533	Mus musculus	XLS	no	no	no
+GSE66357	Homo sapiens	TXT	no	no	no
+GSE61288	Mus musculus	TXT	no	no	no
+GSE56638	Rattus norvegicus; Mus musculus	TXT	no	no	no
+GSE67835	Homo sapiens	CSV	no	no	no
+GSE66694	synthetic construct	BAM, FASTA, GTF, TXT	no	no	no
+GSE66693	Homo sapiens; Mus musculus	BAM, TXT	yes	no	yes
+GSE65525	Mus musculus; Homo sapiens	CSV	no	no	no
+GSE63472	Mus musculus	BAM, TXT	yes	no	yes
+GSE63269	Homo sapiens; Mus musculus	BAM, TXT	yes	no	yes
+GSE66763	Homo sapiens	GTF, TXT	no	no	no
+GSE55939	Homo sapiens	TXT	no	no	no
+GSE57393	Mus musculus	none	no	no	no
+GSE57391	Mus musculus	TXT	no	no	no
+GSE66383	Homo sapiens; Mus musculus	BEDGRAPH, BW	no	no	no
+GSE68103	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE68102	Homo sapiens	DIFF, FPKM_TRACKING, GFF, TXT	no	no	no
+GSE66734	Mus musculus	TSV	no	no	no
+GSE66736	Mus musculus	BED, BEDGRAPH, TSV	no	no	no
+GSE66688	Danio rerio	TXT	no	no	no
+GSE63266	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE63180	Mus musculus	TXT	no	no	no
+GSE66053	Homo sapiens	TSV, TXT	no	no	no
+GSE65633	Mus musculus	BW	no	no	no
+GSE64960	Mus musculus	BIGWIG, CSV	no	no	no
+GSE66217	Homo sapiens	FPKM_TRACKING	no	no	no
+GSE60361	Mus musculus	TXT, XLSX	yes	no	yes
+GSE61470	Mus musculus	XLS	no	no	no
+GSE64959	Mus musculus	TXT	no	no	no
+GSE55291	Mus musculus	FPKM_TRACKING	no	no	no
+GSE57049	Homo sapiens	FPKM_TRACKING, GTF	yes	no	yes
+GSE64677	Homo sapiens	TXT	no	no	no
+GSE61628	Homo sapiens; Mus musculus	CEL, TXT	no	no	no
+GSE61626	Homo sapiens	TXT, XLS	no	no	no
+GSE57609	Mus musculus	TXT	no	no	no
+GSE52717	Homo sapiens	CEL	no	no	no
+GSE52716	Homo sapiens	XLSX	no	no	no
+GSE52715	Homo sapiens	XLSX	no	no	no
+GSE46226	Arabidopsis thaliana	CSV	no	no	no
+GSE53638	Homo sapiens	DAT	no	no	no
+GSE58707	Mus musculus	TXT	no	no	no
+GSE63058	Homo sapiens	BIGBED, BIGWIG, CEL, CYCHP	no	no	no
+GSE63055	Homo sapiens	TXT	no	no	no
+GSE62952	Mus musculus; Homo sapiens	CSV, TXT	no	no	no
+GSE62535	Mus musculus	TXT	no	no	no
+GSE60749	Mus musculus	CSV	no	no	no
+GSE57694	Mus musculus	BW, TXT	no	no	no
+GSE59739	Mus musculus	TXT	no	no	no
+GSE63093	Mus musculus	TXT	no	no	no
+GSE61300	Mus musculus	FPKM_TRACKING	no	no	no
+GSE61346	Mus musculus	FPKM_TRACKING, GTF, TXT	no	no	no
+GSE57182	Homo sapiens	TXT	no	no	no
+GSE62408	Homo sapiens	TXT	no	no	no
+GSE61917	Homo sapiens	TXT	no	no	no
+GSE58057	Schmidtea mediterranea	none	no	no	no
+GSE60407	Homo sapiens	XLS	no	no	no
+GSE51372	Mus musculus	TXT	no	no	no
+GSE60297	Mus musculus	TXT	no	no	no
+GSE52564	Mus musculus	XLS	no	no	no
+GSE56586	Xenopus laevis	GFF, TXT	no	no	no
+GSE59130	Mus musculus	TXT	no	no	no
+GSE59129	Mus musculus	TXT	no	no	no
+GSE59127	Mus musculus	TXT	no	no	no
+GSE57249	Mus musculus	BIGWIG, TXT	no	no	no
+GSE58652	synthetic construct; Homo sapiens; Mus musculus	TXT	no	no	no
+GSE57395	Homo sapiens	TAB	no	no	no
+GSE56446	Mus musculus	TAB	no	no	no
+GSE49607	Cucumis sativus	TXT	no	no	no
+GSE57872	Homo sapiens	TXT	no	no	no
+GSE53779	Homo sapiens	TXT	no	no	no
+GSE48968	Mus musculus	TXT	no	no	no
+GSE57409	Mus musculus	BED, BIGWIG, TSV, TXT	no	no	no
+GSE57403	Mus musculus	TSV	no	no	no
+GSE50708	Mus musculus	TXT	no	no	no
+GSE50585	Mus musculus	PAIR, TXT	no	no	no
+GSE47835	Mus musculus	TXT	no	no	no
+GSE54695	Mus musculus	TXT	no	no	no
+GSE52583	Mus musculus	FPKM_TRACKING	no	no	no
+GSE52529	Homo sapiens	TXT	no	no	no
+GSE54006	Mus musculus	TXT	no	no	no
+GSE52525	Mus musculus	TXT	no	no	no
+GSE45719	Mus musculus	TXT	no	no	no
+GSE46980	Mus musculus	TAB	no	no	no
+GSE53076	Mus musculus	BED, BIGWIG, TXT	no	no	no
+GSE44618	Homo sapiens	FPKM_TRACKING, TXT	no	no	no
+GSE51254	Homo sapiens	TXT	no	no	no
+GSE49592	Mus musculus; Rattus norvegicus	TXT	no	no	no
+GSE39523	Mus musculus	BED, TSV, WIG	no	no	no
+GSE39522	Mus musculus	TSV, WIG	no	no	no
+GSE42706	Mus musculus	BW, XLSX	no	no	no
+GSE42704	Mus musculus	TXT	no	no	no
+GSE45285	Mus musculus	none	no	no	no
+GSE45284	Mus musculus	TXT	no	no	no
+GSE38842	Mus musculus	BEDGRAPH, TXT	no	no	no
+GSE38841	Mus musculus	BIGWIG, TXT	no	no	no
+GSE33693	Mus musculus	BAM, BEDGRAPH, BIGWIG, SAM, TXT	no	no	no
+GSE32190	Mus musculus	BAM, BEDGRAPH, BIGWIG, SAM, TXT	no	no	no
+GSE49321	Homo sapiens; Mus musculus	TXT	no	no	no
+GSE44799	Gallus gallus	BED, TXT	no	no	no
+GSE36552	Homo sapiens	BED, TDF, TXT	no	no	no
+GSE46817	Homo sapiens	BIGWIG	no	no	no
+GSE46805	Homo sapiens	BIGWIG	no	no	no
+GSE44183	Mus musculus; Homo sapiens	TXT, WIG	no	no	no
+GSE42564	Mus musculus	TXT	no	no	no
+GSE47705	Mus musculus	TXT	no	no	no
+GSE47703	Mus musculus	TXT	no	no	no
+GSE41265	Mus musculus	TXT	no	no	no
+GSE42268	Mus musculus	TXT	no	no	no
+GSE16868	Zea mays	TXT	no	no	no
+GSE39873	Homo sapiens	BED, CEL, TXT	no	no	no
+GSE39872	Homo sapiens	BED, TXT	no	no	no
+GSE39821	Homo sapiens	TXT	no	no	no
+GSE38495	Homo sapiens; Mus musculus	BED, TXT	no	no	no
+GSE38198	Mus musculus	TXT	no	no	no
+GSE33979	Mus musculus	BAM	no	no	no
+GSE29087	Mus musculus	MAP, TXT	no	no	no
+GSE22182	Mus musculus	SRF	no	no	no
+GSE21180	Mus musculus	TAB, TXT, WIG	no	no	no
+GSE20187	Mus musculus	TAR, TXT	no	no	no
+GSE14605	Mus musculus	SRF, TXT, WIG	no	no	no

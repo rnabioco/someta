@@ -1,7 +1,7 @@
 ---
 title: 'single cell GEO records'
 date: '`r Sys.Date()`'
-package: scmetadata
+# package: scmetadata
 author:
   - name: Rui Fu
     affiliation: RNA Bioscience Initative, University of Colorado School of Medicine
@@ -29,33 +29,72 @@ knitr::opts_chunk$set(
 ```{r}
 library(here)
 library(tidyverse)
-date <- "090920"
+date <- format(format = "%m%d%y", Sys.Date())
 ```
+
+## Current GEO query used: 
+
+`"expression profiling by high throughput sequencing" AND ("single nuclei" OR "single cell" OR "single-cell" OR "scRNAseq" OR "scRNA-seq" OR "snRNAseq" OR "snRNA-seq")`
 
 ## Parse GEO query
-```{r}
-source(here("utils", "geo_query.R"))
-(gds_h$usable == "yes") %>% mean()
-(gds_m$usable == "yes") %>% mean()
-```
 
-## Parse database from 
+```{r}
+#source(here("utils", "geo_query.R"))
+gds <- read_tsv(here("inst", "extdata", paste0("geo_", date, ".tsv")))
+gds_hm <- gds %>% filter(str_detect(org, "Homo sapiens") | str_detect(org, "Mus musculus"))
+```
+The fraction of GEO entries with potential metadata (file with "meta" or "annot" in filename or rda/rds/rdata files) is `r (gds_hm$usable == "yes") %>% mean()`
+
+## Parse database from Svensson et al.
+
 ```{r}
 library(googlesheets4)
 gs4_deauth()
 data <- read_sheet("https://docs.google.com/spreadsheets/d/1En7-UV0k0laDiIfjFkdn7dggyR7jIk3WH8QgXaMOZF0", sheet = "Data")
-h_data <- data %>% filter(Measurement == "RNA-seq") %>% filter(str_detect(`Data location`, "^GSE")) %>% filter(str_detect(Organism, "Human"))
-m_data <- data %>% filter(Measurement == "RNA-seq") %>% filter(str_detect(`Data location`, "^GSE")) %>% filter(str_detect(Organism, "Mouse"))
+hm_data <- data %>% filter(Measurement == "RNA-seq") %>% filter(str_detect(`Data location`, "^GSE")) %>% filter(str_detect(Organism, "Human") | str_detect(Organism, "Mouse"))
+hm_ids <- hm_data$`Data location` %>% strsplit(", ") %>% unlist()
+```
+
+```{r include = F}
+# hm_ids <- hm_data$`Data location` %>% strsplit(", ") %>% unlist()
+# length(intersect(gds_h$id, h_ids))/length(h_ids)
+# 
+# m_ids <- m_data$`Data location` %>% strsplit(", ") %>% unlist()
+# length(intersect(gds_m$id, m_ids))/length(m_ids)
 ```
 
 ```{r}
-h_ids <- h_data$`Data location` %>% strsplit(", ") %>% unlist()
-length(intersect(gds_h$id, h_ids))/length(h_ids)
+library(GEOquery)
+get_subseries <- function(geo) {
+  res <- tryCatch(
+    suppressMessages(getGEO(GEO = geo,
+                            filename = NULL, destdir = tempdir(), 
+                            GSElimits = NULL, GSEMatrix = FALSE, 
+                            AnnotGPL = FALSE, getGPL = TRUE,
+                            parseCharacteristics = TRUE)),
+    error = function(e) {"notavail"})
+  if (class(res) != "GSE") {
+    return(NA)
+  }
+  resr <- res@header$relation
+  resr[str_detect(resr, "SuperSeries of: ")] %>% str_remove("SuperSeries of: ")
+}
 
-m_ids <- m_data$`Data location` %>% strsplit(", ") %>% unlist()
-length(intersect(gds_m$id, m_ids))/length(m_ids)
+checksub <- purrr::map(
+  setdiff(hm_ids, gds_hm$id),
+  function(x) {
+    temp <- get_subseries(x)
+    if (length(temp) == 1) {
+      if (is.na(temp)) {
+        NA
+      }
+      else {
+        length(intersect(temp, gds_hm$id)) == 0
+      }
+    } else {
+      length(intersect(temp, gds_hm$id)) == 0
+    }
+  }) %>% unlist()
 ```
-
-```{r}
-setdiff(h_ids, gds_h$id)
-```
+Overlap of human and mouse scRNA-seq GEO entries between manual curation and the GEO query is `r 
+1 - sum(checksub, na.rm = T)/(length(hm_ids) - sum(is.na(checksub)))`.

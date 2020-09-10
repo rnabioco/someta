@@ -40,14 +40,14 @@ geo_string <- function(id, string) {
 
 t0 <- Sys.time()
 gds <- gds %>%
-  mutate(has_meta = pbmcapply::pbmcmapply(geo_string, id, "meta")) %>%
+  mutate(has_meta = pbmcapply::pbmcmapply(geo_string, id, "meta|annot|type")) %>%
   filter(!str_detect(has_meta, "error")) %>%
   mutate(has_r = ifelse(str_detect(files, "RDA|RDATA|RDS"), "yes", "no")) %>% 
   mutate(usable = ifelse(has_meta == "yes" | has_r == "yes", "yes", "no"))
 message("GEOquery data check step took ", format(Sys.time() - t0))
+# 
+# gds_h <- gds %>% filter(str_detect(org, "Homo sapiens"))
+# gds_m <- gds %>% filter(str_detect(org, "Mus musculus"))
 
-gds_h <- gds %>% filter(str_detect(org, "Homo sapiens"))
-gds_m <- gds %>% filter(str_detect(org, "Mus musculus"))
-
-write_tsv(gds_h, here("inst", "extdata", paste0("geo_hs_", date, ".tsv")))
-write_tsv(gds_m, here("inst", "extdata", paste0("geo_mm_", date, ".tsv")))
+write_tsv(gds, here("inst", "extdata", paste0("geo_", date, ".tsv")))
+gds <- read_tsv(write_tsv(gds, here("inst", "extdata", paste0("geo_", date, ".tsv"))))
