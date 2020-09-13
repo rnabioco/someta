@@ -40,7 +40,7 @@ date <- format(format = "%m%d%y", Sys.Date())
 
 ```{r}
 #source(here("utils", "geo_query.R"))
-gds <- read_tsv(here("inst", "extdata", paste0("geo_", date, ".tsv")))
+gds <- read_tsv(here("inst", "extdata", paste0("geo_", "091020", ".tsv")))
 gds_hm <- gds %>% filter(str_detect(org, "Homo sapiens") | str_detect(org, "Mus musculus"))
 ```
 The fraction of GEO entries with potential metadata (file with "meta" or "annot" in filename or rda/rds/rdata files) is `r (gds_hm$usable == "yes") %>% mean()`
@@ -98,3 +98,81 @@ checksub <- purrr::map(
 ```
 Overlap of human and mouse scRNA-seq GEO entries between manual curation and the GEO query is `r 
 1 - sum(checksub, na.rm = T)/(length(hm_ids) - sum(is.na(checksub)))`.
+
+Number of entries not public: `r sum(is.na(checksub))`
+
+```{r include = F}
+get_date <- function(geo) {
+  res <- tryCatch(
+    suppressMessages(GEOquery::getGEO(GEO = geo,
+                            filename = NULL, destdir = tempdir(), 
+                            GSElimits = NULL, GSEMatrix = FALSE, 
+                            AnnotGPL = FALSE, getGPL = FALSE,
+                            parseCharacteristics = FALSE)),
+    error = function(e) {"notavail"})
+  if (class(res) != "GSE") {
+    return(NA)
+  }
+
+  res@header$submission_date
+}
+
+library(progress)
+# pb <- progress_estimated(nrow(gds_hm[1:1000,]))
+# gds_hm2a <- gds_hm[1:1000,] %>%
+#   mutate(date = map(id, function(x) {
+#     # update the progress bar (tick()) and print progress (print())
+#     pb$tick()$print()
+#     get_date(x)
+#   })) %>%
+#   separate(date, into = c("month","day","year"))
+# 
+# pb <- progress_estimated(nrow(gds_hm[1001:2000,]))
+# gds_hm2b<- gds_hm[1001:2000,] %>%
+#   mutate(date = map(id, function(x) {
+#     # update the progress bar (tick()) and print progress (print())
+#     pb$tick()$print()
+#     get_date(x)
+#   })) %>%
+#   separate(date, into = c("month","day","year"))
+# pb <- progress_estimated(nrow(gds_hm[2001:3705,]))
+# dates <- sapply(gds_hm$id[2001:3705], function(x) {
+#   pb$tick()$print()
+#   get_date(x)
+# }, simplify = FALSE)
+# saveRDS(dates, "3705dates.rds")
+# gds_hm2c <- gds_hm[2001:3705,] 
+# gds_hm2c$date <- unlist(dates)
+# gds_hm2a <- readRDS(here("hm2000.rds"))
+# gds_hm2 <- bind_rows(gds_hm2a, 
+#                      gds_hm2c %>%
+#   separate(date, into = c("month","day","year")))
+```
+
+```{r}
+frac <- gds_hm %>% na.omit() %>% 
+  group_by(year, usable) %>% 
+  summarize(n = n()) %>% 
+  ungroup() %>% 
+  pivot_wider(names_from = usable, values_from = n) %>% 
+  replace_na(list(no = 0, yes = 0)) %>% 
+  mutate(fraction = yes/(yes + no), total = yes + no) %>% 
+  mutate(fraction = round(fraction, digits = 3))
+
+ggplot(gds_hm %>% na.omit(),
+       aes(x = year, fill = usable)) +
+  geom_bar() +
+  scale_fill_viridis_d(option = "plasma") +
+  geom_text(data = frac, color = "black", aes(x = year, y = total + 30, label = fraction, fill = NA)) +
+  cowplot::theme_cowplot() +
+  ggtitle("scRNAseq datasets by year")
+
+ggplot(gds_hm %>% na.omit() %>% filter(year == "2020") %>% 
+         mutate(month = factor(month, levels = c("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"))),
+       aes(x = month, fill = usable)) +
+  geom_bar() +
+  scale_fill_viridis_d(option = "plasma") +
+  cowplot::theme_cowplot() +
+  ggtitle("scRNAseq datasets by month in 2020")
+```
+
