@@ -32,20 +32,27 @@ library(tidyverse)
 date <- format(format = "%m%d%y", Sys.Date())
 ```
 
-## Current GEO query used: 
+# Current GEO query used: 
 
-`"expression profiling by high throughput sequencing" AND ("single nuclei" OR "single cell" OR "single-cell" OR "scRNAseq" OR "scRNA-seq" OR "snRNAseq" OR "snRNA-seq")`
+```
+"expression profiling by high throughput sequencing" AND
+("single nuclei" OR "single cell" OR "single-cell" OR "scRNAseq" OR "scRNA-seq" OR "snRNAseq" OR "snRNA-seq")
+```
 
-## Parse GEO query
+# Parse GEO query
 
 ```{r entries}
 #source(here("utils", "geo_query.R"))
 gds <- read_tsv(here("inst", "extdata", paste0("geo_", "091020", ".tsv")))
 gds_hm <- gds %>% filter(str_detect(org, "Homo sapiens") | str_detect(org, "Mus musculus"))
-```
-The fraction of GEO entries with potential metadata (file with "meta" or "annot" in filename or rda/rds/rdata files) is `r (gds_hm$usable == "yes") %>% mean()`
 
-## Parse database from Svensson et al.
+gds_old <- gds_hm
+fp <- read_tsv(here("inst", "extdata", "falsepos.txt"), col_names = F) %>% pull(1)
+gds_hm <- gds_hm %>% mutate(usable = ifelse(id %in% fp, "no", usable))
+```
+The fraction of GEO entries with potential metadata (file with "meta", "annot", or "type" in filename or rda/rds/rdata files) is `r (gds_old$usable == "yes") %>% mean()`. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at `r length(fp) / sum(gds_hm$has_meta == "yes")`).
+
+# Parse database from Svensson et al.
 
 ```{r curated}
 library(googlesheets4)
@@ -88,8 +95,8 @@ checksub <- purrr::map(
     }
   }) %>% unlist()
 ```
-Overlap of human and mouse scRNA-seq GEO entries between manual curation and the GEO query is `r 
-1 - sum(checksub, na.rm = T)/(length(hm_ids) - sum(is.na(checksub)))`.
+
+Overlap of human and mouse scRNA-seq GEO entries between manual curation and the GEO query is `r 1 - sum(checksub, na.rm = T)/(length(hm_ids) - sum(is.na(checksub)))`.
 
 Number of entries not public: `r sum(is.na(checksub))`
 

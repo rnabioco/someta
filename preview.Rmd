@@ -1,0 +1,115 @@
+```{r}
+library(tidyverse)
+library(here)
+```
+
+```{r}
+link <- "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE113nnn/GSE113049/suppl/GSE113049_count_matrix.tsv.gz"
+link <- "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE157nnn/GSE157079/suppl//GSE157079_snATAC_metadata.csv.gz"
+preview_link <- function(link, n_row = 5, n_col = 50, verbose = T) {
+  message(link)
+  if (!str_starts(link, "http")) {
+    return(NA)
+  }
+  message("read")
+  url1 <- url(link)
+  if (str_ends(link, "\\.gz")) {
+    temp <- readLines(gzcon(url1), n = n_row)
+  } else {
+    temp <- readLines(url1, n = n_row)
+  }
+  close(url1)
+    
+  message("parse")
+  temp_df <- data.frame(V1 = temp)
+  if (str_ends(str_remove(link, "\\.gz$"), "tsv")) {
+    cn <- str_split(temp[1], "\t")[[1]]
+    r2 <- str_split(temp[2], "\t")[[1]]
+    
+    if (any(duplicated(cn))) {
+      cn <- str_c("col", 1:length(cn))
+    }
+    if (length(r2) > length(cn)) {
+      cn <- c("empty", cn)
+    } else if (any(cn == "")) {
+      cn[cn == ""] <- "empty"
+    }
+    temp_df <- temp_df[2:n_row, , drop= FALSE] %>% tidyr::separate(V1, "\t", into = cn)
+    if (ncol(temp_df) < n_col) {
+      n_col <- ncol(temp_df)
+    }
+    temp_df <- temp_df[,1:n_col]
+  } else if (str_ends(str_remove(link, "\\.gz$"), "csv")) {
+    cn <- str_split(temp[1], ",")[[1]]
+    r2 <- str_split(temp[2], ",")[[1]]
+    
+    if (any(duplicated(cn))) {
+      cn <- str_c("col", 1:length(cn))
+    }
+    if (length(r2) > length(cn)) {
+      cn <- c("empty", cn)
+    } else if (any(cn == "")) {
+      cn[cn == ""] <- "empty"
+    }
+    temp_df <- temp_df[2:n_row, , drop= FALSE] %>% tidyr::separate(V1, ",", into = cn)
+    if (ncol(temp_df) < n_col) {
+      n_col <- ncol(temp_df)
+    }
+    temp_df <- temp_df[,1:n_col]
+  } else if (str_ends(str_remove(link, "\\.gz$"), "txt")) {
+
+    if (length(str_split(temp[1], "\t")[[1]]) >= 5) {
+      delim <- "\t"
+    } else if (length(str_split(temp[1], ",")[[1]]) >= 5) {
+      delim <- ","
+    } else if (length(str_split(temp[1], " ")[[1]]) >= 5) {
+      delim <- " "
+    } else {
+      delim <- "~"
+    }
+    
+    cn <- str_split(temp[1], delim)[[1]]
+    r2 <- str_split(temp[2], delim)[[1]]
+    
+    if (any(duplicated(cn))) {
+      cn <- str_c("col", 1:length(cn))
+    }
+    if (length(r2) > length(cn)) {
+      cn <- c("empty", cn)
+    } else if (any(cn == "")) {
+      cn[cn == ""] <- "empty"
+    }
+    temp_df <- temp_df[2:n_row, , drop= FALSE] %>% tidyr::separate(V1, delim, into = cn)
+    if (ncol(temp_df) < n_col) {
+      n_col <- ncol(temp_df)
+    }
+    temp_df <- temp_df[,1:n_col]
+  }
+  return(temp_df)
+}
+
+preview_link("https://ftp.ncbi.nlm.nih.gov/geo/series/GSE131nnn/GSE131181/suppl//GSE131181_e10.5.meta.data.csv.gz")
+```
+
+```{r entries}
+#source(here("utils", "geo_query.R"))
+gds <- read_tsv(here("inst", "extdata", paste0("geo_", "091020", ".tsv")))
+gds_hm <- gds %>% filter(str_detect(org, "Homo sapiens") | str_detect(org, "Mus musculus"))
+gds_hm_maybe <- gds_hm %>% filter(has_meta == "yes")
+```
+
+```{r}
+library(GEOquery)
+res <- map(as.list(gds_hm_maybe$id) %>% setNames(gds_hm_maybe$id),
+    geo_string,
+    "meta|annot|type",
+    TRUE)
+
+res2 <- map(res,
+            preview_link)
+
+res3 <- enframe(res2) %>% left_join(enframe(res) %>% unnest(value), by = "name") %>% mutate(value.y = str_remove(value.y, ".+/"))
+
+saveRDS(res3, here("inst", "extdata", "previews.rds"))
+```
+

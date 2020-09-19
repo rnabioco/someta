@@ -20,11 +20,23 @@ gds <- read_table(fileloc, col_names = FALSE) %>%
   mutate(files = ifelse(str_detect(files, "FTP download: GEO"), "none", files)) %>% 
   select(id, org, files, link)
 
-geo_string <- function(id, string) {
+geo_string <- function(id, string, return_link = FALSE) {
   temp <- tryCatch(suppressMessages(getGEOSuppFiles(id, 
                                                     makeDirectory = F, 
                                                     fetch_files = F)),
                    error = function(e) {"error_get"})
+  if (return_link) {
+    if (is.null(temp)) {
+      return("error_no")
+    } else {
+      #print(temp)
+      link <- tryCatch(temp %>% filter(str_detect(str_to_lower(fname), string)) %>% 
+                         dplyr::slice(1) %>% 
+                         pull(url),
+      error = function(e) {"error_link"})
+      return(link)
+    }
+  }
   if (is.null(temp)) {
     return("no")
   } else {
