@@ -281,6 +281,15 @@ readRDS("3705journals_4.rds") %>% unlist())
 ```
 
 ```{r journalplot}
+
+ids_nat <- hm_data %>% filter(Journal == "Nature" | str_detect(Journal, "^Nat "))
+ids_cell <- hm_data %>% filter(Journal %in% c("Cell","Cell Reports", "Developmental Cell", "Cell Stem Cell", "Molecular Cell", "Cancer Cell", "Immunity", "Neuron"))
+ids_sci <- hm_data %>% filter(Journal %in% c("Science", "Sci Rep"))
+ids_elife <- hm_data %>% filter(Journal == "eLife")
+ids_pnas <- hm_data %>% filter(Journal == "Proc Natl Acad Sci USA")
+ids_gb <- hm_data %>% filter(Journal == "Genome Biol")
+
+
 gds_hm_j <- gds_hm %>%
   mutate(journal_group = case_when(
     journal %in% c("Nature", "Science", "Cell") ~ "CNS",
@@ -293,14 +302,26 @@ gds_hm_j <- gds_hm %>%
     journal %in% c("Proc. Natl. Acad. Sci. U.S.A.") ~ "PNAS",
     str_detect(journal, "PLoS") ~ "PLOS",
     #journal %in% c("Nucleic Acids Res.") ~ "NAR",
-    
+    TRUE ~ "other"
+    )) %>% 
+  mutate(journal_group2 = case_when(
+    journal %in% c("Nature", "Nat Commun", "Nat Metab", "Cell Res.") ~ "Nature",
+    str_detect(journal, "^Nat. ") ~ "Nature",
+    journal %in% c("Science", "Sci Rep", "Sci Immunol", "Sci Adv") ~ "Science",
+    journal %in% c("Cell", "Cell Rep", "Dev. Cell", "Cell Stem Cell", "Stem Cell Reports", "Mol. Cell", "Cancer Cell", "Immunity", "Neuron", "Cell Syst", "Cell Metab.", "Cell Host Microbe", "iScience") ~ "Cell",
+    journal %in% c("Genome Biol.", "Genome Med") ~ "BMC",
+    str_detect(journal, "BMC") ~ "BMC",
+    #str_detect(journal, "^Front") ~ "Frontiers",
+    #journal %in% c("Genes Dev.", "Genome Res.") ~ "CSHL",
+    #str_detect(journal, "PLoS") ~ "PLOS",
+    #journal %in% c("Nucleic Acids Res.") ~ "NAR",
     TRUE ~ "other"
     )) %>% 
   filter(journal != "error") %>% 
-  filter(year >= 2018) %>% 
   na.omit()
 
 gds_hm_j_frac <- gds_hm_j %>% 
+  filter(year >= 2018) %>% 
   group_by(journal_group, usable) %>% 
   summarize(n = n()) %>% 
   ungroup() %>% 
@@ -310,7 +331,7 @@ gds_hm_j_frac <- gds_hm_j %>%
   mutate(fraction = round(fraction, digits = 3)) %>% 
   arrange(desc(fraction))
 
-ggplot(gds_hm_j %>% mutate(journal_group = factor(journal_group, levels = gds_hm_j_frac$journal_group)),
+ggplot(gds_hm_j %>% filter(year >= 2018) %>% mutate(journal_group = factor(journal_group, levels = gds_hm_j_frac$journal_group)),
        aes(x = journal_group, fill = usable)) +
   geom_bar() +
   scale_fill_viridis_d(option = "plasma") +
@@ -319,3 +340,20 @@ ggplot(gds_hm_j %>% mutate(journal_group = factor(journal_group, levels = gds_hm
   ggtitle("scRNAseq datasets by journal")
 ```
 
+```{r journaldot}
+gds_hm_sum <- gds_hm_j %>% filter(year >= 2018) %>% 
+  group_by(journal, journal_group, journal_group2) %>% 
+  summarize(n = n(), frac = sum(usable == "yes") / n) %>% 
+  ungroup()
+
+ggplot(gds_hm_sum %>% filter(n >= 3) %>% 
+         mutate(journal_group = factor(journal_group2, levels = c("Cell", "Nature", "Science", "BMC", "other"))),
+       aes(x = n, y = frac, color = journal_group)) +
+  geom_point() +
+  scale_color_brewer(palette = "Spectral") +
+  cowplot::theme_cowplot() +
+  ggtitle("scRNAseq datasets by journal family") + 
+  xlab("total") +
+  ylim(c(0, 1)) +
+  scale_x_log10()
+```
