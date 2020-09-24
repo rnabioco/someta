@@ -1,0 +1,65 @@
+digraph workflow {
+  graph [layout = dot,
+        rankdir = TB]
+
+  node [shape = cicle,
+        style = filled,
+        fontcolor = black,
+        fontname = "Helvetica"]
+
+  # start
+  node [fillcolor = "#E69F00"]
+  startnode [label = "Examine GEO record"];
+  mdata [label = "Load data into R/Python\nand reformat for reanalysis"]
+
+
+  # rds or h5ad parsing
+ # node [fillcolor = "#56B4E9"]
+ # objdata [label = "Load data in R/Python\nReformat for reanalysis"]
+
+
+  # no metadata parsing
+  node [fillcolor = "#56B4E9"]
+
+  nomdata_nomatrix [label = "Run Cellranger\nKallisto-Bustools\nor Aleven"]
+  nomdata_3 [label = "Quality control\nFeature selection\nDimensionality Reduction**"]
+  nomdata_4 [label = "Clustering**"]
+  nomdata_5 [label = "Examine cluster markers\n to assign cell types\nto match to publication*"]
+
+  # code
+  node [fillcolor = "#009E73"]
+  code [label = "Install dependencies\n Update code as needed"]
+  code_1 [label = "Try to execute provided code*"]
+  code_2 [label = "Compare results with publication*"]
+
+  # post metadata processing
+  node [fillcolor = "#E69F00"]
+  post [label = "Generate reference dataset"]
+  post_2 [label = "Compare query single cell data\nto reference dataset"]
+
+  # query data
+  node [fillcolor = "#F0E442"]
+  query [label = "Query single cell dataset"]
+
+
+  edge [color = grey
+        fontname = "Helvetica"]
+
+  startnode -> mdata [
+                      label = "Has a matrix?"]
+  startnode -> nomdata_nomatrix [label = "No matrix?"]
+  nomdata_nomatrix -> mdata
+
+  mdata -> nomdata_3 [label = "No code provided"]
+  mdata -> code [label = "Analysis code\nprovided by\npublication"]
+  nomdata_3 -> nomdata_4 -> nomdata_5 -> post
+
+  code -> code_1 -> code_2 -> post
+  code_2 -> code [label = ""]
+
+  nomdata_5 -> nomdata_3 [label = ""]
+  mdata -> post [label = "Has metadata?"]
+  post -> post_2
+  query -> post_2
+
+}
