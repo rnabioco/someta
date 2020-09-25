@@ -124,12 +124,14 @@ gds2 <- gds %>% mutate(suppfiles = pbmcapply::pbmcmapply(supp_files,
 gds3 <- gds2 %>% mutate(tarfiles = pbmcapply::pbmcmapply(tar_files,
                                                          link))
 gds4 <- gds3 %>% mutate(has_meta1 = pbmcapply::pbmcmapply(check_string, 
-                                                          suppfiles,"meta|annot|type"))
+                                                          suppfiles,"meta|annot|type|clustering"))
 gds4 <- gds4 %>% mutate(has_meta2 = pbmcapply::pbmcmapply(check_string, 
-                                                          tarfiles,"meta|annot|type"))
-gds4 <- gds4 %>% mutate(has_object = ifelse(str_detect(files, "RDS|RDA|RDATA|LOOM|H5AD"), 
+                                                          tarfiles,"meta|annot|type|clustering"))
+gds4 <- gds4 %>% mutate(has_object1 = ifelse(str_detect(suppfiles, "rds|rda|rdata|loom|h5ad"), 
                                             "yes", "no"))
-gds4 <- gds4 %>% mutate(usable = ifelse(has_meta1 == "yes" | has_meta2 == "yes" | has_object == "yes",
+gds4 <- gds4 %>% mutate(has_object2 = ifelse(str_detect(tarfiles, "rds|rda|rdata|loom|h5ad"), 
+                                            "yes", "no"))
+gds4 <- gds4 %>% mutate(usable = ifelse(has_meta1 == "yes" | has_meta2 == "yes" | has_object1 == "yes" | has_object2 == "yes",
                                         "yes", "no"))
 
 # giant superseries (also incorrect) soft.gz  files cause issues
@@ -166,7 +168,7 @@ gds6 <- gds5 %>% mutate(pubmed = map(id, from_list))
 gds6 <- gds6 %>% mutate(journal = pbmcapply::pbmcmapply(get_journal,
                                                         pubmed))
 saveRDS(gds6, "gds6_temp_092320.rds")
-
+gds6 %>% saveRDS(here("inst", "extdata", paste0("geo_", "091020", ".rds")))
 
 
 if (return_link) {
@@ -212,34 +214,3 @@ geo_string <- function(id, string, return_link = FALSE) {
       error = function(e) {"error_parse"})
   }
 }
-
-check_tar <- function(link, string) {
-  tryCatch(
-    ifelse(
-      read_tsv(link, comment = "#") %>% pull(2) %>% 
-        str_to_lower() %>%
-        str_detect(string) %>% 
-        any(),
-      "yes",
-      "no"),
-    error = function(e) {"error_parse"})
-}
-
-t0 <- Sys.time()
-gds <- gds %>%
-  mutate(has_meta = pbmcapply::pbmcmapply(geo_string, id, "meta|annot|type|loom|h5ad")) %>%
-  filter(!str_detect(has_meta, "error")) %>%
-  mutate(has_r = ifelse(str_detect(files, "RDA|RDATA|RDS"), "yes", "no")) %>% 
-  mutate(usable = ifelse(has_meta == "yes" | has_r == "yes", "yes", "no"))
-
-gds2 <- gds[,] %>% mutate(tar_meta = pbmcapply::pbmcmapply(check_tar, link, "meta|annot|type"))
-gds3 <- gds_hm %>% inner_join(gds2) %>% 
-  mutate(usable = ifelse(tar_meta == "yes" | usable == "yes", "yes", "no"))
-message("GEOquery data check step took ", format(Sys.time() - t0))
-# 
-# gds_h <- gds %>% filter(str_detect(org, "Homo sapiens"))
-# gds_m <- gds %>% filter(str_detect(org, "Mus musculus"))
-# write_tsv(gds3 %>% select(id, org, files, has_meta, tar_meta, has_r, usable, year, month, day, journal, link),
-#   here("inst", "extdata", paste0("geo_", date, ".tsv")))
-write_tsv(gds, here("inst", "extdata", paste0("geo_", date, ".tsv")))
-gds <- read_tsv(write_tsv(gds, here("inst", "extdata", paste0("geo_", date, ".tsv"))))
