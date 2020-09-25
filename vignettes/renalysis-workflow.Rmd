@@ -1,0 +1,119 @@
+---
+title: "Re-analysis workflows"
+author: "Kent Riemondy RBI"
+date: "9/22/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+# Workflows
+
+```{r}
+library(here)
+library(DiagrammeR)
+library(DiagrammeRsvg)
+library(magrittr)
+library(rsvg)
+library(SingleCellExperiment)
+library(Seurat)
+library(scran)
+library(scater)
+library(igraph)
+```
+
+```{r}
+g_fn <- here("inst", "extdata", "workflow.gv")
+grViz(g_fn)
+```
+
+
+Saving the diagram as a pdf took awhile to figure out. See https://github.com/rich-iannone/DiagrammeR/issues/70#issuecomment-179403772 
+
+
+```{r}
+inch_to_px <- function(x, dpi = 300) { x * dpi}
+
+w_inch <- 4
+asp_ratio = 1.6
+w <-  inch_to_px(w_inch)
+h <- inch_to_px(w_inch * asp_ratio)
+
+grViz(g_fn, width = w, height = h ) %>% 
+  export_svg %>% 
+  charToRaw %>% 
+  rsvg_pdf("workflow-graph.pdf")
+```
+
+
+# Required data
+
+```{r}
+n <- 1000
+seed <- 42
+set.seed(seed)
+sce <- mockSCE() %>% 
+  logNormCounts() %>% 
+  runPCA() %>% 
+  runUMAP()
+
+colData(sce)$clusters <- buildSNNGraph(sce) %>% 
+  cluster_fast_greedy(.) %>% 
+  .$membership
+
+colData(sce)$cell_type <- sample(c("B", "T", "NK", "Mac"), 
+                                 ncol(sce),
+                                 replace = TRUE)
+
+
+colData(sce) <- colData(sce)[c("clusters", "cell_type")]
+
+mdata <- as.data.frame(colData(sce))
+umap <- reducedDim(sce, "UMAP")
+colnames(umap) = c("UMAP_1", "UMAP_2")
+```
+
+## Count Matrix
+
+```{r}
+counts(sce)[1:5, 1:5]
+```
+
+## Metadata
+```{r}
+cbind(mdata, umap)[1:5, 1:4]
+```
+
+# Example metadata export code
+
+## SCE
+
+```{r}
+mdata <- as.data.frame(colData(sce))
+umap <- reducedDim(sce, "UMAP")
+colnames(umap) <- c("UMAP_1", "UMAP_2")
+mdata <- cbind(mdata, umap)
+write.csv(mdata, file = "cell-level-mdata.csv")
+```
+
+## Seurat
+
+```{r}
+seurat_object <- pbmc_small 
+mdata <- cbind(seurat_object@meta.data, Embeddings(seurat_object, "tsne"))
+write.csv(mdata, file = "cell-level-mdata.csv")
+```
+
+## Scanpy
+
+
+```{python, eval = FALSE}
+import scanpy
+import pandas
+adata = scanpy.datasets.pbmc3k_processed()
+mdata = adata.obs
+umap = adata.obsm.to_df()[["X_umap1", "X_umap2"]]
+pandas.concat([mdata, umap]).to_csv("cell-level-metadata.csv")
+```
