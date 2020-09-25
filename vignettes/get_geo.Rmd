@@ -36,30 +36,33 @@ date <- format(format = "%m%d%y", Sys.Date())
 
 ```
 "expression profiling by high throughput sequencing" AND
-("single nuclei" OR "single cell" OR "single-cell" OR "scRNAseq" OR "scRNA-seq" OR "snRNAseq" OR "snRNA-seq")
+("single nuclei" OR "single cell" OR "scRNAseq" OR "scRNA-seq" OR "snRNAseq" OR "snRNA-seq")
 ```
 
 # Parse GEO query
 
 ```{r entries}
 #source(here("utils", "geo_query.R"))
-gds <- read_tsv(here("inst", "extdata", paste0("geo_", "091020", ".tsv")))
-gds_hm <- gds %>% filter(str_detect(org, "Homo sapiens") | str_detect(org, "Mus musculus"))
-
-gds_old <- gds_hm
+#gds <- read_tsv(here("inst", "extdata", paste0("geo_", "091020", ".tsv")))
+#gds_hm <- gds %>% filter(str_detect(org, "Homo sapiens") | str_detect(org, "Mus musculus"))
+gds <- readRDS(here("inst", "extdata", paste0("geo_", "091020", ".rds")))
+gds_old <- gds
 fp <- read_tsv(here("inst", "extdata", "falsepos.txt"), col_names = F) %>% pull(1)
-gds_hm <- gds_hm %>% mutate(usable = ifelse(id %in% fp, "no", usable))
+gds <- gds %>% mutate(usable = ifelse(id %in% fp, "no", usable))
 ```
-The fraction of GEO entries with potential metadata (file with "meta", "annot", or "type" in filename or rda/rds/rdata files) is `r (gds_old$usable == "yes") %>% mean()`. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at `r length(fp) / sum(gds_hm$has_meta == "yes")`).
+The fraction of GEO entries with potential metadata (file with "meta", "annot", or "type" in filename or rda/rds/rdata files) is `r (gds_old$usable == "yes") %>% mean()`. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at `r length(fp) / sum(gds$has_meta1 == "yes")`).
 
 # Parse database from Svensson et al.
 
 ```{r curated}
 library(googlesheets4)
 gs4_deauth()
-data <- read_sheet("https://docs.google.com/spreadsheets/d/1En7-UV0k0laDiIfjFkdn7dggyR7jIk3WH8QgXaMOZF0", sheet = "Data")
-hm_data <- data %>% filter(Measurement == "RNA-seq") %>% filter(str_detect(`Data location`, "^GSE")) %>% filter(str_detect(Organism, "Human") | str_detect(Organism, "Mouse"))
-hm_ids <- hm_data$`Data location` %>% strsplit(", ") %>% unlist()
+gs_data <- read_sheet("https://docs.google.com/spreadsheets/d/1En7-UV0k0laDiIfjFkdn7dggyR7jIk3WH8QgXaMOZF0", sheet = "Data") %>% filter(Measurement == "RNA-seq") %>% filter(str_detect(`Data location`, "^GSE"))
+
+gs_data_processed <- gs_data %>% inner_join(gds, by = c("Data location" = "id"))
+mean(gs_data_processed$usable == "yes")
+
+gs_ids <- gs_data$`Data location` %>% strsplit(", ") %>% unlist()
 ```
 
 ```{r matchsub}
@@ -80,7 +83,7 @@ get_subseries <- function(geo) {
 }
 
 checksub <- purrr::map(
-  setdiff(hm_ids, gds_hm$id),
+  setdiff(gs_ids, gds$id),
   function(x) {
     temp <- get_subseries(x)
     if (length(temp) == 1) {
@@ -88,68 +91,20 @@ checksub <- purrr::map(
         NA
       }
       else {
-        length(intersect(temp, gds_hm$id)) == 0
+        length(intersect(temp, gds$id)) == 0
       }
     } else {
-      length(intersect(temp, gds_hm$id)) == 0
+      length(intersect(temp, gds$id)) == 0
     }
   }) %>% unlist()
 ```
 
-Overlap of human and mouse scRNA-seq GEO entries between manual curation and the GEO query is `r 1 - sum(checksub, na.rm = T)/(length(hm_ids) - sum(is.na(checksub)))`.
+Overlap of scRNA-seq GEO entries between manual curation and the GEO query is `r 1 - sum(checksub, na.rm = T)/(length(gs_ids) - sum(is.na(checksub)))`.
 
 Number of entries not public: `r sum(is.na(checksub))`
 
-```{r date, include = FALSE, eval = F}
-get_date <- function(geo) {
-  res <- tryCatch(
-    suppressMessages(GEOquery::getGEO(GEO = geo,
-                            filename = NULL, destdir = tempdir(), 
-                            GSElimits = NULL, GSEMatrix = FALSE, 
-                            AnnotGPL = FALSE, getGPL = FALSE,
-                            parseCharacteristics = FALSE)),
-    error = function(e) {"notavail"})
-  if (class(res) != "GSE") {
-    return(NA)
-  }
-
-  res@header$submission_date
-}
-
-#library(progress)
-# pb <- progress_estimated(nrow(gds_hm[1:1000,]))
-# gds_hm2a <- gds_hm[1:1000,] %>%
-#   mutate(date = map(id, function(x) {
-#     # update the progress bar (tick()) and print progress (print())
-#     pb$tick()$print()
-#     get_date(x)
-#   })) %>%
-#   separate(date, into = c("month","day","year"))
-# 
-# pb <- progress_estimated(nrow(gds_hm[1001:2000,]))
-# gds_hm2b<- gds_hm[1001:2000,] %>%
-#   mutate(date = map(id, function(x) {
-#     # update the progress bar (tick()) and print progress (print())
-#     pb$tick()$print()
-#     get_date(x)
-#   })) %>%
-#   separate(date, into = c("month","day","year"))
-# pb <- progress_estimated(nrow(gds_hm[2001:3705,]))
-# dates <- sapply(gds_hm$id[2001:3705], function(x) {
-#   pb$tick()$print()
-#   get_date(x)
-# }, simplify = FALSE)
-# saveRDS(dates, "3705dates.rds")
-# gds_hm2c <- gds_hm[2001:3705,] 
-# gds_hm2c$date <- unlist(dates)
-# gds_hm2a <- readRDS(here("hm2000.rds"))
-# gds_hm2 <- bind_rows(gds_hm2a, 
-#                      gds_hm2c %>%
-#   separate(date, into = c("month","day","year")))
-```
-
 ```{r frac}
-frac <- gds_hm %>% na.omit() %>% 
+frac <- gds %>% na.omit() %>% 
   group_by(year, usable) %>% 
   summarize(n = n()) %>% 
   ungroup() %>% 
@@ -158,7 +113,7 @@ frac <- gds_hm %>% na.omit() %>%
   mutate(fraction = yes/(yes + no), total = yes + no) %>% 
   mutate(fraction = round(fraction, digits = 3))
 
-ggplot(gds_hm %>% na.omit(),
+ggplot(gds %>% na.omit(),
        aes(x = year, fill = usable)) +
   geom_bar() +
   scale_fill_viridis_d(option = "plasma") +
@@ -166,7 +121,7 @@ ggplot(gds_hm %>% na.omit(),
   cowplot::theme_cowplot() +
   ggtitle("scRNAseq datasets by year")
 
-ggplot(gds_hm %>% na.omit() %>% filter(year == "2020") %>% 
+ggplot(gds %>% na.omit() %>% filter(year == "2020") %>% 
          mutate(month = factor(month, levels = c("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"))),
        aes(x = month, fill = usable)) +
   geom_bar() +
@@ -175,122 +130,15 @@ ggplot(gds_hm %>% na.omit() %>% filter(year == "2020") %>%
   ggtitle("scRNAseq datasets by month in 2020")
 ```
 
-```{r cj, include = FALSE, eval = F}
-ids_nat <- hm_data %>% filter(Journal == "Nature" | str_detect(Journal, "^Nat "))
-ids_cell <- hm_data %>% filter(Journal %in% c("Cell","Cell Reports", "Developmental Cell", "Cell Stem Cell", "Molecular Cell", "Cancer Cell", "Immunity", "Neuron"))
-ids_sci <- hm_data %>% filter(Journal %in% c("Science", "Sci Rep"))
-ids_elife <- hm_data %>% filter(Journal == "eLife")
-ids_pnas <- hm_data %>% filter(Journal == "Proc Natl Acad Sci USA")
-ids_gb <- hm_data %>% filter(Journal == "Genome Biol")
-
-gds_hm_j <- gds_hm %>%
-  mutate(journal = case_when(
-    id %in% ids_nat$`Data location` ~ "Nat",
-    id %in% ids_cell$`Data location` ~ "Cell",
-    id %in% ids_sci$`Data location` ~ "Sci",
-    id %in% ids_elife$`Data location` ~ "eLife",
-    id %in% ids_pnas$`Data location` ~ "PNAS",
-    id %in% ids_gb$`Data location` ~ "GB",
-    id %in% hm_data$`Data location` ~ "other"
-    )) %>% 
-  na.omit()
-
-gds_hm_j_frac <- gds_hm_j %>% 
-  group_by(journal, usable) %>% 
-  summarize(n = n()) %>% 
-  ungroup() %>% 
-  pivot_wider(names_from = usable, values_from = n) %>% 
-  replace_na(list(no = 0, yes = 0)) %>% 
-  mutate(fraction = yes/(yes + no), total = yes + no) %>% 
-  mutate(fraction = round(fraction, digits = 3))
-
-ggplot(gds_hm_j %>% na.omit(),
-       aes(x = journal, fill = usable)) +
-  geom_bar() +
-  scale_fill_viridis_d(option = "plasma") +
-  geom_text(data = gds_hm_j_frac, color = "black", aes(x = journal, y = total + 10, label = fraction, fill = NA)) +
-  cowplot::theme_cowplot() +
-  ggtitle("scRNAseq datasets by journal")
-```
-
-```{r getjournal, include = F, eval = F}
-library(GEOquery)
-library(easyPubMed)
-get_journal <- function(id) {
-  res <- tryCatch(
-    suppressMessages(GEOquery::getGEO(GEO = id,
-                            filename = NULL, destdir = tempdir(), 
-                            GSElimits = c(0,0), GSEMatrix = FALSE, 
-                            AnnotGPL = FALSE, getGPL = FALSE,
-                            parseCharacteristics = FALSE)),
-    error = function(e) {"notavail"})
-  if (class(res) != "GSE") {
-    return(NA)
-  }
-
-  if (length(res@header$pubmed_id) > 1) {
-      id2 <- tryCatch(res@header$pubmed_id[1],
-                      error = function(e) {"notfound"}
-      )
-  } else {
-      id2 <- tryCatch(res@header$pubmed_id,
-                      error = function(e) {"notfound"}
-      )
-  }
-  
-  if (is.null(id2)) {
-    return(NA)
-  }
-  if (id2 == "notfound") {
-    return(NA)
-  }
-  
-  tryCatch(
-    get_pubmed_ids(id2) %>% 
-      fetch_pubmed_data() %>%
-      article_to_df() %>%
-      dplyr::slice(1) %>%
-      pull(jabbrv),
-    error = function(e) "error"
-  )
-}
-
-get_journal("GSE121386")
-
-library(progress)
-pb <- progress_estimated(nrow(gds_hm[2001:3000,]))
-journal <- sapply(gds_hm$id[2001:3000], function(x) {
-  pb$tick()$print()
-  get_journal(x)
-}, simplify = FALSE)
-
-saveRDS(journal, "3705journals_3b.rds")
-
-# journal <- list()
-pb <- progress_estimated(nrow(gds_hm[3632:3705,]))
-for (i in 632:705) {
-  pb$tick()$print()
-  journal[i] <- get_journal(gds_hm$id[3000 + i])
-}
-saveRDS(journal, "3705journals_4.rds")
-
-gds_hm$journal <- c(readRDS("3705journals_1.rds") %>% unlist(),
-readRDS("3705journals_2.rds") %>% unlist(),
-readRDS("3705journals_3b.rds") %>% unlist(),
-readRDS("3705journals_4.rds") %>% unlist())
-```
-
 ```{r journalplot}
+ids_nat <- gs_data %>% filter(Journal == "Nature" | str_detect(Journal, "^Nat "))
+ids_cell <- gs_data %>% filter(Journal %in% c("Cell","Cell Reports", "Developmental Cell", "Cell Stem Cell", "Molecular Cell", "Cancer Cell", "Immunity", "Neuron"))
+ids_sci <- gs_data %>% filter(Journal %in% c("Science", "Sci Rep"))
+ids_elife <- gs_data %>% filter(Journal == "eLife")
+ids_pnas <- gs_data %>% filter(Journal == "Proc Natl Acad Sci USA")
+ids_gb <- gs_data %>% filter(Journal == "Genome Biol")
 
-ids_nat <- hm_data %>% filter(Journal == "Nature" | str_detect(Journal, "^Nat "))
-ids_cell <- hm_data %>% filter(Journal %in% c("Cell","Cell Reports", "Developmental Cell", "Cell Stem Cell", "Molecular Cell", "Cancer Cell", "Immunity", "Neuron"))
-ids_sci <- hm_data %>% filter(Journal %in% c("Science", "Sci Rep"))
-ids_elife <- hm_data %>% filter(Journal == "eLife")
-ids_pnas <- hm_data %>% filter(Journal == "Proc Natl Acad Sci USA")
-ids_gb <- hm_data %>% filter(Journal == "Genome Biol")
-
-
-gds_hm_j <- gds_hm %>%
+gds_j <- gds %>%
   mutate(journal_group = case_when(
     journal %in% c("Nature", "Science", "Cell") ~ "CNS",
     journal %in% c("Nat Commun", "Nat Metab", "iScience", "Cell Res.", "Sci Rep", "Sci Immunol", "Sci Adv", "Cell Rep", "Dev. Cell", "Cell Stem Cell", "Stem Cell Reports", "Mol. Cell", "Cancer Cell", "Immunity", "Neuron", "Cell Syst", "Cell Metab.", "Cell Host Microbe") ~ "CNS sub",
@@ -320,7 +168,7 @@ gds_hm_j <- gds_hm %>%
   filter(journal != "error") %>% 
   na.omit()
 
-gds_hm_j_frac <- gds_hm_j %>% 
+gds_j_frac <- gds_j %>% 
   filter(year >= 2018) %>% 
   group_by(journal_group, usable) %>% 
   summarize(n = n()) %>% 
@@ -331,28 +179,67 @@ gds_hm_j_frac <- gds_hm_j %>%
   mutate(fraction = round(fraction, digits = 3)) %>% 
   arrange(desc(fraction))
 
-ggplot(gds_hm_j %>% filter(year >= 2018) %>% mutate(journal_group = factor(journal_group, levels = gds_hm_j_frac$journal_group)),
+ggplot(gds_j %>% filter(year >= 2018) %>% mutate(journal_group = factor(journal_group, levels = gds_j_frac$journal_group)),
        aes(x = journal_group, fill = usable)) +
   geom_bar() +
   scale_fill_viridis_d(option = "plasma") +
-  geom_text(data = gds_hm_j_frac, color = "black", aes(x = journal_group, y = total + 30, label = fraction, fill = NA)) +
+  geom_text(data = gds_j_frac, color = "black", aes(x = journal_group, y = total + 30, label = fraction, fill = NA)) +
   cowplot::theme_cowplot() +
   ggtitle("scRNAseq datasets by journal")
 ```
 
 ```{r journaldot}
-gds_hm_sum <- gds_hm_j %>% filter(year >= 2018) %>% 
+gds_sum <- gds_j %>% filter(year >= 2018) %>% 
   group_by(journal, journal_group, journal_group2) %>% 
   summarize(n = n(), frac = sum(usable == "yes") / n) %>% 
   ungroup()
 
-ggplot(gds_hm_sum %>% filter(n >= 3) %>% 
+ggplot(gds_sum %>% filter(n >= 3) %>% 
          mutate(journal_group = factor(journal_group2, levels = c("Cell", "Nature", "Science", "BMC", "other"))),
        aes(x = n, y = frac, color = journal_group)) +
   geom_point() +
   scale_color_brewer(palette = "Spectral") +
   cowplot::theme_cowplot() +
   ggtitle("scRNAseq datasets by journal family") + 
+  xlab("total") +
+  ylim(c(0, 1)) +
+  scale_x_log10()
+```
+
+```{r authors}
+get_authors <- function(pubmed) {
+  tryCatch(pubmed[[1]] %>% mutate(fullname = str_c(firstname, lastname, sep = "_")) %>% pull(fullname),
+           error = function(e) {"NA"})
+}
+get_corauthors <- function(pubmed) {
+  tryCatch(pubmed[[1]] %>% filter(!is.na(email)) %>% mutate(fullname = str_c(firstname, lastname, sep = "_")) %>% pull(fullname),
+           error = function(e) {"NA"})
+}
+gds_a <- gds %>% select(id, journal, usable, year, pubmed) 
+cor <- list()
+for (i in 1:nrow(gds_a)) {
+  cor[[i]] <- get_corauthors(gds$pubmed[i])
+}
+cors <- cor %>% unlist() %>% unique()
+authors <- list()
+for (i in 1:nrow(gds_a)) {
+  authors[[i]] <- get_authors(gds$pubmed[i])
+}
+gds_a$authors <- authors
+
+gds_as <- gds_a %>% select(-pubmed) %>% 
+  filter(year >= 2018) %>% 
+  unnest("authors") %>% 
+  group_by(authors) %>% 
+  summarize(n = n(), yes = sum(usable == "yes")) %>% 
+  filter(authors %in% cors) %>% mutate(frac = yes/n)
+
+ggplot(gds_as %>% filter(authors != "NA") %>% filter(n >= 3),
+       aes(x = n, y = frac)) +
+  geom_point() +
+  scale_color_brewer(palette = "Spectral") +
+  cowplot::theme_cowplot() +
+  ggtitle("scRNAseq datasets by author") + 
   xlab("total") +
   ylim(c(0, 1)) +
   scale_x_log10()
