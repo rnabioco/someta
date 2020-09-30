@@ -46,11 +46,54 @@ date <- format(format = "%m%d%y", Sys.Date())
 #gds <- read_tsv(here("inst", "extdata", paste0("geo_", "091020", ".tsv")))
 #gds_hm <- gds %>% filter(str_detect(org, "Homo sapiens") | str_detect(org, "Mus musculus"))
 gds <- readRDS(here("inst", "extdata", paste0("geo_", "091020", ".rds")))
+```
+
+```{r filteragain}
+checks <- suppressWarnings(map(gds$geo,
+                               function(x) str_detect(str_to_lower(x), 
+                                                      "single nuclei|single-nucleus|single cell|single-cell|scrnaseq|scrna-seq|snrnaseq|snrna-seq") %>% any()))
+gds <- gds[unlist(checks), ]
+```
+
+Number of entries filtered out because key words were not found: `r sum(!unlist(checks), na.rm = TRUE)`
+
+```{r fixseries}
+parse_subseries <- function(geolist) {
+  tryCatch({rel <- geolist$relation
+            rel[str_detect(rel, "^SuperSeries of: ")] %>%
+              str_remove("^SuperSeries of: ")},
+           error = function(e) {return(NA)})
+}
+
+res <- map(gds$geo,
+           parse_subseries)
+names(res) <- gds$id
+res2 <- res[lengths(res) != 0]
+res2 <- map(res2,
+            function(x) ifelse(x %in% gds$id, x, NA))
+res3 <- data.frame(superseries = names(res2))
+res3$id <- res2
+dict_series <- res3 %>% unnest(id) %>% na.omit()
+gds2 <- gds %>% left_join(dict_series) %>% 
+  mutate(superseries = ifelse(is.na(superseries),
+                              id,
+                              superseries)) %>% 
+  group_by(superseries) %>% 
+  summarize(usable = ifelse(any(usable == "yes"), "yes", "no"))
+
+gds_fixed <- gds %>% inner_join(gds2 %>% select(id = superseries, fixed_usable = usable))
+gds <- gds_fixed %>% select(-usable) %>% rename(usable = fixed_usable)
+```
+
+merged super and subseries: `r length(res) - nrow(gds)`
+
+```{r fixfalsep}
 gds_old <- gds
 fp <- read_tsv(here("inst", "extdata", "falsepos.txt"), col_names = F) %>% pull(1)
 gds <- gds %>% mutate(usable = ifelse(id %in% fp, "no", usable))
 ```
-The fraction of GEO entries with potential metadata (file with "meta", "annot", or "type" in filename or rda/rds/rdata files) is `r (gds_old$usable == "yes") %>% mean()`. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at `r length(fp) / sum(gds$has_meta1 == "yes")`).
+
+The fraction of GEO entries with potential metadata (file with "meta", "annot", or "type" in filename or rda/rds/rdata files) is `r (gds_old$usable == "yes") %>% mean(na.rm = TRUE)`. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at `r length(fp) / sum(gds$has_meta1 == "yes", na.rm = TRUE)`).
 
 # Parse database from Svensson et al.
 
@@ -244,3 +287,6 @@ ggplot(gds_as %>% filter(authors != "NA") %>% filter(n >= 3),
   ylim(c(0, 1)) +
   scale_x_log10()
 ```
+
+
+
