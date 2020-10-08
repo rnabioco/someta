@@ -43,9 +43,8 @@ date <- format(format = "%m%d%y", Sys.Date())
 
 ```{r entries}
 #source(here("utils", "geo_query.R"))
-#gds <- read_tsv(here("inst", "extdata", paste0("geo_", "091020", ".tsv")))
-#gds_hm <- gds %>% filter(str_detect(org, "Homo sapiens") | str_detect(org, "Mus musculus"))
-gds <- readRDS(here("inst", "extdata", paste0("geo_", "091020", ".rds")))
+gds <- readRDS(here("inst", "extdata", paste0("geo_", "091020", ".rds"))) %>% 
+  mutate(year = as.numeric(year))
 ```
 
 ```{r filteragain}
@@ -164,22 +163,41 @@ ggplot(gds %>% na.omit(),
   cowplot::theme_cowplot() +
   ggtitle("scRNAseq datasets by year")
 
-ggplot(gds %>% na.omit() %>% filter(year == "2020") %>% 
-         mutate(month = factor(month, levels = c("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"))),
-       aes(x = month, fill = usable)) +
-  geom_bar() +
-  scale_fill_viridis_d(option = "plasma") +
+# ggplot(gds %>% na.omit() %>% filter(year == "2020") %>% 
+#          mutate(month = factor(month, levels = c("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"))),
+#        aes(x = month, fill = usable)) +
+#   geom_bar() +
+#   scale_fill_viridis_d(option = "plasma") +
+#   cowplot::theme_cowplot() +
+#   ggtitle("scRNAseq datasets by month in 2020")
+frac2 <- gds %>% na.omit() %>% 
+  mutate(year = ifelse(month %in% c("Jan", "Feb", "Mar", "Apr", "May", "Jun"), 
+                       year, year + 0.5)) %>% 
+  group_by(year, usable) %>% 
+  summarize(n = n()) %>% 
+  ungroup() %>% 
+  pivot_wider(names_from = usable, values_from = n) %>% 
+  replace_na(list(no = 0, yes = 0)) %>% 
+  mutate(fraction = yes/(yes + no), total = yes + no) %>% 
+  mutate(fraction = round(fraction, digits = 3))
+fit <- lm(fraction ~ year, data = frac2 %>% filter(year >= 2016))
+ggplot(frac2 %>% filter(year >= 2016),
+       aes(x = year, y = fraction, color = total)) +
+  geom_point() +
+  geom_line(data = fortify(fit), aes(x = year, y = .fitted), color = "black") +
+  scale_color_viridis_c(direction = -1) +
   cowplot::theme_cowplot() +
-  ggtitle("scRNAseq datasets by month in 2020")
+  ylim(c(0, 0.25)) +
+  ggtitle("metadata fraction by year")
 ```
 
 ```{r journalplot}
-ids_nat <- gs_data %>% filter(Journal == "Nature" | str_detect(Journal, "^Nat "))
-ids_cell <- gs_data %>% filter(Journal %in% c("Cell","Cell Reports", "Developmental Cell", "Cell Stem Cell", "Molecular Cell", "Cancer Cell", "Immunity", "Neuron"))
-ids_sci <- gs_data %>% filter(Journal %in% c("Science", "Sci Rep"))
-ids_elife <- gs_data %>% filter(Journal == "eLife")
-ids_pnas <- gs_data %>% filter(Journal == "Proc Natl Acad Sci USA")
-ids_gb <- gs_data %>% filter(Journal == "Genome Biol")
+# ids_nat <- gs_data %>% filter(Journal == "Nature" | str_detect(Journal, "^Nat "))
+# ids_cell <- gs_data %>% filter(Journal %in% c("Cell","Cell Reports", "Developmental Cell", "Cell Stem Cell", "Molecular Cell", "Cancer Cell", "Immunity", "Neuron"))
+# ids_sci <- gs_data %>% filter(Journal %in% c("Science", "Sci Rep"))
+# ids_elife <- gs_data %>% filter(Journal == "eLife")
+# ids_pnas <- gs_data %>% filter(Journal == "Proc Natl Acad Sci USA")
+# ids_gb <- gs_data %>% filter(Journal == "Genome Biol")
 
 gds_j <- gds %>%
   mutate(journal_group = case_when(
@@ -247,6 +265,26 @@ ggplot(gds_sum %>% filter(n >= 3) %>%
   xlab("total") +
   ylim(c(0, 1)) +
   scale_x_log10()
+```
+
+```{r citations}
+gds_c <- gds_j %>% mutate(jy = str_c(journal, year, sep = ",")) %>% 
+  group_by(journal, year, usable) %>% 
+  filter(n() >= 4) %>% 
+  filter(year <= 2018) %>% 
+  ungroup() %>% 
+  select(id, usable, jy, cite) %>% 
+  filter(!is.na(cite)) %>% 
+  mutate(cite = as.numeric(cite))
+jys <- gds_c %>% select(usable, jy) %>% distinct() %>% group_by(jy) %>% filter(n() == 2) %>% pull(jy)
+g <- ggplot(gds_c %>% filter(jy %in% jys),
+       aes(x = jy, y = cite)) +
+  geom_boxplot(aes(fill = usable), outlier.shape = NA) +
+  cowplot::theme_cowplot() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  #coord_cartesian(ylim = c(0,500)) +
+  ggtitle("citations binned by year + journal + usable")
+g
 ```
 
 ```{r authors}

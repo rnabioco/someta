@@ -2,6 +2,7 @@ library(tidyverse)
 library(here)
 library(GEOquery)
 library(easyPubMed)
+library(rcrossref)
 proj_dir <- here()
 fileloc <- file.path(proj_dir, "inst", "extdata", paste0("gds_result_", date, ".txt"))
 
@@ -169,6 +170,18 @@ gds6 <- gds6 %>% mutate(journal = pbmcapply::pbmcmapply(get_journal,
                                                         pubmed))
 saveRDS(gds6, "gds6_temp_092320.rds")
 gds6 %>% saveRDS(here("inst", "extdata", paste0("geo_", "091020", ".rds")))
+
+get_cites <- function(pubmed) {
+  tryCatch(
+    cr_citation_count(pubmed$doi[1])$count,
+    error = function(e) "NA")
+}
+gds7 <- gds6 %>% mutate(cite = map(pubmed, get_cites))
+gds7 %>% saveRDS(here("inst", "extdata", paste0("geo_", "091020", ".rds")))
+
+
+
+
 
 
 if (return_link) {
