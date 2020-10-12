@@ -21,7 +21,7 @@ digraph workflow {
   # no metadata parsing
   node [fillcolor = "#56B4E9"]
 
-  nomdata_nomatrix [label = "Run Cellranger\nKallisto-Bustools\nor Aleven"]
+  nomdata_nomatrix [label = "Run Cellranger\nKallisto-Bustools\nor Salmon-Alevin"]
   nomdata_3 [label = "Quality control\nFeature selection\nDimensionality Reduction**"]
   nomdata_4 [label = "Clustering**"]
   nomdata_5 [label = "Examine cluster markers\n to assign cell types\nto match to publication*"]
@@ -46,11 +46,11 @@ digraph workflow {
         fontname = "Helvetica"]
 
   startnode -> mdata [
-                      label = "Has a matrix?"]
-  startnode -> nomdata_nomatrix [label = "No matrix?"]
+                      label = "Has a UMI\ncount matrix?"]
+  startnode -> nomdata_nomatrix [label = "No UMI count matrix?"]
   nomdata_nomatrix -> mdata
 
-  mdata -> nomdata_3 [label = "No code provided"]
+  mdata -> nomdata_3 [xlabel = "No code\nprovided"]
   mdata -> code [label = "Analysis code\nprovided by\npublication"]
   nomdata_3 -> nomdata_4 -> nomdata_5 -> post
 
@@ -58,7 +58,7 @@ digraph workflow {
   code_2 -> code [label = ""]
 
   nomdata_5 -> nomdata_3 [label = ""]
-  mdata -> post [label = "Has metadata?"]
+  mdata -> post [label = "Has\nmetadata?"]
   post -> post_2
   query -> post_2
 

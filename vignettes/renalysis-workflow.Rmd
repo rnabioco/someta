@@ -2,7 +2,10 @@
 title: "Re-analysis workflows"
 author: "Kent Riemondy RBI"
 date: "9/22/2020"
-output: html_document
+always_allow_html: true
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -22,6 +25,7 @@ library(Seurat)
 library(scran)
 library(scater)
 library(igraph)
+library(tidyverse)
 ```
 
 ```{r}
@@ -51,10 +55,20 @@ grViz(g_fn, width = w, height = h ) %>%
 # Required data
 
 ```{r}
-n <- 1000
-seed <- 42
-set.seed(seed)
-sce <- mockSCE() %>% 
+ncells <- 200
+u <- counts(mockSCE(ncells = ncells))
+
+cell_ids <- map_chr(1:ncells, 
+                    ~sample(c("A", "T", "C", "G"), 
+                            16,
+                            replace = TRUE) %>% 
+                      str_c(collapse = ""))
+
+colnames(u) <- cell_ids
+
+sce <- SingleCellExperiment(assays=list(counts=u))
+
+sce <- sce %>% 
   logNormCounts() %>% 
   runPCA() %>% 
   runUMAP()
@@ -67,7 +81,6 @@ colData(sce)$cell_type <- sample(c("B", "T", "NK", "Mac"),
                                  ncol(sce),
                                  replace = TRUE)
 
-
 colData(sce) <- colData(sce)[c("clusters", "cell_type")]
 
 mdata <- as.data.frame(colData(sce))
@@ -75,16 +88,28 @@ umap <- reducedDim(sce, "UMAP")
 colnames(umap) = c("UMAP_1", "UMAP_2")
 ```
 
-## Count Matrix
+## UMI count Matrix
 
-```{r}
-counts(sce)[1:5, 1:5]
+```{r, echo = FALSE}
+counts(sce)[1:5, 1:4]
 ```
 
-## Metadata
-```{r}
+## Cell-level metadata
+```{r, echo = FALSE}
 cbind(mdata, umap)[1:5, 1:4]
 ```
+<br>
+
+<br>
+<br>
+
+
+
+<br>
+
+<br> 
+\newpage
+
 
 # Example metadata export code
 
