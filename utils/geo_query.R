@@ -3,6 +3,7 @@ library(here)
 library(GEOquery)
 library(easyPubMed)
 library(rcrossref)
+date <- format(format = "%m%d%y", Sys.Date())
 proj_dir <- here()
 fileloc <- file.path(proj_dir, "inst", "extdata", paste0("gds_result_", date, ".txt"))
 
@@ -142,20 +143,19 @@ gds4 <- gds4 %>% filter(!(id %in% blacklist))
 # geo and pubmed parsing, slow
 # pb <- progress_estimated(nrow(gds4))
 gds5 <- gds4 %>% split(gds4$id) %>% map_dfr(. %>% mutate(geo = map(id, get_geo)))
-saveRDS(gds5, "gds5_temp_092320.rds")
+saveRDS(gds5, paste0("gds5_temp_", date, ".rds"))
 
 
-gds5<- readRDS("gds5_temp_092320.rds")
-gds5 <- gds5 %>% mutate(date = pbmcapply::pbmcmapply(get_date, 
-                                                    geo)) %>%
-  separate(date, into = c("month","day","year"))
+gds5<- readRDS(paste0("gds5_temp_", date, ".rds"))
+gds5 <- gds5 %>% mutate(date = pbmcapply::pbmcmapply(get_date, geo)) %>%
+  separate(date, into = c("month", "day", "year"))
 
 geo <- list()
-pb <- progress_estimated(nrow(gds5))
-for (i in 1:nrow(gds5)) {
-  pb$tick()$print()
-  geo[[gds5$id[i]]] <- get_pubmed(gds5$geo[i])
-}
+# pb <- progress_estimated(nrow(gds5))
+# for (i in 1:nrow(gds5)) {
+#   pb$tick()$print()
+#   geo[[gds5$id[i]]] <- get_pubmed(gds5$geo[i])
+# }
 
 pb <- progress_estimated(nrow(gds5))
 for (i in 1:nrow(gds5)) {
@@ -168,8 +168,8 @@ for (i in 1:nrow(gds5)) {
 gds6 <- gds5 %>% mutate(pubmed = map(id, from_list))
 gds6 <- gds6 %>% mutate(journal = pbmcapply::pbmcmapply(get_journal,
                                                         pubmed))
-saveRDS(gds6, "gds6_temp_092320.rds")
-gds6 %>% saveRDS(here("inst", "extdata", paste0("geo_", "091020", ".rds")))
+saveRDS(gds6, paste0("gds6_temp_", date, ".rds"))
+# gds6 %>% saveRDS(here("inst", "extdata", paste0("geo_", date, ".rds")))
 
 get_cites <- function(pubmed) {
   tryCatch(
@@ -177,7 +177,7 @@ get_cites <- function(pubmed) {
     error = function(e) "NA")
 }
 gds7 <- gds6 %>% mutate(cite = map(pubmed, get_cites))
-gds7 %>% saveRDS(here("inst", "extdata", paste0("geo_", "091020", ".rds")))
+gds7 %>% saveRDS(here("inst", "extdata", paste0("geo_", date, ".rds")))
 
 
 

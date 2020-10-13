@@ -43,7 +43,7 @@ date <- format(format = "%m%d%y", Sys.Date())
 
 ```{r entries}
 #source(here("utils", "geo_query.R"))
-gds <- readRDS(here("inst", "extdata", paste0("geo_", "091020", ".rds"))) %>% 
+gds <- readRDS(here("inst", "extdata", paste0("geo_", "101220", ".rds"))) %>% 
   mutate(year = as.numeric(year))
 ```
 
@@ -310,13 +310,61 @@ gds_c_if <- gds_j %>%
 
 g <- ggplot(gds_c_if,
        aes(x = bin, y = cite)) +
-  facet_grid(.~year) +
+  #facet_grid(.~year) +
   geom_boxplot(aes(fill = usable), outlier.shape = NA) +
   cowplot::theme_cowplot() +
   #theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
   coord_cartesian(ylim = c(0,500)) +
   ggtitle("citations binned by IF, 2018")
 g
+```
+
+```{r}
+gds_c_if2 <- gds_j %>% 
+  filter(ifs < 51.941) %>% 
+  mutate(bin = case_when(
+    ifs < 5 ~ "5",
+    ifs < 10 ~ "10",
+    ifs < 30 ~ "30",
+    TRUE ~ "+",
+  )) %>% 
+  filter(year == 2017 | year == 2018 | year == 2016) %>% 
+  # mutate(year = ifelse(month %in% c("Jan", "Feb", "Mar", "Apr", "May", "Jun"),
+  #                      year + 0.5,
+  #                      year)) %>%
+  select(pubmed, usable, journal, cite, bin, year, ifs) %>% 
+  distinct() %>% 
+  filter(!is.na(cite)) %>% 
+  mutate(cite = as.numeric(cite)) %>% 
+  mutate(bin = factor(bin, levels = c("5", "10", "30", "+")))
+
+g <- ggplot(gds_c_if2,
+            aes(x = ifs, y = cite, group = usable, color = usable, shape = usable)) +
+  facet_grid(.~year) +
+  geom_point() +
+  cowplot::theme_cowplot() +
+  #scale_y_log10() +
+  geom_smooth(method = "lm", fill = NA) +
+  scale_color_brewer() +
+  #theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  coord_cartesian(ylim = c(0,500)) +
+  xlab("IF") + ylab("# of citations") +
+  ggtitle("citations by IF, 2017/8")
+g
+
+g2 <- ggplot(gds_c_if2,
+            aes(x = ifs, y = cite, group = usable, color = usable, shape = usable)) +
+  facet_grid(.~year) +
+  geom_point() +
+  cowplot::theme_cowplot() +
+  scale_y_log10() +
+  geom_smooth(method = "lm", fill = NA) +
+  scale_color_brewer() +
+  #theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  #coord_cartesian(ylim = c(0,500)) +
+  xlab("IF") + ylab("# of citations") +
+  ggtitle("citations by IF, 2017/8")
+g2
 ```
 
 ```{r authors}
