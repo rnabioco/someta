@@ -45,6 +45,7 @@ date <- format(format = "%m%d%y", Sys.Date())
 #source(here("utils", "geo_query.R"))
 gds <- readRDS(here("inst", "extdata", paste0("geo_", "101220", ".rds"))) %>% 
   mutate(year = as.numeric(year))
+gds_orig <- gds
 ```
 
 ```{r filteragain}
@@ -92,7 +93,7 @@ fp <- read_tsv(here("inst", "extdata", "falsepos.txt"), col_names = F) %>% pull(
 gds <- gds %>% mutate(usable = ifelse(id %in% fp, "no", usable))
 ```
 
-The fraction of GEO entries with potential metadata (file with "meta", "annot", or "type" in filename or rda/rds/rdata files) is `r (gds_old$usable == "yes") %>% mean(na.rm = TRUE)`. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at `r length(fp) / sum(gds$has_meta1 == "yes", na.rm = TRUE)`).
+The fraction of GEO entries with potential metadata (file with "meta", "annot", or "type" in filename or rda/rds/rdata files) is `r (gds_old$usable == "yes") %>% mean(na.rm = TRUE)`. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at `r length(fp) / sum(gds$has_meta1 == "yes", na.rm = TRUE)`). Final fraction: `r (gds$usable == "yes") %>% mean(na.rm = TRUE)`
 
 # Parse database from Svensson et al.
 
@@ -100,9 +101,6 @@ The fraction of GEO entries with potential metadata (file with "meta", "annot", 
 library(googlesheets4)
 gs4_deauth()
 gs_data <- read_sheet("https://docs.google.com/spreadsheets/d/1En7-UV0k0laDiIfjFkdn7dggyR7jIk3WH8QgXaMOZF0", sheet = "Data") %>% filter(Measurement == "RNA-seq") %>% filter(str_detect(`Data location`, "^GSE"))
-
-gs_data_processed <- gs_data %>% inner_join(gds, by = c("Data location" = "id"))
-mean(gs_data_processed$usable == "yes")
 
 gs_ids <- gs_data$`Data location` %>% strsplit(", ") %>% unlist()
 ```
@@ -121,7 +119,7 @@ get_subseries <- function(geo) {
     return(NA)
   }
   resr <- res@header$relation
-  resr[str_detect(resr, "SuperSeries of: ")] %>% str_remove("SuperSeries of: ")
+  resr[str_detect(resr, "SubSeries of: |SuperSeries of: ")] %>% str_remove("SubSeries of: |SuperSeries of: ")
 }
 
 checksub <- purrr::map(
@@ -133,17 +131,22 @@ checksub <- purrr::map(
         NA
       }
       else {
-        length(intersect(temp, gds$id)) == 0
+        temp#length(intersect(temp, gds$id)) == 0
       }
     } else {
-      length(intersect(temp, gds$id)) == 0
+      temp#length(intersect(temp, gds$id)) == 0
     }
-  }) %>% unlist()
+  }) 
+
+names(checksub) <- setdiff(gs_ids, gds$id)
+checksub_ids <- checksub
+checksub <- sapply(checksub,
+                   function(x) length(intersect(x, gds$id)) == 0) %>% unlist()
+
+gs_data_processed <- gs_data %>% inner_join(gds, by = c("Data location" = "id"))
 ```
 
-Overlap of scRNA-seq GEO entries between manual curation and the GEO query is `r 1 - sum(checksub, na.rm = T)/(length(gs_ids) - sum(is.na(checksub)))`.
-
-Number of entries not public: `r sum(is.na(checksub))`
+Overlap of scRNA-seq GEO entries between manual curation and the GEO query is `r 1 - sum(checksub, na.rm = T)/(length(gs_ids) - sum(is.na(checksub)))`. Number of entries not public: `r sum(is.na(checksub))`. Fraction with metadata: `r ((sum(gs_data_processed$usable == "yes") + unlist(checksub_ids) %in% (gds %>% filter(usable == "yes") %>% pull(id)) %>% sum())) / (nrow(gs_data_processed) + unlist(checksub_ids) %in% (gds %>% filter(usable == "yes") %>% pull(id)) %>% sum())`.
 
 ```{r frac}
 frac <- gds %>% na.omit() %>% 
@@ -155,13 +158,21 @@ frac <- gds %>% na.omit() %>%
   mutate(fraction = yes/(yes + no), total = yes + no) %>% 
   mutate(fraction = round(fraction, digits = 3))
 
-ggplot(gds %>% na.omit(),
+g <- ggplot(gds %>% na.omit() %>% filter(year >= 2012),
        aes(x = year, fill = usable)) +
   geom_bar() +
-  scale_fill_viridis_d(option = "plasma") +
-  geom_text(data = frac, color = "black", aes(x = year, y = total + 30, label = fraction, fill = NA)) +
+  scale_fill_brewer() +
+  #scale_fill_viridis_d(option = "plasma") +
+  geom_text(data = frac %>% filter(year >= 2012), color = "black", aes(x = year, y = total + 30, label = fraction, fill = NA), size = 3) +
   cowplot::theme_cowplot() +
-  ggtitle("scRNAseq datasets by year")
+  scale_x_continuous(breaks = c(2012:2020)) +
+  ylab("total studies") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size = 14), 
+        axis.text.y = element_text(size = 14),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14))# + ggtitle("scRNAseq datasets by year")
+g
+cowplot::save_plot("geo_year.pdf", g, base_asp = 1, base_width = 5)
 
 # ggplot(gds %>% na.omit() %>% filter(year == "2020") %>% 
 #          mutate(month = factor(month, levels = c("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"))),
@@ -187,6 +198,7 @@ ggplot(frac2 %>% filter(year >= 2016),
   geom_line(data = fortify(fit), aes(x = year, y = .fitted), color = "black") +
   scale_color_viridis_c(direction = -1) +
   cowplot::theme_cowplot() +
+  ylab("total studies") +
   ylim(c(0, 0.25)) +
   ggtitle("metadata fraction by year")
 ```
@@ -230,7 +242,7 @@ gds_j <- gds %>%
   na.omit()
 
 gds_j_frac <- gds_j %>% 
-  filter(year >= 2018) %>% 
+  filter(year >= 2017) %>% 
   group_by(journal_group, usable) %>% 
   summarize(n = n()) %>% 
   ungroup() %>% 
@@ -240,31 +252,47 @@ gds_j_frac <- gds_j %>%
   mutate(fraction = round(fraction, digits = 3)) %>% 
   arrange(desc(fraction))
 
-ggplot(gds_j %>% filter(year >= 2018) %>% mutate(journal_group = factor(journal_group, levels = gds_j_frac$journal_group)),
+g <- ggplot(gds_j %>% filter(year >= 2017) %>% mutate(journal_group = factor(journal_group, levels = gds_j_frac$journal_group)),
        aes(x = journal_group, fill = usable)) +
   geom_bar() +
   scale_fill_viridis_d(option = "plasma") +
-  geom_text(data = gds_j_frac, color = "black", aes(x = journal_group, y = total + 30, label = fraction, fill = NA)) +
+  geom_text(data = gds_j_frac, color = "black", aes(x = journal_group, y = total + 30, label = fraction, fill = NA), size = 3) +
   cowplot::theme_cowplot() +
-  ggtitle("scRNAseq datasets by journal")
+  scale_x_continuous(breaks = c(2012:2020)) +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size = 14), 
+        axis.text.y = element_text(size = 14),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14)) #+ ggtitle("scRNAseq datasets by journal")
+g
+cowplot::save_plot("geo_family.pdf", g, base_asp = 1, base_width = 5)
 ```
 
 ```{r journaldot}
-gds_sum <- gds_j %>% filter(year >= 2018) %>% 
+gds_sum <- gds_j %>% filter(year >= 2017) %>% 
   group_by(journal, journal_group, journal_group2) %>% 
   summarize(n = n(), frac = sum(usable == "yes") / n) %>% 
   ungroup()
 
-ggplot(gds_sum %>% filter(n >= 3) %>% 
-         mutate(journal_group = factor(journal_group2, levels = c("Cell", "Nature", "Science", "BMC", "other"))),
+g <- ggplot(gds_sum %>% filter(n >= 3) %>% 
+         mutate(journal_group = factor(journal_group, 
+                                       # levels = c("Cell", "Nature", "Science", "BMC", "other")
+                                       levels = c("CNS", "CNS sub", "eLife", "PLOS", "BMC", "other")
+                                       )),
        aes(x = n, y = frac, color = journal_group)) +
   geom_point() +
-  scale_color_brewer(palette = "Spectral") +
+  scale_color_brewer(palette = "Accent") +
   cowplot::theme_cowplot() +
-  ggtitle("scRNAseq datasets by journal family") + 
-  xlab("total") +
+  # ggtitle("scRNAseq datasets by journal family") + 
+  xlab("total studies (since 2017)") +
+  ylab("fraction with metadata") +
   ylim(c(0, 1)) +
+  theme(axis.text.x = element_text(size = 14), 
+        axis.text.y = element_text(size = 14),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14)) +
   scale_x_log10()
+g
+cowplot::save_plot("geo_journal.pdf", g, base_asp = 1, base_width = 5)
 ```
 
 ```{r citations}
@@ -321,14 +349,14 @@ g
 
 ```{r}
 gds_c_if2 <- gds_j %>% 
-  filter(ifs < 51.941) %>% 
+  filter(ifs <= 41.577) %>% 
   mutate(bin = case_when(
     ifs < 5 ~ "5",
     ifs < 10 ~ "10",
     ifs < 30 ~ "30",
     TRUE ~ "+",
   )) %>% 
-  filter(year == 2017 | year == 2018 | year == 2016) %>% 
+  filter(year == 2017 | year == 2018) %>% #| year == 2016| year == 2019) %>% 
   # mutate(year = ifelse(month %in% c("Jan", "Feb", "Mar", "Apr", "May", "Jun"),
   #                      year + 0.5,
   #                      year)) %>%
@@ -341,29 +369,32 @@ gds_c_if2 <- gds_j %>%
 g <- ggplot(gds_c_if2,
             aes(x = ifs, y = cite, group = usable, color = usable, shape = usable)) +
   facet_grid(.~year) +
-  geom_point() +
+  geom_point(alpha = 0.87) +
+  geom_point(alpha = 0.87, 
+             data = gds_c_if2 %>% filter(usable == "yes")) +
   cowplot::theme_cowplot() +
   #scale_y_log10() +
   geom_smooth(method = "lm", fill = NA) +
+  #scale_color_viridis_d(option = "a") +
   scale_color_brewer() +
   #theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
   coord_cartesian(ylim = c(0,500)) +
-  xlab("IF") + ylab("# of citations") +
-  ggtitle("citations by IF, 2017/8")
+  xlab("journal IF") + ylab("# of citations") #+ ggtitle("citations by IF, 2017/8")
 g
+cowplot::save_plot("geo_cite.pdf", g, base_asp = 1, base_width = 5)
 
 g2 <- ggplot(gds_c_if2,
             aes(x = ifs, y = cite, group = usable, color = usable, shape = usable)) +
   facet_grid(.~year) +
-  geom_point() +
+  geom_point(alpha = 0.76) +
   cowplot::theme_cowplot() +
   scale_y_log10() +
   geom_smooth(method = "lm", fill = NA) +
-  scale_color_brewer() +
+  scale_color_viridis_d(option = "plasma") +
+  #scale_color_brewer() +
   #theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
   #coord_cartesian(ylim = c(0,500)) +
-  xlab("IF") + ylab("# of citations") +
-  ggtitle("citations by IF, 2017/8")
+  xlab("journal IF") + ylab("# of citations") #+ ggtitle("citations by IF, 2017/8")
 g2
 ```
 
