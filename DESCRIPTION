@@ -35,7 +35,8 @@ Imports:
     rcrossref,
     BiocStyle,
     pbmcapply,
-    googlesheets4
+    googlesheets4,
+    cowplot
 Suggests:
     roxygen2,
     testthat,
