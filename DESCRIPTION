@@ -36,7 +36,8 @@ Imports:
     BiocStyle,
     pbmcapply,
     googlesheets4,
-    cowplot
+    cowplot,
+    scholar
 Suggests:
     roxygen2,
     testthat,
