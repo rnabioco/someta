@@ -19,6 +19,7 @@ vignette: >
 knitr::opts_chunk$set(
   message = FALSE,
   warning = FALSE,
+  echo = FALSE,
   collapse = TRUE,
   fig.align = "center",
   comment = "#>",
@@ -39,11 +40,31 @@ date <- format(format = "%m%d%y", Sys.Date())
 ("single nuclei" OR "single cell" OR "scRNAseq" OR "scRNA-seq" OR "snRNAseq" OR "snRNA-seq")
 ```
 
+```{r eutil, eval = T}
+library(httr)
+print(date)
+esearch <- "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%22expression%20profiling%20by%20high%20throughput%20sequencing%22%20AND%20(%22single%20nuclei%22%20OR%20%22single%20cell%22%20OR%20%22scRNAseq%22%20OR%20%22scRNA-seq%22%20OR%20%22snRNAseq%22%20OR%20%22snRNA-seq%22)&usehistory=y&retmode=json"
+get1 <- GET(esearch)
+webenv <- content(get1)$esearchresult$webenv
+efetch <- paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&query_key=1&WebEnv=",
+                webenv)
+GET(
+  efetch,
+  write_disk(here("inst", "extdata", date, paste0("gds_result_", date, ".txt"))), 
+  progress()
+)
+```
+
+https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%22expression%20profiling%20by%20high%20throughput%20sequencing%22%20AND%20(%22single%20nuclei%22%20OR%20%22single%20cell%22%20OR%20%22scRNAseq%22%20OR%20%22scRNA-seq%22%20OR%20%22snRNAseq%22%20OR%20%22snRNA-seq%22)&usehistory=y&retmode=json
+
+https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&query_key=1&WebEnv=MCID_5f88cc1a5ba549283b24e861
+
+
 # Parse GEO query
 
 ```{r entries}
-#source(here("utils", "geo_query.R"))
-gds <- readRDS(here("inst", "extdata", paste0("geo_", "101220", ".rds"))) %>% 
+source(here("utils", "geo_query.R"))
+gds <- readRDS(here("inst", "extdata", date, paste0("geo_", date, ".rds"))) %>% 
   mutate(year = as.numeric(year))
 gds_orig <- gds
 ```
@@ -148,6 +169,8 @@ gs_data_processed <- gs_data %>% inner_join(gds, by = c("Data location" = "id"))
 
 Overlap of scRNA-seq GEO entries between manual curation and the GEO query is `r 1 - sum(checksub, na.rm = T)/(length(gs_ids) - sum(is.na(checksub)))`. Number of entries not public: `r sum(is.na(checksub))`. Fraction with metadata: `r ((sum(gs_data_processed$usable == "yes") + unlist(checksub_ids) %in% (gds %>% filter(usable == "yes") %>% pull(id)) %>% sum())) / (nrow(gs_data_processed) + unlist(checksub_ids) %in% (gds %>% filter(usable == "yes") %>% pull(id)) %>% sum())`.
 
+# by year
+
 ```{r frac}
 frac <- gds %>% na.omit() %>% 
   group_by(year, usable) %>% 
@@ -172,7 +195,7 @@ g <- ggplot(gds %>% na.omit() %>% filter(year >= 2012),
         axis.title.x = element_text(size = 14),
         axis.title.y = element_text(size = 14))# + ggtitle("scRNAseq datasets by year")
 g
-cowplot::save_plot("geo_year.pdf", g, base_asp = 1, base_width = 5)
+#cowplot::save_plot("geo_year.pdf", g, base_asp = 1, base_width = 5)
 
 # ggplot(gds %>% na.omit() %>% filter(year == "2020") %>% 
 #          mutate(month = factor(month, levels = c("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"))),
@@ -181,26 +204,26 @@ cowplot::save_plot("geo_year.pdf", g, base_asp = 1, base_width = 5)
 #   scale_fill_viridis_d(option = "plasma") +
 #   cowplot::theme_cowplot() +
 #   ggtitle("scRNAseq datasets by month in 2020")
-frac2 <- gds %>% na.omit() %>% 
-  mutate(year = ifelse(month %in% c("Jan", "Feb", "Mar", "Apr", "May", "Jun"), 
-                       year, year + 0.5)) %>% 
-  group_by(year, usable) %>% 
-  summarize(n = n()) %>% 
-  ungroup() %>% 
-  pivot_wider(names_from = usable, values_from = n) %>% 
-  replace_na(list(no = 0, yes = 0)) %>% 
-  mutate(fraction = yes/(yes + no), total = yes + no) %>% 
-  mutate(fraction = round(fraction, digits = 3))
-fit <- lm(fraction ~ year, data = frac2 %>% filter(year >= 2016))
-ggplot(frac2 %>% filter(year >= 2016),
-       aes(x = year, y = fraction, color = total)) +
-  geom_point() +
-  geom_line(data = fortify(fit), aes(x = year, y = .fitted), color = "black") +
-  scale_color_viridis_c(direction = -1) +
-  cowplot::theme_cowplot() +
-  ylab("total studies") +
-  ylim(c(0, 0.25)) +
-  ggtitle("metadata fraction by year")
+# frac2 <- gds %>% na.omit() %>% 
+#   mutate(year = ifelse(month %in% c("Jan", "Feb", "Mar", "Apr", "May", "Jun"), 
+#                        year, year + 0.5)) %>% 
+#   group_by(year, usable) %>% 
+#   summarize(n = n()) %>% 
+#   ungroup() %>% 
+#   pivot_wider(names_from = usable, values_from = n) %>% 
+#   replace_na(list(no = 0, yes = 0)) %>% 
+#   mutate(fraction = yes/(yes + no), total = yes + no) %>% 
+#   mutate(fraction = round(fraction, digits = 3))
+# fit <- lm(fraction ~ year, data = frac2 %>% filter(year >= 2016))
+# ggplot(frac2 %>% filter(year >= 2016),
+#        aes(x = year, y = fraction, color = total)) +
+#   geom_point() +
+#   geom_line(data = fortify(fit), aes(x = year, y = .fitted), color = "black") +
+#   scale_color_viridis_c(direction = -1) +
+#   cowplot::theme_cowplot() +
+#   ylab("total studies") +
+#   ylim(c(0, 0.25)) +
+#   ggtitle("metadata fraction by year")
 ```
 
 ```{r journalplot}
@@ -264,7 +287,7 @@ g <- ggplot(gds_j %>% filter(year >= 2017) %>% mutate(journal_group = factor(jou
         axis.title.x = element_text(size = 14),
         axis.title.y = element_text(size = 14)) #+ ggtitle("scRNAseq datasets by journal")
 g
-cowplot::save_plot("geo_family.pdf", g, base_asp = 1, base_width = 5)
+#cowplot::save_plot("geo_family.pdf", g, base_asp = 1, base_width = 5)
 ```
 
 ```{r journaldot}
@@ -292,27 +315,27 @@ g <- ggplot(gds_sum %>% filter(n >= 3) %>%
         axis.title.y = element_text(size = 14)) +
   scale_x_log10()
 g
-cowplot::save_plot("geo_journal.pdf", g, base_asp = 1, base_width = 5)
+#cowplot::save_plot("geo_journal.pdf", g, base_asp = 1, base_width = 5)
 ```
 
 ```{r citations}
-gds_c <- gds_j %>% mutate(jy = str_c(journal, year, sep = ",")) %>% 
-  group_by(journal, year, usable) %>% 
-  filter(n() >= 4) %>% 
-  filter(year <= 2018) %>% 
-  ungroup() %>% 
-  select(id, usable, jy, cite) %>% 
-  filter(!is.na(cite)) %>% 
-  mutate(cite = as.numeric(cite))
-jys <- gds_c %>% select(usable, jy) %>% distinct() %>% group_by(jy) %>% filter(n() == 2) %>% pull(jy)
-g <- ggplot(gds_c %>% filter(jy %in% jys),
-       aes(x = jy, y = cite)) +
-  geom_boxplot(aes(fill = usable), outlier.shape = NA) +
-  cowplot::theme_cowplot() +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
-  #coord_cartesian(ylim = c(0,500)) +
-  ggtitle("citations binned by year + journal + usable")
-g
+# gds_c <- gds_j %>% mutate(jy = str_c(journal, year, sep = ",")) %>% 
+#   group_by(journal, year, usable) %>% 
+#   filter(n() >= 4) %>% 
+#   filter(year <= 2018) %>% 
+#   ungroup() %>% 
+#   select(id, usable, jy, cite) %>% 
+#   filter(!is.na(cite)) %>% 
+#   mutate(cite = as.numeric(cite))
+# jys <- gds_c %>% select(usable, jy) %>% distinct() %>% group_by(jy) %>% filter(n() == 2) %>% pull(jy)
+# g <- ggplot(gds_c %>% filter(jy %in% jys),
+#        aes(x = jy, y = cite)) +
+#   geom_boxplot(aes(fill = usable), outlier.shape = NA) +
+#   cowplot::theme_cowplot() +
+#   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+#   #coord_cartesian(ylim = c(0,500)) +
+#   ggtitle("citations binned by year + journal + usable")
+# g
 ```
 
 ```{r if}
@@ -321,30 +344,30 @@ ifs_abbr <- scholar::get_impactfactor(gds_j$journal)
 ifs2 <- bind_cols(ifs, ifs_abbr) %>% mutate(ifs = pmin(`ImpactFactor...3`, `ImpactFactor...7`, na.rm = TRUE))
 gds_j$ifs <- ifs2$ifs
 
-gds_c_if <- gds_j %>% 
-  filter(ifs < 51.941) %>% 
-  mutate(bin = case_when(
-    ifs < 5 ~ "5",
-    ifs < 10 ~ "10",
-    ifs < 30 ~ "30",
-    TRUE ~ "+",
-  )) %>% 
-  filter(year == 2018 | year == 2017) %>% 
-  select(pubmed, usable, journal, cite, bin, year) %>% 
-  distinct() %>% 
-  filter(!is.na(cite)) %>% 
-  mutate(cite = as.numeric(cite)) %>% 
-  mutate(bin = factor(bin, levels = c("5", "10", "30", "+")))
+# gds_c_if <- gds_j %>% 
+#   filter(ifs < 51.941) %>% 
+#   mutate(bin = case_when(
+#     ifs < 5 ~ "5",
+#     ifs < 10 ~ "10",
+#     ifs < 30 ~ "30",
+#     TRUE ~ "+",
+#   )) %>% 
+#   filter(year == 2018 | year == 2017) %>% 
+#   select(pubmed, usable, journal, cite, bin, year) %>% 
+#   distinct() %>% 
+#   filter(!is.na(cite)) %>% 
+#   mutate(cite = as.numeric(cite)) %>% 
+#   mutate(bin = factor(bin, levels = c("5", "10", "30", "+")))
 
-g <- ggplot(gds_c_if,
-       aes(x = bin, y = cite)) +
-  #facet_grid(.~year) +
-  geom_boxplot(aes(fill = usable), outlier.shape = NA) +
-  cowplot::theme_cowplot() +
-  #theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
-  coord_cartesian(ylim = c(0,500)) +
-  ggtitle("citations binned by IF, 2018")
-g
+# g <- ggplot(gds_c_if,
+#        aes(x = bin, y = cite)) +
+#   #facet_grid(.~year) +
+#   geom_boxplot(aes(fill = usable), outlier.shape = NA) +
+#   cowplot::theme_cowplot() +
+#   #theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+#   coord_cartesian(ylim = c(0,500)) +
+#   ggtitle("citations binned by IF, 2018")
+# g
 ```
 
 ```{r}
@@ -381,60 +404,60 @@ g <- ggplot(gds_c_if2,
   coord_cartesian(ylim = c(0,500)) +
   xlab("journal IF") + ylab("# of citations") #+ ggtitle("citations by IF, 2017/8")
 g
-cowplot::save_plot("geo_cite.pdf", g, base_asp = 1, base_width = 5)
-
-g2 <- ggplot(gds_c_if2,
-            aes(x = ifs, y = cite, group = usable, color = usable, shape = usable)) +
-  facet_grid(.~year) +
-  geom_point(alpha = 0.76) +
-  cowplot::theme_cowplot() +
-  scale_y_log10() +
-  geom_smooth(method = "lm", fill = NA) +
-  scale_color_viridis_d(option = "plasma") +
-  #scale_color_brewer() +
-  #theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
-  #coord_cartesian(ylim = c(0,500)) +
-  xlab("journal IF") + ylab("# of citations") #+ ggtitle("citations by IF, 2017/8")
-g2
+#cowplot::save_plot("geo_cite.pdf", g, base_asp = 1, base_width = 5)
+# 
+# g2 <- ggplot(gds_c_if2,
+#             aes(x = ifs, y = cite, group = usable, color = usable, shape = usable)) +
+#   facet_grid(.~year) +
+#   geom_point(alpha = 0.76) +
+#   cowplot::theme_cowplot() +
+#   scale_y_log10() +
+#   geom_smooth(method = "lm", fill = NA) +
+#   scale_color_viridis_d(option = "plasma") +
+#   #scale_color_brewer() +
+#   #theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+#   #coord_cartesian(ylim = c(0,500)) +
+#   xlab("journal IF") + ylab("# of citations") #+ ggtitle("citations by IF, 2017/8")
+# g2
 ```
 
 ```{r authors}
-get_authors <- function(pubmed) {
-  tryCatch(pubmed[[1]] %>% mutate(fullname = str_c(firstname, lastname, sep = "_")) %>% pull(fullname),
-           error = function(e) {"NA"})
-}
-get_corauthors <- function(pubmed) {
-  tryCatch(pubmed[[1]] %>% filter(!is.na(email)) %>% mutate(fullname = str_c(firstname, lastname, sep = "_")) %>% pull(fullname),
-           error = function(e) {"NA"})
-}
-gds_a <- gds %>% select(id, journal, usable, year, pubmed) 
-cor <- list()
-for (i in 1:nrow(gds_a)) {
-  cor[[i]] <- get_corauthors(gds$pubmed[i])
-}
-cors <- cor %>% unlist() %>% unique()
-authors <- list()
-for (i in 1:nrow(gds_a)) {
-  authors[[i]] <- get_authors(gds$pubmed[i])
-}
-gds_a$authors <- authors
-
-gds_as <- gds_a %>% select(-pubmed) %>% 
-  filter(year >= 2018) %>% 
-  unnest("authors") %>% 
-  group_by(authors) %>% 
-  summarize(n = n(), yes = sum(usable == "yes")) %>% 
-  filter(authors %in% cors) %>% mutate(frac = yes/n)
-
-ggplot(gds_as %>% filter(authors != "NA") %>% filter(n >= 3),
-       aes(x = n, y = frac)) +
-  geom_point() +
-  scale_color_brewer(palette = "Spectral") +
-  cowplot::theme_cowplot() +
-  ggtitle("scRNAseq datasets by author") + 
-  xlab("total") +
-  ylim(c(0, 1)) +
-  scale_x_log10()
+# get_authors <- function(pubmed) {
+#   tryCatch(pubmed[[1]] %>% mutate(fullname = str_c(firstname, lastname, sep = "_")) %>% pull(fullname),
+#            error = function(e) {"NA"})
+# }
+# get_corauthors <- function(pubmed) {
+#   tryCatch(pubmed[[1]] %>% filter(!is.na(email)) %>% mutate(fullname = str_c(firstname, lastname, sep = "_")) %>% pull(fullname),
+#            error = function(e) {"NA"})
+# }
+# gds_a <- gds %>% select(id, journal, usable, year, pubmed) 
+# cor <- list()
+# for (i in 1:nrow(gds_a)) {
+#   cor[[i]] <- get_corauthors(gds$pubmed[i])
+# }
+# cors <- cor %>% unlist() %>% unique()
+# authors <- list()
+# for (i in 1:nrow(gds_a)) {
+#   authors[[i]] <- get_authors(gds$pubmed[i])
+# }
+# gds_a$authors <- authors
+# 
+# gds_as <- gds_a %>% select(-pubmed) %>% 
+#   filter(year >= 2018) %>% 
+#   unnest("authors") %>% 
+#   group_by(authors) %>% 
+#   summarize(n = n(), yes = sum(usable == "yes")) %>% 
+#   filter(authors %in% cors) %>% mutate(frac = yes/n)
+# 
+# ggplot(gds_as %>% filter(authors != "NA") %>% filter(n >= 3),
+#        aes(x = n, y = frac)) +
+#   geom_point() +
+#   scale_color_brewer(palette = "Spectral") +
+#   cowplot::theme_cowplot() +
+#   ggtitle("scRNAseq datasets by author") + 
+#   xlab("total") +
+#   ylim(c(0, 1)) +
+#   scale_x_log10()
 ```
 
 
