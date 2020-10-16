@@ -1,0 +1,46 @@
+Package: scmetadata
+Title: Monitoring metadata availability of scRNA-seq data in GEO
+Version: 0.0.0.9000
+Authors@R:
+    c(person(given = "Rui",
+             family = "Fu",
+             role = c("aut", "cre"),
+             email = "raysinensis@gmail.com"),
+      person(given = "Kent",
+             family = "Riemondy",
+             role = "aut",
+             email = "kent.riemondy@ucdenver.edu"),
+      person(given = "Sidhant",
+             family = "Puntambekar",
+             role = "ctb",
+             email = "sidhantnp@yahoo.com"))
+Description: Using NCBI e-utilities and R packages to query and visualize the problematic absence of cell metadata in most GEO single cell sequencing data series.
+License: MIT + file LICENSE
+Imports:
+    dplyr,
+    magrittr,
+    purrr,
+    readr,
+    rlang (>= 0.1.2),
+    stringr,
+    tibble,
+    tidyr,
+    broom,
+    ggplot2,
+    httr,
+    here,
+    GEOquery,
+    easyPubMed,
+    rcrossref
+Suggests:
+    roxygen2,
+    testthat,
+    covr
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Remotes:
+    tidyverse/magrittr
+Depends:
+    R (>= 3.6)
