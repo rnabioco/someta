@@ -6,7 +6,7 @@ on:
       - main
       - master
   schedule:
-    - cron: '07 18 16 * *'
+    - cron: '10 18 16 * *'
 
 name: pkgdown
 
