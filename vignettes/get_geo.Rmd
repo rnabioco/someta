@@ -40,7 +40,7 @@ date <- format(format = "%m%d%y", Sys.Date())
 ("single nuclei" OR "single cell" OR "scRNAseq" OR "scRNA-seq" OR "snRNAseq" OR "snRNA-seq")
 ```
 
-```{r eutil, eval = T}
+```{r eutil, eval = F}
 library(httr)
 print(date)
 esearch <- "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%22expression%20profiling%20by%20high%20throughput%20sequencing%22%20AND%20(%22single%20nuclei%22%20OR%20%22single%20cell%22%20OR%20%22scRNAseq%22%20OR%20%22scRNA-seq%22%20OR%20%22snRNAseq%22%20OR%20%22snRNA-seq%22)&usehistory=y&retmode=json"
@@ -54,11 +54,6 @@ GET(
   progress()
 )
 ```
-
-https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%22expression%20profiling%20by%20high%20throughput%20sequencing%22%20AND%20(%22single%20nuclei%22%20OR%20%22single%20cell%22%20OR%20%22scRNAseq%22%20OR%20%22scRNA-seq%22%20OR%20%22snRNAseq%22%20OR%20%22snRNA-seq%22)&usehistory=y&retmode=json
-
-https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&query_key=1&WebEnv=MCID_5f88cc1a5ba549283b24e861
-
 
 # Parse GEO query
 
@@ -75,6 +70,8 @@ checks <- suppressWarnings(map(gds$geo,
                                                       "single nuclei|single-nucleus|single cell|single-cell|scrnaseq|scrna-seq|snrnaseq|snrna-seq") %>% any()))
 gds <- gds[unlist(checks), ]
 ```
+
+Total entries: `r length(gds_orig)`
 
 Number of entries filtered out because key words were not found: `r sum(!unlist(checks), na.rm = TRUE)`
 
@@ -226,6 +223,8 @@ g
 #   ggtitle("metadata fraction by year")
 ```
 
+# by journal
+
 ```{r journalplot}
 # ids_nat <- gs_data %>% filter(Journal == "Nature" | str_detect(Journal, "^Nat "))
 # ids_cell <- gs_data %>% filter(Journal %in% c("Cell","Cell Reports", "Developmental Cell", "Cell Stem Cell", "Molecular Cell", "Cancer Cell", "Immunity", "Neuron"))
@@ -237,13 +236,13 @@ g
 gds_j <- gds %>%
   mutate(journal_group = case_when(
     journal %in% c("Nature", "Science", "Cell") ~ "CNS",
-    journal %in% c("Nat Commun", "Nat Metab", "iScience", "Cell Res.", "Sci Rep", "Sci Immunol", "Sci Adv", "Cell Rep", "Dev. Cell", "Cell Stem Cell", "Stem Cell Reports", "Mol. Cell", "Cancer Cell", "Immunity", "Neuron", "Cell Syst", "Cell Metab.", "Cell Host Microbe") ~ "CNS sub",
-    str_detect(journal, "^Nat. ") ~ "CNS sub",
-    journal %in% c("Genome Biol.", "Genome Med") ~ "BMC",
+    journal %in% c("Nat Commun", "Nat Metab", "iScience", "Cell Res", "Sci Rep", "Sci Immunol", "Sci Adv", "Cell Rep", "Dev Cell", "Cell Stem Cell", "Stem Cell Reports", "Mol Cell", "Cancer Cell", "Immunity", "Neuron", "Cell Syst", "Cell Metab", "Cell Host Microbe") ~ "CNS sub",
+    str_detect(journal, "^Nat ") ~ "CNS sub",
+    journal %in% c("Genome Biol", "Genome Med") ~ "BMC",
     str_detect(journal, "BMC") ~ "BMC",
-    journal %in% c("Genes Dev.", "Genome Res.") ~ "CSHL",
+    journal %in% c("Genes Dev", "Genome Res") ~ "CSHL",
     journal %in% c("Elife") ~ "eLife",
-    journal %in% c("Proc. Natl. Acad. Sci. U.S.A.") ~ "PNAS",
+    # journal %in% c("Proc Natl Acad Sci U S A") ~ "PNAS",
     str_detect(journal, "PLoS") ~ "PLOS",
     #journal %in% c("Nucleic Acids Res.") ~ "NAR",
     TRUE ~ "other"
@@ -253,8 +252,8 @@ gds_j <- gds %>%
     str_detect(journal, "^Nat. ") ~ "Nature",
     journal %in% c("Science", "Sci Rep", "Sci Immunol", "Sci Adv") ~ "Science",
     journal %in% c("Cell", "Cell Rep", "Dev. Cell", "Cell Stem Cell", "Stem Cell Reports", "Mol. Cell", "Cancer Cell", "Immunity", "Neuron", "Cell Syst", "Cell Metab.", "Cell Host Microbe", "iScience") ~ "Cell",
-    journal %in% c("Genome Biol.", "Genome Med") ~ "BMC",
-    str_detect(journal, "BMC") ~ "BMC",
+    #journal %in% c("Genome Biol.", "Genome Med") ~ "BMC",
+    #str_detect(journal, "BMC") ~ "BMC",
     #str_detect(journal, "^Front") ~ "Frontiers",
     #journal %in% c("Genes Dev.", "Genome Res.") ~ "CSHL",
     #str_detect(journal, "PLoS") ~ "PLOS",
@@ -278,10 +277,10 @@ gds_j_frac <- gds_j %>%
 g <- ggplot(gds_j %>% filter(year >= 2017) %>% mutate(journal_group = factor(journal_group, levels = gds_j_frac$journal_group)),
        aes(x = journal_group, fill = usable)) +
   geom_bar() +
-  scale_fill_viridis_d(option = "plasma") +
+  scale_fill_brewer() +
+  #scale_fill_viridis_d(option = "plasma") +
   geom_text(data = gds_j_frac, color = "black", aes(x = journal_group, y = total + 30, label = fraction, fill = NA), size = 3) +
   cowplot::theme_cowplot() +
-  scale_x_continuous(breaks = c(2012:2020)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size = 14), 
         axis.text.y = element_text(size = 14),
         axis.title.x = element_text(size = 14),
@@ -299,7 +298,7 @@ gds_sum <- gds_j %>% filter(year >= 2017) %>%
 g <- ggplot(gds_sum %>% filter(n >= 3) %>% 
          mutate(journal_group = factor(journal_group, 
                                        # levels = c("Cell", "Nature", "Science", "BMC", "other")
-                                       levels = c("CNS", "CNS sub", "eLife", "PLOS", "BMC", "other")
+                                       levels = c("CNS", "CNS sub", "BMC", "CSHL" , "eLife", "PLOS", "other")
                                        )),
        aes(x = n, y = frac, color = journal_group)) +
   geom_point() +
@@ -337,6 +336,8 @@ g
 #   ggtitle("citations binned by year + journal + usable")
 # g
 ```
+
+# by IF
 
 ```{r if}
 ifs <- scholar::get_impactfactor(sapply(gds_j$pubmed, function(x) x$journal[1]))
