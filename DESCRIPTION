@@ -44,3 +44,5 @@ Remotes:
     tidyverse/magrittr
 Depends:
     R (>= 4.0)
+VignetteBuilder: 
+    knitr
