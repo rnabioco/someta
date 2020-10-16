@@ -54,7 +54,7 @@ check_string <- function(files, string) {
 get_geo <- function(geo) {
   res <- tryCatch(
     suppressMessages(GEOquery::getGEO(GEO = geo,
-                                      filename = NULL, destdir = here("utils", "geo"),
+                                      filename = NULL,
                                       GSElimits = NULL, GSEMatrix = FALSE,
                                       AnnotGPL = FALSE, getGPL = FALSE,
                                       parseCharacteristics = FALSE)),
