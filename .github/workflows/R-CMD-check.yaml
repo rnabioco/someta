@@ -78,6 +78,8 @@ jobs:
         run: |
           remotes::install_deps(dependencies = TRUE)
           remotes::install_cran("rcmdcheck")
+          remotes::install_cran("BiocManager")
+          BiocManager::install('GEOquery')
         shell: Rscript {0}
 
       - name: Session info
