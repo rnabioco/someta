@@ -17,6 +17,7 @@ Authors@R:
 Description: Using NCBI e-utilities and R packages to query and visualize the problematic absence of cell metadata in most GEO single cell sequencing data series.
 License: MIT + file LICENSE
 Imports:
+    tidyverse,
     dplyr,
     magrittr,
     purrr,
@@ -31,7 +32,10 @@ Imports:
     here,
     GEOquery,
     easyPubMed,
-    rcrossref
+    rcrossref,
+    BiocStyle,
+    pbmcapply,
+    googlesheets4
 Suggests:
     roxygen2,
     testthat,
@@ -43,4 +47,6 @@ RoxygenNote: 7.1.1
 Remotes:
     tidyverse/magrittr
 Depends:
-    R (>= 3.6)
+    R (>= 4.0)
+VignetteBuilder: 
+    knitr
