@@ -71,7 +71,7 @@ checks <- suppressWarnings(map(gds$geo,
 gds <- gds[unlist(checks), ]
 ```
 
-Total entries: `r length(gds_orig)`
+Total entries: `r nrow(gds_orig)`
 
 Number of entries filtered out because key words were not found: `r sum(!unlist(checks), na.rm = TRUE)`
 
@@ -371,7 +371,7 @@ gds_j$ifs <- ifs2$ifs
 # g
 ```
 
-```{r}
+```{r citations}
 gds_c_if2 <- gds_j %>% 
   filter(ifs <= 41.577) %>% 
   mutate(bin = case_when(
