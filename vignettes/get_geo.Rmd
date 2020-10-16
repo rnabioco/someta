@@ -48,10 +48,10 @@ get1 <- GET(esearch)
 webenv <- content(get1)$esearchresult$webenv
 efetch <- paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&query_key=1&WebEnv=",
                 webenv)
+dir.create(here("inst", "extdata", date), showWarnings = FALSE)
 GET(
   efetch,
-  write_disk(here("inst", "extdata", date, paste0("gds_result_", date, ".txt"))), 
-  progress()
+  write_disk(here("inst", "extdata", date, paste0("gds_result_", date, ".txt")))
 )
 ```
 
