@@ -34,7 +34,8 @@ Imports:
     easyPubMed,
     rcrossref,
     BiocStyle,
-    pbmcapply
+    pbmcapply,
+    googlesheets4
 Suggests:
     roxygen2,
     testthat,
