@@ -33,7 +33,9 @@ Imports:
     GEOquery,
     easyPubMed,
     rcrossref,
-    BiocStyle
+    BiocStyle,
+    pbmcapply,
+    googlesheets4
 Suggests:
     roxygen2,
     testthat,
