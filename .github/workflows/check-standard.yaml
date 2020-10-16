@@ -68,7 +68,7 @@ jobs:
           remotes::install_deps(dependencies = TRUE)
           remotes::install_cran("rcmdcheck")
           remotes::install_cran("BiocManager")
-          BiocManager::install('GEOquery')
+          BiocManager::install(c('GEOquery', 'BiocStyle'))
         shell: Rscript {0}
 
       - name: Check

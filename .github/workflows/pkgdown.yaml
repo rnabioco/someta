@@ -37,7 +37,7 @@ jobs:
       - name: Install dependencies
         run: |
           remotes::install_cran("BiocManager", force = TRUE)
-          BiocManager::install('GEOquery')
+          BiocManager::install(c('GEOquery', 'BiocStyle'))
           remotes::install_deps(dependencies = TRUE)
           install.packages("pkgdown")
         shell: Rscript {0}
