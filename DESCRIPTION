@@ -17,6 +17,7 @@ Authors@R:
 Description: Using NCBI e-utilities and R packages to query and visualize the problematic absence of cell metadata in most GEO single cell sequencing data series.
 License: MIT + file LICENSE
 Imports:
+    tidyverse,
     dplyr,
     magrittr,
     purrr,

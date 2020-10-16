@@ -10,7 +10,7 @@ output:
     toc_float: true
 
 vignette: >
-    %\VignetteIndexEntry{Introduction to clustifyr}
+    %\VignetteIndexEntry{metadata_report}
     %\VignetteEngine{knitr::rmarkdown}
     %\VignetteEncoding{UTF-8}  
 ---
