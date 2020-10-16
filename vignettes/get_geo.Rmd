@@ -317,7 +317,7 @@ g
 #cowplot::save_plot("geo_journal.pdf", g, base_asp = 1, base_width = 5)
 ```
 
-```{r citations}
+```{r getcitations}
 # gds_c <- gds_j %>% mutate(jy = str_c(journal, year, sep = ",")) %>% 
 #   group_by(journal, year, usable) %>% 
 #   filter(n() >= 4) %>% 
