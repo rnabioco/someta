@@ -6,7 +6,7 @@ on:
       - main
       - master
   schedule:
-    - cron: '22 22 16 * *'
+    - cron: '22 22 18 * *'
 
 name: pkgdown
 
@@ -52,3 +52,9 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           Rscript -e 'pkgdown::deploy_to_branch(new_process = FALSE)'
+
+      - name: Render README
+        run: Rscript -e 'rmarkdown::render("README.Rmd")'
+        run: |
+          git commit README.md -m 'Re-build README.Rmd' || echo "No changes to commit"
+          git push origin || echo "No changes to commit"

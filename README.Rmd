@@ -1,0 +1,104 @@
+---
+output: github_document
+---
+
+```{r, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  collapse = TRUE,
+  echo = FALSE,
+  comment = "#>",
+  fig.path = "man/figures/"
+)
+```
+
+# scmetadata
+<!-- badges: start -->
+[![Last Commit on GitHub](`r paste0("https://img.shields.io/badge/last%20run-", format(format = "%m--%d--%Y", Sys.Date()), "-brightgreen")`)](https://rnabioco.github.io/scmetadata/articles/get_geo.html)
+<!-- badges: end -->
+
+Cell-type annotations are frequently excluded from most public single cell datasets. This hinders single cell sequencing analysis reproducibility and accessibility. To better describe the issue, we monitor GEO entries monthly, and programmatically determine the fraction of entries with usable cell metadata. 
+
+As of the initial presentation of this issue (10--17--2020), the number is a frustratingly low 0.122.
+
+Please find the latest numbers below, or at [report link](https://rnabioco.github.io/scmetadata/articles/get_geo.html).
+
+```{r load}
+library(tidyverse)
+library(GEOquery)
+library(here)
+date <- "101520"#format(format = "%m%d%y", Sys.Date())
+gds <- readRDS(here("inst", "extdata", date, paste0("geo_", date, ".rds"))) %>% 
+  mutate(year = as.numeric(year))
+gds_orig <- gds
+```
+
+```{r filteragain}
+checks <- suppressWarnings(map(gds$geo,
+                               function(x) str_detect(str_to_lower(x), 
+                                                      "single nuclei|single-nucleus|single cell|single-cell|scrnaseq|scrna-seq|snrnaseq|snrna-seq") %>% any()))
+gds <- gds[unlist(checks), ]
+```
+
+```{r superseries}
+parse_subseries <- function(geolist) {
+  tryCatch({rel <- geolist$relation
+            rel[str_detect(rel, "^SuperSeries of: ")] %>%
+              str_remove("^SuperSeries of: ")},
+           error = function(e) {return(NA)})
+}
+
+res <- map(gds$geo,
+           parse_subseries)
+names(res) <- gds$id
+res2 <- res[lengths(res) != 0]
+res2 <- map(res2,
+            function(x) ifelse(x %in% gds$id, x, NA))
+res3 <- data.frame(superseries = names(res2))
+res3$id <- res2
+dict_series <- res3 %>% unnest(id) %>% na.omit()
+gds2 <- gds %>% left_join(dict_series) %>% 
+  mutate(superseries = ifelse(is.na(superseries),
+                              id,
+                              superseries)) %>% 
+  group_by(superseries) %>% 
+  summarize(usable = ifelse(any(usable == "yes"), "yes", "no"))
+
+gds_fixed <- gds %>% inner_join(gds2 %>% select(id = superseries, fixed_usable = usable))
+gds <- gds_fixed %>% select(-usable) %>% rename(usable = fixed_usable)
+```
+
+```{r fixfalsep}
+gds_old <- gds
+fp <- read_tsv(here("inst", "extdata", "falsepos.txt"), col_names = F) %>% pull(1)
+gds <- gds %>% mutate(usable = ifelse(id %in% fp, "no", usable))
+```
+
+Final fraction with (potentially usable) metadata: `r (gds$usable == "yes") %>% mean(na.rm = TRUE)`
+
+```{r frac}
+frac <- gds %>% na.omit() %>% 
+  group_by(year, usable) %>% 
+  summarize(n = n()) %>% 
+  ungroup() %>% 
+  pivot_wider(names_from = usable, values_from = n) %>% 
+  replace_na(list(no = 0, yes = 0)) %>% 
+  mutate(fraction = yes/(yes + no), total = yes + no) %>% 
+  mutate(fraction = round(fraction, digits = 3))
+
+g <- ggplot(gds %>% na.omit() %>% filter(year >= 2012),
+       aes(x = year, fill = usable)) +
+  geom_bar() +
+  scale_fill_brewer() +
+  #scale_fill_viridis_d(option = "plasma") +
+  geom_text(data = frac %>% filter(year >= 2012), color = "black", aes(x = year, y = total + 30, label = fraction, fill = NA), size = 3) +
+  cowplot::theme_cowplot() +
+  scale_x_continuous(breaks = c(2012:2020)) +
+  ylab("total studies") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size = 14), 
+        axis.text.y = element_text(size = 14),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14))# + ggtitle("scRNAseq datasets by year")
+g
+```
