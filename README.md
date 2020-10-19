@@ -21,4 +21,4 @@ link](https://rnabioco.github.io/scmetadata/articles/get_geo.html).
 
 Final fraction with (potentially usable) metadata: 0.1211009
 
-![](man/figures/frac-1.png)<!-- -->
+![](man/figures/frac-1.png)<!-- -->![](man/figures/frac-2.png)<!-- -->
