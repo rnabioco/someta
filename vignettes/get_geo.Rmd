@@ -103,7 +103,7 @@ gds_fixed <- gds %>% inner_join(gds2 %>% select(id = superseries, fixed_usable =
 gds <- gds_fixed %>% select(-usable) %>% rename(usable = fixed_usable)
 ```
 
-merged super and subseries: `r length(res) - nrow(gds)`
+Merged super and subseries: `r length(res) - nrow(gds)`
 
 ```{r fixfalsep}
 gds_old <- gds
