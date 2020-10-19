@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 
 # scmetadata
 <!-- badges: start -->
+[![R build status](https://github.com/rnabioco/scmetadata/workflows/pkgdown/badge.svg)](https://github.com/rnabioco/scmetadata/actions)
 [![Last Commit on GitHub](`r paste0("https://img.shields.io/badge/last%20run-", format(format = "%m--%d--%Y", Sys.Date()), "-brightgreen")`)](https://rnabioco.github.io/scmetadata/articles/get_geo.html)
 <!-- badges: end -->
 
@@ -29,7 +30,7 @@ Please find the latest numbers below, or at [report link](https://rnabioco.githu
 library(tidyverse)
 library(GEOquery)
 library(here)
-date <- "101520"#format(format = "%m%d%y", Sys.Date())
+date <- format(format = "%m%d%y", Sys.Date())
 gds <- readRDS(here("inst", "extdata", date, paste0("geo_", date, ".rds"))) %>% 
   mutate(year = as.numeric(year))
 gds_orig <- gds
