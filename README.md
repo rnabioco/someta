@@ -4,7 +4,7 @@
 <!-- badges: start -->
 
 [![Last Commit on
-GitHub](https://img.shields.io/badge/last%20run-10--18--2020-brightgreen)](https://rnabioco.github.io/scmetadata/articles/get_geo.html)
+GitHub](https://img.shields.io/badge/last%20run-10--19--2020-brightgreen)](https://rnabioco.github.io/scmetadata/articles/get_geo.html)
 <!-- badges: end -->
 
 Cell-type annotations are frequently excluded from most public single
