@@ -20,19 +20,25 @@ knitr::opts_chunk$set(
 [![Last Commit on GitHub](`r paste0("https://img.shields.io/badge/last%20run-", format(format = "%m--%d--%Y", Sys.Date()), "-brightgreen")`)](https://rnabioco.github.io/scmetadata/articles/get_geo.html)
 <!-- badges: end -->
 
-Cell-type annotations are frequently excluded from most public single cell datasets. This hinders single cell sequencing analysis reproducibility and accessibility. To better describe the issue, we monitor GEO entries monthly, and programmatically determine the fraction of entries with usable cell metadata. 
+Cell-type annotations are frequently excluded from public single cell datasets. This hinders single cell sequencing analysis reproducibility and accessibility. To better describe the issue, we monitor GEO entries monthly (currently set to auto-update at 1AM UTC, 20th of the month), and programmatically determine the fraction of entries with (potentially) usable cell metadata. 
 
-As of the initial presentation of this issue (10--17--2020), the number is a frustratingly low 0.122.
+As of the initial presentation of this issue (10--17--2020), the number is a frustratingly low **0.122**.
 
-Please find the latest numbers below, or at [report link](https://rnabioco.github.io/scmetadata/articles/get_geo.html).
+Please find the latest numbers below, or at [full report page](https://rnabioco.github.io/scmetadata/articles/get_geo.html).
 
 ```{r load}
 library(tidyverse)
 library(GEOquery)
 library(here)
 date <- format(format = "%m%d%y", Sys.Date())
-gds <- readRDS(here("inst", "extdata", date, paste0("geo_", date, ".rds"))) %>% 
-  mutate(year = as.numeric(year))
+date_1off <- format(format = "%m%d%y", Sys.Date() - 1)
+if (file.exists(here("inst", "extdata", date, paste0("geo_", date, ".rds")))) {
+  gds <- readRDS(here("inst", "extdata", date, paste0("geo_", date, ".rds"))) %>% 
+    mutate(year = as.numeric(year))
+} else {
+  gds <- readRDS(here("inst", "extdata", date_1off, paste0("geo_", date_1off, ".rds"))) %>% 
+    mutate(year = as.numeric(year))
+}
 gds_orig <- gds
 ```
 
@@ -77,7 +83,16 @@ fp <- read_tsv(here("inst", "extdata", "falsepos.txt"), col_names = F) %>% pull(
 gds <- gds %>% mutate(usable = ifelse(id %in% fp, "no", usable))
 ```
 
-Final fraction with (potentially usable) metadata: `r (gds$usable == "yes") %>% mean(na.rm = TRUE)`
+Current fraction with metadata: **`r (gds$usable == "yes") %>% mean(na.rm = TRUE)`**.
+
+```{r comp}
+gds_comp <- readRDS(here("inst", "extdata", "101520", paste0("geo_", "101520", ".rds"))) %>% 
+    mutate(year = as.numeric(year))
+id_comp <- gds_comp %>% filter(usable == "no") %>% pull(id)
+id_gds <- gds_comp %>% filter(usable == "yes") %>% pull(id)
+```
+
+Number of depositions with updated metadata records since description of the issue here: **`r length(intersect(id_gds, id_comp))`**.
 
 ```{r frac}
 frac <- gds %>% na.omit() %>% 
