@@ -340,11 +340,32 @@ g
 # by IF
 
 ```{r if}
-ifs <- scholar::get_impactfactor(sapply(gds_j$pubmed, function(x) x$journal[1]))
-ifs_abbr <- scholar::get_impactfactor(gds_j$journal)
-ifs2 <- bind_cols(ifs, ifs_abbr) %>% mutate(ifs = pmin(`ImpactFactor...3`, `ImpactFactor...7`, na.rm = TRUE))
-gds_j$ifs <- ifs2$ifs
-
+# ifs <- scholar::get_impactfactor(sapply(gds_j$pubmed, function(x) str_remove(str_remove(x$journal[1], "^The |^the |^THE "), " \\(.+")))
+# ifs_abbr <- scholar::get_impactfactor(gds_j$journal)
+# cut <- ifs_abbr %>% filter(Journal %in% c("CELL", "NATURE", "SCIENCE")) %>% pull(ImpactFactor) %>% max()
+# ifs2 <- bind_cols(if_long = ifs$ImpactFactor, if_short = ifs_abbr$ImpactFactor) %>% 
+#   mutate(if_long = ifelse(if_long > cut, NA, if_long),
+#          if_short = ifelse(if_short > cut, NA, if_short)) %>% 
+#   mutate(ifs = pmax(if_long, if_short, na.rm = TRUE))
+# gds_j$ifs <- ifs2$ifs
+# 
+# checked_j <- gds_j %>% group_by(journal, ifs) %>% summarise(n = n()) %>%
+#   mutate(ifs = case_when(
+#     journal == "JCI Insight" ~ 6.205,
+#     journal == "Science Immunology" ~ 8.160,
+#     journal == "J Am Soc Nephrol" ~ 9.274,
+#     journal == "Genes Dev" ~ 9.527,
+#     journal == "Blood Adv" ~ 4.584,
+#     journal == "Curr Biol" ~ 5.720,
+#     journal == "Protein Cell" ~ 10.164,
+#     journal == "iScience" ~ 4.447,
+#     journal == "Nat Struct Mol Biol" ~ 11.98,
+#     TRUE ~ ifs
+#   ))
+# 
+# write_csv(checked_j, here("inst", "extdata", "ifs.csv"))
+checked_j <- read_csv(here("inst", "extdata", "ifs.csv")) %>% select(-n)
+gds_j <- gds_j %>% left_join(checked_j)
 # gds_c_if <- gds_j %>% 
 #   filter(ifs < 51.941) %>% 
 #   mutate(bin = case_when(
@@ -373,7 +394,6 @@ gds_j$ifs <- ifs2$ifs
 
 ```{r citations}
 gds_c_if2 <- gds_j %>% 
-  filter(ifs <= 41.577) %>% 
   mutate(bin = case_when(
     ifs < 5 ~ "5",
     ifs < 10 ~ "10",
