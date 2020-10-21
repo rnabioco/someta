@@ -69,13 +69,14 @@
 
       
 
-      </header><script src="get_geo_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
+      </header><script src="get_geo_files/accessible-code-block-0.0.1/empty-anchor.js"></script><link href="get_geo_files/anchor-sections-1.0/anchor-sections.css" rel="stylesheet">
+<script src="get_geo_files/anchor-sections-1.0/anchor-sections.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>single cell GEO records</h1>
                         <h4 class="author">Rui Fu</h4>
             <address class="author_afil">
-      RNA Bioscience Initative, University of Colorado School of Medicine<br><h4 class="date">2020-10-20</h4>
+      RNA Bioscience Initative, University of Colorado School of Medicine<br><h4 class="date">2020-10-21</h4>
       
       
       <div class="hidden name"><code>get_geo.Rmd</code></div>
@@ -90,21 +91,21 @@
 <a href="#current-geo-query-used" class="anchor"></a>Current GEO query used:</h1>
 <pre><code>"expression profiling by high throughput sequencing" AND
 ("single nuclei" OR "single cell" OR "scRNAseq" OR "scRNA-seq" OR "snRNAseq" OR "snRNA-seq")</code></pre>
-<pre><code>#&gt; [1] "102020"
-#&gt; Response [https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&amp;query_key=1&amp;WebEnv=MCID_5f8e95188441e458be537077]
-#&gt;   Date: 2020-10-20 07:43
+<pre><code>#&gt; [1] "102120"
+#&gt; Response [https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&amp;query_key=1&amp;WebEnv=MCID_5f908bde1d493e16782dd87c]
+#&gt;   Date: 2020-10-21 19:28
 #&gt;   Status: 200
 #&gt;   Content-Type: text/plain; charset=UTF-8
-#&gt;   Size: 3.51 MB
-#&gt; &lt;ON DISK&gt;  /Users/runner/work/scmetadata/scmetadata/inst/extdata/102020/gds_result_102020.txt</code></pre>
+#&gt;   Size: 3.54 MB
+#&gt; &lt;ON DISK&gt;  /Users/runner/work/scmetadata/scmetadata/inst/extdata/102120/gds_result_102120.txt</code></pre>
 </div>
 <div id="parse-geo-query" class="section level1">
 <h1 class="hasAnchor">
 <a href="#parse-geo-query" class="anchor"></a>Parse GEO query</h1>
-<p>Total entries: 4216</p>
-<p>Number of entries filtered out because key words were not found: 539</p>
-<p>Merged super and subseries: 403</p>
-<p>The fraction of GEO entries with potential metadata (file with “meta”, “annot”, or “type” in filename or rda/rds/rdata files) is 0.1287462. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at 0.1209677). Final fraction: 0.1223242</p>
+<p>Total entries: 4249</p>
+<p>Number of entries filtered out because key words were not found: 547</p>
+<p>Merged super and subseries: 405</p>
+<p>The fraction of GEO entries with potential metadata (file with “meta”, “annot”, or “type” in filename or rda/rds/rdata files) is 0.1284543. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at 0.1204819). Final fraction: 0.1220771</p>
 </div>
 <div id="parse-database-from-svensson-et-al-" class="section level1">
 <h1 class="hasAnchor">
