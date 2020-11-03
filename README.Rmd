@@ -71,9 +71,19 @@ gds2 <- gds %>% left_join(dict_series) %>%
                               id,
                               superseries)) %>% 
   group_by(superseries) %>% 
-  summarize(usable = ifelse(any(usable == "yes"), "yes", "no"))
+  summarize(has_meta1 = ifelse(any(has_meta1 == "yes"), "yes", "no"),
+            has_meta2 = ifelse(any(has_meta2 == "yes"), "yes", "no"),
+            has_object1 = ifelse(any(has_object1 == "yes"), "yes", "no"),
+            has_object2 = ifelse(any(has_object2 == "yes"), "yes", "no")) %>% 
+  mutate(usable = ifelse(has_meta1 == "yes" | 
+                           has_meta2 == "yes" | 
+                           has_object1 == "yes" | 
+                           has_object2 == "yes",
+                         "yes", "no")) %>% 
+  mutate(usable2 = ifelse(has_meta1 == "yes" | has_meta2 == "yes", "meta",
+                          ifelse(has_object1 == "yes" | has_object2 == "yes", "object", "no")))
 
-gds_fixed <- gds %>% inner_join(gds2 %>% select(id = superseries, fixed_usable = usable))
+gds_fixed <- gds %>% inner_join(gds2 %>% select(id = superseries, fixed_usable = usable, usable2))
 gds <- gds_fixed %>% select(-usable) %>% rename(usable = fixed_usable)
 ```
 
@@ -104,12 +114,38 @@ frac <- gds %>% na.omit() %>%
   mutate(fraction = yes/(yes + no), total = yes + no) %>% 
   mutate(fraction = round(fraction, digits = 3))
 
-g <- ggplot(gds %>% na.omit() %>% filter(year >= 2012),
-       aes(x = year, fill = usable)) +
-  geom_bar() +
-  scale_fill_brewer() +
+frac2 <- gds %>% na.omit() %>% 
+  group_by(year, usable2) %>% 
+  summarize(n = n()) %>% 
+  ungroup() %>% 
+  pivot_wider(names_from = usable2, values_from = n) %>% 
+  replace_na(list(no = 0, meta = 0, object = 0)) %>% 
+  mutate(fraction = (meta + object) / (meta + object + no), total = meta + object + no) %>% 
+  mutate(fraction = round(fraction, digits = 3))
+
+# g <- ggplot(gds %>% na.omit() %>% filter(year >= 2012),
+#        aes(x = year, fill = usable)) +
+#   geom_bar() +
+#   scale_fill_brewer() +
+#   #scale_fill_viridis_d(option = "plasma") +
+#   geom_text(data = frac %>% filter(year >= 2012), color = "black", aes(x = year, y = total + max(frac$total) * 0.03, label = fraction, fill = NA), size = 3) +
+#   cowplot::theme_cowplot() +
+#   scale_x_continuous(breaks = c(2012:2020)) +
+#   ylab("total studies") +
+#   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size = 14), 
+#         axis.text.y = element_text(size = 14),
+#         axis.title.x = element_text(size = 14),
+#         axis.title.y = element_text(size = 14))
+# g + ggtitle("scRNAseq datasets by year")
+
+g <- ggplot(gds %>% na.omit() %>% 
+              filter(year >= 2012) %>%
+              mutate(usable2 = factor(usable2, levels = c("no", "meta", "object"))),
+       aes(x = year)) +
+  geom_bar(aes(fill = usable2)) +
+  scale_fill_brewer(name = "usable") +
   #scale_fill_viridis_d(option = "plasma") +
-  geom_text(data = frac %>% filter(year >= 2012), color = "black", aes(x = year, y = total + max(frac$total) * 0.03, label = fraction, fill = NA), size = 3) +
+  geom_text(data = frac2 %>% filter(year >= 2012), color = "black", aes(x = year, y = total + max(frac$total) * 0.03, label = fraction), size = 3) +
   cowplot::theme_cowplot() +
   scale_x_continuous(breaks = c(2012:2020)) +
   ylab("total studies") +
@@ -134,22 +170,33 @@ last12_df <- gds %>% na.omit() %>%
   mutate(month = factor(month, levels = c("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"))) %>% 
   arrange(year, as.numeric(month))
 
+# last12_frac <- last12_df %>% na.omit() %>% 
+#   group_by(year, month, usable2) %>% 
+#   summarize(n = n()) %>% 
+#   ungroup() %>% 
+#   pivot_wider(names_from = usable2, values_from = n) %>% 
+#   replace_na(list(no = 0, yes = 0)) %>% 
+#   mutate(fraction = yes/(yes + no), total = yes + no) %>% 
+#   mutate(fraction = round(fraction, digits = 3)) %>%
+#   mutate(full = str_c(year, month, sep = "-"))
+  
 last12_frac <- last12_df %>% na.omit() %>% 
-  group_by(year, month, usable) %>% 
+  group_by(year, month, usable2) %>% 
   summarize(n = n()) %>% 
   ungroup() %>% 
-  pivot_wider(names_from = usable, values_from = n) %>% 
-  replace_na(list(no = 0, yes = 0)) %>% 
-  mutate(fraction = yes/(yes + no), total = yes + no) %>% 
+  pivot_wider(names_from = usable2, values_from = n) %>% 
+  replace_na(list(no = 0, meta = 0, object = 0)) %>% 
+  mutate(fraction = (meta + object) / (meta + object + no), total = meta + object + no) %>% 
   mutate(fraction = round(fraction, digits = 3)) %>%
   mutate(full = str_c(year, month, sep = "-"))
-  
-g2 <- ggplot(last12_df %>% mutate(full = factor(full, levels = unique(last12_df$full))),
-             aes(x = full, fill = usable)) +
-  geom_bar() +
+
+g2 <- ggplot(last12_df %>% mutate(full = factor(full, levels = unique(last12_df$full))) %>%
+              mutate(usable2 = factor(usable2, levels = c("no", "meta", "object"))),
+             aes(x = full)) +
+  geom_bar(aes(fill = usable2)) +
   geom_text(data = last12_frac %>% mutate(full = factor(full, levels = unique(last12_df$full))),
             color = "black", 
-            aes(x = full, y = total + max(last12_frac$total) * 0.03, label = fraction, fill = NA), size = 3) +
+            aes(x = full, y = total + max(last12_frac$total) * 0.03, label = fraction), size = 3) +
   scale_fill_brewer() +
   cowplot::theme_cowplot() +
   ylab("total studies") +
