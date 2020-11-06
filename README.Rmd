@@ -197,7 +197,7 @@ g2 <- ggplot(last12_df %>% mutate(full = factor(full, levels = unique(last12_df$
   geom_text(data = last12_frac %>% mutate(full = factor(full, levels = unique(last12_df$full))),
             color = "black", 
             aes(x = full, y = total + max(last12_frac$total) * 0.03, label = fraction), size = 3) +
-  scale_fill_brewer() +
+  scale_fill_brewer(name = "usable") +
   cowplot::theme_cowplot() +
   ylab("total studies") +
   xlab("last 12 months") +

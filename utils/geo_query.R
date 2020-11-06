@@ -152,14 +152,6 @@ gds5 <- gds5 %>% mutate(date = pbmcapply::pbmcmapply(get_date, geo)) %>%
   separate(date, into = c("month", "day", "year"))
 gds5 <- gds5 %>% mutate(pubmed = pbmcapply::pbmcmapply(get_pubmed, geo))
 
-# geo <- list()
-# pb <- progress_estimated(nrow(gds5))
-# for (i in 1:nrow(gds5)) {
-#   pb$tick()$print()
-#   if (is.null(geo[[gds5$id[i]]])) {
-#     geo[[gds5$id[i]]] <- get_pubmed(gds5$geo[i])
-#   }
-# }
 pubmeds <- list()
 splits <- split(gds5$pubmed %>% na.omit(), ceiling(seq_along(gds5$pubmed %>% na.omit())/20))
 for (s in splits) {
@@ -185,3 +177,5 @@ get_cites <- function(pubmed) {
 message("get citation data")
 gds7 <- gds6 %>% mutate(cite = map(pubmed, get_cites))
 gds7 %>% saveRDS(here("inst", "extdata", date, paste0("geo_", date, ".rds")))
+gds7 %>% saveRDS(here("inst", "extdata", "current_geo.rds"))
+

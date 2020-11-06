@@ -59,5 +59,6 @@ jobs:
       - name: Commit README
         run: |
           git add README.md man/figures/*
+          git add inst/extdata/current_geo.rds
           git commit -m 'Re-build README.Rmd' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
