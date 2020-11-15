@@ -40,7 +40,7 @@ date <- format(format = "%m%d%y", Sys.Date())
 ("single nuclei" OR "single cell" OR "scRNAseq" OR "scRNA-seq" OR "snRNAseq" OR "snRNA-seq")
 ```
 
-```{r eutil, eval = F}
+```{r eutil, eval = T}
 library(httr)
 print(date)
 esearch <- "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%22expression%20profiling%20by%20high%20throughput%20sequencing%22%20AND%20(%22single%20nuclei%22%20OR%20%22single%20cell%22%20OR%20%22scRNAseq%22%20OR%20%22scRNA-seq%22%20OR%20%22snRNAseq%22%20OR%20%22snRNA-seq%22)&usehistory=y&retmode=json"
@@ -58,7 +58,7 @@ GET(
 # Parse GEO query
 
 ```{r entries}
-# source(here("utils", "geo_query.R"))
+source(here("utils", "geo_query.R"))
 gds <- readRDS(here("inst", "extdata", date, paste0("geo_", date, ".rds"))) %>% 
   mutate(year = as.numeric(year))
 gds_backup <- readRDS(here("inst", "extdata", "101520", paste0("geo_", "101520", ".rds"))) %>% 
