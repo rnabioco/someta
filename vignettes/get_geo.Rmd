@@ -531,10 +531,10 @@ classy <- read_tsv("https://raw.githubusercontent.com/scRNA-tools/scRNA-tools/ma
 # get pubmed ids for tools
 tau <- list()
 for (i in 1:length(tools)) {
-  if (i%%10 == 0) {
-    closeAllConnections()
-    print(i)
-  }
+  # if (i%%10 == 0) {
+  #   closeAllConnections()
+  #   print(i)
+  # }
   tau[[i]] <- easyPubMed::get_pubmed_ids_by_fulltitle(tools[i],
                                                       api_key = "9cc836a53f5c509a6783283e694da4fb0d08")$IdList$Id
 }
@@ -553,10 +553,10 @@ splits <- split(c(tau %>% unlist() %>% na.omit(), try2v) %>% unique() ,
                 ceiling(seq_along(c(tau %>% unlist() %>% na.omit(), try2v) %>% unique())/20))
 for (i in 1:length(splits)) {
   s <- splits[[i]]
-  if (i%%2 == 0) {
-    closeAllConnections()
-    print(i)
-  }
+  # if (i%%2 == 0) {
+  #   closeAllConnections()
+  #   print(i)
+  # }
   query_string <- str_c(s, collapse = ",")
   pubmed_file <- easyPubMed::get_pubmed_ids(query_string,
                                 api_key = "9cc836a53f5c509a6783283e694da4fb0d08")
@@ -670,10 +670,10 @@ tools <- read_tsv("https://raw.githubusercontent.com/scRNA-tools/scRNA-tools/mas
 
 tau <- list()
 for (i in 1:length(tools)) {
-  if (i%%10 == 0) {
-    closeAllConnections()
-    print(i)
-  }
+  # if (i%%10 == 0) {
+  #   closeAllConnections()
+  #   print(i)
+  # }
   tau[[i]] <- easyPubMed::get_pubmed_ids_by_fulltitle(tools[i],
                                                       api_key = "9cc836a53f5c509a6783283e694da4fb0d08")$IdList$Id
 }
@@ -696,10 +696,10 @@ splits <- split(ts2 %>% na.omit() %>% unique(),
                 ceiling(seq_along(ts2 %>% na.omit() %>% unique())/20))
 for (i in 1:length(splits)) {
   s <- splits[[i]]
-  if (i%%2 == 0) {
-    closeAllConnections()
-    print(i)
-  }
+  # if (i%%2 == 0) {
+  #   closeAllConnections()
+  #   print(i)
+  # }
   query_string <- str_c(s, collapse = ",")
   pubmed_file <- easyPubMed::get_pubmed_ids(query_string,
                                 api_key = "9cc836a53f5c509a6783283e694da4fb0d08")
