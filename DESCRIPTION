@@ -37,7 +37,8 @@ Imports:
     pbmcapply,
     googlesheets4,
     cowplot,
-    scholar
+    scholar,
+    rbiorxiv
 Suggests:
     roxygen2,
     testthat,
