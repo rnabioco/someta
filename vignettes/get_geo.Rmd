@@ -40,7 +40,7 @@ date <- format(format = "%m%d%y", Sys.Date())
 ("single nuclei" OR "single cell" OR "scRNAseq" OR "scRNA-seq" OR "snRNAseq" OR "snRNA-seq")
 ```
 
-```{r eutil, eval = T}
+```{r eutil, eval = F}
 library(httr)
 print(date)
 esearch <- "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%22expression%20profiling%20by%20high%20throughput%20sequencing%22%20AND%20(%22single%20nuclei%22%20OR%20%22single%20cell%22%20OR%20%22scRNAseq%22%20OR%20%22scRNA-seq%22%20OR%20%22snRNAseq%22%20OR%20%22snRNA-seq%22)&usehistory=y&retmode=json"
@@ -58,8 +58,10 @@ GET(
 # Parse GEO query
 
 ```{r entries}
-source(here("utils", "geo_query.R"))
+# source(here("utils", "geo_query.R"))
 gds <- readRDS(here("inst", "extdata", date, paste0("geo_", date, ".rds"))) %>% 
+  mutate(year = as.numeric(year))
+gds_backup <- readRDS(here("inst", "extdata", "101520", paste0("geo_", "101520", ".rds"))) %>% 
   mutate(year = as.numeric(year))
 gds_orig <- gds
 ```
@@ -97,9 +99,19 @@ gds2 <- gds %>% left_join(dict_series) %>%
                               id,
                               superseries)) %>% 
   group_by(superseries) %>% 
-  summarize(usable = ifelse(any(usable == "yes"), "yes", "no"))
+  summarize(has_meta1 = ifelse(any(has_meta1 == "yes"), "yes", "no"),
+            has_meta2 = ifelse(any(has_meta2 == "yes"), "yes", "no"),
+            has_object1 = ifelse(any(has_object1 == "yes"), "yes", "no"),
+            has_object2 = ifelse(any(has_object2 == "yes"), "yes", "no")) %>% 
+  mutate(usable = ifelse(has_meta1 == "yes" | 
+                           has_meta2 == "yes" | 
+                           has_object1 == "yes" | 
+                           has_object2 == "yes",
+                         "yes", "no")) %>% 
+  mutate(usable2 = ifelse(has_meta1 == "yes" | has_meta2 == "yes", "meta",
+                          ifelse(has_object1 == "yes" | has_object2 == "yes", "object", "no")))
 
-gds_fixed <- gds %>% inner_join(gds2 %>% select(id = superseries, fixed_usable = usable))
+gds_fixed <- gds %>% inner_join(gds2 %>% select(id = superseries, fixed_usable = usable, usable2))
 gds <- gds_fixed %>% select(-usable) %>% rename(usable = fixed_usable)
 ```
 
@@ -442,44 +454,505 @@ g
 # g2
 ```
 
-```{r authors}
-# get_authors <- function(pubmed) {
-#   tryCatch(pubmed[[1]] %>% mutate(fullname = str_c(firstname, lastname, sep = "_")) %>% pull(fullname),
-#            error = function(e) {"NA"})
-# }
-# get_corauthors <- function(pubmed) {
-#   tryCatch(pubmed[[1]] %>% filter(!is.na(email)) %>% mutate(fullname = str_c(firstname, lastname, sep = "_")) %>% pull(fullname),
-#            error = function(e) {"NA"})
-# }
-# gds_a <- gds %>% select(id, journal, usable, year, pubmed) 
-# cor <- list()
-# for (i in 1:nrow(gds_a)) {
-#   cor[[i]] <- get_corauthors(gds$pubmed[i])
-# }
-# cors <- cor %>% unlist() %>% unique()
-# authors <- list()
-# for (i in 1:nrow(gds_a)) {
-#   authors[[i]] <- get_authors(gds$pubmed[i])
-# }
-# gds_a$authors <- authors
-# 
-# gds_as <- gds_a %>% select(-pubmed) %>% 
-#   filter(year >= 2018) %>% 
-#   unnest("authors") %>% 
-#   group_by(authors) %>% 
-#   summarize(n = n(), yes = sum(usable == "yes")) %>% 
-#   filter(authors %in% cors) %>% mutate(frac = yes/n)
-# 
-# ggplot(gds_as %>% filter(authors != "NA") %>% filter(n >= 3),
-#        aes(x = n, y = frac)) +
-#   geom_point() +
-#   scale_color_brewer(palette = "Spectral") +
-#   cowplot::theme_cowplot() +
-#   ggtitle("scRNAseq datasets by author") + 
-#   xlab("total") +
-#   ylim(c(0, 1)) +
-#   scale_x_log10()
+```{r authors, eval=F}
+get_authors <- function(pubmed) {
+  tryCatch(pubmed[[1]] %>% mutate(fullname = str_c(firstname, lastname, sep = "_")) %>%
+             pull(fullname),
+           error = function(e) {"NA"})
+}
+get_firauthors <- function(pubmed) {
+  tryCatch(pubmed %>% mutate(fullname = str_c(firstname, lastname, sep = "_")) %>% 
+             #dplyr::slice(n()) %>%
+             dplyr::slice(1) %>%
+             pull(fullname),
+           error = function(e) {"NA"})
+}
+get_corauthors <- function(pubmed) {
+  tryCatch(pubmed[[1]] %>% filter(!is.na(email)) %>% mutate(fullname = str_c(firstname, lastname, sep = "_")) %>% pull(fullname),
+           error = function(e) {"NA"})
+}
+gds_a <- gds %>% select(id, journal, usable, year, pubmed)
+
+fir <- list()
+for (i in 1:nrow(gds_a)) {
+  fir[[i]] <- get_firauthors(gds$pubmed[i])
+}
+firs <- fir %>% unlist() %>% unique()
+
+cor <- list()
+for (i in 1:nrow(gds_a)) {
+  cor[[i]] <- get_corauthors(gds$pubmed[i])
+}
+cors <- cor %>% unlist() %>% unique()
+
+authors <- list()
+for (i in 1:nrow(gds_a)) {
+  authors[[i]] <- get_authors(gds$pubmed[i])
+}
+gds_a$authors <- authors
+
+gds_as <- gds_a %>% select(-pubmed) %>%
+  filter(year >= 2017) %>%
+  unnest("authors") %>%
+  group_by(authors) %>%
+  summarize(n = n(), yes = sum(usable == "yes")) %>%
+  #filter(authors %in% cors) %>% 
+  mutate(frac = yes/n) %>% 
+  mutate(author_type = ifelse(authors %in% firsc_check, "yes", "no"))
+
+ggplot(gds_as %>% filter(authors != "NA") %>% filter(n >= 3),
+       aes(x = n, y = frac, color = author_type)) +
+  facet_grid(.~author_type) +
+  geom_point() +
+  scale_color_brewer() +
+  cowplot::theme_cowplot() +
+  ggtitle("scRNAseq datasets by author") +
+  xlab("total") +
+  ylim(c(0, 1)) +
+  scale_x_log10()
 ```
 
+```{r, eval=F}
+authors <- list()
+for (i in 1:nrow(gds_a)) {
+  authors[[i]] <- get_authors(gds$pubmed[i])
+}
+gds_a$authors <- authors
 
+class <- read_tsv("https://raw.githubusercontent.com/scRNA-tools/scRNA-tools/master/database/categories-idx.tsv") %>% filter(Category %in% c("Classification")) %>% pull(Tool)
+doi <- read_tsv("https://raw.githubusercontent.com/scRNA-tools/scRNA-tools/master/database/doi-idx.tsv") %>% filter(Tool %in% class) %>% pull(DOI)
+tools <- read_tsv("https://raw.githubusercontent.com/scRNA-tools/scRNA-tools/master/database/references.tsv") %>% pull(Title) %>%
+  str_remove_all(":|,|\\(|\\)") %>%
+  str_replace_all("’s | or | and |–|—a |—", " ") %>%
+  str_remove_all(" Fig\\. 1\\.") %>% 
+  na.omit()
+classy <- read_tsv("https://raw.githubusercontent.com/scRNA-tools/scRNA-tools/master/database/references.tsv") %>% filter(!is.na(Title)) %>% pull(DOI) %in% doi
+
+# get pubmed ids for tools
+tau <- list()
+for (i in 1:length(tools)) {
+  if (i%%10 == 0) {
+    closeAllConnections()
+    print(i)
+  }
+  tau[[i]] <- easyPubMed::get_pubmed_ids_by_fulltitle(tools[i],
+                                                      api_key = "9cc836a53f5c509a6783283e694da4fb0d08")$IdList$Id
+}
+
+# for missing entries, try doi search
+try2 <- (read_tsv("https://raw.githubusercontent.com/scRNA-tools/scRNA-tools/master/database/references.tsv") %>% pull(DOI))[sapply(tau, is.null)]
+try2l <- list()
+splitst <- split(try2, ceiling(seq_along(try2)/180))
+for (x in splitst) {
+  try2l <- c(try2l, rcrossref::id_converter(x)$records$pmid %>% na.omit())
+}
+try2v <- try2l %>% unlist() %>% unique()
+
+pubmeds_t <- list()
+splits <- split(c(tau %>% unlist() %>% na.omit(), try2v) %>% unique() ,
+                ceiling(seq_along(c(tau %>% unlist() %>% na.omit(), try2v) %>% unique())/20))
+for (i in 1:length(splits)) {
+  s <- splits[[i]]
+  if (i%%2 == 0) {
+    closeAllConnections()
+    print(i)
+  }
+  query_string <- str_c(s, collapse = ",")
+  pubmed_file <- easyPubMed::get_pubmed_ids(query_string,
+                                api_key = "9cc836a53f5c509a6783283e694da4fb0d08")
+  pubmed <- pubmed_file %>% fetch_pubmed_data(retmax = 9999) %>%
+    articles_to_list()
+  pubmeds1 <- sapply(pubmed, article_to_df, simplify = FALSE)
+  names(pubmeds1) <- pubmed_file$IdList
+  pubmeds_t <- append(pubmeds_t, pubmeds1)
+}
+
+fir <- list()
+for (i in 1:length(pubmeds_t)) {
+  fir[[i]] <- get_firauthors(pubmeds_t[[i]])
+}
+firs <- fir %>% unlist() %>% unique()
+firs <- setdiff(firs, c("NA"))
+
+pubmeds_tc <- pubmeds_t[tau[classy] %>% unlist()]
+firc <- list()
+for (i in 1:length(pubmeds_tc)) {
+  firc[[i]] <- get_firauthors(pubmeds_tc[[i]])
+}
+firsc <- firc %>% unlist() %>% unique()
+firsc <- setdiff(firsc, c("NA"))
+
+fir_id <- gds_a %>% select(-pubmed) %>%
+  #filter(year >= 2017) %>%
+  unnest("authors") %>%
+  filter(authors %in% firs) %>%
+  pull(id) %>% 
+  unique()
+
+fir_idc <- gds_a %>% select(-pubmed) %>%
+  #filter(year >= 2017) %>%
+  unnest("authors") %>%
+  filter(authors %in% firsc) %>%
+  pull(id) %>% 
+  unique()
+
+gds_at <- gds %>% 
+  filter(year >= 2017) %>% 
+  mutate(tool = case_when(
+    id %in% fir_idc ~ "yes",
+    # id %in% fir_id ~ "tool",
+    TRUE ~ "no"
+  )) %>% 
+  group_by(tool, usable2) %>% 
+  summarize(n = n()) %>% 
+  group_by(tool) %>% 
+  mutate(fraction = n/sum(n))
+
+frac3 <- gds_at %>% filter(usable2 == "no") %>% 
+  mutate(fraction = 1 - fraction) %>% 
+  mutate(fraction = round(fraction, digits = 3))
+
+g <- ggplot(gds_at %>% mutate(usable2 = factor(usable2, levels = c("no", "meta", "object"))) %>% 
+              mutate(tool = factor(tool, levels = c("no", "yes"))),
+       aes(x = tool, fill = usable2, y = fraction)) +
+  geom_col() +
+  scale_fill_brewer(name = "usable") +
+  geom_text(data = frac3, color = "black", aes(y = 1.03, label = fraction), size = 3) +
+  cowplot::theme_cowplot() +
+  ylab("fraction") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size = 14), 
+        axis.text.y = element_text(size = 14),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14))
+# cowplot::save_plot("geo_authors.pdf", g, base_asp = 1, base_width = 5)
+g + ggtitle("scRNAseq datasets by year")
+```
+
+```{r}
+library(rbiorxiv)
+biorxiv_conv <- function(doi1) {
+  tryCatch(biorxiv_content(doi = doi1)[[1]]$published,
+           error = function(e) doi1)
+}
+
+classes <- read_tsv("https://raw.githubusercontent.com/scRNA-tools/scRNA-tools/master/database/categories-idx.tsv")
+classes <- split(classes$Tool, classes$Category)
+
+d <- read_tsv("https://raw.githubusercontent.com/scRNA-tools/scRNA-tools/master/database/doi-idx.tsv")
+ref <- read_tsv("https://raw.githubusercontent.com/scRNA-tools/scRNA-tools/master/database/references.tsv")
+
+classes <- sapply(classes, function(x) {
+  d %>% filter(Tool %in% x) %>% pull(DOI)
+})
+classes$all <- unlist(classes) %>% unique()
+ts <- read_tsv("https://raw.githubusercontent.com/scRNA-tools/scRNA-tools/master/database/references.tsv") %>% filter(!is.na(Title)) %>% 
+  mutate(DOI_pub = mapply(biorxiv_conv, DOI))
+try2l <- list()
+
+id_conv <- function(doi) {
+  tryCatch(rcrossref::id_converter(doi)$records$pmid,
+           error = function(e) NA)
+}
+try2l <- ts %>% filter(DOI_pub != "NA") %>% 
+  select(DOI_pub) %>% 
+  mutate(pmid = mapply(id_conv, DOI_pub))
+# splitst <- split(ts %>% filter(DOI_pub != "NA") %>% pull(DOI_pub), 
+#                  ceiling(seq_along(ts %>% filter(DOI_pub != "NA") %>% pull(DOI_pub))/180))
+# for (x in splitst) {
+#   try2l <- bind_rows(try2l, rcrossref::id_converter(x)$records %>% select(doi, pmid))
+# }
+
+tools <- read_tsv("https://raw.githubusercontent.com/scRNA-tools/scRNA-tools/master/database/references.tsv") %>% pull(Title) %>%
+  str_remove_all(":|,|\\(|\\)") %>%
+  str_replace_all("’s | or | and |–|—a |—", " ") %>%
+  str_remove_all(" Fig\\. 1\\.") %>% 
+  na.omit()
+
+tau <- list()
+for (i in 1:length(tools)) {
+  if (i%%10 == 0) {
+    closeAllConnections()
+    print(i)
+  }
+  tau[[i]] <- easyPubMed::get_pubmed_ids_by_fulltitle(tools[i],
+                                                      api_key = "9cc836a53f5c509a6783283e694da4fb0d08")$IdList$Id
+}
+
+tau2 <- tau
+tau2[sapply(tau2, is.null)] <- NA
+ts$tau <- unlist(tau2)
+ts2 <- ts %>% left_join(try2l, by = "DOI_pub") %>%
+  mutate(pubmed = ifelse(is.na(pmid), tau, pmid)) %>% 
+  select(DOI, pubmed) %>% 
+  distinct() %>% 
+  column_to_rownames("DOI")
+ts2 <- ts2[ts$DOI,]
+names(ts2) <- ts$DOI
+
+pubmeds_t2 <- list()
+ts2[sapply(ts2, is.null)] <- NA
+ts2 <- ts2 %>% unlist()
+splits <- split(ts2 %>% na.omit() %>% unique(),
+                ceiling(seq_along(ts2 %>% na.omit() %>% unique())/20))
+for (i in 1:length(splits)) {
+  s <- splits[[i]]
+  if (i%%2 == 0) {
+    closeAllConnections()
+    print(i)
+  }
+  query_string <- str_c(s, collapse = ",")
+  pubmed_file <- easyPubMed::get_pubmed_ids(query_string,
+                                api_key = "9cc836a53f5c509a6783283e694da4fb0d08")
+  pubmed <- pubmed_file %>% easyPubMed::fetch_pubmed_data(retmax = 9999) %>%
+    easyPubMed::articles_to_list()
+  pubmeds1 <- sapply(pubmed, easyPubMed::article_to_df, simplify = FALSE)
+  names(pubmeds1) <- pubmed_file$IdList
+  pubmeds_t2 <- append(pubmeds_t2, pubmeds1)
+}
+
+notold <- sapply(pubmeds_t2, function(x) {
+  as.numeric(x$year[1])
+}, simplify = TRUE) %>% as.data.frame() %>% 
+  rownames_to_column("id") %>% 
+  filter(`.` >= 2017) %>% 
+  pull(id)
+
+pubmeds_t3 <- pubmeds_t2[notold]
+
+get_authors <- function(pubmed) {
+  tryCatch(pubmed %>% mutate(fullname = str_c(firstname, lastname, sep = "_")) %>% 
+             pull(fullname),
+           error = function(e) {"NA"})
+}
+
+gds_a <- gds %>% select(id, journal, usable, year, pubmed)
+authors <- list()
+for (i in 1:nrow(gds_a)) {
+  authors[[i]] <- get_authors(gds$pubmed[i][[1]])
+}
+gds_a$authors <- authors
+
+plot_author <- function(classy) {
+  fir <- list()
+  for (i in 1:length(pubmeds_t3)) {
+    fir[[i]] <- get_authors(pubmeds_t3[[i]])
+  }
+  firs <- fir %>% unlist() %>% unique()
+  firs <- setdiff(firs, c("NA"))
+  
+  pubmeds_tc <- pubmeds_t3[ts2[classy] %>% na.omit()]
+  print(length(pubmeds_tc))
+  firc <- list()
+  for (i in 1:length(pubmeds_tc)) {
+    firc[[i]] <- get_authors(pubmeds_tc[[i]])
+  }
+  firsc <- firc %>% unlist() %>% unique()
+  firsc <- setdiff(firsc, c("NA"))
+  firsc_check <<- firsc
+  
+  fir_id <- gds_a %>% select(-pubmed) %>%
+    #filter(year >= 2017) %>%
+    unnest("authors") %>%
+    group_by(id) %>% 
+    #slice(1,2) %>% 
+    filter(authors %in% firs) %>%
+    pull(id) %>% 
+    unique()
+  
+  fir_idc <- gds_a %>% select(-pubmed) %>%
+    #filter(year >= 2017) %>%
+    unnest("authors") %>%
+    group_by(id) %>% 
+    #slice(1,2) %>% 
+    filter(authors %in% firsc) %>%
+    pull(id) %>% 
+    unique()
+  
+  fir_idc_check <<- fir_idc
+  
+  gds_at <- gds %>% 
+    filter(year >= 2017) %>% 
+    mutate(tool = case_when(
+      id %in% fir_idc ~ "yes",
+      # id %in% fir_id ~ "tool",
+      TRUE ~ "no"
+    )) %>% 
+    group_by(tool, usable2) %>% 
+    summarize(n = n()) %>% 
+    group_by(tool) %>% 
+    mutate(fraction = n/sum(n))
+  
+  frac3 <- gds_at %>% filter(usable2 == "no") %>% 
+    mutate(fraction = 1 - fraction) %>% 
+    mutate(fraction = round(fraction, digits = 3))
+  
+  g <- ggplot(gds_at %>% mutate(usable2 = factor(usable2, levels = c("no", "meta", "object"))) %>% 
+                mutate(tool = factor(tool, levels = c("no", "yes"))),
+         aes(x = tool, fill = usable2, y = fraction)) +
+    geom_col() +
+    scale_fill_brewer(name = "usable") +
+    geom_text(data = frac3, color = "black", aes(y = 1.03, label = fraction), size = 3) +
+    cowplot::theme_cowplot() +
+    ylab("fraction") +
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size = 14), 
+          axis.text.y = element_text(size = 14),
+          axis.title.x = element_text(size = 14),
+          axis.title.y = element_text(size = 14))
+  g
+  # cowplot::save_plot("geo_authors.pdf", g, base_asp = 1, base_width = 5)
+}
+ps <- plot_author(classes$all)
+# g <- cowplot::plot_grid(plotlist = ps, labels = str_c(names(ps), sapply(classes, length, simplify = FALSE), sep = ":"))
+# 
+# cowplot::save_plot("all_tools_save_2017.pdf", g, base_asp = 1, base_width = 35, base_height = 35)
+```
+
+# by tool dev
+
+```{r eval = F}
+gds <- gds %>% mutate(tool = case_when(
+      id %in% fir_idc_check ~ "yes",
+      TRUE ~ "no"
+    ))
+frac2 <- gds %>% na.omit() %>% 
+  #mutate(year = ifelse(month %in% c("Jan", "Feb", "Mar", "Apr", "May", "Jun"), year, year + 0.5)) %>% 
+  group_by(year, usable2, tool) %>% 
+  summarize(n = n()) %>% 
+  ungroup() %>% 
+  pivot_wider(names_from = usable2, values_from = n) %>% 
+  replace_na(list(no = 0, meta = 0, object = 0)) %>% 
+  mutate(fraction = (meta + object) / (meta + object + no), total = meta + object + no) %>% 
+  mutate(fraction = round(fraction, digits = 3))
+
+# g <- ggplot(gds %>% na.omit() %>% 
+#               filter(year >= 2012) %>%
+#               mutate(usable2 = factor(usable2, levels = c("no", "meta", "object"))),
+#        aes(x = year)) +
+#   facet_grid(.~tool) +
+#   geom_bar(aes(fill = usable2)) +
+#   scale_fill_brewer(name = "usable") +
+#   #scale_fill_viridis_d(option = "plasma") +
+#   geom_text(data = frac2 %>% filter(year >= 2012), color = "black", aes(x = year, y = total + max(frac2$total) * 0.03, label = fraction), size = 3) +
+#   cowplot::theme_cowplot() +
+#   scale_x_continuous(breaks = c(2012:2020)) +
+#   ylab("total studies") +
+#   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size = 14), 
+#         axis.text.y = element_text(size = 14),
+#         axis.title.x = element_text(size = 14),
+#         axis.title.y = element_text(size = 14))
+
+g <- ggplot(frac2 %>% filter(year >= 2017), aes(x = year, y = fraction, color = tool)) +
+  geom_line() +
+  geom_point() +
+  scale_color_brewer(palette = "Accent") +
+  cowplot::theme_cowplot() +
+  xlab("year") +
+  ylab("fraction with metadata") +
+  ylim(c(0, 1)) +
+  theme(axis.text.x = element_text(size = 14), 
+        axis.text.y = element_text(size = 14),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14))
+# cowplot::save_plot("geo_tool110520.pdf", g, base_asp = 1, base_width = 5)
+g
+```
+
+# reanalysis
+```{r, eval = F}
+checks_re <- suppressWarnings(map(gds$geo,
+                                  function(x) str_detect(str_to_lower(x), 
+                                                         "novel") %>% any())) #"re-analy|reanaly|publicly available"
+gds$re <- ifelse(unlist(checks_re), "yes", "no")
+```
+
+```{r, eval = F}
+library(tidytext)
+summaries <- suppressWarnings(map(gds %>% filter(year >= 2017) %>% pull(geo),
+                                  function(x) str_c(x$summary, collapse = " ")))
+gds_text <- gds %>% filter(year >= 2017) %>% select(id, usable2) %>% mutate(usable2 = ifelse(usable2 == "no", "no", "yes"))
+gds_text$text <- unlist(summaries)
+gds_text2 <- unnest_tokens(gds_text, "word", "text") %>% 
+  anti_join(stop_words) %>% 
+  #mutate(word = str_extract(word, "[:alpha:]+")) %>% 
+  count(id, word, sort = TRUE) %>%
+  add_count(id, wt = n, name = "total_word") %>% 
+  mutate(proportion = n / total_word) %>% 
+  select(-total_word, -n) %>% 
+  pivot_wider(names_from = id, values_from = proportion, 
+              values_fill = list(proportion = 0)) %>% 
+  na.omit() %>% 
+  column_to_rownames("word") %>% 
+  t()
+gds_text2[gds_text2 > 0] <- 1
+gds_text3 <- gds_text2 %>% as.data.frame() %>%
+  rownames_to_column("geoid") %>% 
+  left_join(gds_text %>% select(id, usable2), by = c("geoid" = "id"))
+data <- gds_text3 %>% select(usable2, everything(), -geoid)
+data2 <- data %>% group_by(usable2) %>% 
+  summarize_all(mean)
+data3 <- data2 %>% column_to_rownames("usable2") %>% 
+  t() %>%
+  as.data.frame() %>% 
+  rownames_to_column("word") %>% 
+  mutate(diff = yes - no, fc = log2(yes/no)) %>% 
+  filter(yes >= 0.1)
+```
+
+```{r}
+gds$upload <- sapply(gds$geo, function(x) {
+  temp <- x$contact_name
+  if (is.null(temp)) {
+    return("NA")
+  } else {
+    temp
+  }})
+
+gds_cor <- gds_a %>% unnest(authors) %>% 
+  group_by(id) %>% 
+  slice(n())
+
+gds_up <- gds %>% select(id, usable2, upload, year) %>% 
+  separate(upload, ",", into = c("F", "M", "L")) %>% 
+  mutate(full1 = str_c(str_to_title(F), " ", str_to_upper(M), "_", str_to_title(L))) %>% 
+  mutate(M = str_sub(M, 1, 1)) %>% 
+  mutate(full2 = str_c(str_to_title(F), " ", str_to_upper(M), "_", str_to_title(L))) %>% 
+  mutate(full3 = str_c(str_to_title(F), "_", str_to_title(L))) %>% 
+  mutate(check = case_when(
+    (full1 %in% firsc_check) | (full2 %in% firsc_check) |(full3 %in% firsc_check) ~ "upload", 
+    id %in% fir_idc_check ~ "author",
+    TRUE ~ "no"
+    )) %>% 
+  left_join(gds_cor %>% select(id, authors)) #%>% filter(full1 != authors, full2 != authors, full3 != authors)
+
+gds_up %>% group_by(check, usable2) %>% 
+  summarize(n = n()) %>% 
+  group_by(check) %>% 
+  mutate(frac = n/sum(n))
+
+frac4 <- gds_up %>% na.omit() %>% 
+  #mutate(year = ifelse(month %in% c("Jan", "Feb", "Mar", "Apr", "May", "Jun"), year, year + 0.5)) %>% 
+  group_by(year, usable2, check) %>% 
+  summarize(n = n()) %>% 
+  ungroup() %>% 
+  pivot_wider(names_from = usable2, values_from = n) %>% 
+  replace_na(list(no = 0, meta = 0, object = 0)) %>% 
+  mutate(fraction = (meta + object) / (meta + object + no), total = meta + object + no) %>% 
+  mutate(fraction = round(fraction, digits = 3)) %>% 
+  mutate(check = factor(check, levels = c("upload", "author", "no")))
+
+g <- ggplot(frac4 %>% filter(year >= 2017), aes(x = year, y = fraction, color = check)) +
+  geom_line() +
+  geom_point() +
+  scale_color_brewer(palette = "Accent") +
+  cowplot::theme_cowplot() +
+  xlab("year") +
+  ylab("fraction with metadata") +
+  ylim(c(0, 1)) +
+  theme(axis.text.x = element_text(size = 14), 
+        axis.text.y = element_text(size = 14),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14))
+# cowplot::save_plot("geo_tool110620.pdf", g, base_asp = 1, base_width = 5)
+g
+```
 
