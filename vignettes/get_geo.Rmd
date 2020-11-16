@@ -1,7 +1,7 @@
 ---
 title: 'single cell GEO records'
 date: '`r Sys.Date()`'
-# package: scmetadata
+# package: someta
 author:
   - name: Rui Fu
     affiliation: RNA Bioscience Initative, University of Colorado School of Medicine
