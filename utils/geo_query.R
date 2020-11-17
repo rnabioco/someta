@@ -175,7 +175,8 @@ get_cites <- function(pubmed) {
     error = function(e) "NA")
 }
 message("get citation data")
-gds7 <- gds6 %>% mutate(cite = map(pubmed, get_cites))
+gds7 <- gds6 %>% mutate(cite = map(pubmed, get_cites)) %>%
+  mutate(year = as.numeric(year))
 gds7 %>% saveRDS(here("inst", "extdata", date, paste0("geo_", date, ".rds")))
 gds7 %>% saveRDS(here("inst", "extdata", "current_geo.rds"))
 
