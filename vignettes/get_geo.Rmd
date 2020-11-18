@@ -626,7 +626,9 @@ get_authors <- function(pubmed) {
   }
   )
 }
+```
 
+```{r}
 gds_a <- gds %>% select(id, journal, usable, year, pubmed)
 authors <- list()
 for (i in 1:nrow(gds_a)) {
