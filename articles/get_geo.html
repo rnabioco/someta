@@ -83,7 +83,7 @@
       <h1 data-toc-skip>single cell GEO records</h1>
                         <h4 class="author">Rui Fu</h4>
             <address class="author_afil">
-      RNA Bioscience Initative, University of Colorado School of Medicine<br><h4 class="date">2020-11-16</h4>
+      RNA Bioscience Initative, University of Colorado School of Medicine<br><h4 class="date">2020-11-18</h4>
       
       
       <div class="hidden name"><code>get_geo.Rmd</code></div>
@@ -98,26 +98,26 @@
 <a href="#current-geo-query-used" class="anchor"></a>Current GEO query used:</h1>
 <pre><code>"expression profiling by high throughput sequencing" AND
 ("single nuclei" OR "single cell" OR "scRNAseq" OR "scRNA-seq" OR "snRNAseq" OR "snRNA-seq")</code></pre>
-<pre><code>#&gt; [1] "111620"
-#&gt; Response [https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&amp;query_key=1&amp;WebEnv=MCID_5fb31190a427a91d9f144eb2]
-#&gt;   Date: 2020-11-16 23:56
+<pre><code>#&gt; [1] "111820"
+#&gt; Response [https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&amp;query_key=1&amp;WebEnv=MCID_5fb58a1681e04d5781164530]
+#&gt;   Date: 2020-11-18 20:54
 #&gt;   Status: 200
 #&gt;   Content-Type: text/plain; charset=UTF-8
-#&gt;   Size: 3.71 MB
-#&gt; &lt;ON DISK&gt;  /Users/runner/work/someta/someta/inst/extdata/111620/gds_result_111620.txt</code></pre>
+#&gt;   Size: 3.72 MB
+#&gt; &lt;ON DISK&gt;  /Users/runner/work/someta/someta/inst/extdata/111820/gds_result_111820.txt</code></pre>
 </div>
 <div id="parse-geo-query" class="section level1">
 <h1 class="hasAnchor">
 <a href="#parse-geo-query" class="anchor"></a>Parse GEO query</h1>
-<p>Total entries: 4450</p>
-<p>Number of entries filtered out because key words were not found: 562</p>
+<p>Total entries: 4457</p>
+<p>Number of entries filtered out because key words were not found: 563</p>
 <p>Merged super and subseries: 418</p>
-<p>The fraction of GEO entries with potential metadata (file with “meta”, “annot”, or “type” in filename or rda/rds/rdata files) is 0.1326206. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at 0.1115242). Final fraction: 0.126553</p>
+<p>The fraction of GEO entries with potential metadata (file with “meta”, “annot”, or “type” in filename or rda/rds/rdata files) is 0.1325266. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at 0.1111111). Final fraction: 0.1264765</p>
 </div>
 <div id="parse-database-from-svensson-et-al-" class="section level1">
 <h1 class="hasAnchor">
 <a href="#parse-database-from-svensson-et-al-" class="anchor"></a>Parse database from Svensson et al.</h1>
-<p>Overlap of scRNA-seq GEO entries between manual curation and the GEO query is 0.9753086. Number of entries not public: 0. Fraction with metadata: 0.1802326.</p>
+<p>Overlap of scRNA-seq GEO entries between manual curation and the GEO query is 0.9753086. Number of entries not public: 0. Fraction with metadata: 0.1798839.</p>
 </div>
 <div id="by-year" class="section level1">
 <h1 class="hasAnchor">
@@ -134,30 +134,11 @@
 <h1 class="hasAnchor">
 <a href="#by-if" class="anchor"></a>by IF</h1>
 <p><img src="get_geo_files/figure-html/citations-1.png" width="700" style="display: block; margin: auto;"></p>
-<pre><code>#&gt; [1] 497</code></pre>
 </div>
 <div id="by-tool-dev" class="section level1">
 <h1 class="hasAnchor">
 <a href="#by-tool-dev" class="anchor"></a>by tool dev</h1>
-</div>
-<div id="reanalysis" class="section level1">
-<h1 class="hasAnchor">
-<a href="#reanalysis" class="anchor"></a>reanalysis</h1>
-<pre><code>#&gt; # A tibble: 10 x 4
-#&gt; # Groups:   check [3]
-#&gt;    check  usable2     n    frac
-#&gt;    &lt;chr&gt;  &lt;chr&gt;   &lt;int&gt;   &lt;dbl&gt;
-#&gt;  1 author meta       94 0.119  
-#&gt;  2 author no        674 0.851  
-#&gt;  3 author object     24 0.0303 
-#&gt;  4 no     meta      196 0.0872 
-#&gt;  5 no     no       1987 0.884  
-#&gt;  6 no     object     56 0.0249 
-#&gt;  7 no     &lt;NA&gt;        9 0.00400
-#&gt;  8 upload meta       75 0.174  
-#&gt;  9 upload no        341 0.793  
-#&gt; 10 upload object     14 0.0326</code></pre>
-<p><img src="get_geo_files/figure-html/unnamed-chunk-6-1.png" width="700" style="display: block; margin: auto;"></p>
+<p><img src="get_geo_files/figure-html/unnamed-chunk-3-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
   </div>
 
