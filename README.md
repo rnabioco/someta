@@ -6,7 +6,7 @@
 [![R build
 status](https://github.com/rnabioco/someta/workflows/pkgdown/badge.svg)](https://github.com/rnabioco/someta/actions)
 [![Last Commit on
-GitHub](https://img.shields.io/badge/last%20run-11--17--2020-brightgreen)](https://rnabioco.github.io/someta/articles/get_geo.html)
+GitHub](https://img.shields.io/badge/last%20run-11--18--2020-brightgreen)](https://rnabioco.github.io/someta/articles/get_geo.html)
 <!-- badges: end -->
 
 Cell-type annotations are frequently excluded from public single cell
@@ -22,7 +22,15 @@ a frustratingly low **0.122**.
 Please find the latest numbers below, or at [full report
 page](https://rnabioco.github.io/someta/articles/get_geo.html).
 
-Current fraction with metadata: **0.1211009**.
+The latest archive of GEO scRNA-seq records with other associated data
+can be directly downloaded here
+[current\_geo.rds](https://github.com/rnabioco/someta/raw/master/inst/extdata/current_geo.rds)
+
+Additional thoughtful guidelines for organizing scRNA-seq sample and
+cell metadata are discussed here by [Füllgrabe et
+al](https://www.nature.com/articles/s41587-020-00744-z).
+
+Current fraction with metadata: **0.1264765**.
 
 Number of depositions with updated metadata records since description of
 the issue here: **0**.
