@@ -577,7 +577,9 @@ ts$tau <- unlist(tau2)
 ts2 <- ts %>%
   left_join(try2l, by = "DOI_pub") %>%
   mutate(pubmed = ifelse(is.na(pmid), tau, pmid)) %>%
+  filter(!is.null(pubmed), !is.na(pubmed)) %>% 
   select(DOI, pubmed) %>%
+  na.omit() %>% 
   distinct() %>%
   column_to_rownames("DOI")
 ts2 <- ts2[ts$DOI, ]
@@ -756,7 +758,11 @@ gds_up <- gds %>%
 
 frac4 <- gds_up %>%
   na.omit() %>%
-  # mutate(year = ifelse(month %in% c("Jan", "Feb", "Mar", "Apr", "May", "Jun"), year, year + 0.5)) %>%
+  mutate(check = case_when(
+    (full1 %in% firsc_check) | (full2 %in% firsc_check) | (full3 %in% firsc_check) ~ "upload",
+    id %in% fir_idc_check ~ "author",
+    TRUE ~ "no"
+  )) %>% 
   group_by(year, usable2, check) %>%
   summarize(n = n()) %>%
   ungroup() %>%
@@ -793,5 +799,46 @@ authors_df <- gds_a %>%
   summarize(n = n(), yes = sum(usable != "no")) %>%
   mutate(frac = yes / n)
 write_tsv(authors_df, "authors_meta.tsv")
+```
+
+```{r}
+frac4 <- gds %>%
+  na.omit() %>%
+  mutate(check = case_when(
+    id %in% fir_idc_check ~ "author",
+    TRUE ~ "none"
+  )) %>% 
+  filter(year >= 2017) %>% 
+  group_by(usable2, check) %>%
+  summarize(n = n()) %>%
+  group_by(check) %>% 
+  mutate(fraction = n/sum(n))
+  
+frac5 <- frac4 %>%  
+  ungroup() %>%
+  select(-fraction) %>% 
+  pivot_wider(names_from = usable2, values_from = n) %>%
+  replace_na(list(no = 0, meta = 0, object = 0)) %>%
+  mutate(fraction = (meta + object) / (meta + object + no), total = meta + object + no) %>%
+  mutate(fraction = round(fraction, digits = 3))
+
+frac6 <- frac4 %>% filter(usable2 == "no") %>% 
+  mutate(fraction = 1 - fraction) %>% 
+  mutate(fraction = round(fraction, digits = 3))
+
+g <- ggplot(frac4 %>% mutate(usable2 = factor(usable2, levels = c("no", "meta", "object"))) %>% 
+              mutate(check = factor(check, levels = c("none", "author"))),
+       aes(x = check, fill = usable2, y = fraction)) +
+  geom_col() +
+  scale_fill_brewer(name = "usable") +
+  geom_text(data = frac6, color = "black", aes(y = 1.03, label = fraction), size = 3) +
+  cowplot::theme_cowplot() +
+  ylab("fraction") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size = 14), 
+        axis.text.y = element_text(size = 14),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14))
+# cowplot::save_plot("geo_authors.pdf", g, base_asp = 1, base_width = 5)
+g
 ```
 
