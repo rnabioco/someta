@@ -24,6 +24,8 @@ Cell-type annotations are frequently excluded from public single cell datasets. 
 
 As of the initial presentation of this issue (10--17--2020), the number is a frustratingly low **0.122**.
 
+We have written up descriptions of the issue and suggestions (in short: PLEASE deposit some metadata at cell level for scRNA-seq data) in this short [manuscript](https://www.biorxiv.org/content/10.1101/2020.11.20.391920v1).
+
 Please find the latest numbers below, or at [full report page](https://rnabioco.github.io/someta/articles/get_geo.html).
 
 The latest archive of GEO scRNA-seq records with other associated data can be directly downloaded here [current_geo.rds](https://github.com/rnabioco/someta/raw/master/inst/extdata/current_geo.rds)
