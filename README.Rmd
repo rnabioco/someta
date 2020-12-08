@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 [![Last Commit on GitHub](`r paste0("https://img.shields.io/badge/last%20run-", format(format = "%m--%d--%Y", Sys.Date()), "-brightgreen")`)](https://rnabioco.github.io/someta/articles/get_geo.html)
 <!-- badges: end -->
 
-Cell-type annotations are frequently excluded from public single cell datasets. This hinders single cell sequencing analysis reproducibility and accessibility. To better describe the issue, we monitor GEO entries monthly (currently set to auto-update at 1AM UTC, 20th of the month), and programmatically determine the fraction of entries with (potentially) usable cell metadata. 
+Cell-type annotations are frequently excluded from public single cell datasets. This hinders single cell sequencing analysis reproducibility and accessibility. To better describe the issue, we monitor GEO entries monthly (currently set to auto-update at 1AM UTC, 15th of the month), and programmatically determine the fraction of entries with (potentially) usable cell metadata. 
 
 As of the initial presentation of this issue (10--17--2020), the number is a frustratingly low **0.122**.
 

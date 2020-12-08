@@ -459,6 +459,14 @@ gds_j <- gds_j %>% left_join(checked_j)
 ```
 
 ```{r citations}
+yearcut <- max(gds_j$year) - 2
+addhalf <- gds_j %>%
+  filter(year == yearcut + 2) %>%
+  pull(month) %>%
+  unique() %>%
+  length()
+
+
 gds_c_if2 <- gds_j %>%
   mutate(bin = case_when(
     ifs < 5 ~ "5",
@@ -466,10 +474,22 @@ gds_c_if2 <- gds_j %>%
     ifs < 30 ~ "30",
     TRUE ~ "+",
   )) %>%
-  filter(year == 2017 | year == 2018) %>% #| year == 2016| year == 2019) %>% 
-  # mutate(year = ifelse(month %in% c("Jan", "Feb", "Mar", "Apr", "May", "Jun"),
-  #                      year + 0.5,
-  #                      year)) %>%
+  filter(year >= 2016 & year <= 2019)
+
+# if (addhalf >= 7) {
+#   gds_c_if2 <- gds_c_if2 %>% rbind(
+#     gds_j %>%
+#       mutate(bin = case_when(
+#         ifs < 5 ~ "5",
+#         ifs < 10 ~ "10",
+#         ifs < 30 ~ "30",
+#         TRUE ~ "+",
+#         )) %>%
+#       filter(year == yearcut + 1, month %in% c("Jan", "Feb", "Mar", "Apr", "May", "Jun")) 
+#   )
+# }
+
+gds_c_if2 <- gds_c_if2 %>% 
   select(pubmed, usable, journal, cite, bin, year, ifs) %>%
   distinct() %>%
   filter(!is.na(cite)) %>%
