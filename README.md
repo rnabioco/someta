@@ -6,7 +6,7 @@
 [![R build
 status](https://github.com/rnabioco/someta/workflows/pkgdown/badge.svg)](https://github.com/rnabioco/someta/actions)
 [![Last Commit on
-GitHub](https://img.shields.io/badge/last%20run-12--08--2020-brightgreen)](https://rnabioco.github.io/someta/articles/get_geo.html)
+GitHub](https://img.shields.io/badge/last%20run-12--15--2020-brightgreen)](https://rnabioco.github.io/someta/articles/get_geo.html)
 <!-- badges: end -->
 
 Cell-type annotations are frequently excluded from public single cell
@@ -35,7 +35,7 @@ Additional thoughtful guidelines for organizing scRNA-seq sample and
 cell metadata are discussed here by [Füllgrabe et
 al](https://www.nature.com/articles/s41587-020-00744-z).
 
-Current fraction with metadata: **0.1291047**.
+Current fraction with metadata: **0.1305193**.
 
 Number of depositions with updated metadata records since description of
 the issue here: **0**.
