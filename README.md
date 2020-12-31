@@ -6,7 +6,7 @@
 [![R build
 status](https://github.com/rnabioco/someta/workflows/pkgdown/badge.svg)](https://github.com/rnabioco/someta/actions)
 [![Last Commit on
-GitHub](https://img.shields.io/badge/last%20run-12--15--2020-brightgreen)](https://rnabioco.github.io/someta/articles/get_geo.html)
+GitHub](https://img.shields.io/badge/last%20run-12--31--2020-brightgreen)](https://rnabioco.github.io/someta/articles/get_geo.html)
 <!-- badges: end -->
 
 Cell-type annotations are frequently excluded from public single cell
@@ -16,16 +16,10 @@ monthly (currently set to auto-update at 1AM UTC, 15th of the month),
 and programmatically determine the fraction of entries with
 (potentially) usable cell metadata.
 
-As of the initial presentation of this issue (10–17–2020), the number is
-a frustratingly low **0.122**.
-
 We have written up descriptions of the issue and suggestions (in short:
 PLEASE deposit some metadata at cell level for scRNA-seq data) in this
 short
 [manuscript](https://www.biorxiv.org/content/10.1101/2020.11.20.391920v1).
-
-Please find the latest numbers below, or at [full report
-page](https://rnabioco.github.io/someta/articles/get_geo.html).
 
 The latest archive of GEO scRNA-seq records with other associated data
 can be directly downloaded here
@@ -35,9 +29,17 @@ Additional thoughtful guidelines for organizing scRNA-seq sample and
 cell metadata are discussed here by [Füllgrabe et
 al](https://www.nature.com/articles/s41587-020-00744-z).
 
-Current fraction with metadata: **0.1305193**.
+-----
+
+As of the initial presentation of this issue (10–17–2020), the number is
+a frustratingly low **0.122**.
+
+Current fraction with metadata: **0.1322043**.
 
 Number of depositions with updated metadata records since description of
 the issue here: **0**.
+
+Please also see [full report
+page](https://rnabioco.github.io/someta/articles/get_geo.html).
 
 ![](man/figures/frac-1.png)<!-- -->![](man/figures/frac-2.png)<!-- -->
