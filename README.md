@@ -6,7 +6,7 @@
 [![R build
 status](https://github.com/rnabioco/someta/workflows/pkgdown/badge.svg)](https://github.com/rnabioco/someta/actions)
 [![Last Commit on
-GitHub](https://img.shields.io/badge/last%20run-12--31--2020-brightgreen)](https://rnabioco.github.io/someta/articles/get_geo.html)
+GitHub](https://img.shields.io/badge/last%20run-01--15--2021-brightgreen)](https://rnabioco.github.io/someta/articles/get_geo.html)
 <!-- badges: end -->
 
 Cell-type annotations are frequently excluded from public single cell
@@ -34,7 +34,7 @@ al](https://www.nature.com/articles/s41587-020-00744-z).
 As of the initial presentation of this issue (10–17–2020), the number is
 a frustratingly low **0.122**.
 
-Current fraction with metadata: **0.1322043**.
+Current fraction with metadata: **0.132216**.
 
 Number of depositions with updated metadata records since description of
 the issue here: **0**.
