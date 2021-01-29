@@ -173,7 +173,7 @@ g <- ggplot(
   scale_fill_brewer(name = "usable") +
   geom_text(data = frac2 %>% filter(year >= 2012), color = "black", aes(x = year, y = total + max(frac$total) * 0.03, label = fraction), size = 3) +
   cowplot::theme_cowplot() +
-  scale_x_continuous(breaks = c(2012:2020)) +
+  scale_x_continuous(breaks = c(2012:format(Sys.time(), "%Y") %>% as.numeric())) +
   ylab("total studies") +
   theme(
     axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 14),
