@@ -885,7 +885,9 @@ sets2$samplemetainfo_2 %>% table() %>%
 
 sets_10x %>% separate(ReleaseDate, sep = "-", into = c("year", "month", "day")) %>% 
   group_by(year) %>% 
-  summarize(frac = sum(str_detect(str_to_lower(samplemetainfo_1), "meta|annot|type|clustering|coldata") | 
-    str_detect(str_to_lower(additionalfiles), "meta|annot|type|clustering|coldata")) / n(),
+  summarize(frac = sum(
+    str_detect(str_to_lower(samplemetainfo_1), "meta|annot|type|clustering|coldata") | 
+    str_detect(str_to_lower(additionalfiles), "meta|annot|type|clustering|coldata"),
+    na.rm = T) / n(),
     n = n())
 ```
