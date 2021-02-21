@@ -54,4 +54,4 @@ sets <- sets %>%
   mutate(expmeta = map_chr(ID, get_expmeta)) %>%
   mutate(additionalfiles = map_chr(expmeta, get_add_files))
 
-write_tsv(sets, here("inst", "extdata", "arrayexpress_sets_proc_add.tsv"))
+write_tsv(sets, here("inst", "extdata", "arrayexpress_sets_proc_add.tsv.gz"))

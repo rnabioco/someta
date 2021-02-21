@@ -24,7 +24,7 @@ Cell-type annotations are frequently excluded from public single cell datasets. 
 
 We have written up descriptions of the issue and suggestions (in short: PLEASE deposit some metadata at cell level for scRNA-seq data) in this short [manuscript](https://www.biorxiv.org/content/10.1101/2020.11.20.391920v1).
 
-The latest archive of GEO scRNA-seq records with other associated data can be directly downloaded here [current_geo.rds](https://github.com/rnabioco/someta/raw/master/inst/extdata/current_geo.rds)
+The latest archive of GEO scRNA-seq records with other associated data can be directly downloaded here [current_geo.rds](https://github.com/rnabioco/someta/raw/master/inst/extdata/current_geo.rds).
 
 Additional thoughtful guidelines for organizing scRNA-seq sample and cell metadata are discussed here by [Füllgrabe et al](https://www.nature.com/articles/s41587-020-00744-z).
 
@@ -140,7 +140,7 @@ sets_10x_withmeta <- sets_10x %>%
   )
 ```
 
-Current fraction with metadata: **`r (gds$usable == "yes") %>% mean(na.rm = TRUE)`**. (For ArrayExpress 10x datasets, the fraction is **`r nrow(sets_10x_withmeta) / nrow(sets_10x)`**)
+Current fraction in GEO with metadata: **`r (gds$usable == "yes") %>% mean(na.rm = TRUE)`**. In comparison, for ArrayExpress 10x datasets, the fraction is **`r nrow(sets_10x_withmeta) / nrow(sets_10x)`**).
 
 ```{r comp}
 gds_comp <- readRDS(here("inst", "extdata", "101520", paste0("geo_", "101520", ".rds"))) %>%

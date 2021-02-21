@@ -866,7 +866,7 @@ g
 
 ```{r ae}
 source(here("utils", "arrayexpress_query.R"))
-sets <- read_tsv(here("inst", "extdata", "arrayexpress_sets_proc_add.tsv"))
+sets <- read_tsv(here("inst", "extdata", "arrayexpress_sets_proc_add.tsv.gz"))
 
 # remove GEO imported
 sets2 <- sets %>% filter(!str_detect(ID, "GEO"))
