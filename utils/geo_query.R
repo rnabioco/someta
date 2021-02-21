@@ -47,8 +47,8 @@ supp_files <- function(temp) {
 
 tar_files <- function(link) {
   tryCatch(
-    read_tsv(link, comment = "#") %>% pull(2) %>%
-      str_to_lower(),
+    suppressMessages(read_tsv(link, comment = "#") %>% pull(2) %>%
+      str_to_lower()),
     error = function(e) {
       "error_parse"
     }

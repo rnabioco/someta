@@ -33,7 +33,7 @@ get_expmeta <- function(id) {
 }
 
 get_add_files <- function(expmeta) {
-  temp <- readLines(url(expmeta))
+  temp <- suppressWarnings(readLines(url(expmeta)))
   lines <- temp[str_detect(temp, "\\[AdditionalFile")]
   files <- lines %>% str_remove("..+\\]\t") %>% str_c(collapse = ";")
   files
