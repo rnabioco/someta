@@ -98,8 +98,8 @@
 <pre><code>"expression profiling by high throughput sequencing" AND
 ("single nuclei" OR "single cell" OR "scRNAseq" OR "scRNA-seq" OR "snRNAseq" OR "snRNA-seq")</code></pre>
 <pre><code>#&gt; [1] "022121"
-#&gt; Response [https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&amp;query_key=1&amp;WebEnv=MCID_6031a53ec364c42f942201d3]
-#&gt;   Date: 2021-02-21 00:11
+#&gt; Response [https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&amp;query_key=1&amp;WebEnv=MCID_60329564c1de8344c0493fd0]
+#&gt;   Date: 2021-02-21 17:16
 #&gt;   Status: 200
 #&gt;   Content-Type: text/plain; charset=UTF-8
 #&gt;   Size: 4.26 MB
@@ -111,7 +111,7 @@
 <p>Total entries: 5099</p>
 <p>Number of entries filtered out because key words were not found: 627</p>
 <p>Merged super and subseries: 476</p>
-<p>The fraction of GEO entries with potential metadata (file with “meta”, “annot”, or “type” in filename or rda/rds/rdata files) is 0.1433584. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at 0.0906344). Final fraction: 0.1380952</p>
+<p>The fraction of GEO entries with potential metadata (file with “meta”, “annot”, or “type” in filename or rda/rds/rdata files) is 0.1435371. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at 0.0903614). Final fraction: 0.1382766</p>
 </div>
 <div id="parse-database-from-svensson-et-al-" class="section level1">
 <h1 class="hasAnchor">
@@ -139,6 +139,41 @@
 <a href="#by-tool-dev" class="anchor"></a>by tool dev</h1>
 <p><img src="get_geo_files/figure-html/unnamed-chunk-3-1.png" width="700" style="display: block; margin: auto;"></p>
 <p><img src="get_geo_files/figure-html/unnamed-chunk-5-1.png" width="700" style="display: block; margin: auto;"></p>
+</div>
+<div id="arrayexpress" class="section level1">
+<h1 class="hasAnchor">
+<a href="#arrayexpress" class="anchor"></a>ArrayExpress</h1>
+<pre><code>#&gt;                                                     . Freq
+#&gt; 1                                               10xV2  101
+#&gt; 2                                               10xV3   29
+#&gt; 3                                          smart-seq2   26
+#&gt; 4                                          Smart-seq2   22
+#&gt; 5                                          smart-like   10
+#&gt; 6                                            drop-seq    6
+#&gt; 7                                              10xV1a    3
+#&gt; 8                                              10xV1i    3
+#&gt; 9                                            CEL-seq2    3
+#&gt; 10                                           Drop-seq    3
+#&gt; 11                                           STRT-seq    3
+#&gt; 12                                              10xV1    2
+#&gt; 13                                              other    2
+#&gt; 14                                         Smart-like    2
+#&gt; 15                                                10x    1
+#&gt; 16                                             10x_v1    1
+#&gt; 17 BD Rhapsody Immune Response Targeted Panel (Human)    1
+#&gt; 18                                         BDRhapsody    1
+#&gt; 19                                          CELLO-seq    1
+#&gt; 20                                          Smart-seq    1
+#&gt; 21                                         Smart-Seq2    1
+#&gt; 22                                         Smart-seq3    1
+#&gt; # A tibble: 5 x 3
+#&gt;   year   frac     n
+#&gt; * &lt;chr&gt; &lt;dbl&gt; &lt;int&gt;
+#&gt; 1 2017     NA     3
+#&gt; 2 2018     NA    16
+#&gt; 3 2019     NA    30
+#&gt; 4 2020     NA    80
+#&gt; 5 2021     NA    11</code></pre>
 </div>
   </div>
 
