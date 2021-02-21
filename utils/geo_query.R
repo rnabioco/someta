@@ -157,11 +157,11 @@ gds3 <- gds2 %>% mutate(tarfiles = pbmcapply::pbmcmapply(
 ))
 gds4 <- gds3 %>% mutate(has_meta1 = pbmcapply::pbmcmapply(
   check_string,
-  suppfiles, "meta|annot|type|clustering"
+  suppfiles, "meta|annot|type|clustering|coldata"
 ))
 gds4 <- gds4 %>% mutate(has_meta2 = pbmcapply::pbmcmapply(
   check_string,
-  tarfiles, "meta|annot|type|clustering"
+  tarfiles, "meta|annot|type|clustering|coldata"
 ))
 gds4 <- gds4 %>% mutate(has_object1 = ifelse(str_detect(suppfiles, "rds|rda|rdata|loom|h5ad"),
   "yes", "no"
