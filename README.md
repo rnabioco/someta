@@ -34,7 +34,8 @@ al](https://www.nature.com/articles/s41587-020-00744-z).
 As of the initial presentation of this issue (10–17–2020), the number is
 a frustratingly low **0.122**.
 
-Current fraction with metadata: **0.1380952**.
+Current fraction with metadata: **0.1382766**. (For ArrayExpress 10x
+datasets, the fraction is **0.15**)
 
 Number of depositions with updated metadata records since description of
 the issue here: **0**.
