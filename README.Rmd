@@ -125,7 +125,22 @@ fp <- read_tsv(here("inst", "extdata", "falsepos.txt"), col_names = F) %>% pull(
 gds <- gds %>% mutate(usable = ifelse(id %in% fp, "no", usable))
 ```
 
-Current fraction with metadata: **`r (gds$usable == "yes") %>% mean(na.rm = TRUE)`**.
+```{r ae}
+sets <- read_tsv(here("inst", "extdata", "arrayexpress_sets_proc_add.tsv"))
+
+# remove GEO imported
+sets2 <- sets %>% filter(!str_detect(ID, "GEO"))
+
+sets_10x <- sets2 %>% filter(str_to_lower(str_sub(samplemetainfo_2, 1, 3)) == "10x")
+
+sets_10x_withmeta <- sets_10x %>% 
+  filter(
+    str_detect(str_to_lower(samplemetainfo_1), "meta|annot|type|clustering|coldata") | 
+    str_detect(str_to_lower(additionalfiles), "meta|annot|type|clustering|coldata")
+  )
+```
+
+Current fraction with metadata: **`r (gds$usable == "yes") %>% mean(na.rm = TRUE)`**. (For ArrayExpress 10x datasets, the fraction is **`r nrow(sets_10x_withmeta) / nrow(sets_10x)`**)
 
 ```{r comp}
 gds_comp <- readRDS(here("inst", "extdata", "101520", paste0("geo_", "101520", ".rds"))) %>%

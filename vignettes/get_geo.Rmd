@@ -862,3 +862,30 @@ g <- ggplot(frac4 %>% mutate(usable2 = factor(usable2, levels = c("no", "meta", 
 g
 ```
 
+# ArrayExpress
+
+```{r ae}
+source(here("utils", "arrayexpress_query.R"))
+sets <- read_tsv(here("inst", "extdata", "arrayexpress_sets_proc_add.tsv"))
+
+# remove GEO imported
+sets2 <- sets %>% filter(!str_detect(ID, "GEO"))
+
+sets_10x <- sets2 %>% filter(str_to_lower(str_sub(samplemetainfo_2, 1, 3)) == "10x")
+
+sets_10x_withmeta <- sets_10x %>% 
+  filter(
+    str_detect(str_to_lower(samplemetainfo_1), "meta|annot|type|clustering|coldata") | 
+    str_detect(str_to_lower(additionalfiles), "meta|annot|type|clustering|coldata")
+  )
+
+sets2$samplemetainfo_2 %>% table() %>%
+  as.data.frame() %>%
+  arrange(desc(Freq))
+
+sets_10x %>% separate(ReleaseDate, sep = "-", into = c("year", "month", "day")) %>% 
+  group_by(year) %>% 
+  summarize(frac = sum(str_detect(str_to_lower(samplemetainfo_1), "meta|annot|type|clustering|coldata") | 
+    str_detect(str_to_lower(additionalfiles), "meta|annot|type|clustering|coldata")) / n(),
+    n = n())
+```
