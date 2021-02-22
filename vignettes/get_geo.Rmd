@@ -466,7 +466,6 @@ addhalf <- gds_j %>%
   unique() %>%
   length()
 
-
 gds_c_if2 <- gds_j %>%
   mutate(bin = case_when(
     ifs < 5 ~ "5",
@@ -474,7 +473,7 @@ gds_c_if2 <- gds_j %>%
     ifs < 30 ~ "30",
     TRUE ~ "+",
   )) %>%
-  filter(year >= 2016 & year <= 2019)
+  filter(year >= 2016 & year <= yearcut)
 
 # if (addhalf >= 7) {
 #   gds_c_if2 <- gds_c_if2 %>% rbind(
@@ -879,10 +878,12 @@ sets_10x_withmeta <- sets_10x %>%
     str_detect(str_to_lower(additionalfiles), "meta|annot|type|clustering|coldata")
   )
 
+print("experiments")
 sets2$samplemetainfo_2 %>% table() %>%
   as.data.frame() %>%
   arrange(desc(Freq))
 
+print("fractions with metadata by year (10x experiments)")
 sets_10x %>% separate(ReleaseDate, sep = "-", into = c("year", "month", "day")) %>% 
   group_by(year) %>% 
   summarize(frac = sum(
