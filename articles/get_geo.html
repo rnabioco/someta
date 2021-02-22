@@ -82,7 +82,7 @@
       <h1 data-toc-skip>single cell GEO records</h1>
                         <h4 class="author">Rui Fu</h4>
             <address class="author_afil">
-      RNA Bioscience Initative, University of Colorado School of Medicine<br><h4 class="date">2021-02-21</h4>
+      RNA Bioscience Initative, University of Colorado School of Medicine<br><h4 class="date">2021-02-22</h4>
       
       
       <div class="hidden name"><code>get_geo.Rmd</code></div>
@@ -97,21 +97,21 @@
 <a href="#current-geo-query-used" class="anchor"></a>Current GEO query used:</h1>
 <pre><code>"expression profiling by high throughput sequencing" AND
 ("single nuclei" OR "single cell" OR "scRNAseq" OR "scRNA-seq" OR "snRNAseq" OR "snRNA-seq")</code></pre>
-<pre><code>#&gt; [1] "022121"
-#&gt; Response [https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&amp;query_key=1&amp;WebEnv=MCID_60329564c1de8344c0493fd0]
-#&gt;   Date: 2021-02-21 17:16
+<pre><code>#&gt; [1] "022221"
+#&gt; Response [https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&amp;query_key=1&amp;WebEnv=MCID_6033022f14f92f7ded573da5]
+#&gt;   Date: 2021-02-22 01:00
 #&gt;   Status: 200
 #&gt;   Content-Type: text/plain; charset=UTF-8
-#&gt;   Size: 4.26 MB
-#&gt; &lt;ON DISK&gt;  /Users/runner/work/someta/someta/inst/extdata/022121/gds_result_022121.txt</code></pre>
+#&gt;   Size: 4.27 MB
+#&gt; &lt;ON DISK&gt;  /Users/runner/work/someta/someta/inst/extdata/022221/gds_result_022221.txt</code></pre>
 </div>
 <div id="parse-geo-query" class="section level1">
 <h1 class="hasAnchor">
 <a href="#parse-geo-query" class="anchor"></a>Parse GEO query</h1>
-<p>Total entries: 5099</p>
+<p>Total entries: 5103</p>
 <p>Number of entries filtered out because key words were not found: 627</p>
 <p>Merged super and subseries: 476</p>
-<p>The fraction of GEO entries with potential metadata (file with “meta”, “annot”, or “type” in filename or rda/rds/rdata files) is 0.1435371. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at 0.0903614). Final fraction: 0.1382766</p>
+<p>The fraction of GEO entries with potential metadata (file with “meta”, “annot”, or “type” in filename or rda/rds/rdata files) is 0.1435011. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at 0.0903614). Final fraction: 0.1382419</p>
 </div>
 <div id="parse-database-from-svensson-et-al-" class="section level1">
 <h1 class="hasAnchor">
@@ -167,13 +167,13 @@
 #&gt; 21                                         Smart-Seq2    1
 #&gt; 22                                         Smart-seq3    1
 #&gt; # A tibble: 5 x 3
-#&gt;   year   frac     n
-#&gt; * &lt;chr&gt; &lt;dbl&gt; &lt;int&gt;
-#&gt; 1 2017     NA     3
-#&gt; 2 2018     NA    16
-#&gt; 3 2019     NA    30
-#&gt; 4 2020     NA    80
-#&gt; 5 2021     NA    11</code></pre>
+#&gt;   year    frac     n
+#&gt; * &lt;chr&gt;  &lt;dbl&gt; &lt;int&gt;
+#&gt; 1 2017  0.333      3
+#&gt; 2 2018  0.0625    16
+#&gt; 3 2019  0.167     30
+#&gt; 4 2020  0.15      80
+#&gt; 5 2021  0.182     11</code></pre>
 </div>
   </div>
 
