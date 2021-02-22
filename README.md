@@ -4,17 +4,17 @@
 <!-- badges: start -->
 
 [![R build
-status](https://github.com/rnabioco/someta/workflows/pkgdown/badge.svg)](https://github.com/rnabioco/someta/actions)
+status](https://github.com/rnabioco/someta/workflows/Query/badge.svg)](https://github.com/rnabioco/someta/actions)
 [![Last Commit on
-GitHub](https://img.shields.io/badge/last%20run-02--21--2021-brightgreen)](https://rnabioco.github.io/someta/articles/get_geo.html)
+GitHub](https://img.shields.io/badge/last%20run-02--22--2021-brightgreen)](https://rnabioco.github.io/someta/articles/get_geo.html)
 <!-- badges: end -->
 
 Cell-type annotations are frequently excluded from public single cell
 datasets. This hinders single cell sequencing analysis reproducibility
 and accessibility. To better describe the issue, we monitor GEO entries
-monthly (currently set to auto-update at 1AM UTC, 15th of the month),
-and programmatically determine the fraction of entries with
-(potentially) usable cell metadata.
+monthly (currently set to auto-update at 1AM UTC, 1st of the month), and
+programmatically determine the fraction of entries with (potentially)
+usable cell metadata.
 
 We have written up descriptions of the issue and suggestions (in short:
 PLEASE deposit some metadata at cell level for scRNA-seq data) in this
@@ -23,7 +23,7 @@ short
 
 The latest archive of GEO scRNA-seq records with other associated data
 can be directly downloaded here
-[current\_geo.rds](https://github.com/rnabioco/someta/raw/master/inst/extdata/current_geo.rds)
+[current\_geo.rds](https://github.com/rnabioco/someta/raw/master/inst/extdata/current_geo.rds).
 
 Additional thoughtful guidelines for organizing scRNA-seq sample and
 cell metadata are discussed here by [Füllgrabe et
@@ -34,8 +34,8 @@ al](https://www.nature.com/articles/s41587-020-00744-z).
 As of the initial presentation of this issue (10–17–2020), the number is
 a frustratingly low **0.122**.
 
-Current fraction with metadata: **0.1382766**. (For ArrayExpress 10x
-datasets, the fraction is **0.15**)
+Current fraction in GEO with metadata: **0.1381727**. In comparison, for
+ArrayExpress 10x datasets, the fraction is **0.1478873**).
 
 Number of depositions with updated metadata records since description of
 the issue here: **0**.
