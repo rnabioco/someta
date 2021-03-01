@@ -82,7 +82,7 @@
       <h1 data-toc-skip>single cell GEO records</h1>
                         <h4 class="author">Rui Fu</h4>
             <address class="author_afil">
-      RNA Bioscience Initative, University of Colorado School of Medicine<br><h4 class="date">2021-02-22</h4>
+      RNA Bioscience Initative, University of Colorado School of Medicine<br><h4 class="date">2021-03-01</h4>
       
       
       <div class="hidden name"><code>get_geo.Rmd</code></div>
@@ -97,26 +97,26 @@
 <a href="#current-geo-query-used" class="anchor"></a>Current GEO query used:</h1>
 <pre><code>"expression profiling by high throughput sequencing" AND
 ("single nuclei" OR "single cell" OR "scRNAseq" OR "scRNA-seq" OR "snRNAseq" OR "snRNA-seq")</code></pre>
-<pre><code>#&gt; [1] "022221"
-#&gt; Response [https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&amp;query_key=1&amp;WebEnv=MCID_60336d8893d82e147e29f218]
-#&gt;   Date: 2021-02-22 08:38
+<pre><code>#&gt; [1] "030121"
+#&gt; Response [https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&amp;query_key=1&amp;WebEnv=MCID_603c4ce7a6d18955654aec56]
+#&gt;   Date: 2021-03-01 02:09
 #&gt;   Status: 200
 #&gt;   Content-Type: text/plain; charset=UTF-8
-#&gt;   Size: 4.27 MB
-#&gt; &lt;ON DISK&gt;  /Users/runner/work/someta/someta/inst/extdata/022221/gds_result_022221.txt</code></pre>
+#&gt;   Size: 4.31 MB
+#&gt; &lt;ON DISK&gt;  /Users/runner/work/someta/someta/inst/extdata/030121/gds_result_030121.txt</code></pre>
 </div>
 <div id="parse-geo-query" class="section level1">
 <h1 class="hasAnchor">
 <a href="#parse-geo-query" class="anchor"></a>Parse GEO query</h1>
-<p>Total entries: 5103</p>
-<p>Number of entries filtered out because key words were not found: 627</p>
+<p>Total entries: 5150</p>
+<p>Number of entries filtered out because key words were not found: 634</p>
 <p>Merged super and subseries: 476</p>
-<p>The fraction of GEO entries with potential metadata (file with “meta”, “annot”, or “type” in filename or rda/rds/rdata files) is 0.1434293. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at 0.0903614). Final fraction: 0.1381727</p>
+<p>The fraction of GEO entries with potential metadata (file with “meta”, “annot”, or “type” in filename or rda/rds/rdata files) is 0.1435656. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at 0.0890208). Final fraction: 0.1383585</p>
 </div>
 <div id="parse-database-from-svensson-et-al-" class="section level1">
 <h1 class="hasAnchor">
 <a href="#parse-database-from-svensson-et-al-" class="anchor"></a>Parse database from Svensson et al.</h1>
-<p>Overlap of scRNA-seq GEO entries between manual curation and the GEO query is 0.973466. Number of entries not public: 0. Fraction with metadata: 0.1948998.</p>
+<p>Overlap of scRNA-seq GEO entries between manual curation and the GEO query is 0.9735537. Number of entries not public: 0. Fraction with metadata: 0.1978221.</p>
 </div>
 <div id="by-year" class="section level1">
 <h1 class="hasAnchor">
@@ -146,7 +146,7 @@
 <pre><code>#&gt; [1] "experiments"
 #&gt;                                                     . Freq
 #&gt; 1                                               10xV2  102
-#&gt; 2                                               10xV3   29
+#&gt; 2                                               10xV3   31
 #&gt; 3                                          smart-seq2   26
 #&gt; 4                                          Smart-seq2   22
 #&gt; 5                                          smart-like   10
@@ -159,14 +159,14 @@
 #&gt; 12                                           STRT-seq    3
 #&gt; 13                                              other    2
 #&gt; 14                                         Smart-like    2
-#&gt; 15                                                10x    1
-#&gt; 16                                             10x_v1    1
-#&gt; 17 BD Rhapsody Immune Response Targeted Panel (Human)    1
-#&gt; 18                                         BDRhapsody    1
-#&gt; 19                                          CELLO-seq    1
-#&gt; 20                                          Smart-seq    1
-#&gt; 21                                         Smart-Seq2    1
-#&gt; 22                                         Smart-seq3    1
+#&gt; 15                                         Smart-seq3    2
+#&gt; 16                                                10x    1
+#&gt; 17                                             10x_v1    1
+#&gt; 18 BD Rhapsody Immune Response Targeted Panel (Human)    1
+#&gt; 19                                         BDRhapsody    1
+#&gt; 20                                          CELLO-seq    1
+#&gt; 21                                          Smart-seq    1
+#&gt; 22                                         Smart-Seq2    1
 #&gt; [1] "fractions with metadata by year (10x experiments)"
 #&gt; # A tibble: 5 x 3
 #&gt;   year    frac     n
@@ -175,7 +175,7 @@
 #&gt; 2 2018  0.0625    16
 #&gt; 3 2019  0.167     30
 #&gt; 4 2020  0.15      80
-#&gt; 5 2021  0.154     13</code></pre>
+#&gt; 5 2021  0.133     15</code></pre>
 </div>
   </div>
 
