@@ -1,0 +1,53 @@
+---
+title: 'Recommendations for improving single cell GEO record annotations'
+date: '`r Sys.Date()`'
+# package: someta
+author:
+  - name: Rui Fu, Kent Riemondy, Sidhant Puntambekar
+    affiliation: RNA Bioscience Initative, University of Colorado School of Medicine
+output:
+  BiocStyle::html_document:
+    toc_float: true
+
+vignette: >
+    %\VignetteIndexEntry{metadata_report}
+    %\VignetteEngine{knitr::rmarkdown}
+    %\VignetteEncoding{UTF-8}  
+---
+
+```{r "knitr options", echo = FALSE, message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  echo = FALSE,
+  collapse = TRUE,
+  fig.align = "center",
+  comment = "#>",
+  crop = NULL
+)
+```
+
+# Recommendations for depositing scRNA-seq datasets
+
+## For investigators and reviewers
+1.	Require that analysts provide a metadata table containing cell-level metadata and a  count matrix with RNA abundance measurements. The cell-level metadata should contain the cell identifiers present in the matrix and provide the inferred cell-type or other cell-level annotations described in the associated publication. A binary object saved from the analysis framework could also be supplied (.rds for R or .h5ad for Python). 
+
+2.	When reviewing single-cell sequencing studies, ensure that the authors have deposited the proper cell-level metadata alongside the raw data into a suitable repository (e.g. GEO, ArrayExpress).
+
+3.	Encouraging previous depositors of single-cell sequencing data to update their records with cell-level metadata, if it was not included in the original submission.
+
+## For journals
+1.	Include language about requirements/recommendation for external single-cell datasets to contain proper cell-level metadata.
+
+2.	Ask reviewers to review material deposited to external data repositories. 
+
+## For data repositories
+1.	Public repositories should introduce a standardized annotation that specifies that the dataset contains single cell data. For GEO, commonly used single cell sequencing methods could be added to the library strategy annotation (e.g. scRNA-seq, snRNA-seq, CITE-seq, etc.).
+
+2.	Updating submission guidelines to require metadata with cell-level annotations for single cell dataset submissions. For GEO, this would be accomplished by updating the “Processed data files” requirements to outline required data types for single-cell sequencing submissions.
+
+_“For single-cell sequencing data, in addition to standard count matrices (genes-by-cells), we expect users to deposit metadata with cell-level annotations generated during the course of analysis.”_
+
+# For more detailed discussions, please see:
+1. [Füllgrabe et al](https://www.nature.com/articles/s41587-020-00744-z)
+2. [Single Cell Portal Metadata Convention](https://github.com/broadinstitute/single_cell_portal/wiki/Metadata-File#scp-conventional-file-format)

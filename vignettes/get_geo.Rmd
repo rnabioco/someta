@@ -1,5 +1,5 @@
 ---
-title: 'single cell GEO records'
+title: 'Assessment of missing cell-level metadata in single cell GEO records'
 date: '`r Sys.Date()`'
 # package: someta
 author:
@@ -151,9 +151,9 @@ fp <- read_tsv(here("inst", "extdata", "falsepos.txt"), col_names = F) %>% pull(
 gds <- gds %>% mutate(usable = ifelse(id %in% fp, "no", usable))
 ```
 
-The fraction of GEO entries with potential metadata (file with "meta", "annot", or "type" in filename or rda/rds/rdata files) is `r (gds_old$usable == "yes") %>% mean(na.rm = TRUE)`. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at `r length(fp) / sum(gds$has_meta1 == "yes", na.rm = TRUE)`). Final fraction: `r (gds$usable == "yes") %>% mean(na.rm = TRUE)`
+The fraction of GEO entries with potential metadata (file with "meta", "annot", "clustering", "colData", or "type" in filename or rda/rds/rdata/h5ad/loom files) is `r (gds_old$usable == "yes") %>% mean(na.rm = TRUE)`. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at `r length(fp) / sum(gds$has_meta1 == "yes", na.rm = TRUE)`). Final fraction: `r (gds$usable == "yes") %>% mean(na.rm = TRUE)`
 
-# Parse database from Svensson et al.
+# Comparison of parsed data to database from Svensson et al.
 
 ```{r curated}
 library(googlesheets4)
@@ -218,7 +218,7 @@ gs_data_processed <- gs_data %>% inner_join(gds, by = c("Data location" = "id"))
 
 Overlap of scRNA-seq GEO entries between manual curation and the GEO query is `r 1 - sum(checksub, na.rm = T)/(length(gs_ids) - sum(is.na(checksub)))`. Number of entries not public: `r sum(is.na(checksub))`. Fraction with metadata: `r ((sum(gs_data_processed$usable == "yes") + unlist(checksub_ids) %in% (gds %>% filter(usable == "yes") %>% pull(id)) %>% sum())) / (nrow(gs_data_processed) + unlist(checksub_ids) %in% (gds %>% filter(usable == "yes") %>% pull(id)) %>% sum())`.
 
-# by year
+# GEO cell-level metadata availability by year
 
 ```{r frac}
 frac <- gds %>%
@@ -280,7 +280,7 @@ g
 #   ggtitle("metadata fraction by year")
 ```
 
-# by journal
+# GEO cell-level metadata availability by journal
 
 ```{r journalplot}
 # ids_nat <- gs_data %>% filter(Journal == "Nature" | str_detect(Journal, "^Nat "))
@@ -403,7 +403,7 @@ g
 # g
 ```
 
-# by IF
+# Potential effects of GEO cell-level metadata on data reuse and citations
 
 ```{r if}
 # ifs <- scholar::get_impactfactor(sapply(gds_j$pubmed, function(x) str_remove(str_remove(x$journal[1], "^The |^the |^THE "), " \\(.+")))
@@ -465,6 +465,7 @@ addhalf <- gds_j %>%
   pull(month) %>%
   unique() %>%
   length()
+
 
 gds_c_if2 <- gds_j %>%
   mutate(bin = case_when(
@@ -739,7 +740,7 @@ plot_author <- function(classy) {
 ps <- plot_author(classes$all)
 ```
 
-# by tool dev
+# Investigation of whether metadata deposition is better in projects with authors developing scRNA-seq informatic tools (split out to "upload author/other author/not", or just "author/not")
 
 ```{r}
 gds$upload <- sapply(gds$geo, function(x) {
@@ -861,9 +862,9 @@ g <- ggplot(frac4 %>% mutate(usable2 = factor(usable2, levels = c("no", "meta", 
 g
 ```
 
-# ArrayExpress
+# Similar analysis and observations with ArrayExpress
 
-```{r ae}
+```{r ae1}
 source(here("utils", "arrayexpress_query.R"))
 sets <- read_tsv(here("inst", "extdata", "arrayexpress_sets_proc_add.tsv.gz"))
 
@@ -882,13 +883,15 @@ print("experiments")
 sets2$samplemetainfo_2 %>% table() %>%
   as.data.frame() %>%
   arrange(desc(Freq))
+```
 
-print("fractions with metadata by year (10x experiments)")
+```{r ae2}
+print("fraction with metadata (10x experiments only)")
 sets_10x %>% separate(ReleaseDate, sep = "-", into = c("year", "month", "day")) %>% 
   group_by(year) %>% 
   summarize(frac = sum(
     str_detect(str_to_lower(samplemetainfo_1), "meta|annot|type|clustering|coldata") | 
     str_detect(str_to_lower(additionalfiles), "meta|annot|type|clustering|coldata"),
-    na.rm = T) / n(),
+    na.rm = TRUE) / n(),
     n = n())
 ```
