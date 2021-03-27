@@ -232,13 +232,13 @@ frac <- gds %>%
   mutate(fraction = round(fraction, digits = 3))
 
 g <- ggplot(
-  gds %>% na.omit() %>% filter(year >= 2012),
-  aes(x = year, fill = usable)
+  gds %>% na.omit() %>% filter(year >= 2012) %>% mutate(usable2 = factor(usable2, levels = c("no", "meta", "object"))),
+  aes(x = year)
 ) +
-  geom_bar() +
-  scale_fill_brewer() +
+  geom_bar(aes(fill = usable2)) +
+  scale_fill_brewer(name = "usable") +
   # scale_fill_viridis_d(option = "plasma") +
-  geom_text(data = frac %>% filter(year >= 2012), color = "black", aes(x = year, y = total + 30, label = fraction, fill = NA), size = 3) +
+  geom_text(data = frac %>% filter(year >= 2012), color = "black", aes(x = year, y = total + 30, label = fraction), size = 3) +
   cowplot::theme_cowplot() +
   scale_x_continuous(breaks = c(2012:format(Sys.time(), "%Y") %>% as.numeric())) +
   ylab("total studies") +
