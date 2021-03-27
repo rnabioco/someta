@@ -39,6 +39,7 @@ jobs:
       - name: Install dependencies
         run: |
           remotes::install_cran("BiocManager", force = TRUE)
+          remotes::install_github("nicholasmfraser/rbiorxiv")
           BiocManager::install(c('GEOquery', 'BiocStyle', 'ArrayExpress'))
           remotes::install_deps(dependencies = TRUE)
           install.packages("pkgdown")
