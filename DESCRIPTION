@@ -40,7 +40,8 @@ Imports:
     googlesheets4,
     cowplot,
     scholar,
-    rbiorxiv
+    rbiorxiv,
+    bookdown
 Suggests:
     roxygen2,
     testthat,
