@@ -65,7 +65,8 @@ if (!(file.exists(here("inst", "extdata", date, paste0("gds_result_", date, ".tx
 ```{r entries}
 if (format(format = "%m%d%y", file.mtime(here("inst", "extdata", "current_geo.rds"))) == date) {
   gds <- readRDS(here("inst", "extdata", "current_geo.rds")) %>%
-  mutate(year = as.numeric(year))
+    mutate(year = as.numeric(year))
+  gds %>% saveRDS(here("inst", "extdata", date, paste0("geo_", date, ".rds")))
 } else {
   source(here("utils", "geo_query.R"))
   gds <- readRDS(here("inst", "extdata", date, paste0("geo_", date, ".rds"))) %>%
