@@ -50,19 +50,28 @@ efetch <- paste0(
   "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&query_key=1&WebEnv=",
   webenv
 )
-dir.create(here("inst", "extdata", date), showWarnings = FALSE)
-GET(
-  efetch,
-  write_disk(here("inst", "extdata", date, paste0("gds_result_", date, ".txt")))
-)
+
+if (!(file.exists(here("inst", "extdata", date, paste0("gds_result_", date, ".txt"))))) {
+  dir.create(here("inst", "extdata", date), showWarnings = FALSE)
+  GET(
+    efetch,
+    write_disk(here("inst", "extdata", date, paste0("gds_result_", date, ".txt")))
+  )
+}
 ```
 
 # Parse GEO query
 
 ```{r entries}
-source(here("utils", "geo_query.R"))
-gds <- readRDS(here("inst", "extdata", date, paste0("geo_", date, ".rds"))) %>%
+if (format(format = "%m%d%y", file.mtime(here("inst", "extdata", "current_geo.rds"))) == date) {
+  gds <- readRDS(here("inst", "extdata", "current_geo.rds")) %>%
   mutate(year = as.numeric(year))
+} else {
+  source(here("utils", "geo_query.R"))
+  gds <- readRDS(here("inst", "extdata", date, paste0("geo_", date, ".rds"))) %>%
+    mutate(year = as.numeric(year))
+}
+
 gds_backup <- readRDS(here("inst", "extdata", "101520", paste0("geo_", "101520", ".rds"))) %>%
   mutate(year = as.numeric(year))
 gds_orig <- gds
@@ -865,8 +874,13 @@ g
 # Similar analysis and observations with ArrayExpress
 
 ```{r ae1}
-source(here("utils", "arrayexpress_query.R"))
-sets <- read_tsv(here("inst", "extdata", "arrayexpress_sets_proc_add.tsv.gz"))
+if (format(format = "%m%d%y", file.mtime(here("inst", "extdata", "current_geo.rds"))) == date) {
+  sets <- read_tsv(here("inst", "extdata", "arrayexpress_sets_proc_add.tsv.gz"))
+} else {
+  source(here("utils", "arrayexpress_query.R"))
+  sets <- read_tsv(here("inst", "extdata", "arrayexpress_sets_proc_add.tsv.gz"))
+}
+
 
 # remove GEO imported
 sets2 <- sets %>% filter(!str_detect(ID, "GEO"))
