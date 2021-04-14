@@ -208,10 +208,10 @@ checksub <- purrr::map(
         NA
       }
       else {
-        temp # length(intersect(temp, gds$id)) == 0
+        temp
       }
     } else {
-      temp # length(intersect(temp, gds$id)) == 0
+      temp
     }
   }
 )
@@ -224,6 +224,10 @@ checksub <- sapply(
 ) %>% unlist()
 
 gs_data_processed <- gs_data %>% inner_join(gds, by = c("Data location" = "id"))
+gds_shared <- gs_data_processed %>% select(id = `Data location`, usable) %>% 
+  bind_rows(data.frame(id = names(checksub)[checksub], usable = NA))
+
+# write_tsv(gds_shared, "geo_vs_Svensson.tsv.gz")
 ```
 
 Overlap of scRNA-seq GEO entries between manual curation and the GEO query is `r 1 - sum(checksub, na.rm = T)/(length(gs_ids) - sum(is.na(checksub)))`. Number of entries not public: `r sum(is.na(checksub))`. Fraction with metadata: `r ((sum(gs_data_processed$usable == "yes") + unlist(checksub_ids) %in% (gds %>% filter(usable == "yes") %>% pull(id)) %>% sum())) / (nrow(gs_data_processed) + unlist(checksub_ids) %in% (gds %>% filter(usable == "yes") %>% pull(id)) %>% sum())`.
@@ -247,7 +251,6 @@ g <- ggplot(
 ) +
   geom_bar(aes(fill = usable2)) +
   scale_fill_brewer(name = "usable") +
-  # scale_fill_viridis_d(option = "plasma") +
   geom_text(data = frac %>% filter(year >= 2012), color = "black", aes(x = year, y = total + 30, label = fraction), size = 3) +
   cowplot::theme_cowplot() +
   scale_x_continuous(breaks = c(2012:format(Sys.time(), "%Y") %>% as.numeric())) +
@@ -257,49 +260,21 @@ g <- ggplot(
     axis.text.y = element_text(size = 14),
     axis.title.x = element_text(size = 14),
     axis.title.y = element_text(size = 14)
-  ) # + ggtitle("scRNAseq datasets by year")
-g
-# cowplot::save_plot("geo_year.pdf", g, base_asp = 1, base_width = 5)
+  )
+g # fig2a
 
-# ggplot(gds %>% na.omit() %>% filter(year == "2020") %>%
-#          mutate(month = factor(month, levels = c("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"))),
-#        aes(x = month, fill = usable)) +
-#   geom_bar() +
-#   scale_fill_viridis_d(option = "plasma") +
-#   cowplot::theme_cowplot() +
-#   ggtitle("scRNAseq datasets by month in 2020")
-# frac2 <- gds %>% na.omit() %>%
-#   mutate(year = ifelse(month %in% c("Jan", "Feb", "Mar", "Apr", "May", "Jun"),
-#                        year, year + 0.5)) %>%
-#   group_by(year, usable) %>%
-#   summarize(n = n()) %>%
-#   ungroup() %>%
-#   pivot_wider(names_from = usable, values_from = n) %>%
-#   replace_na(list(no = 0, yes = 0)) %>%
-#   mutate(fraction = yes/(yes + no), total = yes + no) %>%
-#   mutate(fraction = round(fraction, digits = 3))
-# fit <- lm(fraction ~ year, data = frac2 %>% filter(year >= 2016))
-# ggplot(frac2 %>% filter(year >= 2016),
-#        aes(x = year, y = fraction, color = total)) +
-#   geom_point() +
-#   geom_line(data = fortify(fit), aes(x = year, y = .fitted), color = "black") +
-#   scale_color_viridis_c(direction = -1) +
-#   cowplot::theme_cowplot() +
-#   ylab("total studies") +
-#   ylim(c(0, 0.25)) +
-#   ggtitle("metadata fraction by year")
+gds_a <- gds %>% 
+  na.omit() %>% 
+  filter(year >= 2012) %>% 
+  mutate(usable2 = factor(usable2, levels = c("no", "meta", "object"))) %>% 
+  select(id, year, usable, usable2)
+
+# write_tsv(gds_a, "fig2a.tsv.gz")
 ```
 
 # GEO cell-level metadata availability by journal
 
 ```{r journalplot}
-# ids_nat <- gs_data %>% filter(Journal == "Nature" | str_detect(Journal, "^Nat "))
-# ids_cell <- gs_data %>% filter(Journal %in% c("Cell","Cell Reports", "Developmental Cell", "Cell Stem Cell", "Molecular Cell", "Cancer Cell", "Immunity", "Neuron"))
-# ids_sci <- gs_data %>% filter(Journal %in% c("Science", "Sci Rep"))
-# ids_elife <- gs_data %>% filter(Journal == "eLife")
-# ids_pnas <- gs_data %>% filter(Journal == "Proc Natl Acad Sci USA")
-# ids_gb <- gs_data %>% filter(Journal == "Genome Biol")
-
 gds_j <- gds %>%
   mutate(journal_group = case_when(
     journal %in% c("Nature", "Science", "Cell") ~ "CNS",
@@ -309,9 +284,7 @@ gds_j <- gds %>%
     str_detect(journal, "BMC") ~ "BMC",
     journal %in% c("Genes Dev", "Genome Res") ~ "CSHL",
     journal %in% c("Elife") ~ "eLife",
-    # journal %in% c("Proc Natl Acad Sci U S A") ~ "PNAS",
     str_detect(journal, "PLoS") ~ "PLOS",
-    # journal %in% c("Nucleic Acids Res.") ~ "NAR",
     TRUE ~ "other"
   )) %>%
   mutate(journal_group2 = case_when(
@@ -319,12 +292,6 @@ gds_j <- gds %>%
     str_detect(journal, "^Nat. ") ~ "Nature",
     journal %in% c("Science", "Sci Rep", "Sci Immunol", "Sci Adv") ~ "Science",
     journal %in% c("Cell", "Cell Rep", "Dev. Cell", "Cell Stem Cell", "Stem Cell Reports", "Mol. Cell", "Cancer Cell", "Immunity", "Neuron", "Cell Syst", "Cell Metab.", "Cell Host Microbe", "iScience") ~ "Cell",
-    # journal %in% c("Genome Biol.", "Genome Med") ~ "BMC",
-    # str_detect(journal, "BMC") ~ "BMC",
-    # str_detect(journal, "^Front") ~ "Frontiers",
-    # journal %in% c("Genes Dev.", "Genome Res.") ~ "CSHL",
-    # str_detect(journal, "PLoS") ~ "PLOS",
-    # journal %in% c("Nucleic Acids Res.") ~ "NAR",
     TRUE ~ "other"
   )) %>%
   filter(journal != "error") %>%
@@ -347,7 +314,6 @@ g <- ggplot(
 ) +
   geom_bar() +
   scale_fill_brewer() +
-  # scale_fill_viridis_d(option = "plasma") +
   geom_text(data = gds_j_frac, color = "black", aes(x = journal_group, y = total + 30, label = fraction, fill = NA), size = 3) +
   cowplot::theme_cowplot() +
   theme(
@@ -355,9 +321,8 @@ g <- ggplot(
     axis.text.y = element_text(size = 14),
     axis.title.x = element_text(size = 14),
     axis.title.y = element_text(size = 14)
-  ) #+ ggtitle("scRNAseq datasets by journal")
+  ) 
 g
-# cowplot::save_plot("geo_family.pdf", g, base_asp = 1, base_width = 5)
 ```
 
 ```{r journaldot}
@@ -370,7 +335,6 @@ gds_sum <- gds_j %>%
 g <- ggplot(
   gds_sum %>% filter(n >= 3) %>%
     mutate(journal_group = factor(journal_group,
-      # levels = c("Cell", "Nature", "Science", "BMC", "other")
       levels = c("CNS", "CNS sub", "BMC", "CSHL", "eLife", "PLOS", "other")
     )),
   aes(x = n, y = frac, color = journal_group)
@@ -378,7 +342,6 @@ g <- ggplot(
   geom_point() +
   scale_color_brewer(palette = "Accent") +
   cowplot::theme_cowplot() +
-  # ggtitle("scRNAseq datasets by journal family") +
   xlab("total studies (since 2017)") +
   ylab("fraction with metadata") +
   ylim(c(0, 1)) +
@@ -389,28 +352,13 @@ g <- ggplot(
     axis.title.y = element_text(size = 14)
   ) +
   scale_x_log10()
-g
-# cowplot::save_plot("geo_journal.pdf", g, base_asp = 1, base_width = 5)
-```
+g # fig2b
 
-```{r getcitations}
-# gds_c <- gds_j %>% mutate(jy = str_c(journal, year, sep = ",")) %>%
-#   group_by(journal, year, usable) %>%
-#   filter(n() >= 4) %>%
-#   filter(year <= 2018) %>%
-#   ungroup() %>%
-#   select(id, usable, jy, cite) %>%
-#   filter(!is.na(cite)) %>%
-#   mutate(cite = as.numeric(cite))
-# jys <- gds_c %>% select(usable, jy) %>% distinct() %>% group_by(jy) %>% filter(n() == 2) %>% pull(jy)
-# g <- ggplot(gds_c %>% filter(jy %in% jys),
-#        aes(x = jy, y = cite)) +
-#   geom_boxplot(aes(fill = usable), outlier.shape = NA) +
-#   cowplot::theme_cowplot() +
-#   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
-#   #coord_cartesian(ylim = c(0,500)) +
-#   ggtitle("citations binned by year + journal + usable")
-# g
+gds_b <- gds_j %>%
+  filter(year >= 2017) %>%
+  select(id, journal, journal_group)
+
+# write_tsv(gds_b, "fig2b.tsv.gz")
 ```
 
 # Potential effects of GEO cell-level metadata on data reuse and citations
@@ -442,30 +390,6 @@ g
 # write_csv(checked_j, here("inst", "extdata", "ifs.csv"))
 checked_j <- read_csv(here("inst", "extdata", "ifs.csv")) %>% select(-n)
 gds_j <- gds_j %>% left_join(checked_j)
-# gds_c_if <- gds_j %>%
-#   filter(ifs < 51.941) %>%
-#   mutate(bin = case_when(
-#     ifs < 5 ~ "5",
-#     ifs < 10 ~ "10",
-#     ifs < 30 ~ "30",
-#     TRUE ~ "+",
-#   )) %>%
-#   filter(year == 2018 | year == 2017) %>%
-#   select(pubmed, usable, journal, cite, bin, year) %>%
-#   distinct() %>%
-#   filter(!is.na(cite)) %>%
-#   mutate(cite = as.numeric(cite)) %>%
-#   mutate(bin = factor(bin, levels = c("5", "10", "30", "+")))
-
-# g <- ggplot(gds_c_if,
-#        aes(x = bin, y = cite)) +
-#   #facet_grid(.~year) +
-#   geom_boxplot(aes(fill = usable), outlier.shape = NA) +
-#   cowplot::theme_cowplot() +
-#   #theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
-#   coord_cartesian(ylim = c(0,500)) +
-#   ggtitle("citations binned by IF, 2018")
-# g
 ```
 
 ```{r citations}
@@ -486,19 +410,6 @@ gds_c_if2 <- gds_j %>%
   )) %>%
   filter(year >= 2016 & year <= yearcut)
 
-# if (addhalf >= 7) {
-#   gds_c_if2 <- gds_c_if2 %>% rbind(
-#     gds_j %>%
-#       mutate(bin = case_when(
-#         ifs < 5 ~ "5",
-#         ifs < 10 ~ "10",
-#         ifs < 30 ~ "30",
-#         TRUE ~ "+",
-#         )) %>%
-#       filter(year == yearcut + 1, month %in% c("Jan", "Feb", "Mar", "Apr", "May", "Jun")) 
-#   )
-# }
-
 gds_c_if2 <- gds_c_if2 %>% 
   select(pubmed, usable, journal, cite, bin, year, ifs) %>%
   distinct() %>%
@@ -517,30 +428,20 @@ g <- ggplot(
     data = gds_c_if2 %>% filter(usable == "yes")
   ) +
   cowplot::theme_cowplot() +
-  # scale_y_log10() +
   geom_smooth(method = "lm", fill = NA) +
-  # scale_color_viridis_d(option = "a") +
   scale_color_brewer() +
-  # theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
   coord_cartesian(ylim = c(0, 500)) +
   xlab("journal IF") +
-  ylab("# of citations") #+ ggtitle("citations by IF, 2017/8")
-g
-# cowplot::save_plot("geo_cite.pdf", g, base_asp = 1, base_width = 5)
-#
-# g2 <- ggplot(gds_c_if2,
-#             aes(x = ifs, y = cite, group = usable, color = usable, shape = usable)) +
-#   facet_grid(.~year) +
-#   geom_point(alpha = 0.76) +
-#   cowplot::theme_cowplot() +
-#   scale_y_log10() +
-#   geom_smooth(method = "lm", fill = NA) +
-#   scale_color_viridis_d(option = "plasma") +
-#   #scale_color_brewer() +
-#   #theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
-#   #coord_cartesian(ylim = c(0,500)) +
-#   xlab("journal IF") + ylab("# of citations") #+ ggtitle("citations by IF, 2017/8")
-# g2
+  ylab("# of citations") 
+g # fig2c
+
+gds_c <- gds_j %>% filter(year >= 2016 & year <= 2018) %>% 
+  select(id, usable, journal, cite, year, ifs) %>%
+  distinct() %>%
+  filter(!is.na(cite)) %>%
+  mutate(cite = as.numeric(cite))
+
+# write_tsv(gds_c, "fig3c.tsv.gz")
 ```
 
 ```{r}
@@ -577,11 +478,6 @@ try2l <- ts %>%
   filter(DOI_pub != "NA") %>%
   select(DOI_pub) %>%
   mutate(pmid = mapply(id_conv, DOI_pub))
-# splitst <- split(ts %>% filter(DOI_pub != "NA") %>% pull(DOI_pub),
-#                  ceiling(seq_along(ts %>% filter(DOI_pub != "NA") %>% pull(DOI_pub))/180))
-# for (x in splitst) {
-#   try2l <- bind_rows(try2l, rcrossref::id_converter(x)$records %>% select(doi, pmid))
-# }
 
 tools <- read_tsv("https://raw.githubusercontent.com/scRNA-tools/scRNA-tools/master/database/references.tsv") %>%
   pull(Title) %>%
@@ -592,10 +488,6 @@ tools <- read_tsv("https://raw.githubusercontent.com/scRNA-tools/scRNA-tools/mas
 
 tau <- list()
 for (i in 1:length(tools)) {
-  # if (i%%10 == 0) {
-  #   closeAllConnections()
-  #   print(i)
-  # }
   tau[[i]] <- easyPubMed::get_pubmed_ids_by_fulltitle(tools[i],
     api_key = "9cc836a53f5c509a6783283e694da4fb0d08"
   )$IdList$Id
@@ -624,10 +516,6 @@ splits <- split(
 )
 for (i in 1:length(splits)) {
   s <- splits[[i]]
-  # if (i%%2 == 0) {
-  #   closeAllConnections()
-  #   print(i)
-  # }
   query_string <- str_c(s, collapse = ",")
   pubmed_file <- easyPubMed::get_pubmed_ids(query_string,
     api_key = "9cc836a53f5c509a6783283e694da4fb0d08"
@@ -679,7 +567,6 @@ plot_author <- function(classy) {
   firs <- setdiff(firs, c("NA"))
 
   pubmeds_tc <- pubmeds_t3[ts2[classy] %>% na.omit()]
-  # print(length(pubmeds_tc))
   firc <- list()
   for (i in 1:length(pubmeds_tc)) {
     firc[[i]] <- get_authors(pubmeds_tc[[i]])
@@ -692,20 +579,16 @@ plot_author <- function(classy) {
 
   fir_id <- gds_a %>%
     select(-pubmed) %>%
-    # filter(year >= 2017) %>%
     unnest("authors") %>%
     group_by(id) %>%
-    # slice(1,2) %>%
     filter(authors %in% firs) %>%
     pull(id) %>%
     unique()
 
   fir_idc <- gds_a %>%
     select(-pubmed) %>%
-    # filter(year >= 2017) %>%
     unnest("authors") %>%
     group_by(id) %>%
-    # slice(1,2) %>%
     filter(authors %in% firsc) %>%
     pull(id) %>%
     unique()
@@ -716,7 +599,6 @@ plot_author <- function(classy) {
     filter(year >= 2017) %>%
     mutate(tool = case_when(
       id %in% fir_idc ~ "yes",
-      # id %in% fir_id ~ "tool",
       TRUE ~ "no"
     )) %>%
     group_by(tool, usable2) %>%
@@ -779,12 +661,7 @@ gds_up <- gds %>%
     id %in% fir_idc_check ~ "author",
     TRUE ~ "no"
   )) %>%
-  left_join(gds_cor %>% select(id, authors)) # %>% filter(full1 != authors, full2 != authors, full3 != authors)
-
-# gds_up %>% group_by(check, usable2) %>%
-#   summarize(n = n()) %>%
-#   group_by(check) %>%
-#   mutate(frac = n/sum(n))
+  left_join(gds_cor %>% select(id, authors))
 
 frac4 <- gds_up %>%
   na.omit() %>%
@@ -816,7 +693,7 @@ g <- ggplot(frac4 %>% filter(year >= 2017), aes(x = year, y = fraction, color = 
     axis.title.x = element_text(size = 14),
     axis.title.y = element_text(size = 14)
   )
-# cowplot::save_plot("geo_tool110620.pdf", g, base_asp = 1, base_width = 5)
+
 g
 ```
 
@@ -828,7 +705,8 @@ authors_df <- gds_a %>%
   group_by(authors) %>%
   summarize(n = n(), yes = sum(usable != "no")) %>%
   mutate(frac = yes / n)
-write_tsv(authors_df, "authors_meta.tsv")
+
+# write_tsv(authors_df, "authors_meta.tsv")
 ```
 
 ```{r}
@@ -869,7 +747,18 @@ g <- ggplot(frac4 %>% mutate(usable2 = factor(usable2, levels = c("no", "meta", 
         axis.title.x = element_text(size = 14),
         axis.title.y = element_text(size = 14))
 # cowplot::save_plot("geo_authors.pdf", g, base_asp = 1, base_width = 5)
-g
+g # fig2d
+
+gds_d <- gds %>%
+  na.omit() %>%
+  mutate(check = case_when(
+    id %in% fir_idc_check ~ "author",
+    TRUE ~ "none"
+  )) %>% 
+  dplyr::filter(year >= 2017) %>% 
+  dplyr::select(id, usable, usable2, software_author = check)
+
+write_tsv(gds_d, "fig2d.tsv.gz")
 ```
 
 # Similar analysis and observations with ArrayExpress
