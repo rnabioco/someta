@@ -9,8 +9,8 @@ digraph workflow {
 
   # start
   node [fillcolor = "#E69F00"]
-  startnode [label = "Examine GEO record"];
-  mdata [label = "Load data into R/Python\nand reformat for reanalysis"]
+  startnode [label = "Examine data\n repository record"];
+  mdata [label = "Load data into R or Python\nand reformat for reanalysis"]
 
 
   # rds or h5ad parsing
@@ -35,7 +35,7 @@ digraph workflow {
   # post metadata processing
   node [fillcolor = "#E69F00"]
   post [label = "Generate reference dataset"]
-  post_2 [label = "Compare query single cell data\nto reference dataset"]
+  post_2 [label = "Compare query and reference\nsingle cell datasets\n (Annotate cell types, \nperform dataset integration, \ncompare gene signatures, etc.)"]
 
   # query data
   node [fillcolor = "#F0E442"]
@@ -46,8 +46,8 @@ digraph workflow {
         fontname = "Helvetica"]
 
   startnode -> mdata [
-                      label = "Has a UMI\ncount matrix?"]
-  startnode -> nomdata_nomatrix [label = "No UMI count matrix?"]
+                      label = "Has a \ncount matrix?"]
+  startnode -> nomdata_nomatrix [label = "No count matrix?"]
   nomdata_nomatrix -> mdata
 
   mdata -> nomdata_3 [xlabel = "No code\nprovided"]

@@ -1,0 +1,2545 @@
+id	journal	journal_group
+GSE100033	Nat Neurosci	CNS sub
+GSE100037	Nat Methods	CNS sub
+GSE100058	Cell	CNS
+GSE100106	Development	other
+GSE100118	Nature	CNS
+GSE100274	BMC Biol	BMC
+GSE100320	Cell	CNS
+GSE100337	Cell	CNS
+GSE100344	Sci Adv	CNS sub
+GSE100384	Cell	CNS
+GSE100389	Protein Cell	other
+GSE100412	Life Sci Alliance	other
+GSE100426	Cell Rep	CNS sub
+GSE100449	Cell	CNS
+GSE100471	Science	CNS
+GSE100474	Nat Commun	CNS sub
+GSE100501	Nat Biotechnol	CNS sub
+GSE100584	Front Synaptic Neurosci	other
+GSE100586	Front Synaptic Neurosci	other
+GSE100597	Cell Rep	CNS sub
+GSE100607	Cell Stem Cell	CNS sub
+GSE100618	Nat Immunol	CNS sub
+GSE100669	Mol Cancer Res	other
+GSE100694	Cancer Cell	CNS sub
+GSE100706	Kidney Int	other
+GSE100771	Nature	CNS
+GSE100861	Dev Cell	CNS sub
+GSE100866	Nat Methods	CNS sub
+GSE100913	J Exp Med	other
+GSE101099	Nat Commun	CNS sub
+GSE101181	J Biol Chem	other
+GSE101207	Cell Rep	CNS sub
+GSE101334	Cell	CNS
+GSE101340	Cancer Cell	CNS sub
+GSE101341	mBio	other
+GSE101487	Science	CNS
+GSE101518	G3 (Bethesda)	other
+GSE101519	G3 (Bethesda)	other
+GSE101601	Sci Rep	CNS sub
+GSE101712	J Exp Med	other
+GSE101901	Nat Commun	CNS sub
+GSE101984	PLoS One	PLOS
+GSE102048	Proc Natl Acad Sci U S A	other
+GSE102086	Dev Cell	CNS sub
+GSE102090	Mol Cell	CNS sub
+GSE102130	Science	CNS
+GSE102163	Genome Biol	BMC
+GSE102299	Nature	CNS
+GSE102332	Neuron	CNS sub
+GSE102443	Nat Commun	CNS sub
+GSE102456	EMBO J	other
+GSE102475	PLoS Biol	PLOS
+GSE102479	Front Endocrinol (Lausanne)	other
+GSE102580	Nature	CNS
+GSE102591	J Clin Invest	other
+GSE102596	J Am Soc Nephrol	other
+GSE102665	J Exp Med	other
+GSE102698	Cell Syst	CNS sub
+GSE102748	J Immunol	other
+GSE102827	Nat Neurosci	CNS sub
+GSE102934	Genome Res	CSHL
+GSE102935	Development	other
+GSE102962	Gut	other
+GSE102990	Nature	CNS
+GSE103011	Sci Rep	CNS sub
+GSE103185	Cell	CNS
+GSE103221	Mol Cell	CNS sub
+GSE103224	Genome Med	BMC
+GSE103239	Nat Cell Biol	CNS sub
+GSE103275	Nat Commun	CNS sub
+GSE103322	Cell	CNS
+GSE103334	Cell Rep	CNS sub
+GSE103354	Nature	CNS
+GSE103461	J Biol Chem	other
+GSE103518	Nat Commun	CNS sub
+GSE103544	Immunity	CNS sub
+GSE103568	Nat Commun	CNS sub
+GSE103574	Cell	CNS
+GSE103577	Stem Cell Reports	CNS sub
+GSE103591	Hepatology	other
+GSE103618	Sci Immunol	CNS sub
+GSE103633	Science	CNS
+GSE103692	PLoS Genet	PLOS
+GSE103723	Cell Res	CNS sub
+GSE103753	Cell	CNS
+GSE103771	Cell	CNS
+GSE103772	Cell	CNS
+GSE103789	Development	other
+GSE103840	Nat Neurosci	CNS sub
+GSE103892	Cell Rep	CNS sub
+GSE103920	Stem Cell Reports	CNS sub
+GSE103970	Nature	CNS
+GSE103976	Neuron	CNS sub
+GSE104054	Science	CNS
+GSE104154	Cell Rep	CNS sub
+GSE104158	Nature	CNS
+GSE104276	Nature	CNS
+GSE104343	Elife	eLife
+GSE104379	Cancer Discov	other
+GSE104396	Dev Biol	other
+GSE104406	Cancer Discov	other
+GSE104490	Nat Med	CNS sub
+GSE104525	Nat Methods	CNS sub
+GSE104556	Sci Data	other
+GSE104701	Nat Commun	CNS sub
+GSE104782	Ann Rheum Dis	other
+GSE104842	PLoS Biol	PLOS
+GSE104869	Nat Commun	CNS sub
+GSE104899	Nat Neurosci	CNS sub
+GSE104985	Cancer Cell	CNS sub
+GSE104987	Cancer Cell	CNS sub
+GSE105010	Nat Biotechnol	CNS sub
+GSE105054	Elife	eLife
+GSE105115	Curr Biol	other
+GSE105267	EMBO Rep	other
+GSE105454	Mol Cell	CNS sub
+GSE106118	Cell Rep	CNS sub
+GSE106121	Nat Biotechnol	CNS sub
+GSE106202	Oncotarget	other
+GSE106218	Clin Cancer Res	other
+GSE106219	Development	other
+GSE106236	Nature	CNS
+GSE106245	Cell	CNS
+GSE106251	Sci Adv	CNS sub
+GSE106268	Science	CNS
+GSE106269	Science	CNS
+GSE106273	Nat Commun	CNS sub
+GSE106391	Nat Commun	CNS sub
+GSE106447	Cell Rep	CNS sub
+GSE106471	Nat Med	CNS sub
+GSE106472	Nat Med	CNS sub
+GSE106487	Cell Stem Cell	CNS sub
+GSE106510	Cell	CNS
+GSE106514	Cell Rep	CNS sub
+GSE106544	Sci Immunol	CNS sub
+GSE106587	Science	CNS
+GSE106636	Nat Commun	CNS sub
+GSE106663	Cell	CNS
+GSE106676	Dev Cell	CNS sub
+GSE106678	Mol Cell	CNS sub
+GSE106708	Cell Rep	CNS sub
+GSE106872	Nat Genet	CNS sub
+GSE106882	Nat Commun	CNS sub
+GSE106888	Cell Stem Cell	CNS sub
+GSE106960	Proc Natl Acad Sci U S A	other
+GSE106973	Blood	other
+GSE107115	Cell Rep	CNS sub
+GSE107122	Cell Rep	CNS sub
+GSE107152	Sci Adv	CNS sub
+GSE107153	Sci Adv	CNS sub
+GSE107185	Cell Syst	CNS sub
+GSE107451	Cell	CNS
+GSE107493	Life Sci Alliance	other
+GSE107517	Cell Discov	other
+GSE107527	Genes Dev	CSHL
+GSE107552	Genome Biol	BMC
+GSE107585	Science	CNS
+GSE107618	PLoS Biol	PLOS
+GSE107632	Cell Rep	CNS sub
+GSE107644	Cell Res	CNS sub
+GSE107646	Proc Natl Acad Sci U S A	other
+GSE107653	PLoS Genet	PLOS
+GSE107711	Development	other
+GSE107723	Genome Biol	BMC
+GSE107727	Blood	other
+GSE107740	Nat Commun	CNS sub
+GSE107747	Sci Rep	CNS sub
+GSE107761	EMBO J	other
+GSE107794	Nat Biotechnol	CNS sub
+GSE107864	Cell Rep	CNS sub
+GSE107873	Cell	CNS
+GSE107874	Cell	CNS
+GSE107909	Nature	CNS
+GSE107910	Immunity	CNS sub
+GSE107947	Cell Syst	CNS sub
+GSE108020	Am J Hum Genet	other
+GSE108041	Elife	eLife
+GSE108067	Cell	CNS
+GSE108097	Cell	CNS
+GSE108108	Mol Metab	other
+GSE108129	Genes Dev	CSHL
+GSE108155	Cell Rep	CNS sub
+GSE108230	Elife	eLife
+GSE108233	Nature	CNS
+GSE108261	Genetics	other
+GSE108275	Genes Dev	CSHL
+GSE108287	Sci Rep	CNS sub
+GSE108288	J Clin Invest	other
+GSE108291	Development	other
+GSE108313	Genome Biol	BMC
+GSE108359	Sci Transl Med	other
+GSE108397	Genome Res	CSHL
+GSE108416	Nat Neurosci	CNS sub
+GSE108427	Nat Commun	CNS sub
+GSE108443	Genome Biol	BMC
+GSE108444	Genome Biol	BMC
+GSE108478	Immunity	CNS sub
+GSE108546	Cell Rep	CNS sub
+GSE108556	Nat Genet	CNS sub
+GSE108561	Nat Biotechnol	CNS sub
+GSE108578	Mol Cell Proteomics	other
+GSE108677	Cell Stem Cell	CNS sub
+GSE108679	Cell	CNS
+GSE108699	Nat Methods	CNS sub
+GSE108709	Cell Stem Cell	CNS sub
+GSE108761	Proc Natl Acad Sci U S A	other
+GSE108775	Neuron	CNS sub
+GSE108788	Neuron	CNS sub
+GSE108811	Science	CNS
+GSE108849	PLoS Comput Biol	PLOS
+GSE108891	Nature	CNS
+GSE108963	Circ Res	other
+GSE108970	Cell Rep	CNS sub
+GSE108974	Cell Rep	CNS sub
+GSE108977	Cell Rep	CNS sub
+GSE109033	Cell Rep	CNS sub
+GSE109037	Cell Rep	CNS sub
+GSE109049	Cell Rep	CNS sub
+GSE109071	Cell Rep	CNS sub
+GSE109085	Nat Commun	CNS sub
+GSE109100	Cell Stem Cell	CNS sub
+GSE109113	Mol Ther	other
+GSE109205	Development	other
+GSE109247	Nat Genet	CNS sub
+GSE109262	Nat Commun	CNS sub
+GSE109281	Nat Cell Biol	CNS sub
+GSE109308	Gut	other
+GSE109324	Haematologica	other
+GSE109444	Science	CNS
+GSE109447	Cell Rep	CNS sub
+GSE109449	Nat Commun	CNS sub
+GSE109488	Cell Rep	CNS sub
+GSE109535	Nucleic Acids Res	other
+GSE109542	Science	CNS
+GSE109555	Nature	CNS
+GSE109556	Cell Rep	CNS sub
+GSE109564	J Am Soc Nephrol	other
+GSE109706	Neurobiol Dis	other
+GSE109707	Nat Cell Biol	CNS sub
+GSE109718	Cell Stem Cell	CNS sub
+GSE109742	Nat Immunol	CNS sub
+GSE109761	Nature	CNS
+GSE109796	Science	CNS
+GSE109816	Nat Cell Biol	CNS sub
+GSE109822	J Invest Dermatol	other
+GSE109881	Sci Rep	CNS sub
+GSE109984	Nat Commun	CNS sub
+GSE109989	Genome Biol	BMC
+GSE109990	Stem Cell Res	other
+GSE109999	PLoS Comput Biol	PLOS
+GSE110010	Nature	CNS
+GSE110037	Cell Stem Cell	CNS sub
+GSE110116	Stem Cell Reports	CNS sub
+GSE110265	Protein Cell	other
+GSE110283	Proc Natl Acad Sci U S A	other
+GSE110351	Nat Cell Biol	CNS sub
+GSE110357	Nature	CNS
+GSE110371	J Biol Chem	other
+GSE110496	Elife	eLife
+GSE110499	Genome Res	CSHL
+GSE110501	Cancer Res	other
+GSE110513	Nat Biotechnol	CNS sub
+GSE110588	Curr Biol	other
+GSE110648	Cell Metab	CNS sub
+GSE110680	Nat Commun	CNS sub
+GSE110684	Sci Immunol	CNS sub
+GSE110686	Nat Med	CNS sub
+GSE110746	Nature	CNS
+GSE110791	Stem Cells Dev	other
+GSE110798	Antioxid Redox Signal	other
+GSE110823	Science	CNS
+GSE110878	Mol Cell	CNS sub
+GSE110894	Nat Commun	CNS sub
+GSE110899	Nat Commun	CNS sub
+GSE110909	Nat Commun	CNS sub
+GSE110973	Blood Adv	other
+GSE111015	Nat Commun	CNS sub
+GSE111027	Nat Commun	CNS sub
+GSE111065	Cell	CNS
+GSE111068	Nat Ecol Evol	CNS sub
+GSE111107	J Am Soc Nephrol	other
+GSE111113	Cell Rep	CNS sub
+GSE111229	Nat Commun	CNS sub
+GSE111301	Cell	CNS
+GSE111360	Cell	CNS
+GSE111404	Nat Commun	CNS sub
+GSE111429	Nat Commun	CNS sub
+GSE111462	Nucleic Acids Res	other
+GSE111527	Cell Rep	CNS sub
+GSE111543	Nat Commun	CNS sub
+GSE111545	Nat Commun	CNS sub
+GSE111598	Cell Stem Cell	CNS sub
+GSE111599	Stem Cell Reports	CNS sub
+GSE111664	Nat Immunol	CNS sub
+GSE111672	Nat Biotechnol	CNS sub
+GSE111704	Proc Natl Acad Sci U S A	other
+GSE111717	Elife	eLife
+GSE111727	Cell Rep	CNS sub
+GSE111764	Science	CNS
+GSE111822	Stem Cells Transl Med	other
+GSE111831	Nat Biomed Eng	CNS sub
+GSE111839	Elife	eLife
+GSE111860	Blood Adv	other
+GSE111898	J Exp Med	other
+GSE111912	Mol Cell	CNS sub
+GSE111976	Nat Med	CNS sub
+GSE112004	Elife	eLife
+GSE112008	Nat Commun	CNS sub
+GSE112033	JCI Insight	other
+GSE112177	Front Cell Neurosci	other
+GSE112205	Cell	CNS
+GSE112271	Nat Commun	CNS sub
+GSE112294	Science	CNS
+GSE112380	Nat Commun	CNS sub
+GSE112381	Nature	CNS
+GSE112393	Dev Cell	CNS sub
+GSE112417	Circulation	other
+GSE112438	Cell	CNS
+GSE112507	Stem Cells	other
+GSE112642	Nat Commun	CNS sub
+GSE112671	Nat Commun	CNS sub
+GSE112692	Cell Rep	CNS sub
+GSE112711	Cell Host Microbe	CNS sub
+GSE112732	Cell Rep	CNS sub
+GSE112794	Proc Natl Acad Sci U S A	other
+GSE112837	Elife	eLife
+GSE112845	J Transl Med	other
+GSE112846	Cell	CNS
+GSE112865	Theranostics	other
+GSE112880	Nat Commun	CNS sub
+GSE112903	Immunity	CNS sub
+GSE112982	Sci Immunol	CNS sub
+GSE113014	Cell Rep	CNS sub
+GSE113036	Nat Neurosci	CNS sub
+GSE113043	Nature	CNS
+GSE113046	Sci Immunol	CNS sub
+GSE113049	JCI Insight	other
+GSE113069	Elife	eLife
+GSE113074	Science	CNS
+GSE113111	JCI Insight	other
+GSE113164	BMC Genomics	BMC
+GSE113168	Stem Cell Reports	CNS sub
+GSE113197	Nat Commun	CNS sub
+GSE113208	Nature	CNS
+GSE113221	Nature	CNS
+GSE113262	Nature	CNS
+GSE113280	Nature	CNS
+GSE113293	Elife	eLife
+GSE113307	J Immunother Cancer	other
+GSE113320	Nat Commun	CNS sub
+GSE113336	Mol Syst Biol	other
+GSE113418	Genome Res	CSHL
+GSE113466	Sci Rep	CNS sub
+GSE113502	Nat Commun	CNS sub
+GSE113530	Nat Methods	CNS sub
+GSE113536	Cell Stem Cell	CNS sub
+GSE113560	Proc Natl Acad Sci U S A	other
+GSE113561	Cell	CNS
+GSE113576	Science	CNS
+GSE113605	Nat Commun	CNS sub
+GSE113616	Cell	CNS
+GSE113660	Genome Biol	BMC
+GSE113675	Nat Methods	CNS sub
+GSE113689	Nature	CNS
+GSE113788	Sci Adv	CNS sub
+GSE113807	Nature	CNS
+GSE113811	Nature	CNS
+GSE113854	Nat Commun	CNS sub
+GSE113901	Nat Neurosci	CNS sub
+GSE113917	Protein Cell	other
+GSE113931	Science	CNS
+GSE113973	Nat Med	CNS sub
+GSE113985	Nat Genet	CNS sub
+GSE114000	Nat Commun	CNS sub
+GSE114044	PLoS Biol	PLOS
+GSE114071	Nat Commun	CNS sub
+GSE114156	J Am Soc Nephrol	other
+GSE114157	Cell Rep	CNS sub
+GSE114161	Nat Commun	CNS sub
+GSE114186	Nature	CNS
+GSE114220	Stem Cell Res	other
+GSE114239	Cell Rep	CNS sub
+GSE114278	Sci Rep	CNS sub
+GSE114279	Sci Rep	CNS sub
+GSE114297	Diabetes	other
+GSE114312	Nat Immunol	CNS sub
+GSE114313	Nat Immunol	CNS sub
+GSE114314	Nat Immunol	CNS sub
+GSE114374	Cell	CNS
+GSE114396	Nat Immunol	CNS sub
+GSE114397	Cell	CNS
+GSE114412	Nature	CNS
+GSE114446	Br J Cancer	other
+GSE114459	Nature	CNS
+GSE114460	Nature	CNS
+GSE114461	Nature	CNS
+GSE114530	PLoS Biol	PLOS
+GSE114569	iScience	CNS sub
+GSE114615	Cell Rep	CNS sub
+GSE114670	Nat Commun	CNS sub
+GSE114687	Nat Genet	CNS sub
+GSE114704	Mol Cancer Ther	other
+GSE114713	Front Immunol	other
+GSE114727	Cell	CNS
+GSE114748	BMC Biol	BMC
+GSE114759	Cell	CNS
+GSE114802	Nat Methods	CNS sub
+GSE114822	Cell Res	CNS sub
+GSE114895	Nature	CNS
+GSE114961	Nat Commun	CNS sub
+GSE114986	Elife	eLife
+GSE114988	Nat Cell Biol	CNS sub
+GSE114997	Cell	CNS
+GSE115006	Nat Commun	CNS sub
+GSE115007	Nat Commun	CNS sub
+GSE115008	Aging (Albany NY)	other
+GSE115011	Nat Neurosci	CNS sub
+GSE115030	Immunity	CNS sub
+GSE115032	J Transl Med	other
+GSE115033	J Transl Med	other
+GSE115070	eNeuro	other
+GSE115097	Nat Commun	CNS sub
+GSE115149	Leukemia	other
+GSE115189	F1000Res	other
+GSE115218	Cell	CNS
+GSE115235	Proc Natl Acad Sci U S A	other
+GSE115242	Nat Commun	CNS sub
+GSE115251	Nature	CNS
+GSE115257	Elife	eLife
+GSE115280	Genome Biol	BMC
+GSE115301	Cell Rep	CNS sub
+GSE115331	Nature	CNS
+GSE115346	Elife	eLife
+GSE115350	Elife	eLife
+GSE115389	Nat Commun	CNS sub
+GSE115397	Acta Neuropathol Commun	other
+GSE115404	Nat Commun	CNS sub
+GSE115405	Cell Rep	CNS sub
+GSE115424	Dev Cell	CNS sub
+GSE115427	Cell	CNS
+GSE115469	Nat Commun	CNS sub
+GSE115476	Nat Commun	CNS sub
+GSE115501	Cancers (Basel)	other
+GSE115571	EMBO Rep	other
+GSE115600	Cell	CNS
+GSE115612	Nature	CNS
+GSE115622	Cell	CNS
+GSE115640	PLoS One	PLOS
+GSE115723	PLoS One	PLOS
+GSE115730	Nat Commun	CNS sub
+GSE115746	Nature	CNS
+GSE115765	EMBO J	other
+GSE115795	Nat Immunol	CNS sub
+GSE115798	Nat Commun	CNS sub
+GSE115803	Sci Adv	CNS sub
+GSE115859	Cell Rep	CNS sub
+GSE115861	Sci Rep	CNS sub
+GSE115865	Mol Neurodegener	other
+GSE115869	Sci Signal	other
+GSE115884	Dev Cell	CNS sub
+GSE115900	Elife	eLife
+GSE115903	Blood	other
+GSE115908	Nature	CNS
+GSE115926	iScience	CNS sub
+GSE115931	EMBO J	other
+GSE115934	Biol Open	other
+GSE115936	Sci Rep	CNS sub
+GSE115937	Sci Rep	CNS sub
+GSE115950	Nat Commun	CNS sub
+GSE115953	Nat Metab	CNS sub
+GSE115955	Nature	CNS
+GSE115956	Nature	CNS
+GSE115968	Proc Natl Acad Sci U S A	other
+GSE115978	Cell	CNS
+GSE115982	JCI Insight	other
+GSE115986	JCI Insight	other
+GSE115997	Protein Cell	other
+GSE116001	Elife	eLife
+GSE116011	Genome Biol	BMC
+GSE116031	Nat Commun	CNS sub
+GSE116106	Dev Cell	CNS sub
+GSE116113	Cell Res	CNS sub
+GSE116138	Nat Commun	CNS sub
+GSE116165	Cell Syst	CNS sub
+GSE116180	Cancer Commun (Lond)	other
+GSE116222	Nature	CNS
+GSE116237	Cell	CNS
+GSE116240	Circ Res	other
+GSE116254	Cancer Discov	other
+GSE116256	Cell	CNS
+GSE116341	Exp Cell Res	other
+GSE116390	Oncoimmunology	other
+GSE116426	Cell Rep	CNS sub
+GSE116470	Cell	CNS
+GSE116481	Nat Med	CNS sub
+GSE116482	Nat Genet	CNS sub
+GSE116500	J Clin Invest	other
+GSE116514	Nat Commun	CNS sub
+GSE116530	Nat Cell Biol	CNS sub
+GSE116555	Circ Res	other
+GSE116672	Proc Natl Acad Sci U S A	other
+GSE116683	Nucleic Acids Res	other
+GSE116708	PLoS Biol	PLOS
+GSE116718	Cell Stem Cell	CNS sub
+GSE116753	Cell Rep	CNS sub
+GSE116920	Elife	eLife
+GSE116946	J Immunother Cancer	other
+GSE116947	J Immunother Cancer	other
+GSE117055	Nat Commun	CNS sub
+GSE117078	Immunity	CNS sub
+GSE117079	Immunity	CNS sub
+GSE117089	Science	CNS
+GSE117129	Cell Rep	CNS sub
+GSE117131	Cell Rep	CNS sub
+GSE117149	Nat Immunol	CNS sub
+GSE117154	Cell	CNS
+GSE117156	Nat Med	CNS sub
+GSE117176	JCI Insight	other
+GSE117211	Development	other
+GSE117216	Cell Rep	CNS sub
+GSE117219	Genome Res	CSHL
+GSE117233	Dev Cell	CNS sub
+GSE117271	Cell Rep	CNS sub
+GSE117309	Nat Genet	CNS sub
+GSE117382	Nat Commun	CNS sub
+GSE117394	Stem Cell Reports	CNS sub
+GSE117397	JCI Insight	other
+GSE117403	Cell Rep	CNS sub
+GSE117410	Mol Cancer Res	other
+GSE117437	Development	other
+GSE117449	Cell Mol Immunol	other
+GSE117470	Nat Immunol	CNS sub
+GSE117498	Nat Commun	CNS sub
+GSE117512	Mol Cell	CNS sub
+GSE117542	Nature	CNS
+GSE117567	Nat Immunol	CNS sub
+GSE117570	Cancer Med	other
+GSE117599	Cancer Res	other
+GSE117615	PLoS Biol	PLOS
+GSE117708	Nat Commun	CNS sub
+GSE117715	Nat Commun	CNS sub
+GSE117770	Cell Metab	CNS sub
+GSE117795	Cell Rep	CNS sub
+GSE117826	Nature	CNS
+GSE117837	Cell Death Dis	other
+GSE117872	Nat Commun	CNS sub
+GSE117893	Development	other
+GSE117895	J Exp Med	other
+GSE117963	Nat Commun	CNS sub
+GSE117988	Nat Commun	CNS sub
+GSE117997	EMBO Rep	other
+GSE118055	Cancer Res	other
+GSE118056	Nat Commun	CNS sub
+GSE118068	Nature	CNS
+GSE118122	Dev Cell	CNS sub
+GSE118127	Nat Commun	CNS sub
+GSE118137	Proc Natl Acad Sci U S A	other
+GSE118180	Sci Rep	CNS sub
+GSE118184	Cell Stem Cell	CNS sub
+GSE118194	Sci Adv	CNS sub
+GSE118234	Stem Cell Reports	CNS sub
+GSE118237	Nat Commun	CNS sub
+GSE118252	Immunity	CNS sub
+GSE118257	Nature	CNS
+GSE118258	Sci Adv	CNS sub
+GSE118292	J Exp Med	other
+GSE118322	J Exp Med	other
+GSE118390	Nat Commun	CNS sub
+GSE118404	Nat Neurosci	CNS sub
+GSE118410	Proc Natl Acad Sci U S A	other
+GSE118412	Nat Commun	CNS sub
+GSE118436	Nature	CNS
+GSE118486	Elife	eLife
+GSE118487	Nat Commun	CNS sub
+GSE118545	Genes Dev	CSHL
+GSE118546	Cell	CNS
+GSE118555	Elife	eLife
+GSE118577	Cell Rep	CNS sub
+GSE118599	PLoS Biol	PLOS
+GSE118614	Neuron	CNS sub
+GSE118723	PLoS Genet	PLOS
+GSE118726	Genes Dev	CSHL
+GSE118733	Stem Cell Reports	CNS sub
+GSE118734	Stem Cell Reports	CNS sub
+GSE118767	PLoS Comput Biol	PLOS
+GSE118768	Elife	eLife
+GSE118773	mBio	other
+GSE118814	Cell Mol Gastroenterol Hepatol	other
+GSE118828	PLoS One	PLOS
+GSE118852	Cell	CNS
+GSE118891	Nat Genet	CNS sub
+GSE118900	Blood Cancer J	other
+GSE118904	J Clin Invest	other
+GSE118918	Cell Rep	CNS sub
+GSE118931	J Clin Invest	other
+GSE118932	Sci Rep	CNS sub
+GSE118948	Science	CNS
+GSE118953	Science	CNS
+GSE119139	Nat Biotechnol	CNS sub
+GSE119212	Nature	CNS
+GSE119228	Cell	CNS
+GSE119271	Lab Chip	other
+GSE119323	Nat Commun	CNS sub
+GSE119324	Nat Commun	CNS sub
+GSE119352	Cell	CNS
+GSE119355	Nat Immunol	CNS sub
+GSE119428	Nucleic Acids Res	other
+GSE119450	Cell	CNS
+GSE119455	Cell Rep	CNS sub
+GSE119484	Stem Cell Reports	CNS sub
+GSE119506	J Exp Med	other
+GSE119507	J Exp Med	other
+GSE119531	J Am Soc Nephrol	other
+GSE119561	EMBO Rep	other
+GSE119562	Immunity	CNS sub
+GSE119594	Cell Stem Cell	CNS sub
+GSE119630	PLoS One	PLOS
+GSE119750	Nat Commun	CNS sub
+GSE119766	Cell Rep	CNS sub
+GSE119807	Protein Cell	other
+GSE119861	Mol Psychiatry	other
+GSE119888	Nat Microbiol	CNS sub
+GSE119893	Stem Cells	other
+GSE119926	Nature	CNS
+GSE119943	Nat Immunol	CNS sub
+GSE119945	Nature	CNS
+GSE119969	Cell Stem Cell	CNS sub
+GSE119988	iScience	CNS sub
+GSE120000	JCI Insight	other
+GSE120035	Genes Dev	CSHL
+GSE120046	Sci Adv	CNS sub
+GSE120061	Cell Rep	CNS sub
+GSE120064	Circulation	other
+GSE120067	Cell	CNS
+GSE120108	Proc Natl Acad Sci U S A	other
+GSE120145	Stem Cell Reports	CNS sub
+GSE120155	Mol Syst Biol	other
+GSE120156	Mol Syst Biol	other
+GSE120190	Mol Psychiatry	other
+GSE120199	Neuron	CNS sub
+GSE120239	J Exp Med	other
+GSE120261	Sci Rep	CNS sub
+GSE120269	Mol Cell	CNS sub
+GSE120365	Nature	CNS
+GSE120372	Elife	eLife
+GSE120386	Nat Commun	CNS sub
+GSE120404	Nature	CNS
+GSE120406	Nature	CNS
+GSE120407	Nature	CNS
+GSE120408	Nature	CNS
+GSE120410	Endocrinology	other
+GSE120421	Science	CNS
+GSE120446	JCI Insight	other
+GSE120462	Nature	CNS
+GSE120467	Sci Rep	CNS sub
+GSE120503	Cell Rep	CNS sub
+GSE120508	Cell Res	CNS sub
+GSE120515	Nature	CNS
+GSE120522	Stem Cell Reports	CNS sub
+GSE120537	Proc Natl Acad Sci U S A	other
+GSE120575	Cell	CNS
+GSE120628	Nat Cell Biol	CNS sub
+GSE120629	Nature	CNS
+GSE120654	Cell Stem Cell	CNS sub
+GSE120678	Cell Stem Cell	CNS sub
+GSE120744	Nature	CNS
+GSE120745	Nature	CNS
+GSE120839	J Virol	other
+GSE120861	Cell	CNS
+GSE120909	Sci Immunol	CNS sub
+GSE120960	Transl Psychiatry	other
+GSE120974	Cancer Cell	CNS sub
+GSE120976	Development	other
+GSE121001	Cell Rep	CNS sub
+GSE121002	Immunity	CNS sub
+GSE121026	Nature	CNS
+GSE121034	J Exp Med	other
+GSE121039	Science	CNS
+GSE121047	Elife	eLife
+GSE121081	Sci Rep	CNS sub
+GSE121083	Neuron	CNS sub
+GSE121107	Nat Commun	CNS sub
+GSE121265	Genome Res	CSHL
+GSE121267	Nat Commun	CNS sub
+GSE121284	Nat Commun	CNS sub
+GSE121287	Nat Commun	CNS sub
+GSE121292	J Clin Invest	other
+GSE121320	Bone	other
+GSE121364	Nat Commun	CNS sub
+GSE121371	Cell Res	CNS sub
+GSE121380	Cell	CNS
+GSE121386	Nat Commun	CNS sub
+GSE121416	Cell	CNS
+GSE121429	Cell Stem Cell	CNS sub
+GSE121451	Nat Cell Biol	CNS sub
+GSE121457	Nat Cell Biol	CNS sub
+GSE121469	Proc Natl Acad Sci U S A	other
+GSE121478	JCI Insight	other
+GSE121521	Nat Microbiol	CNS sub
+GSE121527	Dev Cell	CNS sub
+GSE121560	Cancer Discov	other
+GSE121568	Cell Rep	CNS sub
+GSE121579	Stem Cell Reports	CNS sub
+GSE121598	Nature	CNS
+GSE121611	Am J Respir Crit Care Med	other
+GSE121617	Science	CNS
+GSE121619	Plant Cell	other
+GSE121638	Commun Biol	other
+GSE121653	Cell Rep	CNS sub
+GSE121654	Immunity	CNS sub
+GSE121655	Genome Biol	BMC
+GSE121671	Nat Commun	CNS sub
+GSE121705	J Clin Invest	other
+GSE121707	Cell Rep	CNS sub
+GSE121708	Nature	CNS
+GSE121717	Nat Commun	CNS sub
+GSE121720	Nat Commun	CNS sub
+GSE121737	Nat Commun	CNS sub
+GSE121750	Dev Cell	CNS sub
+GSE121807	Dev Biol	other
+GSE121861	Cell Rep	CNS sub
+GSE121891	Cell Rep	CNS sub
+GSE121893	Nat Cell Biol	CNS sub
+GSE121904	PLoS Genet	PLOS
+GSE121940	Nat Commun	CNS sub
+GSE121957	PLoS Genet	PLOS
+GSE122009	Cell Stem Cell	CNS sub
+GSE122012	Development	other
+GSE122026	Dev Cell	CNS sub
+GSE122041	Biophys J	other
+GSE122057	Commun Biol	other
+GSE122084	Nat Commun	CNS sub
+GSE122187	Nature	CNS
+GSE122208	PLoS One	PLOS
+GSE122233	Proc Natl Acad Sci U S A	other
+GSE122332	Nat Commun	CNS sub
+GSE122336	Nat Commun	CNS sub
+GSE122342	Cell Stem Cell	CNS sub
+GSE122357	J Mol Cell Biol	other
+GSE122392	Nat Microbiol	CNS sub
+GSE122393	Nat Commun	CNS sub
+GSE122460	Sci Adv	CNS sub
+GSE122529	Nat Commun	CNS sub
+GSE122662	Cell	CNS
+GSE122666	Cell Rep	CNS sub
+GSE122687	Cell Rep	CNS sub
+GSE122706	Nat Commun	CNS sub
+GSE122713	Nat Immunol	CNS sub
+GSE122730	JCI Insight	other
+GSE122740	Mucosal Immunol	other
+GSE122743	Nat Commun	CNS sub
+GSE122762	J Exp Med	other
+GSE122783	Stem Cell Reports	CNS sub
+GSE122792	Exp Hematol	other
+GSE122795	JCI Insight	other
+GSE122817	Cell	CNS
+GSE122827	Development	other
+GSE122843	Nat Commun	CNS sub
+GSE122846	Nat Immunol	CNS sub
+GSE122871	Cell Stem Cell	CNS sub
+GSE122873	Hum Mol Genet	other
+GSE122900	J Am Soc Nephrol	other
+GSE122930	Circulation	other
+GSE122960	Am J Respir Crit Care Med	other
+GSE122969	Immunity	CNS sub
+GSE122970	Dev Cell	CNS sub
+GSE123013	Plant Physiol	other
+GSE123028	Proc Natl Acad Sci U S A	other
+GSE123030	Neuron	CNS sub
+GSE123067	Nat Immunol	CNS sub
+GSE123070	Nat Commun	CNS sub
+GSE123078	Nature	CNS
+GSE123103	Development	other
+GSE123119	Endocrinology	other
+GSE123135	Nature	CNS
+GSE123139	Cell	CNS
+GSE123164	Plant J	other
+GSE123179	PLoS One	PLOS
+GSE123187	Nature	CNS
+GSE123241	Elife	eLife
+GSE123335	Nat Commun	CNS sub
+GSE123359	Prostate	other
+GSE123366	Elife	eLife
+GSE123392	Nat Protoc	CNS sub
+GSE123400	Cell Rep	CNS sub
+GSE123454	PLoS One	PLOS
+GSE123476	Gynecol Oncol	other
+GSE123508	Cell	CNS
+GSE123516	Nature	CNS
+GSE123534	Immunity	CNS sub
+GSE123547	Nat Commun	CNS sub
+GSE123585	Nat Biotechnol	CNS sub
+GSE123586	Nat Biotechnol	CNS sub
+GSE123587	JCI Insight	other
+GSE123595	Proc Natl Acad Sci U S A	other
+GSE123778	Curr Biol	other
+GSE123782	Nat Commun	CNS sub
+GSE123812	Nat Med	CNS sub
+GSE123813	Nat Med	CNS sub
+GSE123818	Dev Cell	CNS sub
+GSE123824	Cell Syst	CNS sub
+GSE123837	Nat Cell Biol	CNS sub
+GSE123838	Cell Discov	other
+GSE123844	Nature	CNS
+GSE123904	Nat Med	CNS sub
+GSE123926	Nat Commun	CNS sub
+GSE123941	Elife	eLife
+GSE124031	Nat Med	CNS sub
+GSE124061	Cell	CNS
+GSE124162	PLoS Biol	PLOS
+GSE124172	Nat Cell Biol	CNS sub
+GSE124174	Nat Neurosci	CNS sub
+GSE124258	Respir Res	other
+GSE124263	Cell Rep	CNS sub
+GSE124299	Cell	CNS
+GSE124310	Nat Cancer	CNS sub
+GSE124312	Cell Rep	CNS sub
+GSE124323	Dev Cell	CNS sub
+GSE124324	Dev Cell	CNS sub
+GSE124334	Front Microbiol	other
+GSE124335	Nature	CNS
+GSE124395	Nature	CNS
+GSE124425	Nat Commun	CNS sub
+GSE124437	Leukemia	other
+GSE124454	Biochem Biophys Res Commun	other
+GSE124472	Dev Cell	CNS sub
+GSE124477	EMBO J	other
+GSE124488	Nat Commun	CNS sub
+GSE124494	Immunity	CNS sub
+GSE124560	Hum Gene Ther	other
+GSE124562	Science	CNS
+GSE124577	Elife	eLife
+GSE124675	Sci Immunol	CNS sub
+GSE124691	Cell Rep	CNS sub
+GSE124703	Neuron	CNS sub
+GSE124731	Nat Commun	CNS sub
+GSE124742	Cell Metab	CNS sub
+GSE124796	Eur J Immunol	other
+GSE124822	Nat Genet	CNS sub
+GSE124847	Eur J Neurosci	other
+GSE124862	J Transl Med	other
+GSE124872	Nat Commun	CNS sub
+GSE124875	EMBO J	other
+GSE124880	Immunity	CNS sub
+GSE124885	Mucosal Immunol	other
+GSE124889	Cancer Res	other
+GSE124899	Clin Cancer Res	other
+GSE124904	Nat Commun	CNS sub
+GSE124930	Nat Cell Biol	CNS sub
+GSE124952	Nat Commun	CNS sub
+GSE124989	Front Genet	other
+GSE124992	Cell Rep	CNS sub
+GSE125044	Cell Syst	CNS sub
+GSE125065	Nat Neurosci	CNS sub
+GSE125088	Nat Cell Biol	CNS sub
+GSE125162	Elife	eLife
+GSE125188	Cell Discov	other
+GSE125269	J Clin Invest	other
+GSE125272	Commun Biol	other
+GSE125290	Cell Rep	CNS sub
+GSE125316	Nat Commun	CNS sub
+GSE125372	Cell	CNS
+GSE125416	Stem Cell Reports	CNS sub
+GSE125449	Cancer Cell	CNS sub
+GSE125464	J Bone Miner Res	other
+GSE125492	Immunity	CNS sub
+GSE125497	Proc Natl Acad Sci U S A	other
+GSE125527	Sci Immunol	CNS sub
+GSE125586	Sci Adv	CNS sub
+GSE125587	Adv Sci (Weinh)	other
+GSE125588	JCI Insight	other
+GSE125595	Mol Cell	CNS sub
+GSE125620	Nat Neurosci	CNS sub
+GSE125670	Nat Commun	CNS sub
+GSE125676	Science	CNS
+GSE125688	Cell Stem Cell	CNS sub
+GSE125694	Elife	eLife
+GSE125708	Proc Natl Acad Sci U S A	other
+GSE125709	Nat Cell Biol	CNS sub
+GSE125837	Dev Cell	CNS sub
+GSE125838	Dev Cell	CNS sub
+GSE125881	Nat Commun	CNS sub
+GSE125949	Nat Commun	CNS sub
+GSE125969	Cell Rep	CNS sub
+GSE125970	J Exp Med	other
+GSE126022	Cell	CNS
+GSE126030	Nat Commun	CNS sub
+GSE126042	Elife	eLife
+GSE126060	Nat Commun	CNS sub
+GSE126067	Biochem Biophys Res Commun	other
+GSE126074	Nat Biotechnol	CNS sub
+GSE126085	Nat Biotechnol	CNS sub
+GSE126111	Sci Rep	CNS sub
+GSE126128	Nature	CNS
+GSE126131	J Exp Med	other
+GSE126139	Elife	eLife
+GSE126158	Proc Natl Acad Sci U S A	other
+GSE126159	Proc Natl Acad Sci U S A	other
+GSE126184	Nat Immunol	CNS sub
+GSE126250	J Clin Invest	other
+GSE126261	Nat Commun	CNS sub
+GSE126310	Nat Methods	CNS sub
+GSE126321	Sci Data	other
+GSE126349	Breast Cancer Res	other
+GSE126388	Nucleic Acids Res	other
+GSE126480	Nat Commun	CNS sub
+GSE126488	Nat Commun	CNS sub
+GSE126497	Epigenetics Chromatin	other
+GSE126500	Epigenetics Chromatin	other
+GSE126539	Cell	CNS
+GSE126574	Commun Biol	other
+GSE126579	Nat Biotechnol	CNS sub
+GSE126647	Development	other
+GSE126657	Neuron	CNS sub
+GSE126707	Front Neurosci	other
+GSE126714	Cell Death Differ	other
+GSE126770	Immunity	CNS sub
+GSE126780	PLoS One	PLOS
+GSE126783	Immunity	CNS sub
+GSE126834	Development	other
+GSE126836	Cell	CNS
+GSE126891	Sci Immunol	CNS sub
+GSE126954	Science	CNS
+GSE127005	Sci Immunol	CNS sub
+GSE127193	Science	CNS
+GSE127202	Cell Rep	CNS sub
+GSE127235	J Am Soc Nephrol	other
+GSE127249	Sci Rep	CNS sub
+GSE127266	Oncotarget	other
+GSE127465	Immunity	CNS sub
+GSE127470	J Dent Res	other
+GSE127471	Nat Biotechnol	CNS sub
+GSE127683	Elife	eLife
+GSE127774	Genome Res	CSHL
+GSE127794	Elife	eLife
+GSE127803	Eur Respir J	other
+GSE127813	Nat Biotechnol	CNS sub
+GSE127832	Nat Methods	CNS sub
+GSE127888	Cancer Immunol Res	other
+GSE127898	Genome Res	CSHL
+GSE127918	Commun Biol	other
+GSE127943	Cell Rep	CNS sub
+GSE127969	J Clin Invest	other
+GSE128003	Allergy	other
+GSE128033	Eur Respir J	other
+GSE128040	Stem Cell Reports	CNS sub
+GSE128066	Nat Commun	CNS sub
+GSE128074	Allergy	other
+GSE128089	Nat Immunol	CNS sub
+GSE128147	Wellcome Open Res	other
+GSE128169	Ann Rheum Dis	other
+GSE128175	J Exp Med	other
+GSE128223	Proc Natl Acad Sci U S A	other
+GSE128241	Nature	CNS
+GSE128243	Front Cell Dev Biol	other
+GSE128273	Nat Commun	CNS sub
+GSE128276	iScience	CNS sub
+GSE128306	Nat Ecol Evol	CNS sub
+GSE128334	Immunity	CNS sub
+GSE128357	Cell Stem Cell	CNS sub
+GSE128393	Neuron	CNS sub
+GSE128423	Nature	CNS
+GSE128464	Blood	other
+GSE128518	Cell	CNS
+GSE128525	Nat Commun	CNS sub
+GSE128531	Clin Cancer Res	other
+GSE128553	Cell Mol Life Sci	other
+GSE128639	Cell	CNS
+GSE128671	Mol Cell	CNS sub
+GSE128691	Biol Res	other
+GSE128738	Cell Res	CNS sub
+GSE128743	Nat Immunol	CNS sub
+GSE128762	Cell Stem Cell	CNS sub
+GSE128818	Cell	CNS
+GSE128822	J Clin Invest	other
+GSE128855	Nat Neurosci	CNS sub
+GSE128879	Nat Commun	CNS sub
+GSE128890	Science	CNS
+GSE128908	Circulation	other
+GSE128916	Prog Neurobiol	other
+GSE128933	Nat Med	CNS sub
+GSE128934	Cell Rep	CNS sub
+GSE128944	Elife	eLife
+GSE128963	Nat Immunol	CNS sub
+GSE128974	Development	other
+GSE128982	Brief Bioinform	other
+GSE128987	Nat Cell Biol	CNS sub
+GSE128991	J Am Soc Nephrol	other
+GSE128992	J Am Soc Nephrol	other
+GSE129007	Genomics Proteomics Bioinformatics	other
+GSE129087	Nature	CNS
+GSE129096	Sci Rep	CNS sub
+GSE129105	J Clin Invest	other
+GSE129112	Cell	CNS
+GSE129114	Science	CNS
+GSE129139	Immunity	CNS sub
+GSE129150	Nat Neurosci	CNS sub
+GSE129170	Stem Cell Reports	CNS sub
+GSE129175	Cell Discov	other
+GSE129178	Nat Commun	CNS sub
+GSE129218	Cell Stem Cell	CNS sub
+GSE129225	Immunity	CNS sub
+GSE129256	Sci Immunol	CNS sub
+GSE129257	Sci Immunol	CNS sub
+GSE129299	Cancer Cell	CNS sub
+GSE129371	J Clin Invest	other
+GSE129447	PLoS One	PLOS
+GSE129451	Nature	CNS
+GSE129455	Cancer Discov	other
+GSE129516	Mol Cell	CNS sub
+GSE129519	Nature	CNS
+GSE129570	Stem Cell Reports	CNS sub
+GSE129578	Nat Methods	CNS sub
+GSE129581	Cell	CNS
+GSE129583	Proc Natl Acad Sci U S A	other
+GSE129584	Proc Natl Acad Sci U S A	other
+GSE129605	Am J Respir Cell Mol Biol	other
+GSE129609	Nature	CNS
+GSE129611	J Invest Dermatol	other
+GSE129662	Blood Adv	other
+GSE129726	Nat Cell Biol	CNS sub
+GSE129730	Nat Commun	CNS sub
+GSE129738	Immunity	CNS sub
+GSE129740	Immunity	CNS sub
+GSE129762	Nature	CNS
+GSE129763	Nature	CNS
+GSE129773	Nature	CNS
+GSE129774	Nature	CNS
+GSE129788	Nat Neurosci	CNS sub
+GSE129798	Dev Cell	CNS sub
+GSE129825	Cell Rep	CNS sub
+GSE129826	Cell Rep	CNS sub
+GSE129845	J Am Soc Nephrol	other
+GSE129857	Proc Natl Acad Sci U S A	other
+GSE129914	Cell Rep	CNS sub
+GSE129933	Front Immunol	other
+GSE129937	Cell Stem Cell	CNS sub
+GSE129981	ACS Appl Mater Interfaces	other
+GSE129987	BMC Biol	BMC
+GSE130001	Genome Med	BMC
+GSE130008	Nat Commun	CNS sub
+GSE130009	Nat Immunol	CNS sub
+GSE130025	Cell Rep	CNS sub
+GSE130037	Cancer Res	other
+GSE130045	JCI Insight	other
+GSE130065	Genome Biol	BMC
+GSE130070	Gut	other
+GSE130075	Cell Metab	CNS sub
+GSE130105	Nature	CNS
+GSE130113	Cell Mol Gastroenterol Hepatol	other
+GSE130114	Science	CNS
+GSE130116	Cancer Cell	CNS sub
+GSE130117	Nucleic Acids Res	other
+GSE130118	Nature	CNS
+GSE130146	Development	other
+GSE130148	Nat Med	CNS sub
+GSE130151	Clin Epigenetics	other
+GSE130157	Proc Natl Acad Sci U S A	other
+GSE130180	Gut	other
+GSE130212	FASEB J	other
+GSE130228	Sci Rep	CNS sub
+GSE130238	Cell Stem Cell	CNS sub
+GSE130287	Nat Commun	CNS sub
+GSE130289	Proc Natl Acad Sci U S A	other
+GSE130298	Nat Cell Biol	CNS sub
+GSE130312	Cell Rep	CNS sub
+GSE130318	Am J Clin Exp Urol	other
+GSE130341	Cell Stem Cell	CNS sub
+GSE130430	Nat Commun	CNS sub
+GSE130439	BMC Genomics	BMC
+GSE130453	Cell	CNS
+GSE130461	Development	other
+GSE130473	Nat Commun	CNS sub
+GSE130504	Proc Natl Acad Sci U S A	other
+GSE130515	Cell Stem Cell	CNS sub
+GSE130526	Proc Natl Acad Sci U S A	other
+GSE130554	Development	other
+GSE130566	Dis Model Mech	other
+GSE130593	Development	other
+GSE130597	Science	CNS
+GSE130606	Development	other
+GSE130609	J Immunol	other
+GSE130626	Neuron	CNS sub
+GSE130636	Exp Eye Res	other
+GSE130646	Sci Rep	CNS sub
+GSE130649	Stem Cell Reports	CNS sub
+GSE130653	Cereb Cortex	other
+GSE130664	Cell	CNS
+GSE130682	Nat Methods	CNS sub
+GSE130708	Nat Commun	CNS sub
+GSE130756	J Hematol Oncol	other
+GSE130772	Nat Immunol	CNS sub
+GSE130784	Commun Biol	other
+GSE130785	Sci Rep	CNS sub
+GSE130812	Cell Syst	CNS sub
+GSE130822	Cell Stem Cell	CNS sub
+GSE130842	Immunity	CNS sub
+GSE130850	Science	CNS
+GSE130875	Immunity	CNS sub
+GSE130879	Immunity	CNS sub
+GSE130880	Cell Mol Immunol	other
+GSE130881	Cell Syst	CNS sub
+GSE130888	Sci Transl Med	other
+GSE130919	Stem Cell Reports	CNS sub
+GSE130938	Elife	eLife
+GSE130950	PLoS Comput Biol	PLOS
+GSE130966	Nat Immunol	CNS sub
+GSE130973	Commun Biol	other
+GSE130977	Sci Rep	CNS sub
+GSE131038	Immunity	CNS sub
+GSE131094	PLoS Biol	PLOS
+GSE131099	Mol Cell	CNS sub
+GSE131135	Mol Cell	CNS sub
+GSE131136	Elife	eLife
+GSE131155	Nature	CNS
+GSE131181	Development	other
+GSE131204	Nat Cell Biol	CNS sub
+GSE131271	Life Sci Alliance	other
+GSE131272	Elife	eLife
+GSE131285	J Dent Res	other
+GSE131305	Cell Stem Cell	CNS sub
+GSE131339	Nat Commun	CNS sub
+GSE131365	Eur J Immunol	other
+GSE131391	Sci Adv	CNS sub
+GSE131434	J Neuroinflammation	other
+GSE131450	Cell	CNS
+GSE131498	Theranostics	other
+GSE131508	Nature	CNS
+GSE131569	J Immunol	other
+GSE131629	Theranostics	other
+GSE131630	Mucosal Immunol	other
+GSE131662	Nat Commun	CNS sub
+GSE131668	J Biol Chem	other
+GSE131685	Sci Data	other
+GSE131696	J Clin Endocrinol Metab	other
+GSE131702	Genome Res	CSHL
+GSE131714	Cell	CNS
+GSE131734	Biochem Biophys Res Commun	other
+GSE131736	Eur Heart J	other
+GSE131780	Nat Med	CNS sub
+GSE131800	JCI Insight	other
+GSE131834	Gut	other
+GSE131841	Cell Stem Cell	CNS sub
+GSE131882	Proc Natl Acad Sci U S A	other
+GSE131886	Proc Natl Acad Sci U S A	other
+GSE131907	Nat Commun	CNS sub
+GSE131909	Nat Commun	CNS sub
+GSE131928	Cell	CNS
+GSE131935	Immunity	CNS sub
+GSE131957	Nature	CNS
+GSE131971	Genes Dev	CSHL
+GSE131983	Nat Commun	CNS sub
+GSE131984	Nat Commun	CNS sub
+GSE131987	Cell Stem Cell	CNS sub
+GSE131996	Immunity	CNS sub
+GSE132023	Cell Stem Cell	CNS sub
+GSE132044	Nat Biotechnol	CNS sub
+GSE132045	Cell Res	CNS sub
+GSE132065	Genome Biol	BMC
+GSE132080	Nat Biotechnol	CNS sub
+GSE132133	Nature	CNS
+GSE132146	Circulation	other
+GSE132149	Cancer Cell	CNS sub
+GSE132151	Cell Rep	CNS sub
+GSE132164	Sci Adv	CNS sub
+GSE132166	Nat Neurosci	CNS sub
+GSE132172	BMC Med Genomics	BMC
+GSE132188	Development	other
+GSE132199	Sci Rep	CNS sub
+GSE132224	Front Endocrinol (Lausanne)	other
+GSE132229	Proc Natl Acad Sci U S A	other
+GSE132238	Cell	CNS
+GSE132255	J Exp Med	other
+GSE132257	Nat Genet	CNS sub
+GSE132272	Invest Ophthalmol Vis Sci	other
+GSE132273	Nat Immunol	CNS sub
+GSE132274	Cell Rep	CNS sub
+GSE132326	Nature	CNS
+GSE132329	Nature	CNS
+GSE132338	Front Immunol	other
+GSE132355	Nat Commun	CNS sub
+GSE132364	Development	other
+GSE132394	Proc Natl Acad Sci U S A	other
+GSE132438	Front Immunol	other
+GSE132462	Development	other
+GSE132465	Nat Genet	CNS sub
+GSE132504	Development	other
+GSE132507	Neuron	CNS sub
+GSE132509	Sci Rep	CNS sub
+GSE132525	Front Cell Infect Microbiol	other
+GSE132573	J Exp Med	other
+GSE132589	Sci Adv	CNS sub
+GSE132642	PLoS Biol	PLOS
+GSE132649	EMBO J	other
+GSE132662	Cells	other
+GSE132672	Nature	CNS
+GSE132730	Nature	CNS
+GSE132757	Science	CNS
+GSE132758	Nat Commun	CNS sub
+GSE132770	Nat Immunol	CNS sub
+GSE132771	Nat Commun	CNS sub
+GSE132798	Science	CNS
+GSE132802	Nat Med	CNS sub
+GSE132815	Toxicol Appl Pharmacol	other
+GSE132867	J Dent Res	other
+GSE132880	Eur Heart J	other
+GSE132901	Genome Res	CSHL
+GSE132910	Am J Respir Crit Care Med	other
+GSE132914	Am J Respir Crit Care Med	other
+GSE132925	Elife	eLife
+GSE132950	Nat Commun	CNS sub
+GSE132959	Cell	CNS
+GSE133015	Nat Commun	CNS sub
+GSE133018	Nat Commun	CNS sub
+GSE133022	Genome Res	CSHL
+GSE133028	Proc Natl Acad Sci U S A	other
+GSE133054	Circulation	other
+GSE133079	iScience	CNS sub
+GSE133083	JCI Insight	other
+GSE133094	Nat Commun	CNS sub
+GSE133161	Front Endocrinol (Lausanne)	other
+GSE133181	Blood	other
+GSE133204	Development	other
+GSE133230	Neuron	CNS sub
+GSE133232	Sci Adv	CNS sub
+GSE133244	Nat Cell Biol	CNS sub
+GSE133329	Proc Natl Acad Sci U S A	other
+GSE133341	Immunity	CNS sub
+GSE133344	Science	CNS
+GSE133345	Nature	CNS
+GSE133371	Am J Physiol Renal Physiol	other
+GSE133433	Neuron	CNS sub
+GSE133449	Ann Rheum Dis	other
+GSE133452	Cell Stem Cell	CNS sub
+GSE133486	Elife	eLife
+GSE133531	Nat Genet	CNS sub
+GSE133549	Nat Biotechnol	CNS sub
+GSE133604	Cancer Discov	other
+GSE133640	Circ Res	other
+GSE133699	Immunity	CNS sub
+GSE133706	Cancer Discov	other
+GSE133707	Nat Commun	CNS sub
+GSE133743	Nat Immunol	CNS sub
+GSE133747	Sci Adv	CNS sub
+GSE133832	Nat Commun	CNS sub
+GSE133856	Cell Stem Cell	CNS sub
+GSE133912	Nat Neurosci	CNS sub
+GSE133926	Nat Genet	CNS sub
+GSE133948	BMC Genomics	BMC
+GSE133953	Commun Biol	other
+GSE133992	Clin Cancer Res	other
+GSE133996	Stem Cell Reports	CNS sub
+GSE134009	Biol Reprod	other
+GSE134049	Nat Methods	CNS sub
+GSE134134	NAR Genom Bioinform	other
+GSE134139	Nat Immunol	CNS sub
+GSE134144	Cell Stem Cell	CNS sub
+GSE134157	Sci Immunol	CNS sub
+GSE134163	Elife	eLife
+GSE134174	Nat Commun	CNS sub
+GSE134179	Cell Rep	CNS sub
+GSE134180	Cell Rep	CNS sub
+GSE134181	Cell Rep	CNS sub
+GSE134240	Dev Cell	CNS sub
+GSE134269	Nature	CNS
+GSE134286	Nature	CNS
+GSE134288	PLoS Biol	PLOS
+GSE134311	Nat Commun	CNS sub
+GSE134339	PLoS Biol	PLOS
+GSE134350	Mol Reprod Dev	other
+GSE134355	Nature	CNS
+GSE134388	Proc Natl Acad Sci U S A	other
+GSE134419	Nat Commun	CNS sub
+GSE134420	Nature	CNS
+GSE134432	Nat Cell Biol	CNS sub
+GSE134450	Nat Genet	CNS sub
+GSE134479	Nat Commun	CNS sub
+GSE134520	Cell Rep	CNS sub
+GSE134540	EMBO J	other
+GSE134555	Nat Metab	CNS sub
+GSE134557	Nat Metab	CNS sub
+GSE134570	Proc Natl Acad Sci U S A	other
+GSE134571	Nature	CNS
+GSE134576	Nature	CNS
+GSE134577	Nature	CNS
+GSE134705	Cell	CNS
+GSE134706	Cell	CNS
+GSE134722	Elife	eLife
+GSE134726	Cell Metab	CNS sub
+GSE134757	Cancer Cell	CNS sub
+GSE134758	Cancer Cell	CNS sub
+GSE134791	Nat Commun	CNS sub
+GSE134809	Cell	CNS
+GSE134881	Cell	CNS
+GSE134883	Sci Immunol	CNS sub
+GSE134902	J Exp Med	other
+GSE134904	Sci Immunol	CNS sub
+GSE134918	Cell Rep	CNS sub
+GSE134997	Cell Stem Cell	CNS sub
+GSE135044	Nat Neurosci	CNS sub
+GSE135092	Cell Rep	CNS sub
+GSE135132	Elife	eLife
+GSE135133	Cell Rep	CNS sub
+GSE135142	Nat Cell Biol	CNS sub
+GSE135143	Nat Cell Biol	CNS sub
+GSE135167	J Exp Med	other
+GSE135185	Nat Neurosci	CNS sub
+GSE135186	Nat Neurosci	CNS sub
+GSE135194	Blood Adv	other
+GSE135202	Cell Res	CNS sub
+GSE135253	Cell Stem Cell	CNS sub
+GSE135289	Cell	CNS
+GSE135296	Genes Dev	CSHL
+GSE135310	Circ Res	other
+GSE135325	Cell Rep	CNS sub
+GSE135330	Nat Neurosci	CNS sub
+GSE135356	Nat Commun	CNS sub
+GSE135382	Nat Biotechnol	CNS sub
+GSE135394	Genome Biol	BMC
+GSE135399	Nat Biotechnol	CNS sub
+GSE135429	Sci Adv	CNS sub
+GSE135437	Nat Neurosci	CNS sub
+GSE135495	Nat Microbiol	CNS sub
+GSE135497	Nat Methods	CNS sub
+GSE135500	Nat Commun	CNS sub
+GSE135507	Genes (Basel)	other
+GSE135513	Sci Adv	CNS sub
+GSE135553	Nat Microbiol	CNS sub
+GSE135618	Glia	other
+GSE135663	Kidney360	other
+GSE135701	Cell	CNS
+GSE135703	Front Mol Neurosci	other
+GSE135704	eNeuro	other
+GSE135710	Cell	CNS
+GSE135769	BMC Genomics	BMC
+GSE135779	Nat Immunol	CNS sub
+GSE135780	Dev Cell	CNS sub
+GSE135781	Dev Cell	CNS sub
+GSE135801	Cell	CNS
+GSE135851	Am J Respir Crit Care Med	other
+GSE135893	Sci Adv	CNS sub
+GSE135922	Proc Natl Acad Sci U S A	other
+GSE135929	Blood Adv	other
+GSE135985	Dev Cell	CNS sub
+GSE136028	Nat Immunol	CNS sub
+GSE136103	Nature	CNS
+GSE136109	Environ Sci Technol	other
+GSE136121	Proc Natl Acad Sci U S A	other
+GSE136125	Proc Natl Acad Sci U S A	other
+GSE136148	Brief Bioinform	other
+GSE136160	Sci Immunol	CNS sub
+GSE136162	Nat Commun	CNS sub
+GSE136196	Front Mol Neurosci	other
+GSE136206	Cell	CNS
+GSE136230	Nat Metab	CNS sub
+GSE136239	Cell Rep	CNS sub
+GSE136353	Cytogenet Genome Res	other
+GSE136376	Nat Commun	CNS sub
+GSE136394	Cancer Immunol Res	other
+GSE136441	Proc Natl Acad Sci U S A	other
+GSE136447	Nature	CNS
+GSE136455	Front Cell Neurosci	other
+GSE136546	Exp Cell Res	other
+GSE136580	Cell	CNS
+GSE136610	Cancer Immunol Res	other
+GSE136611	Genes Cells	other
+GSE136641	Nat Commun	CNS sub
+GSE136656	Nat Neurosci	CNS sub
+GSE136659	Nucleic Acids Res	other
+GSE136679	Nat Commun	CNS sub
+GSE136689	Nat Commun	CNS sub
+GSE136720	Nature	CNS
+GSE136732	Immunity	CNS sub
+GSE136747	Sci Adv	CNS sub
+GSE136752	Cell Rep	CNS sub
+GSE136795	Proc Natl Acad Sci U S A	other
+GSE136800	Mol Vis	other
+GSE136802	Elife	eLife
+GSE136805	Nature	CNS
+GSE136831	Sci Adv	CNS sub
+GSE136867	Proc Natl Acad Sci U S A	other
+GSE136871	Genome Biol	BMC
+GSE136874	Nature	CNS
+GSE136900	Cancer Res	other
+GSE136915	Nat Immunol	CNS sub
+GSE136954	Am J Physiol Lung Cell Mol Physiol	other
+GSE136970	Nat Commun	CNS sub
+GSE136973	Nat Commun	CNS sub
+GSE136979	Nat Commun	CNS sub
+GSE137007	Proc Natl Acad Sci U S A	other
+GSE137010	Nature	CNS
+GSE137015	Nature	CNS
+GSE137082	Immunity	CNS sub
+GSE137101	Nat Genet	CNS sub
+GSE137116	Blood	other
+GSE137165	Cell Syst	CNS sub
+GSE137208	Stem Cell Reports	CNS sub
+GSE137236	Cell	CNS
+GSE137275	Front Immunol	other
+GSE137299	Nat Commun	CNS sub
+GSE137337	Nature	CNS
+GSE137349	Sci Immunol	CNS sub
+GSE137353	Pediatr Res	other
+GSE137391	Mol Cell	CNS sub
+GSE137400	Neuron	CNS sub
+GSE137462	Nat Cell Biol	CNS sub
+GSE137476	Nat Commun	CNS sub
+GSE137478	Neuron	CNS sub
+GSE137496	J Allergy Clin Immunol	other
+GSE137512	iScience	CNS sub
+GSE137524	Br J Cancer	other
+GSE137525	Development	other
+GSE137540	Nat Immunol	CNS sub
+GSE137545	FEBS Lett	other
+GSE137586	mBio	other
+GSE137659	Nat Biotechnol	CNS sub
+GSE137671	Cell Rep	CNS sub
+GSE137672	Cell Rep	CNS sub
+GSE137699	Elife	eLife
+GSE137710	Cell	CNS
+GSE137720	Cell Rep	CNS sub
+GSE137758	Nat Commun	CNS sub
+GSE137759	Sci Adv	CNS sub
+GSE137763	Sci Adv	CNS sub
+GSE137770	Elife	eLife
+GSE137784	Biol Open	other
+GSE137786	Nat Commun	CNS sub
+GSE137787	Biol Open	other
+GSE137791	Proc Natl Acad Sci U S A	other
+GSE137792	Proc Natl Acad Sci U S A	other
+GSE137793	Proc Natl Acad Sci U S A	other
+GSE137795	Exp Cell Res	other
+GSE137799	Cell Stem Cell	CNS sub
+GSE137804	Cancer Cell	CNS sub
+GSE137805	Cell Stem Cell	CNS sub
+GSE137811	Cell Stem Cell	CNS sub
+GSE137829	Commun Biol	other
+GSE137847	Nat Commun	CNS sub
+GSE137869	Cell	CNS
+GSE137877	Life Sci Alliance	other
+GSE137908	Development	other
+GSE137909	Mol Metab	other
+GSE137912	Nature	CNS
+GSE137927	Mucosal Immunol	other
+GSE137961	Cell Metab	CNS sub
+GSE137971	Sci Adv	CNS sub
+GSE137986	Cell	CNS
+GSE138002	Dev Cell	CNS sub
+GSE138025	Proc Natl Acad Sci U S A	other
+GSE138027	Sci Immunol	CNS sub
+GSE138033	Cancer Cell	CNS sub
+GSE138156	Nat Med	CNS sub
+GSE138181	Development	other
+GSE138222	J Immunol	other
+GSE138227	Nat Commun	CNS sub
+GSE138228	Nat Commun	CNS sub
+GSE138243	Cell Stem Cell	CNS sub
+GSE138266	Nat Commun	CNS sub
+GSE138270	Circ Res	other
+GSE138302	Stem Cells Transl Med	other
+GSE138381	Brain Res	other
+GSE138504	Blood	other
+GSE138536	Science	CNS
+GSE138544	Immun Ageing	other
+GSE138585	Cell	CNS
+GSE138626	EMBO Rep	other
+GSE138628	Proc Natl Acad Sci U S A	other
+GSE138629	Proc Natl Acad Sci U S A	other
+GSE138651	Cell	CNS
+GSE138665	Cell Death Differ	other
+GSE138680	PLoS One	PLOS
+GSE138693	Cancer Cell	CNS sub
+GSE138707	Sci Rep	CNS sub
+GSE138718	Cell Rep	CNS sub
+GSE138748	FASEB J	other
+GSE138791	Stem Cells Transl Med	other
+GSE138794	Cancer Discov	other
+GSE138811	Sci Adv	CNS sub
+GSE138826	iScience	CNS sub
+GSE138832	Cell Syst	CNS sub
+GSE138833	Cell Syst	CNS sub
+GSE138838	Elife	eLife
+GSE138852	Nat Neurosci	CNS sub
+GSE138857	Nat Commun	CNS sub
+GSE138867	Cell Rep Med	other
+GSE138892	Nat Methods	CNS sub
+GSE138904	Nat Commun	CNS sub
+GSE138941	Nat Neurosci	CNS sub
+GSE139013	Cell Rep	CNS sub
+GSE139034	Proc Natl Acad Sci U S A	other
+GSE139035	Proc Natl Acad Sci U S A	other
+GSE139042	STAR Protoc	other
+GSE139046	Immunity	CNS sub
+GSE139065	Elife	eLife
+GSE139079	Cancer Cell	CNS sub
+GSE139088	Nature	CNS
+GSE139103	Nat Commun	CNS sub
+GSE139125	Sci Immunol	CNS sub
+GSE139161	Nat Commun	CNS sub
+GSE139168	Sci Adv	CNS sub
+GSE139181	Clin Transl Immunology	other
+GSE139186	Nat Commun	CNS sub
+GSE139193	Proc Natl Acad Sci U S A	other
+GSE139218	Elife	eLife
+GSE139229	Cell Rep	CNS sub
+GSE139231	Cell Rep	CNS sub
+GSE139248	Genome Biol	BMC
+GSE139249	JCI Insight	other
+GSE139265	Cell Rep	CNS sub
+GSE139324	Immunity	CNS sub
+GSE139342	Genome Biol	BMC
+GSE139389	Cell Res	CNS sub
+GSE139448	Stem Cell Reports	CNS sub
+GSE139492	JCI Insight	other
+GSE139495	Mol Carcinog	other
+GSE139506	J Am Soc Nephrol	other
+GSE139512	Front Cell Dev Biol	other
+GSE139522	Nat Neurosci	CNS sub
+GSE139535	Cell Rep	CNS sub
+GSE139555	Nature	CNS
+GSE139558	Elife	eLife
+GSE139598	Nature	CNS
+GSE139659	Nat Commun	CNS sub
+GSE139819	Nat Commun	CNS sub
+GSE139827	Cell Stem Cell	CNS sub
+GSE139829	Nat Commun	CNS sub
+GSE139842	Cell Stem Cell	CNS sub
+GSE139891	J Exp Med	other
+GSE139944	Science	CNS
+GSE140021	Cell Rep	CNS sub
+GSE140023	J Am Soc Nephrol	other
+GSE140026	Sci Immunol	CNS sub
+GSE140032	Nat Cell Biol	CNS sub
+GSE140123	Mucosal Immunol	other
+GSE140128	Stem Cell Reports	CNS sub
+GSE140130	Cell Rep	CNS sub
+GSE140133	Nat Commun	CNS sub
+GSE140182	Exp Mol Med	other
+GSE140203	Cell	CNS
+GSE140222	Cell Stem Cell	CNS sub
+GSE140228	Cell	CNS
+GSE140231	Nat Commun	CNS sub
+GSE140312	Cold Spring Harb Mol Case Stud	other
+GSE140348	Nat Commun	CNS sub
+GSE140405	Nat Commun	CNS sub
+GSE140431	Cell Rep	CNS sub
+GSE140440	Mol Cancer Res	other
+GSE140468	Cell	CNS
+GSE140511	Nat Med	CNS sub
+GSE140512	Cell Stem Cell	CNS sub
+GSE140628	Cancer Discov	other
+GSE140793	Front Cell Dev Biol	other
+GSE140795	Nature	CNS
+GSE140802	Science	CNS
+GSE140807	Nat Commun	CNS sub
+GSE140811	Cell Mol Life Sci	other
+GSE140812	Circ Res	other
+GSE140816	Cell Rep	CNS sub
+GSE140819	Nat Med	CNS sub
+GSE140822	Nat Neurosci	CNS sub
+GSE140881	JCI Insight	other
+GSE140883	Proc Natl Acad Sci U S A	other
+GSE140890	Cell Rep	CNS sub
+GSE140896	Cancer Res	other
+GSE140946	Elife	eLife
+GSE140956	Cell Res	CNS sub
+GSE140968	Circ Res	other
+GSE140989	JCI Insight	other
+GSE141017	Nat Commun	CNS sub
+GSE141018	Nat Microbiol	CNS sub
+GSE141026	Clin Transl Sci	other
+GSE141030	Mol Syst Biol	other
+GSE141031	Cell Stem Cell	CNS sub
+GSE141036	Immunometabolism	other
+GSE141038	Circ Res	other
+GSE141044	Biosci Biotechnol Biochem	other
+GSE141105	Cytokine	other
+GSE141111	Cell Rep Med	other
+GSE141115	Genome Biol	BMC
+GSE141117	Cell Rep Med	other
+GSE141141	Sci Adv	CNS sub
+GSE141157	Cancer Res	other
+GSE141173	Elife	eLife
+GSE141175	Science	CNS
+GSE141183	Gastroenterology	other
+GSE141259	Nat Commun	CNS sub
+GSE141275	Nat Commun	CNS sub
+GSE141330	Immunity	CNS sub
+GSE141348	Nature	CNS
+GSE141428	Development	other
+GSE141445	Nat Cell Biol	CNS sub
+GSE141460	Cancer Cell	CNS sub
+GSE141526	Nat Commun	CNS sub
+GSE141532	Acta Neuropathol	other
+GSE141533	Acta Neuropathol	other
+GSE141552	Hum Mol Genet	other
+GSE141590	Mol Syst Biol	other
+GSE141634	Nat Cell Biol	CNS sub
+GSE141665	Life Sci Alliance	other
+GSE141728	Proc Natl Acad Sci U S A	other
+GSE141730	Science	CNS
+GSE141732	Nat Commun	CNS sub
+GSE141776	Cell Rep	CNS sub
+GSE141786	J Exp Med	other
+GSE141807	Elife	eLife
+GSE141811	Dev Cell	CNS sub
+GSE141814	Sci Adv	CNS sub
+GSE141834	Commun Biol	other
+GSE141851	Nat Methods	CNS sub
+GSE141856	Neuron	CNS sub
+GSE141895	Cell Rep	CNS sub
+GSE141922	Proc Natl Acad Sci U S A	other
+GSE141928	Cell Stem Cell	CNS sub
+GSE141946	Cell	CNS
+GSE141982	Bioinformatics	other
+GSE142016	Proc Natl Acad Sci U S A	other
+GSE142047	Toxicol Sci	other
+GSE142074	Endocrinology	other
+GSE142078	Genome Res	CSHL
+GSE142116	Gut	other
+GSE142119	Genome Biol	BMC
+GSE142168	Glia	other
+GSE142180	PLoS Pathog	PLOS
+GSE142184	PLoS Pathog	PLOS
+GSE142199	J Exp Zool B Mol Dev Evol	other
+GSE142200	J Exp Zool B Mol Dev Evol	other
+GSE142212	Cell Rep	CNS sub
+GSE142213	Cancer Cell	CNS sub
+GSE142233	Cell Rep Med	other
+GSE142235	Int J Mol Sci	other
+GSE142244	Elife	eLife
+GSE142245	Nat Biotechnol	CNS sub
+GSE142267	EMBO Mol Med	other
+GSE142274	Genome Res	CSHL
+GSE142277	Mol Syst Biol	other
+GSE142341	Nature	CNS
+GSE142345	Proc Natl Acad Sci U S A	other
+GSE142347	Nature	CNS
+GSE142356	Mol Syst Biol	other
+GSE142418	Nature	CNS
+GSE142420	Nature	CNS
+GSE142423	Nature	CNS
+GSE142425	Matrix Biol	other
+GSE142435	Microorganisms	other
+GSE142451	Genome Biol	BMC
+GSE142471	Cell Rep	CNS sub
+GSE142484	Nat Commun	CNS sub
+GSE142489	iScience	CNS sub
+GSE142515	JCI Insight	other
+GSE142526	Cell Rep	CNS sub
+GSE142538	Nucleic Acids Res	other
+GSE142541	Proc Natl Acad Sci U S A	other
+GSE142546	Nat Commun	CNS sub
+GSE142564	Circulation	other
+GSE142581	Cell Rep	CNS sub
+GSE142585	Dev Cell	CNS sub
+GSE142637	Proc Natl Acad Sci U S A	other
+GSE142653	Nat Commun	CNS sub
+GSE142745	Nat Biotechnol	CNS sub
+GSE142750	NAR Genom Bioinform	other
+GSE142754	Cell	CNS
+GSE142768	Development	other
+GSE142845	Cell Metab	CNS sub
+GSE142853	J Immunol	other
+GSE142858	J Immunol	other
+GSE142873	Cell	CNS
+GSE142999	Immunity	CNS sub
+GSE143002	Immunity	CNS sub
+GSE143038	Curr Biol	other
+GSE143140	J Exp Med	other
+GSE143148	Proc Natl Acad Sci U S A	other
+GSE143158	Immunity	CNS sub
+GSE143167	PLoS Pathog	PLOS
+GSE143190	Micromachines (Basel)	other
+GSE143214	Nat Commun	CNS sub
+GSE143221	Mol Metab	other
+GSE143295	J Biol Chem	other
+GSE143317	Nat Med	CNS sub
+GSE143337	Cell Rep	CNS sub
+GSE143353	Nat Commun	CNS sub
+GSE143355	Mol Neurodegener	other
+GSE143356	Nat Cell Biol	CNS sub
+GSE143380	Nat Cell Biol	CNS sub
+GSE143417	Cell	CNS
+GSE143435	Cell Rep	CNS sub
+GSE143437	Cell Rep	CNS sub
+GSE143452	PLoS Genet	PLOS
+GSE143453	PLoS Genet	PLOS
+GSE143476	Development	other
+GSE143492	PLoS Genet	PLOS
+GSE143524	Science	CNS
+GSE143526	Science	CNS
+GSE143545	Genome Biol	BMC
+GSE143624	Science	CNS
+GSE143637	Cell Rep	CNS sub
+GSE143663	Curr Biol	other
+GSE143669	Commun Biol	other
+GSE143685	Stem Cell Reports	CNS sub
+GSE143686	Stem Cell Reports	CNS sub
+GSE143704	Skelet Muscle	other
+GSE143706	Am J Respir Crit Care Med	other
+GSE143753	Cell Res	CNS sub
+GSE143758	Nat Neurosci	CNS sub
+GSE143783	Nat Metab	CNS sub
+GSE143796	Int J Mol Sci	other
+GSE143802	J Exp Med	other
+GSE143868	Am J Respir Crit Care Med	other
+GSE143877	Front Cardiovasc Med	other
+GSE143880	Genome Biol	BMC
+GSE143888	Dev Cell	CNS sub
+GSE143913	J Biol Chem	other
+GSE143916	Nat Commun	CNS sub
+GSE143920	Front Immunol	other
+GSE143988	Cell Stem Cell	CNS sub
+GSE144024	Cell Stem Cell	CNS sub
+GSE144027	Hypertension	other
+GSE144038	Cell	CNS
+GSE144085	Proc Natl Acad Sci U S A	other
+GSE144097	Commun Biol	other
+GSE144136	Nat Neurosci	CNS sub
+GSE144170	Proc Natl Acad Sci U S A	other
+GSE144191	Blood Adv	other
+GSE144216	Sci Rep	CNS sub
+GSE144222	Elife	eLife
+GSE144240	Cell	CNS
+GSE144270	J Immunol	other
+GSE144271	Cell Rep	CNS sub
+GSE144273	Cell Stem Cell	CNS sub
+GSE144306	Elife	eLife
+GSE144317	Nat Immunol	CNS sub
+GSE144320	Cancer Res	other
+GSE144357	Nat Genet	CNS sub
+GSE144384	J Biol Chem	other
+GSE144420	Blood	other
+GSE144430	Blood Adv	other
+GSE144444	Nat Commun	CNS sub
+GSE144468	Cell Stem Cell	CNS sub
+GSE144469	Cell	CNS
+GSE144471	Cell Metab	CNS sub
+GSE144477	Stem Cell Reports	CNS sub
+GSE144481	Blood Adv	other
+GSE144482	Blood Adv	other
+GSE144494	Science	CNS
+GSE144495	Science	CNS
+GSE144507	Cell	CNS
+GSE144508	Cell Rep	CNS sub
+GSE144568	Mol Cell	CNS sub
+GSE144678	Dis Model Mech	other
+GSE144705	Nat Neurosci	CNS sub
+GSE144707	Nat Neurosci	CNS sub
+GSE144720	J Vis Exp	other
+GSE144730	Vet Immunol Immunopathol	other
+GSE144734	Nat Commun	CNS sub
+GSE144735	Nat Genet	CNS sub
+GSE144769	Dis Model Mech	other
+GSE144820	Elife	eLife
+GSE144827	Curr Biol	other
+GSE144870	Immunity	CNS sub
+GSE144890	Elife	eLife
+GSE144897	Elife	eLife
+GSE144908	Sci Rep	CNS sub
+GSE144944	J Bone Miner Res	other
+GSE144980	Elife	eLife
+GSE145013	Cell Rep	CNS sub
+GSE145031	Cell Stem Cell	CNS sub
+GSE145080	Elife	eLife
+GSE145086	Hepatology	other
+GSE145095	JCI Insight	other
+GSE145107	Cell Rep	CNS sub
+GSE145121	Front Cardiovasc Med	other
+GSE145137	Genome Med	BMC
+GSE145139	Genome Med	BMC
+GSE145163	Biomaterials	other
+GSE145197	Nat Metab	CNS sub
+GSE145228	J Exp Med	other
+GSE145229	Proc Natl Acad Sci U S A	other
+GSE145230	Proc Natl Acad Sci U S A	other
+GSE145241	J Clin Invest	other
+GSE145242	J Clin Invest	other
+GSE145243	J Clin Invest	other
+GSE145266	iScience	CNS sub
+GSE145267	iScience	CNS sub
+GSE145273	Nature	CNS
+GSE145279	Gene	other
+GSE145286	Nature	CNS
+GSE145306	Front Neurosci	other
+GSE145307	EBioMedicine	other
+GSE145326	J Clin Invest	other
+GSE145328	NPJ Precis Oncol	other
+GSE145347	Nat Commun	CNS sub
+GSE145360	Am J Respir Crit Care Med	other
+GSE145363	Cancer Cell	CNS sub
+GSE145370	Nat Commun	CNS sub
+GSE145410	Gene	other
+GSE145434	Elife	eLife
+GSE145435	Elife	eLife
+GSE145443	Elife	eLife
+GSE145477	Elife	eLife
+GSE145502	Nat Methods	CNS sub
+GSE145539	Stem Cells	other
+GSE145556	Nat Commun	CNS sub
+GSE145609	Nat Cell Biol	CNS sub
+GSE145633	Sci Rep	CNS sub
+GSE145638	Stem Cell Reports	CNS sub
+GSE145690	J Am Soc Nephrol	other
+GSE145700	Am J Cancer Res	other
+GSE145708	Cell Rep	CNS sub
+GSE145727	Nat Cell Biol	CNS sub
+GSE145800	mBio	other
+GSE145801	Epilepsia	other
+GSE145830	Gastroenterology	other
+GSE145832	Stem Cell Reports	CNS sub
+GSE145866	Cell Rep	CNS sub
+GSE145896	Cell Mol Immunol	other
+GSE145926	Nat Med	CNS sub
+GSE145927	J Am Soc Nephrol	other
+GSE145928	Prostate	other
+GSE145929	Prostate	other
+GSE145973	Nat Commun	CNS sub
+GSE146002	Stem Cell Reports	CNS sub
+GSE146020	Neuron	CNS sub
+GSE146026	Nat Med	CNS sub
+GSE146035	Mol Plant	other
+GSE146040	PLoS Biol	PLOS
+GSE146043	Elife	eLife
+GSE146113	Nat Immunol	CNS sub
+GSE146115	J Hematol Oncol	other
+GSE146122	Cell	CNS
+GSE146123	Nat Commun	CNS sub
+GSE146137	Nat Commun	CNS sub
+GSE146165	Cell	CNS
+GSE146172	Sci Immunol	CNS sub
+GSE146186	Proc Natl Acad Sci U S A	other
+GSE146187	Proc Natl Acad Sci U S A	other
+GSE146216	Circ Res	other
+GSE146221	Cancers (Basel)	other
+GSE146233	Sci Immunol	CNS sub
+GSE146238	Genes Dev	CSHL
+GSE146244	Front Genet	other
+GSE146264	J Allergy Clin Immunol	other
+GSE146285	Nat Commun	CNS sub
+GSE146409	Mol Syst Biol	other
+GSE146456	Adv Sci (Weinh)	other
+GSE146596	Elife	eLife
+GSE146609	Nature	CNS
+GSE146613	Nat Med	CNS sub
+GSE146619	Protein Cell	other
+GSE146637	Nature	CNS
+GSE146639	Front Mol Neurosci	other
+GSE146672	Nat Commun	CNS sub
+GSE146681	Sci Immunol	CNS sub
+GSE146682	Sci Immunol	CNS sub
+GSE146684	Genes Dev	CSHL
+GSE146692	Elife	eLife
+GSE146712	Genome Biol	BMC
+GSE146740	Nat Immunol	CNS sub
+GSE146741	Nat Immunol	CNS sub
+GSE146755	Nat Immunol	CNS sub
+GSE146759	Cell Rep	CNS sub
+GSE146771	Cell	CNS
+GSE146783	Sci Rep	CNS sub
+GSE146799	Cell	CNS
+GSE146811	Science	CNS
+GSE146837	Elife	eLife
+GSE146861	Nat Struct Mol Biol	CNS sub
+GSE146912	J Am Soc Nephrol	other
+GSE146923	Nat Commun	CNS sub
+GSE146926	Cell	CNS
+GSE146972	Cell	CNS
+GSE146974	Nat Commun	CNS sub
+GSE146981	Am J Respir Crit Care Med	other
+GSE146983	Elife	eLife
+GSE146988	J Am Soc Nephrol	other
+GSE146990	iScience	CNS sub
+GSE147021	Immunity	CNS sub
+GSE147047	Mol Psychiatry	other
+GSE147080	Immunity	CNS sub
+GSE147081	Immunity	CNS sub
+GSE147100	Elife	eLife
+GSE147108	Circ Res	other
+GSE147117	Circ Res	other
+GSE147143	Protein Cell	other
+GSE147174	Nat Metab	CNS sub
+GSE147203	Genome Biol	BMC
+GSE147206	Nature	CNS
+GSE147259	Cell Rep	CNS sub
+GSE147263	Immunity	CNS sub
+GSE147285	eNeuro	other
+GSE147295	Genes Dev	CSHL
+GSE147298	Genes Dev	CSHL
+GSE147322	J Clin Invest	other
+GSE147326	Transl Oncol	other
+GSE147327	JCI Insight	other
+GSE147349	Cell Metab	CNS sub
+GSE147355	Nat Commun	CNS sub
+GSE147386	Proc Natl Acad Sci U S A	other
+GSE147394	Nat Immunol	CNS sub
+GSE147395	Nat Immunol	CNS sub
+GSE147397	Nat Immunol	CNS sub
+GSE147405	Nat Commun	CNS sub
+GSE147415	Elife	eLife
+GSE147424	J Allergy Clin Immunol	other
+GSE147457	Cell Stem Cell	CNS sub
+GSE147487	Genome Biol	BMC
+GSE147495	Cell Rep	CNS sub
+GSE147525	J Am Soc Nephrol	other
+GSE147559	Cell	CNS
+GSE147564	Nature	CNS
+GSE147581	Cell Mol Gastroenterol Hepatol	other
+GSE147668	Elife	eLife
+GSE147693	Nat Commun	CNS sub
+GSE147694	Cell Stem Cell	CNS sub
+GSE147722	Proc Natl Acad Sci U S A	other
+GSE147729	BMC Biol	BMC
+GSE147744	Int J Mol Sci	other
+GSE147794	Front Immunol	other
+GSE147795	Ann Rheum Dis	other
+GSE147822	J Anim Sci	other
+GSE147863	Cell	CNS
+GSE147883	Cell Rep	CNS sub
+GSE147893	Proc Natl Acad Sci U S A	other
+GSE147928	Sci Rep	CNS sub
+GSE147944	Blood	other
+GSE147975	Nature	CNS
+GSE147987	Development	other
+GSE147989	Nat Med	CNS sub
+GSE148063	Biochem Biophys Res Commun	other
+GSE148077	Sci Rep	CNS sub
+GSE148115	Sci Rep	CNS sub
+GSE148127	Cell Rep	CNS sub
+GSE148162	Cancer Immunol Res	other
+GSE148190	J Exp Med	other
+GSE148209	Elife	eLife
+GSE148212	Nat Commun	CNS sub
+GSE148215	Cell Discov	other
+GSE148218	Genome Med	BMC
+GSE148316	Science	CNS
+GSE148339	Cell Mol Gastroenterol Hepatol	other
+GSE148345	Cell Stem Cell	CNS sub
+GSE148360	Sci Adv	CNS sub
+GSE148366	Nature	CNS
+GSE148367	Cell Tissue Res	other
+GSE148371	Proc Natl Acad Sci U S A	other
+GSE148373	Proc Natl Acad Sci U S A	other
+GSE148374	Proc Natl Acad Sci U S A	other
+GSE148416	BMC Biol	BMC
+GSE148505	Nat Med	CNS sub
+GSE148507	Nature	CNS
+GSE148519	Elife	eLife
+GSE148591	Science	CNS
+GSE148633	Nature	CNS
+GSE148665	Nucleic Acids Res	other
+GSE148666	Cell Rep	CNS sub
+GSE148673	Nat Biotechnol	CNS sub
+GSE148796	JCI Insight	other
+GSE148820	Genome Biol	BMC
+GSE148822	Acta Neuropathol	other
+GSE148826	Elife	eLife
+GSE148829	Cell	CNS
+GSE148856	Nat Commun	CNS sub
+GSE148859	Proc Natl Acad Sci U S A	other
+GSE148866	Elife	eLife
+GSE148882	Immunity	CNS sub
+GSE148902	Arthritis Res Ther	other
+GSE148946	Nat Commun	CNS sub
+GSE148963	Life Sci Alliance	other
+GSE148981	Immunity	CNS sub
+GSE148996	Nature	CNS
+GSE149036	J Immunol	other
+GSE149099	Microvasc Res	other
+GSE149100	Microvasc Res	other
+GSE149121	iScience	CNS sub
+GSE149133	JCI Insight	other
+GSE149134	Dev Biol	other
+GSE149201	Cancer Discov	other
+GSE149207	Nat Commun	CNS sub
+GSE149209	Cancer Discov	other
+GSE149221	Development	other
+GSE149224	Cell Rep	CNS sub
+GSE149271	Curr Biol	other
+GSE149298	J Hepatol	other
+GSE149335	Proc Natl Acad Sci U S A	other
+GSE149443	Cell	CNS
+GSE149451	Development	other
+GSE149452	Circ Res	other
+GSE149512	Nat Commun	CNS sub
+GSE149527	Pain	other
+GSE149583	Nat Commun	CNS sub
+GSE149613	Cytotherapy	other
+GSE149617	Immunity	CNS sub
+GSE149629	Cell Discov	other
+GSE149652	Cell	CNS
+GSE149655	Cell Stem Cell	CNS sub
+GSE149689	Sci Immunol	CNS sub
+GSE149715	J Neurosci	other
+GSE149758	Cell Host Microbe	CNS sub
+GSE149777	Cardiovasc Res	other
+GSE149813	Cell Stem Cell	CNS sub
+GSE149878	Clin Transl Med	other
+GSE149897	Nature	CNS
+GSE149907	Sci Immunol	CNS sub
+GSE149909	Cell Stem Cell	CNS sub
+GSE149931	Nat Biotechnol	CNS sub
+GSE149974	Science	CNS
+GSE150004	Science	CNS
+GSE150020	Blood	other
+GSE150021	Blood	other
+GSE150050	Cell Res	CNS sub
+GSE150065	Nat Commun	CNS sub
+GSE150115	Gastroenterology	other
+GSE150150	Nat Commun	CNS sub
+GSE150166	Elife	eLife
+GSE150169	Elife	eLife
+GSE150176	JCI Insight	other
+GSE150199	Mol Cell	CNS sub
+GSE150202	Nat Biotechnol	CNS sub
+GSE150219	Dev Cell	CNS sub
+GSE150226	Angiogenesis	other
+GSE150233	Genome Biol	BMC
+GSE150234	Genome Biol	BMC
+GSE150235	Genome Biol	BMC
+GSE150263	Cell Stem Cell	CNS sub
+GSE150284	Nucleic Acids Res	other
+GSE150291	Signal Transduct Target Ther	other
+GSE150294	Nat Commun	CNS sub
+GSE150305	Nat Immunol	CNS sub
+GSE150311	Nature	CNS
+GSE150321	Int J Cancer	other
+GSE150327	iScience	CNS sub
+GSE150358	J Exp Med	other
+GSE150361	Immunity	CNS sub
+GSE150425	Cell Stem Cell	CNS sub
+GSE150430	Cell Res	CNS sub
+GSE150551	Cell Rep	CNS sub
+GSE150556	iScience	CNS sub
+GSE150580	Cell Rep	CNS sub
+GSE150637	Nature	CNS
+GSE150644	Circulation	other
+GSE150660	Science	CNS
+GSE150672	Immunity	CNS sub
+GSE150692	Elife	eLife
+GSE150703	Science	CNS
+GSE150713	Cell	CNS
+GSE150728	Nat Med	CNS sub
+GSE150741	Front Physiol	other
+GSE150752	Cell Rep	CNS sub
+GSE150768	Circulation	other
+GSE150839	J Cell Biol	other
+GSE150861	Nat Commun	CNS sub
+GSE150877	Cell	CNS
+GSE150921	Nat Commun	CNS sub
+GSE150930	Front Oncol	other
+GSE150989	Elife	eLife
+GSE150991	Sci Immunol	CNS sub
+GSE150992	Nat Med	CNS sub
+GSE150995	J Clin Invest	other
+GSE151087	Immunity	CNS sub
+GSE151089	Immunity	CNS sub
+GSE151117	Cell Rep	CNS sub
+GSE151151	Immunity	CNS sub
+GSE151152	Immunity	CNS sub
+GSE151167	Nat Metab	CNS sub
+GSE151202	Nat Commun	CNS sub
+GSE151212	Sci Adv	CNS sub
+GSE151248	Nat Immunol	CNS sub
+GSE151257	PLoS Biol	PLOS
+GSE151263	JCI Insight	other
+GSE151346	Sci Adv	CNS sub
+GSE151381	Science	CNS
+GSE151409	Commun Biol	other
+GSE151421	Cell Metab	CNS sub
+GSE151511	Nat Med	CNS sub
+GSE151564	Mol Biol Cell	other
+GSE151592	Nat Commun	CNS sub
+GSE151630	Immunity	CNS sub
+GSE151658	Elife	eLife
+GSE151669	JCI Insight	other
+GSE151674	Nature	CNS
+GSE151682	Immunity	CNS sub
+GSE151709	Sci Adv	CNS sub
+GSE151710	Cell	CNS
+GSE151723	Toxicol Sci	other
+GSE151811	Nat Commun	CNS sub
+GSE151824	Development	other
+GSE151831	Commun Biol	other
+GSE151877	Cell Stem Cell	CNS sub
+GSE151878	Res Sq	other
+GSE151921	Nat Commun	CNS sub
+GSE151928	Am J Respir Crit Care Med	other
+GSE151944	Elife	eLife
+GSE151973	iScience	CNS sub
+GSE151985	Development	other
+GSE152009	Proc Natl Acad Sci U S A	other
+GSE152018	Nat Metab	CNS sub
+GSE152022	Cancer Immunol Res	other
+GSE152048	Nat Commun	CNS sub
+GSE152058	Neuron	CNS sub
+GSE152125	Proc Natl Acad Sci U S A	other
+GSE152145	Lab Invest	other
+GSE152197	J Clin Invest	other
+GSE152198	Sci Immunol	CNS sub
+GSE152237	Sci Immunol	CNS sub
+GSE152238	Sci Immunol	CNS sub
+GSE152248	Elife	eLife
+GSE152281	Cell Rep	CNS sub
+GSE152369	Cell Stem Cell	CNS sub
+GSE152370	Cell Stem Cell	CNS sub
+GSE152469	Biomark Res	other
+GSE152522	Cell	CNS
+GSE152551	Sci Rep	CNS sub
+GSE152555	Cell Stem Cell	CNS sub
+GSE152573	Blood	other
+GSE152574	Blood Adv	other
+GSE152583	Cardiovasc Res	other
+GSE152587	Proc Natl Acad Sci U S A	other
+GSE152632	Nature	CNS
+GSE152674	Cancer Discov	other
+GSE152685	Cell Rep	CNS sub
+GSE152716	Neuron	CNS sub
+GSE152730	iScience	CNS sub
+GSE152731	iScience	CNS sub
+GSE152745	Front Genet	other
+GSE152786	Nat Commun	CNS sub
+GSE152805	Sci Rep	CNS sub
+GSE152841	J Immunol	other
+GSE152859	Elife	eLife
+GSE152866	Cancers (Basel)	other
+GSE152867	Cell Rep	CNS sub
+GSE152888	J Immunother Cancer	other
+GSE152906	Elife	eLife
+GSE152930	Cell Rep	CNS sub
+GSE152939	Stem Cell Reports	CNS sub
+GSE152962	Sci Rep	CNS sub
+GSE152981	Genome Biol	BMC
+GSE153099	Stem Cell Reports	CNS sub
+GSE153277	Cell Stem Cell	CNS sub
+GSE153319	NPJ Precis Oncol	other
+GSE153339	Blood	other
+GSE153358	Cancer Cell	CNS sub
+GSE153481	Cell Rep	CNS sub
+GSE153487	Nat Commun	CNS sub
+GSE153515	Ocul Surf	other
+GSE153534	Arterioscler Thromb Vasc Biol	other
+GSE153541	Stem Cell Reports	CNS sub
+GSE153549	Nat Commun	CNS sub
+GSE153568	JCI Insight	other
+GSE153569	JCI Insight	other
+GSE153596	Elife	eLife
+GSE153647	Cell	CNS
+GSE153665	Science	CNS
+GSE153674	Mol Vis	other
+GSE153697	Nat Commun	CNS sub
+GSE153760	J Allergy Clin Immunol	other
+GSE153771	Cell Rep	CNS sub
+GSE153807	Cell Rep	CNS sub
+GSE153818	Hum Mol Genet	other
+GSE153819	Nat Commun	CNS sub
+GSE153824	Elife	eLife
+GSE153889	J Mammary Gland Biol Neoplasia	other
+GSE153916	Elife	eLife
+GSE153929	Nat Commun	CNS sub
+GSE153931	Sci Immunol	CNS sub
+GSE153958	mBio	other
+GSE154037	Nat Med	CNS sub
+GSE154047	Cell Rep	CNS sub
+GSE154048	Nature	CNS
+GSE154107	Elife	eLife
+GSE154109	JCI Insight	other
+GSE154126	Mol Metab	other
+GSE154136	Respir Res	other
+GSE154203	Cell	CNS
+GSE154278	Cell Rep	CNS sub
+GSE154304	Proc Natl Acad Sci U S A	other
+GSE154356	Cell Stem Cell	CNS sub
+GSE154358	Cell Stem Cell	CNS sub
+GSE154359	Cell Stem Cell	CNS sub
+GSE154370	Aging Cell	other
+GSE154375	Front Cell Neurosci	other
+GSE154400	J Immunol	other
+GSE154543	Nature	CNS
+GSE154557	JCI Insight	other
+GSE154579	Nat Commun	CNS sub
+GSE154659	Neuron	CNS sub
+GSE154679	Elife	eLife
+GSE154692	Circulation	other
+GSE154759	Nat Biotechnol	CNS sub
+GSE154775	JCI Insight	other
+GSE154778	Genome Med	BMC
+GSE154817	Nat Immunol	CNS sub
+GSE154863	Dev Cell	CNS sub
+GSE154874	Nat Commun	CNS sub
+GSE154879	Nat Commun	CNS sub
+GSE154900	Microbiol Resour Announc	other
+GSE154906	Cell Death Discov	other
+GSE154973	Sci Immunol	CNS sub
+GSE154977	Cancer Cell	CNS sub
+GSE154978	Cancer Cell	CNS sub
+GSE154989	Cancer Cell	CNS sub
+GSE155006	Immunity	CNS sub
+GSE155012	Front Immunol	other
+GSE155136	Cell Rep	CNS sub
+GSE155182	Cell Metab	CNS sub
+GSE155204	Science	CNS
+GSE155212	Elife	eLife
+GSE155226	bioRxiv	other
+GSE155249	Nature	CNS
+GSE155261	Nat Commun	CNS sub
+GSE155275	J Exp Med	other
+GSE155304	Mol Plant	other
+GSE155329	Neuron	CNS sub
+GSE155340	Sci Immunol	CNS sub
+GSE155427	Elife	eLife
+GSE155434	Genome Biol	BMC
+GSE155468	Circulation	other
+GSE155499	Cell Rep	CNS sub
+GSE155514	Circulation	other
+GSE155569	Nat Commun	CNS sub
+GSE155669	iScience	CNS sub
+GSE155673	Science	CNS
+GSE155699	Hypertension	other
+GSE155788	Elife	eLife
+GSE155794	Development	other
+GSE155802	Am J Physiol Lung Cell Mol Physiol	other
+GSE155850	JCI Insight	other
+GSE155880	Neurotoxicol Teratol	other
+GSE155928	Elife	eLife
+GSE155988	Development	other
+GSE156052	Immunity	CNS sub
+GSE156057	Immunity	CNS sub
+GSE156135	Cell	CNS
+GSE156136	Cell	CNS
+GSE156138	Nucleic Acids Res	other
+GSE156150	Cell Syst	CNS sub
+GSE156170	Cell	CNS
+GSE156183	Proc Natl Acad Sci U S A	other
+GSE156210	Cancer Cell	CNS sub
+GSE156234	Sci Rep	CNS sub
+GSE156340	Nat Commun	CNS sub
+GSE156341	Nat Commun	CNS sub
+GSE156455	Neuron	CNS sub
+GSE156467	Stem Cell Res Ther	other
+GSE156498	Proc Natl Acad Sci U S A	other
+GSE156588	Cell Stem Cell	CNS sub
+GSE156625	Cell	CNS
+GSE156644	Cell Stem Cell	CNS sub
+GSE156725	J Immunother Cancer	other
+GSE156745	Immunohorizons	other
+GSE156755	Sci Transl Med	other
+GSE156776	Cell	CNS
+GSE156790	Nat Commun	CNS sub
+GSE156972	J Exp Med	other
+GSE156988	bioRxiv	other
+GSE157068	Sci Adv	CNS sub
+GSE157072	Proc Natl Acad Sci U S A	other
+GSE157100	Sci Adv	CNS sub
+GSE157119	Cell Rep	CNS sub
+GSE157144	NPJ Vaccines	other
+GSE157157	J Am Heart Assoc	other
+GSE157202	J Neurosci	other
+GSE157204	Elife	eLife
+GSE157220	Nat Genet	CNS sub
+GSE157277	Sci Immunol	CNS sub
+GSE157278	Front Immunol	other
+GSE157292	JCI Insight	other
+GSE157410	Cancer Res	other
+GSE157453	Immunity	CNS sub
+GSE157480	Immunity	CNS sub
+GSE157501	Nat Immunol	CNS sub
+GSE157504	Elife	eLife
+GSE157525	Genes Dev	CSHL
+GSE157526	bioRxiv	other
+GSE157542	Proc Natl Acad Sci U S A	other
+GSE157591	Cell Stem Cell	CNS sub
+GSE157624	Cell Rep	CNS sub
+GSE157641	Nat Immunol	CNS sub
+GSE157697	Dev Cell	CNS sub
+GSE157703	Mol Cancer	other
+GSE157740	Cancer Discov	other
+GSE157742	Cancer Discov	other
+GSE157743	Cancer Discov	other
+GSE157744	Cancer Discov	other
+GSE157770	Nat Neurosci	CNS sub
+GSE157771	Nat Neurosci	CNS sub
+GSE157815	Nat Metab	CNS sub
+GSE157827	Proc Natl Acad Sci U S A	other
+GSE157829	Emerg Microbes Infect	other
+GSE157890	Cell Rep	CNS sub
+GSE157962	Cell Rep	CNS sub
+GSE157963	Cell Rep	CNS sub
+GSE157983	Elife	eLife
+GSE157990	Cell	CNS
+GSE158004	Proc Natl Acad Sci U S A	other
+GSE158109	Cancer Cell	CNS sub
+GSE158127	Sci Transl Med	other
+GSE158142	Neuron	CNS sub
+GSE158234	Nat Commun	CNS sub
+GSE158240	Nat Immunol	CNS sub
+GSE158257	Dev Cell	CNS sub
+GSE158275	Elife	eLife
+GSE158291	Cell Biosci	other
+GSE158390	Cell	CNS
+GSE158432	Sci Immunol	CNS sub
+GSE158449	Int J Mol Sci	other
+GSE158450	Nat Commun	CNS sub
+GSE158454	Invest Ophthalmol Vis Sci	other
+GSE158582	Cell Rep	CNS sub
+GSE158700	Neuro Oncol	other
+GSE158704	Cell	CNS
+GSE158733	Stem Cells	other
+GSE158808	Cell Death Differ	other
+GSE158820	J Dev Biol	other
+GSE158827	Genes Dev	CSHL
+GSE158840	Nature	CNS
+GSE158841	Nature	CNS
+GSE158844	iScience	CNS sub
+GSE158874	JCI Insight	other
+GSE158880	PeerJ	other
+GSE158886	Cancer Discov	other
+GSE158896	J Exp Med	other
+GSE158923	J Allergy Clin Immunol	other
+GSE158924	J Allergy Clin Immunol	other
+GSE158967	Cell Rep	CNS sub
+GSE158999	Cell Stem Cell	CNS sub
+GSE159030	Proc Natl Acad Sci U S A	other
+GSE159065	Sci Immunol	CNS sub
+GSE159074	Mol Psychiatry	other
+GSE159107	Elife	eLife
+GSE159212	Cell	CNS
+GSE159345	Cell Rep	CNS sub
+GSE159354	Cell Rep Med	other
+GSE159423	Mucosal Immunol	other
+GSE159491	Cell Syst	CNS sub
+GSE159575	Mol Syst Biol	other
+GSE159576	Proc Natl Acad Sci U S A	other
+GSE159593	Proc Natl Acad Sci U S A	other
+GSE159597	Nat Commun	CNS sub
+GSE159599	FASEB J	other
+GSE159624	Cell Mol Immunol	other
+GSE159745	Nat Commun	CNS sub
+GSE159768	Cell Stem Cell	CNS sub
+GSE159784	Nat Biotechnol	CNS sub
+GSE159913	Cell Metab	CNS sub
+GSE159929	Genome Biol	BMC
+GSE159966	iScience	CNS sub
+GSE160009	Sci Immunol	CNS sub
+GSE160090	Elife	eLife
+GSE160193	Life Sci Alliance	other
+GSE160351	Nat Immunol	CNS sub
+GSE160358	Stem Cells	other
+GSE160384	Viruses	other
+GSE160400	J Clin Invest	other
+GSE160466	Sci Adv	CNS sub
+GSE160486	Cell	CNS
+GSE160536	Arthritis Res Ther	other
+GSE160664	Am J Respir Crit Care Med	other
+GSE160673	Am J Respir Crit Care Med	other
+GSE160674	Am J Respir Crit Care Med	other
+GSE160729	Cell Metab	CNS sub
+GSE160751	Cancer Res	other
+GSE160752	Cancer Res	other
+GSE160753	Cancer Res	other
+GSE160754	Cancer Res	other
+GSE160760	Eur Respir J	other
+GSE160763	J Neurosci	other
+GSE160767	mSystems	other
+GSE160787	Nat Commun	CNS sub
+GSE160810	Commun Biol	other
+GSE160876	J Clin Invest	other
+GSE160915	Cancer Res	other
+GSE160938	Neuron	CNS sub
+GSE161089	Cell Stem Cell	CNS sub
+GSE161123	Sci Adv	CNS sub
+GSE161125	Nat Commun	CNS sub
+GSE161153	Heliyon	other
+GSE161228	Elife	eLife
+GSE161255	Cell Stem Cell	CNS sub
+GSE161262	Cell Stem Cell	CNS sub
+GSE161263	Cell Stem Cell	CNS sub
+GSE161329	BMC Biol	BMC
+GSE161340	Aging Cell	other
+GSE161345	Cell Mol Immunol	other
+GSE161382	Elife	eLife
+GSE161447	Life Sci Alliance	other
+GSE161465	Nat Biotechnol	CNS sub
+GSE161487	J Neurosci Res	other
+GSE161617	Cell Stem Cell	CNS sub
+GSE161642	Development	other
+GSE161648	JCI Insight	other
+GSE161685	JCI Insight	other
+GSE161751	Sci Adv	CNS sub
+GSE161758	J Clin Invest	other
+GSE161934	EMBO J	other
+GSE161947	Dev Cell	CNS sub
+GSE162025	Nat Commun	CNS sub
+GSE162033	Proc Natl Acad Sci U S A	other
+GSE162035	Science	CNS
+GSE162073	J Exp Med	other
+GSE162086	Immunity	CNS sub
+GSE162098	Elife	eLife
+GSE162115	Cancer Sci	other
+GSE162238	Proc Natl Acad Sci U S A	other
+GSE162308	Cell Rep	CNS sub
+GSE162498	Sci Immunol	CNS sub
+GSE162499	Sci Immunol	CNS sub
+GSE162512	Metabolites	other
+GSE162621	J Immunother Cancer	other
+GSE162685	Cell Rep	CNS sub
+GSE162686	Cell Rep	CNS sub
+GSE162726	Analyst	other
+GSE162806	JCI Insight	other
+GSE162952	Reproduction	other
+GSE163005	Immunity	CNS sub
+GSE163014	Front Genet	other
+GSE163028	Acta Neuropathol Commun	other
+GSE163089	Nat Commun	CNS sub
+GSE163108	Cell	CNS
+GSE163155	J Neurosci	other
+GSE163493	J Exp Med	other
+GSE163602	J Exp Med	other
+GSE163650	PLoS One	PLOS
+GSE163668	Nature	CNS
+GSE163764	Nature	CNS
+GSE163793	BMC Genomics	BMC
+GSE164044	Neuron	CNS sub
+GSE93156	PLoS One	PLOS
+GSE93374	Nat Neurosci	CNS sub
+GSE93421	Nat Commun	CNS sub
+GSE93524	Dev Cell	CNS sub
+GSE93530	J Am Coll Cardiol	other
+GSE93593	Neuron	CNS sub
+GSE93722	Elife	eLife
+GSE93801	Neuron	CNS sub
+GSE93811	Nature	CNS
+GSE94054	Neuron	CNS sub
+GSE94333	Development	other
+GSE94383	Cell Syst	CNS sub
+GSE94555	JCI Insight	other
+GSE94579	Sci Rep	CNS sub
+GSE94641	Sci Rep	CNS sub
+GSE94820	Science	CNS
+GSE94883	Nat Biotechnol	CNS sub
+GSE94920	Sci Transl Med	other
+GSE94957	Nature	CNS
+GSE95021	Genes Dev	CSHL
+GSE95025	Science	CNS
+GSE95093	Dev Cell	CNS sub
+GSE95133	Neuron	CNS sub
+GSE95140	Nat Commun	CNS sub
+GSE95155	Nat Commun	CNS sub
+GSE95194	Dev Cell	CNS sub
+GSE95435	Cell	CNS
+GSE95446	Cell	CNS
+GSE95450	Cell	CNS
+GSE95542	Stem Cell Res	other
+GSE95601	Cell Stem Cell	CNS sub
+GSE95701	Immunity	CNS sub
+GSE95723	Cell	CNS
+GSE95736	Stem Cell Reports	CNS sub
+GSE96045	Nature	CNS
+GSE96066	Wellcome Open Res	other
+GSE96104	Cell Stem Cell	CNS sub
+GSE96105	Cell Stem Cell	CNS sub
+GSE96106	J Clin Invest	other
+GSE96569	J Immunol	other
+GSE96583	Nat Biotechnol	CNS sub
+GSE96638	Dev Cell	CNS sub
+GSE96674	Proc Natl Acad Sci U S A	other
+GSE96675	Proc Natl Acad Sci U S A	other
+GSE96772	Cell	CNS
+GSE96819	Cell Rep	CNS sub
+GSE96827	Mol Cell	CNS sub
+GSE96981	Nature	CNS
+GSE96986	Elife	eLife
+GSE96993	Nucleic Acids Res	other
+GSE97037	Cancer Cell	CNS sub
+GSE97080	Cell Rep	CNS sub
+GSE97160	Proc Natl Acad Sci U S A	other
+GSE97168	Cell	CNS
+GSE97213	Dev Cell	CNS sub
+GSE97310	Circ Res	other
+GSE97390	Elife	eLife
+GSE97519	Cell Rep	CNS sub
+GSE97564	Proc Natl Acad Sci U S A	other
+GSE97655	Sci Rep	CNS sub
+GSE97679	Nature	CNS
+GSE97681	Nature	CNS
+GSE97693	Science	CNS
+GSE97726	Nat Commun	CNS sub
+GSE97848	J Allergy Clin Immunol	other
+GSE97849	J Allergy Clin Immunol	other
+GSE97881	Cell Stem Cell	CNS sub
+GSE97941	J Clin Invest	other
+GSE97942	Nat Biotechnol	CNS sub
+GSE97955	Nat Commun	CNS sub
+GSE98011	Science	CNS
+GSE98048	Cancer Discov	other
+GSE98052	Science	CNS
+GSE98131	Nat Commun	CNS sub
+GSE98145	Nat Plants	CNS sub
+GSE98201	Cell Stem Cell	CNS sub
+GSE98415	Cell Rep	CNS sub
+GSE98440	Mol Cell	CNS sub
+GSE98451	Stem Cell Reports	CNS sub
+GSE98556	Stem Cells	other
+GSE98561	Science	CNS
+GSE98567	Nature	CNS
+GSE98569	Nature	CNS
+GSE98587	Bone	other
+GSE98638	Cell	CNS
+GSE98644	BMC Biol	BMC
+GSE98664	Nat Commun	CNS sub
+GSE98679	Nat Commun	CNS sub
+GSE98734	Sci Rep	CNS sub
+GSE98794	Cell	CNS
+GSE98816	Nature	CNS
+GSE98852	J Allergy Clin Immunol	other
+GSE98971	Cell	CNS
+GSE99058	Nature	CNS
+GSE99095	Blood	other
+GSE99187	Nature	CNS
+GSE99210	Sci Rep	CNS sub
+GSE99211	Development	other
+GSE99235	Nature	CNS
+GSE99251	Cell Stem Cell	CNS sub
+GSE99254	Nat Med	CNS sub
+GSE99255	Sci Transl Med	other
+GSE99258	Mol Cell Biol	other
+GSE99305	Mol Oncol	other
+GSE99330	Cell Syst	CNS sub
+GSE99457	Cell Stem Cell	CNS sub
+GSE99701	Proc Natl Acad Sci U S A	other
+GSE99714	Cell	CNS
+GSE99735	Nat Immunol	CNS sub
+GSE99765	Hippocampus	other
+GSE99778	JCI Insight	other
+GSE99786	Nature	CNS
+GSE99795	Cancer Res	other
+GSE99822	Gigascience	other
+GSE99866	Genome Biol	BMC
+GSE99888	PLoS Biol	PLOS
+GSE99909	Nucleic Acids Res	other
+GSE99915	Nature	CNS
+GSE99951	Neuron	CNS sub
+GSE99989	Genome Biol	BMC
