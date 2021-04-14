@@ -138,6 +138,22 @@ sets_10x_withmeta <- sets_10x %>%
     str_detect(str_to_lower(samplemetainfo_1), "meta|annot|type|clustering|coldata") | 
     str_detect(str_to_lower(additionalfiles), "meta|annot|type|clustering|coldata")
   )
+
+sets_final <- sets_10x %>% 
+  mutate(has_meta = ifelse(
+    str_detect(str_to_lower(samplemetainfo_1), "meta|annot|type|clustering|coldata") | 
+    str_detect(str_to_lower(additionalfiles), "meta|annot|type|clustering|coldata"),
+    "yes",
+    "no")) %>% 
+  mutate(has_meta = ifelse(
+    is.na(has_meta), "no", has_meta
+  )) %>% 
+  select(ID, ReleaseDate, PubmedID, Species, 
+         files = samplemetainfo_1, type = samplemetainfo_2,
+         has_meta) %>% 
+  filter(str_sub(ReleaseDate, 1, 4) != "2021")
+
+# write_tsv(sets_final, "arrayexpres_analysis_2020.tsv.gz")
 ```
 
 Current fraction in GEO with metadata: **`r (gds$usable == "yes") %>% mean(na.rm = TRUE)`**. In comparison, for ArrayExpress 10x datasets, the fraction is **`r nrow(sets_10x_withmeta) / nrow(sets_10x)`**).
