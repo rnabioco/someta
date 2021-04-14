@@ -23,7 +23,7 @@ knitr::opts_chunk$set(
 
 Cell-type annotations are frequently excluded from public single cell datasets. This hinders single cell sequencing analysis reproducibility and accessibility. To better describe the issue, we monitor GEO entries monthly (currently set to auto-update at 1AM UTC, 1st of the month), and programmatically determine the fraction of entries with (potentially, likely overestimated) usable cell metadata. 
 
-Descriptions of the issue and suggestions (in short: PLEASE PLEASE deposit some metadata at cell level for scRNA-seq data) are in this short [manuscript](https://www.biorxiv.org/content/10.1101/2020.11.20.391920v1).
+Descriptions of the issue and suggestions (in short: PLEASE PLEASE deposit some metadata at cell level for scRNA-seq data) are in this short [manuscript](https://www.biorxiv.org/content/10.1101/2020.11.20.391920v1). Supplemental data files related to the manuscript are located in the `inst/manuscript/` directory.
 
 The latest archive of GEO scRNA-seq records with other associated data can be directly downloaded here [current_geo.rds](https://github.com/rnabioco/someta/raw/master/inst/extdata/current_geo.rds). GEO filtering, preview [first lines of text files, and content of .tar], and spot check feedback can be accessed from last tab on the `clustifyr` [web app](https://raysinensis.shinyapps.io/clustifyr-web-app/?tab=someta).
 
