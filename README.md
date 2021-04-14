@@ -21,6 +21,8 @@ Descriptions of the issue and suggestions (in short: PLEASE PLEASE
 deposit some metadata at cell level for scRNA-seq data) are in this
 short
 [manuscript](https://www.biorxiv.org/content/10.1101/2020.11.20.391920v1).
+Supplemental data files related to the manuscript are located in the
+`inst/manuscript/` directory.
 
 The latest archive of GEO scRNA-seq records with other associated data
 can be directly downloaded here
