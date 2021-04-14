@@ -18,6 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![R build status](https://github.com/rnabioco/someta/workflows/Query/badge.svg)](https://github.com/rnabioco/someta/actions)
 [![Last Commit on GitHub](`r paste0("https://img.shields.io/badge/Last%20Run-", format(format = "%m--%d--%Y", Sys.Date()), "-brightgreen")`)](https://rnabioco.github.io/someta/articles/get_geo.html)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4686053.svg)](https://doi.org/10.5281/zenodo.4686053)
 <!-- badges: end -->
 
 Cell-type annotations are frequently excluded from public single cell datasets. This hinders single cell sequencing analysis reproducibility and accessibility. To better describe the issue, we monitor GEO entries monthly (currently set to auto-update at 1AM UTC, 1st of the month), and programmatically determine the fraction of entries with (potentially, likely overestimated) usable cell metadata. 
