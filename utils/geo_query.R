@@ -90,7 +90,6 @@ get_date <- function(res) {
 }
 
 get_pubmed <- function(res) {
-  # res <- res[[1]]
   if (class(res) != "list") {
     return(NA)
   }
@@ -116,12 +115,6 @@ get_pubmed <- function(res) {
     return(NA)
   }
   return(id2)
-  # tryCatch(
-  #   get_pubmed_ids(id2) %>%
-  #     fetch_pubmed_data() %>%
-  #     article_to_df(),
-  #   error = function(e) {"error"}
-  # )
 }
 
 from_list <- function(pubmedid) {
