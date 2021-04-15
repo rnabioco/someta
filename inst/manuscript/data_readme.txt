@@ -35,3 +35,12 @@ is_sc : manual check if entry is truly single cell data
 called_usable : orginal automated call if single cell dataset has metadata
 correct_call : manual check if automated call was correct
 has_type : manual check if dataset metadata actually contains cell type column/info
+
+arrayexpress_analysis_2020.tsv:
+ID : arrayexpress accession
+ReleaseDate : date of release
+PubmedID : associated Pubmed id
+Species : organisms
+files : all associated files
+type : scRNA-seq platform
+has_meta : single cell dataset has metadata
