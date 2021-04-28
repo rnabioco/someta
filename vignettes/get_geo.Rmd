@@ -63,7 +63,7 @@ if (!(file.exists(here("inst", "extdata", date, paste0("gds_result_", date, ".tx
 # Parse GEO query
 
 ```{r entries}
-if (format(format = "%m%d%y", file.mtime(here("inst", "extdata", "current_geo.rds"))) == date) {
+if (format(format = "%m%d%y", file.info(here("inst", "extdata", "current_geo.rds"))$ctime) == date) {
   gds <- readRDS(here("inst", "extdata", "current_geo.rds")) %>%
     mutate(year = as.numeric(year))
   gds %>% saveRDS(here("inst", "extdata", date, paste0("geo_", date, ".rds")))
