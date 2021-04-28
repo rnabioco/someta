@@ -6,7 +6,7 @@
 [![R build
 status](https://github.com/rnabioco/someta/workflows/Query/badge.svg)](https://github.com/rnabioco/someta/actions)
 [![Last Commit on
-GitHub](https://img.shields.io/badge/Last%20Run-04--14--2021-brightgreen)](https://rnabioco.github.io/someta/articles/get_geo.html)
+GitHub](https://img.shields.io/badge/Last%20Run-04--15--2021-brightgreen)](https://rnabioco.github.io/someta/articles/get_geo.html)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4686053.svg)](https://doi.org/10.5281/zenodo.4686053)
 <!-- badges: end -->
 
@@ -21,6 +21,8 @@ Descriptions of the issue and suggestions (in short: PLEASE PLEASE
 deposit some metadata at cell level for scRNA-seq data) are in this
 short
 [manuscript](https://www.biorxiv.org/content/10.1101/2020.11.20.391920v1).
+Supplemental data files related to the manuscript are located in the
+`inst/manuscript/` directory.
 
 The latest archive of GEO scRNA-seq records with other associated data
 can be directly downloaded here
