@@ -63,7 +63,8 @@ if (!(file.exists(here("inst", "extdata", date, paste0("gds_result_", date, ".tx
 # Parse GEO query
 
 ```{r entries}
-if (format(format = "%m%d%y", file.info(here("inst", "extdata", "current_geo.rds"))$ctime) == date) {
+# if (format(format = "%m%d%y", file.info(here("inst", "extdata", "current_geo.rds"))$ctime) == date) {
+if (!(file.exists(here("inst", "extdata", date, paste0("gds_result_", date, ".txt"))))) {
   gds <- readRDS(here("inst", "extdata", "current_geo.rds")) %>%
     mutate(year = as.numeric(year))
   gds %>% saveRDS(here("inst", "extdata", date, paste0("geo_", date, ".rds")))
@@ -764,7 +765,8 @@ write_tsv(gds_d, "fig2d.tsv.gz")
 # Similar analysis and observations with ArrayExpress
 
 ```{r ae1}
-if (format(format = "%m%d%y", file.mtime(here("inst", "extdata", "current_geo.rds"))) == date) {
+# if (format(format = "%m%d%y", file.info(here("inst", "extdata", "current_geo.rds"))$ctime) == date) {
+if (!(file.exists(here("inst", "extdata", date, paste0("gds_result_", date, ".txt"))))) {
   sets <- read_tsv(here("inst", "extdata", "arrayexpress_sets_proc_add.tsv.gz"))
 } else {
   source(here("utils", "arrayexpress_query.R"))
