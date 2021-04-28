@@ -6,7 +6,7 @@
 [![R build
 status](https://github.com/rnabioco/someta/workflows/Query/badge.svg)](https://github.com/rnabioco/someta/actions)
 [![Last Commit on
-GitHub](https://img.shields.io/badge/Last%20Run-04--15--2021-brightgreen)](https://rnabioco.github.io/someta/articles/get_geo.html)
+GitHub](https://img.shields.io/badge/Last%20Run-04--28--2021-brightgreen)](https://rnabioco.github.io/someta/articles/get_geo.html)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4686053.svg)](https://doi.org/10.5281/zenodo.4686053)
 <!-- badges: end -->
 
