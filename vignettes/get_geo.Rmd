@@ -64,7 +64,7 @@ if (!(file.exists(here("inst", "extdata", date, paste0("gds_result_", date, ".tx
 
 ```{r entries}
 # if (format(format = "%m%d%y", file.info(here("inst", "extdata", "current_geo.rds"))$ctime) == date) {
-if (!(file.exists(here("inst", "extdata", date, paste0("gds_result_", date, ".txt"))))) {
+if ((file.exists(here("inst", "extdata", date, paste0("gds_result_", date, ".txt"))))) {
   gds <- readRDS(here("inst", "extdata", "current_geo.rds")) %>%
     mutate(year = as.numeric(year))
   gds %>% saveRDS(here("inst", "extdata", date, paste0("geo_", date, ".rds")))
@@ -475,10 +475,20 @@ id_conv <- function(doi) {
     error = function(e) NA
   )
 }
+
+extract_layer <- function(x) {
+  temp <- x %>% unlist()
+  if (is.null(temp)) {
+    temp <- NA
+  }
+  temp
+}
 try2l <- ts %>%
   filter(DOI_pub != "NA") %>%
   select(DOI_pub) %>%
   mutate(pmid = mapply(id_conv, DOI_pub))
+try2l <- try2l %>% 
+  mutate(pmid = map_chr(pmid, extract_layer))
 
 tools <- read_tsv("https://raw.githubusercontent.com/scRNA-tools/scRNA-tools/master/database/references.tsv") %>%
   pull(Title) %>%
@@ -500,7 +510,7 @@ ts$tau <- unlist(tau2)
 ts2 <- ts %>%
   left_join(try2l, by = "DOI_pub") %>%
   mutate(pubmed = ifelse(is.na(pmid), tau, pmid)) %>%
-  filter(!is.null(pubmed), !is.na(pubmed)) %>% 
+  filter(!is.null(unlist(pubmed)), !is.na(unlist(pubmed))) %>% 
   select(DOI, pubmed) %>%
   na.omit() %>% 
   distinct() %>%
@@ -759,14 +769,14 @@ gds_d <- gds %>%
   dplyr::filter(year >= 2017) %>% 
   dplyr::select(id, usable, usable2, software_author = check)
 
-write_tsv(gds_d, "fig2d.tsv.gz")
+# write_tsv(gds_d, "fig2d.tsv.gz")
 ```
 
 # Similar analysis and observations with ArrayExpress
 
 ```{r ae1}
 # if (format(format = "%m%d%y", file.info(here("inst", "extdata", "current_geo.rds"))$ctime) == date) {
-if (!(file.exists(here("inst", "extdata", date, paste0("gds_result_", date, ".txt"))))) {
+if ((file.exists(here("inst", "extdata", date, paste0("gds_result_", date, ".txt"))))) {
   sets <- read_tsv(here("inst", "extdata", "arrayexpress_sets_proc_add.tsv.gz"))
 } else {
   source(here("utils", "arrayexpress_query.R"))
