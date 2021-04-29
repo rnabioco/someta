@@ -41,8 +41,8 @@ al](https://www.nature.com/articles/s41587-020-00744-z).
 As of the initial presentation of this issue (10–17–2020), the number is
 a frustratingly low **0.122**.
 
-Current fraction in GEO with metadata: **0.1399138**. In comparison, for
-ArrayExpress 10x datasets, the fraction is **0.1493506**).
+Current fraction in GEO with metadata: **0.1443606**. In comparison, for
+ArrayExpress 10x datasets, the fraction is **0.1677019**).
 
 Number of depositions with updated metadata records since description of
 the issue here: **0**.
