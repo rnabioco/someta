@@ -41,7 +41,8 @@ Imports:
     cowplot,
     scholar,
     rbiorxiv,
-    bookdown
+    bookdown,
+    textshaping
 Suggests:
     roxygen2,
     testthat,
