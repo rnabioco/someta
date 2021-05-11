@@ -21,13 +21,11 @@ knitr::opts_chunk$set(
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4686053.svg)](https://doi.org/10.5281/zenodo.4686053)
 <!-- badges: end -->
 
-Cell-type annotations are frequently excluded from public single cell datasets. This hinders single cell sequencing analysis reproducibility and accessibility. To better describe the issue, we monitor GEO entries monthly (currently set to auto-update at 1AM UTC, 1st of the month), and programmatically determine the fraction of entries with (potentially, likely overestimated) usable cell metadata. 
-
-Descriptions of the issue and suggestions (in short: PLEASE PLEASE deposit some metadata at cell level for scRNA-seq data) are in this short [manuscript](https://www.biorxiv.org/content/10.1101/2020.11.20.391920v1). Supplemental data files related to the manuscript are located in the `inst/manuscript/` directory.
-
-The latest archive of GEO scRNA-seq records with other associated data can be directly downloaded here [current_geo.rds](https://github.com/rnabioco/someta/raw/master/inst/extdata/current_geo.rds). GEO filtering, preview [first lines of text files, and content of .tar], and spot check feedback can be accessed from last tab on the `clustifyr` [web app](https://raysinensis.shinyapps.io/clustifyr-web-app/?tab=someta).
+Cell-type annotations are frequently excluded from public single cell datasets. This hinders single cell sequencing analysis reproducibility and accessibility. To better describe the issue, we monitor GEO entries monthly (currently set to auto-update at 1AM UTC, 1st of the month), and programmatically determine the fraction of entries with (potentially, likely overestimated) usable cell metadata. Descriptions of the issue and suggestions (in short: PLEASE PLEASE deposit some metadata at cell level for scRNA-seq data) are now published on [PLoS Biology](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001077). Supplemental data files related to the manuscript are located in the `inst/manuscript/` directory.
 
 Additional thoughtful guidelines for organizing scRNA-seq sample and cell metadata are discussed here by [Füllgrabe et al](https://www.nature.com/articles/s41587-020-00744-z).
+
+The latest archive of GEO scRNA-seq records with other associated data can be directly downloaded here [current_geo.rds](https://github.com/rnabioco/someta/raw/master/inst/extdata/current_geo.rds). GEO filtering, preview first lines of text files, and content of .tar, and spot check feedback can be accessed from last tab on the `clustifyr` [web app](https://raysinensis.shinyapps.io/clustifyr-web-app/?tab=someta).
 
 ***
 
@@ -43,8 +41,9 @@ if (file.exists(here("inst", "extdata", date, paste0("geo_", date, ".rds")))) {
   gds <- readRDS(here("inst", "extdata", date, paste0("geo_", date, ".rds"))) %>%
     mutate(year = as.numeric(year))
 } else {
-  gds <- readRDS(here("inst", "extdata", date_1off, paste0("geo_", date_1off, ".rds"))) %>%
-    mutate(year = as.numeric(year))
+  # gds <- readRDS(here("inst", "extdata", date_1off, paste0("geo_", date_1off, ".rds"))) %>%
+  #   mutate(year = as.numeric(year))
+  gds <- readRDS(here("inst", "extdata", "current_geo.rds"))
 }
 gds_orig <- gds
 ```
