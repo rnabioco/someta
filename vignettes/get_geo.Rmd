@@ -494,14 +494,21 @@ tools <- read_tsv("https://raw.githubusercontent.com/scRNA-tools/scRNA-tools/mas
   pull(Title) %>%
   str_remove_all(":|,|\\(|\\)") %>%
   str_replace_all("’s | or | and |–|—a |—", " ") %>%
-  str_remove_all(" Fig\\. 1\\.") %>%
-  na.omit()
+  str_remove_all(" Fig\\. 1\\.") #%>% na.omit()
 
 tau <- list()
 for (i in 1:length(tools)) {
-  tau[[i]] <- easyPubMed::get_pubmed_ids_by_fulltitle(tools[i],
+  temp <- tryCatch(easyPubMed::get_pubmed_ids_by_fulltitle(tools[i],
     api_key = "9cc836a53f5c509a6783283e694da4fb0d08"
-  )$IdList$Id
+  )$IdList$Id,
+  error = function(e) {
+    NA
+  })
+  if (!is.null(temp)) {
+    tau[[i]] <- temp
+  } else {
+    tau[[i]] <- NA
+  }
 }
 
 tau2 <- tau
@@ -782,7 +789,6 @@ if (!(file.exists(here("inst", "extdata", date, paste0("gds_result_", date, ".tx
   source(here("utils", "arrayexpress_query.R"))
   sets <- read_tsv(here("inst", "extdata", "arrayexpress_sets_proc_add.tsv.gz"))
 }
-
 
 # remove GEO imported
 sets2 <- sets %>% filter(!str_detect(ID, "GEO"))
