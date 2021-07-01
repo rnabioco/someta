@@ -85,7 +85,7 @@
       <h1 data-toc-skip>Assessment of missing cell-level metadata in single cell GEO records</h1>
                         <h4 class="author">Rui Fu</h4>
             <address class="author_afil">
-      RNA Bioscience Initative, University of Colorado School of Medicine<br><h4 class="date">2021-06-01</h4>
+      RNA Bioscience Initative, University of Colorado School of Medicine<br><h4 class="date">2021-07-01</h4>
       
       
       <div class="hidden name"><code>get_geo.Rmd</code></div>
@@ -100,26 +100,26 @@
 <a href="#current-geo-query-used" class="anchor"></a>Current GEO query used:</h1>
 <pre><code>"expression profiling by high throughput sequencing" AND
 ("single nuclei" OR "single cell" OR "scRNAseq" OR "scRNA-seq" OR "snRNAseq" OR "snRNA-seq")</code></pre>
-<pre><code>#&gt; [1] "060121"
-#&gt; Response [https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&amp;query_key=1&amp;WebEnv=MCID_60b6a78fb781d509663d0a08]
-#&gt;   Date: 2021-06-01 21:33
+<pre><code>#&gt; [1] "070121"
+#&gt; Response [https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&amp;query_key=1&amp;WebEnv=MCID_60ddaf0cc07729260d295999]
+#&gt;   Date: 2021-07-01 12:03
 #&gt;   Status: 200
 #&gt;   Content-Type: text/plain; charset=UTF-8
-#&gt;   Size: 4.85 MB
-#&gt; &lt;ON DISK&gt;  /Users/runner/work/someta/someta/inst/extdata/060121/gds_result_060121.txt</code></pre>
+#&gt;   Size: 5.02 MB
+#&gt; &lt;ON DISK&gt;  /Users/runner/work/someta/someta/inst/extdata/070121/gds_result_070121.txt</code></pre>
 </div>
 <div id="parse-geo-query" class="section level1">
 <h1 class="hasAnchor">
 <a href="#parse-geo-query" class="anchor"></a>Parse GEO query</h1>
-<p>Total entries: 5788</p>
-<p>Number of entries filtered out because key words were not found: 705</p>
-<p>Merged super and subseries: 511</p>
-<p>The fraction of GEO entries with potential metadata (file with “meta”, “annot”, “clustering”, “colData”, or “type” in filename or rda/rds/rdata/h5ad/loom files) is 0.1547723. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at 0.0724638). Final fraction: 0.1501751</p>
+<p>Total entries: 5990</p>
+<p>Number of entries filtered out because key words were not found: 731</p>
+<p>Merged super and subseries: 519</p>
+<p>The fraction of GEO entries with potential metadata (file with “meta”, “annot”, “clustering”, “colData”, or “type” in filename or rda/rds/rdata/h5ad/loom files) is 0.1596284. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at 0.0669643). Final fraction: 0.1551943</p>
 </div>
 <div id="comparison-of-parsed-data-to-database-from-svensson-et-al-" class="section level1">
 <h1 class="hasAnchor">
 <a href="#comparison-of-parsed-data-to-database-from-svensson-et-al-" class="anchor"></a>Comparison of parsed data to database from Svensson et al.</h1>
-<p>Overlap of scRNA-seq GEO entries between manual curation and the GEO query is 0.9707242. Number of entries not public: 0. Fraction with metadata: 0.2054329.</p>
+<p>Overlap of scRNA-seq GEO entries between manual curation and the GEO query is 0.970948. Number of entries not public: 0. Fraction with metadata: 0.2057336.</p>
 </div>
 <div id="geo-cell-level-metadata-availability-by-year" class="section level1">
 <h1 class="hasAnchor">
@@ -148,13 +148,13 @@
 <a href="#similar-analysis-and-observations-with-arrayexpress" class="anchor"></a>Similar analysis and observations with ArrayExpress</h1>
 <pre><code>#&gt; [1] "experiments"
 #&gt;                                                     . Freq
-#&gt; 1                                               10xV2  124
-#&gt; 2                                               10xV3   48
+#&gt; 1                                               10xV2  129
+#&gt; 2                                               10xV3   52
 #&gt; 3                                          smart-seq2   26
-#&gt; 4                                          Smart-seq2   25
+#&gt; 4                                          Smart-seq2   26
 #&gt; 5                                          smart-like   10
 #&gt; 6                                            drop-seq    6
-#&gt; 7                                            Drop-seq    4
+#&gt; 7                                            Drop-seq    5
 #&gt; 8                                               10xV1    3
 #&gt; 9                                              10xV1a    3
 #&gt; 10                                             10xV1i    3
@@ -164,14 +164,15 @@
 #&gt; 14                                           STRT-seq    3
 #&gt; 15                                          10x5prime    2
 #&gt; 16                                         Smart-seq3    2
-#&gt; 17                                 10X TCR enrichment    1
-#&gt; 18                                             10x_v1    1
-#&gt; 19 BD Rhapsody Immune Response Targeted Panel (Human)    1
-#&gt; 20                                         BDRhapsody    1
-#&gt; 21                                          CELLO-seq    1
-#&gt; 22                                           CITE-seq    1
-#&gt; 23                                          Smart-seq    1
-#&gt; 24                                         Smart-Seq2    1</code></pre>
+#&gt; 17                                          10x 5' v1    1
+#&gt; 18                                 10X TCR enrichment    1
+#&gt; 19                                             10x_v1    1
+#&gt; 20 BD Rhapsody Immune Response Targeted Panel (Human)    1
+#&gt; 21                                         BDRhapsody    1
+#&gt; 22                                          CELLO-seq    1
+#&gt; 23                                           CITE-seq    1
+#&gt; 24                                          Smart-seq    1
+#&gt; 25                                         Smart-Seq2    1</code></pre>
 <pre><code>#&gt; [1] "fraction with metadata (10x experiments only)"
 #&gt; # A tibble: 5 x 3
 #&gt;   year    frac     n
@@ -179,8 +180,8 @@
 #&gt; 1 2017  0.333      3
 #&gt; 2 2018  0.0625    16
 #&gt; 3 2019  0.167     30
-#&gt; 4 2020  0.152     79
-#&gt; 5 2021  0.175     57</code></pre>
+#&gt; 4 2020  0.154     78
+#&gt; 5 2021  0.147     68</code></pre>
 </div>
   </div>
 
