@@ -9,7 +9,7 @@ fileloc <- file.path(proj_dir, "inst", "extdata", date, paste0("gds_result_", da
 
 # read query results
 message("parse GEO results")
-gds <- read_table(fileloc, col_names = FALSE) %>%
+gds <- read_delim(fileloc, col_names = FALSE, delim = "alwaysread1column") %>%
   mutate(num = as.numeric(str_remove(str_extract(X1, "^[0-9]+\\."), "\\."))) %>%
   fill(num, .direction = "down") %>%
   filter(str_detect(X1, "Organism:|FTP download:")) %>%
