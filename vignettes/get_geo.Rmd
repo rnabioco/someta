@@ -779,9 +779,9 @@ gds_d <- gds %>%
 # write_tsv(gds_d, "fig2d.tsv.gz")
 ```
 
-# Similar analysis and observations with ArrayExpress
+<!-- # Similar analysis and observations with ArrayExpress -->
 
-```{r ae1}
+```{r ae1, eval = FALSE}
 # if (format(format = "%m%d%y", file.info(here("inst", "extdata", "current_geo.rds"))$ctime) == date) {
 if (!(file.exists(here("inst", "extdata", date, paste0("gds_result_", date, ".txt"))))) {
   sets <- read_tsv(here("inst", "extdata", "arrayexpress_sets_proc_add.tsv.gz"))
@@ -807,7 +807,7 @@ sets2$samplemetainfo_2 %>% table() %>%
   arrange(desc(Freq))
 ```
 
-```{r ae2}
+```{r ae2, eval = FALSE}
 print("fraction with metadata (10x experiments only)")
 sets_10x %>% separate(ReleaseDate, sep = "-", into = c("year", "month", "day")) %>% 
   group_by(year) %>% 
