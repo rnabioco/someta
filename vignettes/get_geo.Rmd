@@ -553,13 +553,8 @@ for (i in 1:length(splits)) {
 
 notold <- sapply(pubmeds_t2, function(x) {
   as.numeric(x$year[1])
-}, simplify = TRUE) %>%
-  as.data.frame() %>%
-  rownames_to_column("id") %>%
-  filter(`.` >= 2017) %>%
-  pull(id)
-
-pubmeds_t3 <- pubmeds_t2[notold]
+}, simplify = TRUE)
+pubmeds_t3 <- pubmeds_t2[notold >= 2017]
 
 get_authors <- function(pubmed) {
   tryCatch(pubmed %>% mutate(fullname = str_c(firstname, lastname, sep = "_")) %>%
