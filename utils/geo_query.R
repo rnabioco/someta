@@ -166,19 +166,23 @@ gds4 <- gds4 %>% mutate(usable = ifelse(has_meta1 == "yes" | has_meta2 == "yes" 
   "yes", "no"
 ))
 
-# giant superseries (also incorrect) soft.gz  files cause issues
+# giant superseries (also incorrect) soft.gz files cause issues
 blacklist <- c("GSE63058", "GSE47917")
 gds4 <- gds4 %>% filter(!(id %in% blacklist))
+
+# avoid re-doing previous checks
+gds_old <- readRDS(here("inst", "extdata", "current_geo.rds"))
+gds4 <- gds4 %>% filter(!(id %in% gds_old$id))
 
 # geo and pubmed parsing, slow
 message("get GEO data")
 gds5 <- gds4 %>%
   split(gds4$id) %>%
   map_dfr(. %>% mutate(geo = map(id, get_geo)))
-saveRDS(gds5, here("inst", "extdata", date, paste0("gds5_temp_", date, ".rds")))
+# saveRDS(gds5, here("inst", "extdata", date, paste0("gds5_temp_", date, ".rds")))
 
 message("get PubMed data")
-gds5 <- readRDS(here("inst", "extdata", date, paste0("gds5_temp_", date, ".rds")))
+# gds5 <- readRDS(here("inst", "extdata", date, paste0("gds5_temp_", date, ".rds")))
 gds5 <- gds5 %>%
   mutate(date = pbmcapply::pbmcmapply(get_date, geo)) %>%
   separate(date, into = c("month", "day", "year"))
@@ -215,5 +219,6 @@ message("get citation data")
 gds7 <- gds6 %>%
   mutate(cite = map(pubmed, get_cites)) %>%
   mutate(year = as.numeric(year))
+gds7 <- bind_rows(gds_old, gds7)
 gds7 %>% saveRDS(here("inst", "extdata", date, paste0("geo_", date, ".rds")))
 gds7 %>% saveRDS(here("inst", "extdata", "current_geo.rds"))
