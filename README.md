@@ -6,7 +6,7 @@
 [![R build
 status](https://github.com/rnabioco/someta/workflows/Query/badge.svg)](https://github.com/rnabioco/someta/actions)
 [![Last Commit on
-GitHub](https://img.shields.io/badge/Last%20Run-08--02--2021-brightgreen)](https://rnabioco.github.io/someta/articles/get_geo.html)
+GitHub](https://img.shields.io/badge/Last%20Run-09--02--2021-brightgreen)](https://rnabioco.github.io/someta/articles/get_geo.html)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4686053.svg)](https://doi.org/10.5281/zenodo.4686053)
 <!-- badges: end -->
 
@@ -39,7 +39,7 @@ app](https://raysinensis.shinyapps.io/clustifyr-web-app/?tab=someta).
 As of the initial presentation of this issue (10–17–2020), the number is
 a frustratingly low **0.122**.
 
-Current fraction in GEO with metadata: **0.1557594**. In comparison, for
+Current fraction in GEO with metadata: **0.1597168**. In comparison, for
 ArrayExpress 10x datasets, the fraction is **0.1487179**).
 
 Number of depositions with updated metadata records since description of
