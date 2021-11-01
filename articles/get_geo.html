@@ -85,7 +85,7 @@
       <h1 data-toc-skip>Assessment of missing cell-level metadata in single cell GEO records</h1>
                         <h4 class="author">Rui Fu</h4>
             <address class="author_afil">
-      RNA Bioscience Initative, University of Colorado School of Medicine<br><h4 class="date">2021-10-01</h4>
+      RNA Bioscience Initative, University of Colorado School of Medicine<br><h4 class="date">2021-11-01</h4>
       
       
       <div class="hidden name"><code>get_geo.Rmd</code></div>
@@ -100,26 +100,26 @@
 <a href="#current-geo-query-used" class="anchor"></a>Current GEO query used:</h1>
 <pre><code>"expression profiling by high throughput sequencing" AND
 ("single nuclei" OR "single cell" OR "scRNAseq" OR "scRNA-seq" OR "snRNAseq" OR "snRNA-seq")</code></pre>
-<pre><code>#&gt; [1] "100121"
-#&gt; Response [https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&amp;query_key=1&amp;WebEnv=MCID_615664b8c629e93af242bb15]
-#&gt;   Date: 2021-10-01 01:30
+<pre><code>#&gt; [1] "110121"
+#&gt; Response [https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&amp;query_key=1&amp;WebEnv=MCID_617f437ece72560cbc49c5b0]
+#&gt;   Date: 2021-11-01 01:31
 #&gt;   Status: 200
 #&gt;   Content-Type: text/plain; charset=UTF-8
-#&gt;   Size: 5.58 MB
-#&gt; &lt;ON DISK&gt;  /Users/runner/work/someta/someta/inst/extdata/100121/gds_result_100121.txt</code></pre>
+#&gt;   Size: 5.75 MB
+#&gt; &lt;ON DISK&gt;  /Users/runner/work/someta/someta/inst/extdata/110121/gds_result_110121.txt</code></pre>
 </div>
 <div id="parse-geo-query" class="section level1">
 <h1 class="hasAnchor">
 <a href="#parse-geo-query" class="anchor"></a>Parse GEO query</h1>
-<p>Total entries: 6643</p>
-<p>Number of entries filtered out because key words were not found: 793</p>
-<p>Merged super and subseries: 547</p>
-<p>The fraction of GEO entries with potential metadata (file with “meta”, “annot”, “clustering”, “colData”, or “type” in filename or rda/rds/rdata/h5ad/loom files) is 0.166319. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at 0.0588235). Final fraction: 0.1623364</p>
+<p>Total entries: 6859</p>
+<p>Number of entries filtered out because key words were not found: 822</p>
+<p>Merged super and subseries: 561</p>
+<p>The fraction of GEO entries with potential metadata (file with “meta”, “annot”, “clustering”, “colData”, or “type” in filename or rda/rds/rdata/h5ad/loom files) is 0.1691204. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at 0.0564972). Final fraction: 0.1652558</p>
 </div>
 <div id="comparison-of-parsed-data-to-database-from-svensson-et-al-" class="section level1">
 <h1 class="hasAnchor">
 <a href="#comparison-of-parsed-data-to-database-from-svensson-et-al-" class="anchor"></a>Comparison of parsed data to database from Svensson et al.</h1>
-<p>Overlap of scRNA-seq GEO entries between manual curation and the GEO query is 0.9683453. Number of entries not public: 0. Fraction with metadata: 0.217806.</p>
+<p>Overlap of scRNA-seq GEO entries between manual curation and the GEO query is 0.9671429. Number of entries not public: 0. Fraction with metadata: 0.2160883.</p>
 </div>
 <div id="geo-cell-level-metadata-availability-by-year" class="section level1">
 <h1 class="hasAnchor">
