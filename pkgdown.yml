@@ -1,8 +1,8 @@
 pandoc: 2.7.3
-pkgdown: 2.0.0
+pkgdown: 2.0.1
 pkgdown_sha: ~
 articles:
   get_geo: get_geo.html
   recs: recs.html
-last_built: 2021-12-01T01:44Z
+last_built: 2022-01-01T01:34Z
 
