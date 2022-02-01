@@ -81,7 +81,7 @@
       <h1 data-toc-skip>Recommendations for improving single cell GEO record annotations</h1>
                         <h4 data-toc-skip class="author">Rui Fu, Kent Riemondy, Sidhant Puntambekar</h4>
             <address class="author_afil">
-      RNA Bioscience Initative, University of Colorado School of Medicine<br><h4 data-toc-skip class="date">2022-01-01</h4>
+      RNA Bioscience Initative, University of Colorado School of Medicine<br><h4 data-toc-skip class="date">2022-02-01</h4>
       
       
       <div class="hidden name"><code>recs.Rmd</code></div>
@@ -91,29 +91,29 @@
 
     
     
-<div class="section level1">
-<h1 id="recommendations-for-depositing-scrna-seq-datasets">Recommendations for depositing scRNA-seq datasets<a class="anchor" aria-label="anchor" href="#recommendations-for-depositing-scrna-seq-datasets"></a>
-</h1>
 <div class="section level2">
-<h2 id="for-investigators-and-reviewers">For investigators and reviewers<a class="anchor" aria-label="anchor" href="#for-investigators-and-reviewers"></a>
+<h2 id="recommendations-for-depositing-scrna-seq-datasets">Recommendations for depositing scRNA-seq datasets<a class="anchor" aria-label="anchor" href="#recommendations-for-depositing-scrna-seq-datasets"></a>
 </h2>
+<div class="section level3">
+<h3 id="for-investigators-and-reviewers">For investigators and reviewers<a class="anchor" aria-label="anchor" href="#for-investigators-and-reviewers"></a>
+</h3>
 <ol style="list-style-type: decimal">
 <li><p>Require that analysts provide a metadata table containing cell-level metadata and a count matrix with RNA abundance measurements. The cell-level metadata should contain the cell identifiers present in the matrix and provide the inferred cell-type or other cell-level annotations described in the associated publication. A binary object saved from the analysis framework could also be supplied (.rds for R or .h5ad for Python).</p></li>
 <li><p>When reviewing single-cell sequencing studies, ensure that the authors have deposited the proper cell-level metadata alongside the raw data into a suitable repository (e.g. GEO, ArrayExpress).</p></li>
 <li><p>Encouraging previous depositors of single-cell sequencing data to update their records with cell-level metadata, if it was not included in the original submission.</p></li>
 </ol>
 </div>
-<div class="section level2">
-<h2 id="for-journals">For journals<a class="anchor" aria-label="anchor" href="#for-journals"></a>
-</h2>
+<div class="section level3">
+<h3 id="for-journals">For journals<a class="anchor" aria-label="anchor" href="#for-journals"></a>
+</h3>
 <ol style="list-style-type: decimal">
 <li><p>Include language about requirements/recommendation for external single-cell datasets to contain proper cell-level metadata.</p></li>
 <li><p>Ask reviewers to review material deposited to external data repositories.</p></li>
 </ol>
 </div>
-<div class="section level2">
-<h2 id="for-data-repositories">For data repositories<a class="anchor" aria-label="anchor" href="#for-data-repositories"></a>
-</h2>
+<div class="section level3">
+<h3 id="for-data-repositories">For data repositories<a class="anchor" aria-label="anchor" href="#for-data-repositories"></a>
+</h3>
 <ol style="list-style-type: decimal">
 <li><p>Public repositories should introduce a standardized annotation that specifies that the dataset contains single cell data. For GEO, commonly used single cell sequencing methods could be added to the library strategy annotation (e.g. scRNA-seq, snRNA-seq, CITE-seq, etc.).</p></li>
 <li><p>Updating submission guidelines to require metadata with cell-level annotations for single cell dataset submissions. For GEO, this would be accomplished by updating the “Processed data files” requirements to outline required data types for single-cell sequencing submissions.</p></li>
@@ -121,9 +121,9 @@
 <p><em>“For single-cell sequencing data, in addition to standard count matrices (genes-by-cells), we expect users to deposit metadata with cell-level annotations generated during the course of analysis.”</em></p>
 </div>
 </div>
-<div class="section level1">
-<h1 id="for-more-detailed-discussions-please-see">For more detailed discussions, please see:<a class="anchor" aria-label="anchor" href="#for-more-detailed-discussions-please-see"></a>
-</h1>
+<div class="section level2">
+<h2 id="for-more-detailed-discussions-please-see">For more detailed discussions, please see:<a class="anchor" aria-label="anchor" href="#for-more-detailed-discussions-please-see"></a>
+</h2>
 <ol style="list-style-type: decimal">
 <li><a href="https://www.nature.com/articles/s41587-020-00744-z" class="external-link">Füllgrabe et al</a></li>
 <li><a href="https://github.com/broadinstitute/single_cell_portal/wiki/Metadata-File#scp-conventional-file-format" class="external-link">Single Cell Portal Metadata Convention</a></li>
@@ -148,7 +148,7 @@
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
 </div>
 
       </footer>

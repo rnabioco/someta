@@ -81,7 +81,7 @@
       <h1 data-toc-skip>Assessment of missing cell-level metadata in single cell GEO records</h1>
                         <h4 data-toc-skip class="author">Rui Fu</h4>
             <address class="author_afil">
-      RNA Bioscience Initative, University of Colorado School of Medicine<br><h4 data-toc-skip class="date">2022-01-01</h4>
+      RNA Bioscience Initative, University of Colorado School of Medicine<br><h4 data-toc-skip class="date">2022-02-01</h4>
       
       
       <div class="hidden name"><code>get_geo.Rmd</code></div>
@@ -91,51 +91,51 @@
 
     
     
-<div class="section level1">
-<h1 id="current-geo-query-used">Current GEO query used:<a class="anchor" aria-label="anchor" href="#current-geo-query-used"></a>
-</h1>
+<div class="section level2">
+<h2 id="current-geo-query-used">Current GEO query used:<a class="anchor" aria-label="anchor" href="#current-geo-query-used"></a>
+</h2>
 <pre><code>"expression profiling by high throughput sequencing" AND
 ("single nuclei" OR "single cell" OR "scRNAseq" OR "scRNA-seq" OR "snRNAseq" OR "snRNA-seq")</code></pre>
-<pre><code><span class="co">#&gt; [1] "010122"</span>
-<span class="co">#&gt; Response [https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&amp;query_key=1&amp;WebEnv=MCID_61cfafc7f966a36f90423c81]</span>
-<span class="co">#&gt;   Date: 2022-01-01 01:35</span>
+<pre><code><span class="co">#&gt; [1] "020122"</span>
+<span class="co">#&gt; Response [https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=gds&amp;query_key=1&amp;WebEnv=MCID_61f88eac62354f27a56de757]</span>
+<span class="co">#&gt;   Date: 2022-02-01 01:36</span>
 <span class="co">#&gt;   Status: 200</span>
 <span class="co">#&gt;   Content-Type: text/plain; charset=UTF-8</span>
-<span class="co">#&gt;   Size: 6.17 MB</span>
-<span class="co">#&gt; &lt;ON DISK&gt;  /Users/runner/work/someta/someta/inst/extdata/010122/gds_result_010122.txt</span></code></pre>
+<span class="co">#&gt;   Size: 6.38 MB</span>
+<span class="co">#&gt; &lt;ON DISK&gt;  /Users/runner/work/someta/someta/inst/extdata/020122/gds_result_020122.txt</span></code></pre>
 </div>
-<div class="section level1">
-<h1 id="parse-geo-query">Parse GEO query<a class="anchor" aria-label="anchor" href="#parse-geo-query"></a>
-</h1>
-<p>Total entries: 7366</p>
-<p>Number of entries filtered out because key words were not found: 876</p>
-<p>Merged super and subseries: 580</p>
-<p>The fraction of GEO entries with potential metadata (file with “meta”, “annot”, “clustering”, “colData”, or “type” in filename or rda/rds/rdata/h5ad/loom files) is 0.1717675. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at 0.0525394). Final fraction: 0.1681568</p>
+<div class="section level2">
+<h2 id="parse-geo-query">Parse GEO query<a class="anchor" aria-label="anchor" href="#parse-geo-query"></a>
+</h2>
+<p>Total entries: 7623</p>
+<p>Number of entries filtered out because key words were not found: 906</p>
+<p>Merged super and subseries: 587</p>
+<p>The fraction of GEO entries with potential metadata (file with “meta”, “annot”, “clustering”, “colData”, or “type” in filename or rda/rds/rdata/h5ad/loom files) is 0.1729622. Note however that these terms include some false positives (such as gene annotation file, patient metadata, and phenotype table), which we manually inspected and corrected (false positive fraction at 0.0509338). Final fraction: 0.1694831</p>
 </div>
-<div class="section level1">
-<h1 id="comparison-of-parsed-data-to-database-from-svensson-et-al-">Comparison of parsed data to database from Svensson et al.<a class="anchor" aria-label="anchor" href="#comparison-of-parsed-data-to-database-from-svensson-et-al-"></a>
-</h1>
-<p>Overlap of scRNA-seq GEO entries between manual curation and the GEO query is 0.9657534. Number of entries not public: 0. Fraction with metadata: 0.2151515.</p>
+<div class="section level2">
+<h2 id="comparison-of-parsed-data-to-database-from-svensson-et-al-">Comparison of parsed data to database from Svensson et al.<a class="anchor" aria-label="anchor" href="#comparison-of-parsed-data-to-database-from-svensson-et-al-"></a>
+</h2>
+<p>Overlap of scRNA-seq GEO entries between manual curation and the GEO query is 0.9659401. Number of entries not public: 0. Fraction with metadata: 0.2195489.</p>
 </div>
-<div class="section level1">
-<h1 id="geo-cell-level-metadata-availability-by-year">GEO cell-level metadata availability by year<a class="anchor" aria-label="anchor" href="#geo-cell-level-metadata-availability-by-year"></a>
-</h1>
+<div class="section level2">
+<h2 id="geo-cell-level-metadata-availability-by-year">GEO cell-level metadata availability by year<a class="anchor" aria-label="anchor" href="#geo-cell-level-metadata-availability-by-year"></a>
+</h2>
 <p><img src="get_geo_files/figure-html/frac-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
-<div class="section level1">
-<h1 id="geo-cell-level-metadata-availability-by-journal">GEO cell-level metadata availability by journal<a class="anchor" aria-label="anchor" href="#geo-cell-level-metadata-availability-by-journal"></a>
-</h1>
+<div class="section level2">
+<h2 id="geo-cell-level-metadata-availability-by-journal">GEO cell-level metadata availability by journal<a class="anchor" aria-label="anchor" href="#geo-cell-level-metadata-availability-by-journal"></a>
+</h2>
 <p><img src="get_geo_files/figure-html/journalplot-1.png" width="700" style="display: block; margin: auto;"></p>
 <p><img src="get_geo_files/figure-html/journaldot-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
-<div class="section level1">
-<h1 id="potential-effects-of-geo-cell-level-metadata-on-data-reuse-and-citations">Potential effects of GEO cell-level metadata on data reuse and citations<a class="anchor" aria-label="anchor" href="#potential-effects-of-geo-cell-level-metadata-on-data-reuse-and-citations"></a>
-</h1>
+<div class="section level2">
+<h2 id="potential-effects-of-geo-cell-level-metadata-on-data-reuse-and-citations">Potential effects of GEO cell-level metadata on data reuse and citations<a class="anchor" aria-label="anchor" href="#potential-effects-of-geo-cell-level-metadata-on-data-reuse-and-citations"></a>
+</h2>
 <p><img src="get_geo_files/figure-html/citations-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
-<div class="section level1">
-<h1 id="investigation-of-whether-metadata-deposition-is-better-in-projects-with-authors-developing-scrna-seq-informatic-tools-split-out-to-upload-authorother-authornot-or-just-authornot">Investigation of whether metadata deposition is better in projects with authors developing scRNA-seq informatic tools (split out to “upload author/other author/not”, or just “author/not”)<a class="anchor" aria-label="anchor" href="#investigation-of-whether-metadata-deposition-is-better-in-projects-with-authors-developing-scrna-seq-informatic-tools-split-out-to-upload-authorother-authornot-or-just-authornot"></a>
-</h1>
+<div class="section level2">
+<h2 id="investigation-of-whether-metadata-deposition-is-better-in-projects-with-authors-developing-scrna-seq-informatic-tools-split-out-to-upload-authorother-authornot-or-just-authornot">Investigation of whether metadata deposition is better in projects with authors developing scRNA-seq informatic tools (split out to “upload author/other author/not”, or just “author/not”)<a class="anchor" aria-label="anchor" href="#investigation-of-whether-metadata-deposition-is-better-in-projects-with-authors-developing-scrna-seq-informatic-tools-split-out-to-upload-authorother-authornot-or-just-authornot"></a>
+</h2>
 <p><img src="get_geo_files/figure-html/unnamed-chunk-3-1.png" width="700" style="display: block; margin: auto;"></p>
 <p><img src="get_geo_files/figure-html/unnamed-chunk-5-1.png" width="700" style="display: block; margin: auto;"></p>
 <!-- # Similar analysis and observations with ArrayExpress -->
@@ -159,7 +159,7 @@
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
 </div>
 
       </footer>
