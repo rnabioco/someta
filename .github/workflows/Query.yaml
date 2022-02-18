@@ -26,8 +26,11 @@ jobs:
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          cache-version: 1
-          extra-packages: nicholasmfraser/rbiorxiv, pkgdown, local::.
+          extra-packages: nicholasmfraser/rbiorxiv, any::pkgdown, local::.
+          needs: website
+
+      - name: Install package
+        run: R CMD INSTALL .
 
       - name: Deploy package
         timeout-minutes: 1200
