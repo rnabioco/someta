@@ -41,7 +41,7 @@ jobs:
           BiocManager::install(c('GEOquery', 'BiocStyle', 'ArrayExpress'))
           remotes::install_github("rnabioco/someta")
           remotes::install_deps(dependencies = TRUE)
-          install.packages("pkgdown")
+          install.packages("pkgdown", dependencies = TRUE)
         shell: Rscript {0}
 
       - name: Deploy package
