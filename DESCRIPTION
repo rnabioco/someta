@@ -23,7 +23,6 @@ Imports:
     here,
     httr,
     pbmcapply,
-    rbiorxiv,
     rcrossref,
     scholar,
     tidyverse
