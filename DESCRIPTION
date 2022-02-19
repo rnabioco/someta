@@ -1,59 +1,39 @@
 Package: scmetadata
 Title: Monitoring metadata availability of scRNA-seq data in GEO
 Version: 1.0.0
-Authors@R:
-    c(person(given = "Rui",
-             family = "Fu",
-             role = c("aut", "cre"),
-             email = "raysinensis@gmail.com"),
-      person(given = "Kent",
-             family = "Riemondy",
-             role = "aut",
-             email = "kent.riemondy@ucdenver.edu"),
-      person(given = "Sidhant",
-             family = "Puntambekar",
-             role = "ctb",
-             email = "sidhantnp@yahoo.com"))
-Description: Using NCBI e-utilities and R packages to query and visualize the problematic absence of cell metadata in most GEO single cell sequencing data series.
+Authors@R:c(
+    person("Rui", "Fu", , "raysinensis@gmail.com", role = c("aut", "cre")),
+    person("Kent", "Riemondy", , "kent.riemondy@ucdenver.edu", role = "aut"),
+    person("Sidhant", "Puntambekar", , "sidhantnp@yahoo.com", role = "ctb")
+  )
+Description: Using NCBI e-utilities and R packages to query and visualize
+    the problematic absence of cell metadata in most GEO single cell
+    sequencing data series.
 License: MIT + file LICENSE
+Depends:
+    R (>= 4.0)
 Imports:
-    data.table,
-    tidyverse,
-    dplyr,
-    magrittr,
-    purrr,
-    readr,
-    rlang (>= 0.1.2),
-    stringr,
-    tibble,
-    tidyr,
-    broom,
-    ggplot2,
-    httr,
-    here,
-    GEOquery,
-    easyPubMed,
     ArrayExpress,
-    rcrossref,
     BiocStyle,
-    pbmcapply,
-    googlesheets4,
     cowplot,
-    scholar,
+    data.table,
+    easyPubMed,
+    GEOquery,
+    googlesheets4,
+    here,
+    httr,
+    pbmcapply,
     rbiorxiv,
-    bookdown,
-    textshaping
+    rcrossref,
+    scholar,
+    tidyverse
 Suggests:
+    covr,
     roxygen2,
-    testthat,
-    covr
+    testthat
+VignetteBuilder: 
+    knitr
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
-Remotes:
-    tidyverse/magrittr
-Depends:
-    R (>= 4.0)
-VignetteBuilder: 
-    knitr
