@@ -24,10 +24,24 @@ jobs:
 
       - uses: r-lib/actions/setup-pandoc@v2
 
-      - uses: r-lib/actions/setup-r-dependencies@v2
+      - name: Restore R package cache
+        uses: actions/cache@v2
         with:
-          extra-packages: nicholasmfraser/rbiorxiv, any::pkgdown, local::.
-          needs: website
+          path: |
+            ${{ env.R_LIBS_USER }}/*
+            !${{ env.R_LIBS_USER }}/pak
+          key: ${{ format('{0}-{1}-{2}-{3}', steps.install.outputs.os-version, steps.install.outputs.r-version, inputs.cache-version, hashFiles(format('{0}/.github/pkg.lock', inputs.working-directory ))) }}
+          restore-keys: ${{ steps.install.outputs.os-version }}-${{ steps.install.outputs.r-version }}-${{inputs.cache-version }}-
+
+      - name: Install dependencies
+        run: |
+          install.packages("remotes")
+          remotes::install_cran("BiocManager", force = TRUE)
+          remotes::install_github("nicholasmfraser/rbiorxiv")
+          BiocManager::install(c('GEOquery', 'BiocStyle', 'ArrayExpress'))
+          remotes::install_deps(dependencies = TRUE)
+          install.packages("pkgdown")
+        shell: Rscript {0}
 
       - name: Install package
         run: R CMD INSTALL .
