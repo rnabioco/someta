@@ -33,6 +33,9 @@ jobs:
           key: ${{ format('{0}-{1}-{2}-{3}', steps.install.outputs.os-version, steps.install.outputs.r-version, inputs.cache-version, hashFiles(format('{0}/.github/pkg.lock', inputs.working-directory ))) }}
           restore-keys: ${{ steps.install.outputs.os-version }}-${{ steps.install.outputs.r-version }}-${{inputs.cache-version }}-
 
+      - name: Install cURL Headers
+        run: sudo apt-get install libcurl4-openssl-dev
+
       - name: Install dependencies
         run: |
           install.packages("remotes")
