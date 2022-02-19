@@ -35,3 +35,17 @@ jobs:
           git config --local user.name "$GITHUB_ACTOR"
           git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
           Rscript -e 'pkgdown::deploy_to_branch(new_process = FALSE)'
+
+      - name: Install package
+        run: R CMD INSTALL .
+
+      - name: Render README
+        run: Rscript -e 'rmarkdown::render("README.Rmd")'
+
+      - name: Commit README
+        run: |
+          git add README.md man/figures/*
+          git add inst/extdata/current_geo.rds
+          git add inst/extdata/arrayexpress_sets_proc_add.tsv.gz
+          git commit -m 'Re-build README.Rmd' || echo "No changes to commit"
+          git push origin || echo "No changes to commit"
