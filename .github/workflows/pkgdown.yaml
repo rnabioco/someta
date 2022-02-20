@@ -30,6 +30,9 @@ jobs:
           extra-packages: pkgdown
           needs: website
 
+      - name: Install rbiorxiv
+        run: Rscript -e 'pak::pkg_install("nicholasmfraser/rbiorxiv")'
+
       - name: Deploy package
         run: |
           git config --local user.name "$GITHUB_ACTOR"
