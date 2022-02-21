@@ -1,0 +1,5 @@
+url: https://rnabioco.github.io/someta/
+template:
+  package: rbitemplate
+  bootstrap: 5
+
