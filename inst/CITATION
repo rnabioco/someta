@@ -1,0 +1,13 @@
+bibentry(
+  bibtype = "Article",
+  year = 2021,
+  title = 'Cell-level metadata are indispensable for documenting single-cell sequencing datasets',
+  author  = c(
+      person('Sidhant', 'Puntambekar', role = c('aut'), email = 'sidhant.puntambekar@colorado.edu'),
+      person(c('Jay', 'R.'), 'Hesselberth', role = c('aut', 'cre'), email = 'jay.hesselberth@gmail.com'),
+      person(c('Kent', 'A.'), 'Riemondy', role = c('aut'), email = 'kent.riemondy@gmail.com'),
+      person('Rui', 'Fu', role = c('aut', 'cre'), email = 'rui.fu@cuanschutz.edu')
+      ),
+  journal = 'PloS Biology',
+  doi = '10.1371/journal.pbio.3001077'
+)
