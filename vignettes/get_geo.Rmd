@@ -4,7 +4,7 @@ date: '`r Sys.Date()`'
 # package: someta
 author:
   - name: Rui Fu
-    affiliation: RNA Bioscience Initative, University of Colorado School of Medicine
+    affiliation: New York Genome Center
 output:
   BiocStyle::html_document:
     toc_float: true
